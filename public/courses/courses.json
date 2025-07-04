@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "python-language-course",
+    "title": "Python Language Course",
+    "duration": "1 Month",
+    "level": "Beginner",
+    "image": "/images/courses/python.png",
+    "description": "Master the basics of Python for scripting, automation, and foundational backend development.",
+    "prerequisites": "None",
+    "learnings": [
+      "Variables, loops, and functions",
+      "Data types and file handling",
+      "OOP in Python",
+      "Error handling and modules"
+    ],
+    "outcomes": [
+      "Write scripts and basic backend logic",
+      "Understand Python in automation and data workflows"
+    ],
+    "offerings": [
+      "Coding Tutorials",
+      "Exercises & Live Projects",
+      "Business Domain Knowledge",
+      "Interview Preparation & Mock Sessions",
+      "Resume Building & LinkedIn Optimization",
+      "1:1 Career Mentorship with Domain Experts",
+      "Live Projects with GitHub Portfolio",
+      "Placement Assistance & Job Readiness"
+    ]
+  }
+]
