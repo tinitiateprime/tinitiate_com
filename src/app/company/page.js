@@ -45,7 +45,7 @@ export default function CompanyPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Partner With Us?</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Whether you're an individual looking to upskill or an enterprise needing cutting-edge development services, TINITIATE is your trusted technology partner. Our commitment to personalized mentoring, project-oriented learning, and scalable engineering makes us stand out.
+            Whether you&apos;re an individual looking to upskill or an enterprise needing cutting-edge development services, TINITIATE is your trusted technology partner. Our commitment to personalized mentoring, project-oriented learning, and scalable engineering makes us stand out.
           </p>
           <div className="grid sm:grid-cols-2 gap-6 text-left">
             {[

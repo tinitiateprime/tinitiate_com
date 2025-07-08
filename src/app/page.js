@@ -296,7 +296,7 @@ export default function HomePage() {
       {/* Left: Why Choose TINITIATE */}
       <div>
         <p className="text-gray-700 mb-6 leading-relaxed">
-          With <strong>15+ years of hands-on IT experience</strong>, our training isn’t just theory—It's real-time knowledge paired with live projects, bonus technologies, and business domain immersion.
+          With <strong>15+ years of hands-on IT experience</strong>, our training isn&apos;t just theory—It&apos;s real-time knowledge paired with live projects, bonus technologies, and business domain immersion.
         </p>
         <ul className="space-y-3">
           {[

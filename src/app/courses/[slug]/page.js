@@ -56,7 +56,7 @@ export default function CourseDetailPage() {
 
       {/* Learnings */}
       <section className="py-14 px-6 max-w-6xl mx-auto bg-white ">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">What You'll Learn</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">What You&apos;ll Learn</h2>
         <ul className="grid md:grid-cols-2 gap-4 list-disc pl-6 text-gray-700">
           {course.learnings.map((item, i) => (
             <li key={i}>{item}</li>

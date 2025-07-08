@@ -454,7 +454,7 @@ export default function ITTrainingPage() {
                 Discover Your IT Career Path
               </h3>
               <p className="text-center text-gray-700 max-w-3xl mx-auto mb-6">
-                In today's rapidly evolving technology landscape, staying up-to-date with the latest IT skills and knowledge is crucial for professional growth and success. Our IT training services are designed to equip individuals and organizations with the necessary expertise to thrive in the digital age. Here are the compelling reasons why you need our IT training services:
+                In today&apos;s rapidly evolving technology landscape, staying up-to-date with the latest IT skills and knowledge is crucial for professional growth and success. Our IT training services are designed to equip individuals and organizations with the necessary expertise to thrive in the digital age. Here are the compelling reasons why you need our IT training services:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
                 {optReasons.map((reason, idx) => (
