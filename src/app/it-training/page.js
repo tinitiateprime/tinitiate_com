@@ -1,4 +1,4 @@
-// 'use client'
+// "use client"
 
 // import Image from 'next/image'
 // import Link from 'next/link'
@@ -206,7 +206,7 @@
 
 
 
-'use client'
+"use client"
 
 import { useState } from 'react'
 import Image from 'next/image'
@@ -336,6 +336,27 @@ const advancedCourses = [
     href: '/courses/snowflake',
   },
 ]
+
+const optServices = [
+  'IT Training',
+  'Interview Screening',
+  'Resume Enhancement',
+  'Interview Preparation',
+  'IT Development Services',
+  'IT Project Support',
+]
+
+const optReasons = [
+  'Comprehensive Curriculum',
+  'Industry-Experienced Instructors',
+  'Hands-on Learning',
+  'Customized Training Solutions',
+  'Up-to-Date Content',
+  'Practical Application',
+  'Networking Opportunities',
+  'Continuous Support',
+]
+
 function CourseGrid({ courses }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -382,43 +403,68 @@ export default function ITTrainingPage() {
           IT Training Programs
         </h1>
         <p className="max-w-2xl mx-auto text-lg text-gray-700">
-          Explore our beginner and advanced IT courses to boost your tech career.
+          {/* Explore our beginner and advanced IT courses to boost your tech career. */}
+          Kickstart and propel your IT career with team TINITIATE
         </p>
       </section>
 
+   
       {/* Tabs */}
-      <div className="bg-white py-4 border-b">
+      <div className="bg-white py-4 ">
         <div className="flex justify-center gap-8">
-          <button
-            onClick={() => handleTabClick('Beginner')}
-            className={`text-sm font-medium px-4 py-2 rounded-full transition ${
-              activeTab === 'Beginner'
-                ? 'bg-blue-500 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-blue-200'
-            }`}
-          >
-            Beginner IT Training 
-          </button>
-          <button
-            onClick={() => handleTabClick('Advanced')}
-            className={`text-sm font-medium px-4 py-2 rounded-full transition ${
-              activeTab === 'Advanced'
-                ? 'bg-blue-500 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-blue-200'
-            }`}
-          >
-            Advanced IT Training 
-          </button>
+          {['Beginner', 'Advanced', 'OPT'].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => handleTabClick(tab)}
+              className={`text-sm font-medium px-4 py-2 rounded-full transition ${
+                activeTab === tab
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-blue-200'
+              }`}
+            >
+              {tab} 
+            </button>
+          ))}
         </div>
       </div>
 
-      {/* Grid */}
+      {/* Grid or OPT Section */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
-            {activeTab} IT Training Courses
-          </h2>
-          <CourseGrid courses={activeTab === 'Beginner' ? beginnerCourses : advancedCourses} />
+          {activeTab !== 'OPT' ? (
+            <>
+              <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
+                {activeTab} IT Training Courses
+              </h2>
+              <CourseGrid courses={activeTab === 'Beginner' ? beginnerCourses : advancedCourses} />
+            </>
+          ) : (
+            <>
+              <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
+                OPT Student Training Services
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center mb-16">
+                {optServices.map((service, idx) => (
+                  <div key={idx} className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-md">
+                    <p className="text-blue-800 font-semibold">{service}</p>
+                  </div>
+                ))}
+              </div>
+              <h3 className="text-2xl font-bold text-center text-gray-900 mb-4">
+                Discover Your IT Career Path
+              </h3>
+              <p className="text-center text-gray-700 max-w-3xl mx-auto mb-6">
+                In today's rapidly evolving technology landscape, staying up-to-date with the latest IT skills and knowledge is crucial for professional growth and success. Our IT training services are designed to equip individuals and organizations with the necessary expertise to thrive in the digital age. Here are the compelling reasons why you need our IT training services:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+                {optReasons.map((reason, idx) => (
+                  <div key={idx} className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md">
+                    <p className="text-gray-800 font-medium">{reason}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </section>
     </main>

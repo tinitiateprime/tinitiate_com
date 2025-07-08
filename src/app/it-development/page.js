@@ -1,5 +1,5 @@
 // // src/app/it-development/page.jsx
-// 'use client'
+// "use client"
 
 // import Image from 'next/image'
 // import Link from 'next/link'
@@ -109,7 +109,7 @@
 
 
 // // src/app/it-development/page.js
-// 'use client'
+// "use client"
 
 // import Image from 'next/image'
 // import Link from 'next/link'
@@ -220,7 +220,7 @@
 
 
 
-'use client'
+"use client"
 
 import { useRouter, usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'

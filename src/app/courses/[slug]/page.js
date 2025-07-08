@@ -1,8 +1,9 @@
-'use client'
+"use client"
 
 import { useEffect, useState } from 'react'
 import { useParams, notFound } from 'next/navigation'
 import Image from 'next/image'
+import { FaChalkboardTeacher, FaCode, FaBriefcase, FaUserTie, FaProjectDiagram, FaTools } from 'react-icons/fa'
 
 export default function CourseDetailPage() {
   const { slug } = useParams()
@@ -27,11 +28,11 @@ export default function CourseDetailPage() {
   }
 
   return (
-    <main className="text-gray-800 w-full bg-white">
+ <main className="text-gray-800 w-full bg-white px-2 sm:px-4 md:px-8">
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-br from-blue-100 to-white min-h-[50vh] flex items-center px-6 ">
+ <section className="w-full bg-gradient-to-br from-blue-100 to-white min-h-[50vh] flex items-center px-6 ">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full py-16">
-          <div className="relative w-full h-72 md:h-80">
+          <div className="relative w-full h-60 md:h-64">
             <Image
               src={course.image}
               alt={course.title}
@@ -46,7 +47,7 @@ export default function CourseDetailPage() {
               <li><strong>📆 Duration:</strong> {course.duration}</li>
               <li><strong>📊 Level:</strong> {course.level}</li>
             </ul>
-            <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-green-700 transition">
+            <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
               Enroll Now
             </button>
           </div>
@@ -76,7 +77,7 @@ export default function CourseDetailPage() {
       </section> */}
 
       {/* Course Offerings */}
-      <section className="py-14 px-6 bg-gray-50">
+      {/* <section className="py-14 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">What We Offer</h2>
           <ul className="grid md:grid-cols-2 gap-4 list-disc pl-6 text-gray-700">
@@ -85,7 +86,48 @@ export default function CourseDetailPage() {
             ))}
           </ul>
         </div>
+      </section> */}
+
+      {/* Offerings - Static with FontAwesome */}
+      <section className="py-14 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-10 ">What We Offer</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow hover:shadow-md">
+              <FaCode className="text-3xl text-blue-600 mb-3" />
+              <p className="text-gray-800 font-semibold">Coding Tutorials</p>
+              <p className="text-sm text-gray-600 mt-2">Hands-on coding practices to build foundational and advanced programming skills.</p>
+            </div>
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow hover:shadow-md">
+              <FaProjectDiagram className="text-3xl text-blue-600 mb-3" />
+              <p className="text-gray-800 font-semibold">Live Projects</p>
+              <p className="text-sm text-gray-600 mt-2">Work on real-world projects to showcase your expertise and enhance your portfolio.</p>
+            </div>
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow hover:shadow-md">
+              <FaBriefcase className="text-3xl text-blue-600 mb-3" />
+              <p className="text-gray-800 font-semibold">Business Knowledge</p>
+              <p className="text-sm text-gray-600 mt-2">Understand real industry use-cases and domain-specific scenarios to gain business context.</p>
+            </div>
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow hover:shadow-md">
+              <FaUserTie className="text-3xl text-blue-600 mb-3" />
+              <p className="text-gray-800 font-semibold">Interview Preparation</p>
+              <p className="text-sm text-gray-600 mt-2">Get mock interview sessions and tips to boost your confidence and success rate.</p>
+            </div>
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow hover:shadow-md">
+              <FaChalkboardTeacher className="text-3xl text-blue-600 mb-3" />
+              <p className="text-gray-800 font-semibold">1:1 Mentorship</p>
+              <p className="text-sm text-gray-600 mt-2">Personal guidance from industry experts to help shape your learning journey.</p>
+            </div>
+            <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow hover:shadow-md">
+              <FaTools className="text-3xl text-blue-600 mb-3" />
+              <p className="text-gray-800 font-semibold">Placement Assistance</p>
+              <p className="text-sm text-gray-600 mt-2">Support with resume building, job search, and application to relevant roles.</p>
+            </div>
+          </div>
+        </div>
       </section>
+
+      
     </main>
   )
 }

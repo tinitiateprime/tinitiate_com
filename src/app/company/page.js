@@ -1,5 +1,5 @@
 // src/app/company/page.jsx
-'use client'
+"use client"
 
 export default function CompanyPage() {
   return (

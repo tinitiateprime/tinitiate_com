@@ -1,5 +1,5 @@
 // app/page.js
-'use client'
+"use client"
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,17 +14,17 @@ const services = [
   },
   {
     title: 'IT Training',
-    href: '/services/it-training',
+    href: '/it-training',
     image: '/images/services-training.png',
   },
   {
     title: 'Work Experience Program',
-    href: '/services/work-experience',
+    href: '/work-experience',
     image: '/images/work-experience-program.png',
   },
   {
     title: 'Remote Consulting',
-    href: '/services/remote-consulting',
+    href: '/remote-consulting',
     image: '/images/Remote-consulting.png',
   },
 ]
@@ -126,7 +126,7 @@ export default function HomePage() {
       </section>
 
       {/* Training Programs */}
-<section id="programs" className="py-20 px-6 bg-white ">
+<section id="programs" className="py-16 px-6 bg-white ">
   <h2 className="text-3xl font-bold text-center mb-12">
     Our Top Training Programs
   </h2>
@@ -185,14 +185,14 @@ export default function HomePage() {
   </Link> */}
 </section>
 
-<section className="py-20 px-6 bg-white">
+<section className="py-10 px-6 bg-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4 text-gray-900">
+        <h2 className="text-4xl font-bold mb-6 text-gray-900">
           IT Development Services
         </h2>
-        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+        {/* <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
           We offer a range of modern development services tailored to your business goals — from data engineering to full-stack development, testing, and deployment support.
-        </p>
+        </p> */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {itServices.map(({ title, image }) => (

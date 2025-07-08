@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
         <header className="fixed top-0 left-0 w-full z-[1000] bg-white ">
           <Header />
         </header>
-        <main className="flex-grow pt-16">
+        <main className="flex-grow pt-14">
           {children}
         </main>
 

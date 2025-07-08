@@ -1,5 +1,5 @@
 // // src/app/components/Header.jsx
-// 'use client'
+// "use client"
 
 // import { useState } from 'react'
 // import Link from 'next/link'
@@ -58,7 +58,7 @@
 
 
 
-'use client'
+"use client"
 
 import { useState, useRef } from 'react'
 import Link from 'next/link'
@@ -75,7 +75,7 @@ export default function Header() {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    // { label: 'Remote Consulting', href: '/remote-consulting' },
+    { label: 'Remote Consulting', href: '/remote-consulting' },
     // { label: 'Work Experience Program', href: '/work-experience' },
     { label: 'IT Development Services', href: '/it-development' },
     { label: 'IT Training', href: '/it-training' },

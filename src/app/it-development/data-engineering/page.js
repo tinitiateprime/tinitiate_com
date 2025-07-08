@@ -1,5 +1,5 @@
 // src/app/it-development/data-engineering/page.jsx
-'use client'
+"use client"
 
 import Image from 'next/image'
 
@@ -40,14 +40,14 @@ export default function DataEngineeringPage() {
             />
           </div>
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600 mb-4">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-blue-500 mb-4">
               {serviceData.title}
             </h1>
             <p className="text-lg text-gray-700 mb-3">{serviceData.overview}</p>
             <p className="text-sm text-gray-600">
               <strong>Timeline:</strong> {serviceData.duration}
             </p>
-            <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+            <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">
               Request Consultation
             </button>
           </div>
