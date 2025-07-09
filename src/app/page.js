@@ -42,33 +42,68 @@ const programs = [
     image: '/images/IT-training/Power-BI-Developer-Program.png',
     description: 'Learn powerful BI reporting, data modeling, and dashboard creation using real-world business data.',
   },
-  {
-    title: 'AWS DevOps Program',
+  // {
+  //   title: 'AWS DevOps Program',
+  //   duration: '3 Months',
+  //   image: '/images/IT-training/AWS-DevOps-Program.png',
+  //   description: 'Gain expertise in CI/CD pipelines, infrastructure as code, containerization, and cloud deployment.',
+  // },
+    {
+    title: 'SQL Database Program',
     duration: '3 Months',
-    image: '/images/IT-training/AWS-DevOps-Program.png',
-    description: 'Gain expertise in CI/CD pipelines, infrastructure as code, containerization, and cloud deployment.',
+    image: '/images/courses/sql.png',
+    description: 'Understand data modeling, querying, and reporting using relational databases and SQL.',
   },
 ]
+
+
+// const itServices = [
+//   {
+//     title: 'Data Engineering',
+//     image: '/images/IT-development/data-engineering.png',
+//   },
+//   {
+//     title: 'App Development',
+//     image: '/images/IT-development/app-development.jpg',
+//   },
+//   {
+//     title: 'Web/Backend Development',
+//     image: '/images/IT-development/web-backend.png',
+//   },
+//   {
+//     title: 'Testing and Support',
+//     image: '/images/IT-development/testing-support.png',
+//   },
+// ]
 
 
 const itServices = [
   {
-    title: 'Data Engineering',
-    image: '/images/IT-development/data-engineering.png',
+    title: "Data Engineering",
+    image1: "/images/IT-development/data-engineering-1.png",
+    image2: "/images/IT-development/data-engineering-2.jpg",
+    description: "Build reliable pipelines and manage large-scale data platforms using cloud-native tools."
   },
   {
-    title: 'App Development',
-    image: '/images/IT-development/app-development.jpg',
+    title: "App Development",
+    image1: "/images/IT-development/app-development-1.jpg",
+    image2: "/images/IT-development/app-development-2.jpg",
+    description: "Create cross-platform apps with native performance and delightful user experience."
   },
   {
-    title: 'Web/Backend Development',
-    image: '/images/IT-development/web-backend.png',
+    title: "Web & Backend Development",
+    image1: "/images/IT-development/web-backend-1.jpg",
+    image2: "/images/IT-development/web-backend-2.jpg",
+    description: "Design and build scalable APIs, admin panels, and responsive web platforms."
   },
   {
-    title: 'Testing and Support',
-    image: '/images/IT-development/testing-support.png',
-  },
-]
+    title: "Testing & Support",
+    image1: "/images/IT-development/testing-support-1.jpg",
+    image2: "/images/IT-development/testing-support-2.jpg",
+    description: "Ensure stability, automation, and continuous integration with end-to-end QA solutions."
+  }
+];
+
 
 
 
@@ -109,6 +144,117 @@ const guidanceData = [
 export default function HomePage() {
   return (
     <main className="text-gray-800">
+
+      <section className="bg-gradient-to-br from-gray-200 to-white py-24 px-6 text-center">
+  <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
+    Building Powerful Solutions with Custom IT Development
+  </h1>
+  <p className="max-w-2xl mx-auto text-lg text-gray-700 mb-8">
+    From full-stack applications to data pipelines and backend automation, our expert-led development services are tailored for scale, speed, and success — trusted by startups and enterprises alike.
+  </p>
+  {/* <Link
+    href="/services/it-development"
+    className="inline-block px-8 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-800 transition"
+  >
+    Explore IT Development Services
+  </Link> */}
+</section>
+
+{/* <section className="py-10 px-6 bg-white">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-6 text-gray-900">
+          IT Development Services
+        </h2>
+        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+          We offer a range of modern development services tailored to your business goals — from data engineering to full-stack development, testing, and deployment support.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {itServices.map(({ title, image }) => (
+            <div
+              key={title}
+              className="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group"
+            >
+              <div className="relative w-full h-48 sm:h-56 overflow-hidden">
+                <Image
+                  src={image}
+                  alt={title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="text-lg text-gray-800 font-semibold text-center">
+                  {title}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
+
+
+        <Link
+  href="/it-development"
+  className="inline-block px-8 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
+>
+  Explore
+</Link>
+      </div>
+
+      
+    </section> */}
+
+<section className="py-10 px-6 bg-white">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-4xl font-bold mb-6 text-gray-900">
+      IT Development Services
+    </h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
+      {itServices.map(({ title, image1, image2, description }) => (
+        <div
+          key={title}
+          className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group"
+        >
+          {/* Image Container */}
+          <div className="relative w-full h-72 overflow-hidden">
+            {/* Base Image */}
+            <Image
+              src={image1}
+              alt={title}
+              fill
+              className="object-cover transition-opacity duration-500 group-hover:opacity-0"
+            />
+            {/* Hover Image */}
+            <Image
+              src={image2}
+              alt={`${title} hover`}
+              fill
+              className="object-cover absolute top-0 left-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
+            />
+          </div>
+
+          {/* Text Content */}
+          <div className="p-6">
+            <h3 className="text-3xl font-semibold text-gray-800 text-center mb-2">
+              {title}
+            </h3>
+            <p className="text-1xl text-gray-600 text-center">
+              {description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+      
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-100 to-white py-24 px-6 text-center">
         <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
@@ -170,68 +316,7 @@ export default function HomePage() {
   </div>
 </section>
 
-<section className="bg-gradient-to-br from-gray-100 to-white py-24 px-6 text-center">
-  <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
-    Building Powerful Solutions with Custom IT Development
-  </h1>
-  <p className="max-w-2xl mx-auto text-lg text-gray-700 mb-8">
-    From full-stack applications to data pipelines and backend automation, our expert-led development services are tailored for scale, speed, and success — trusted by startups and enterprises alike.
-  </p>
-  {/* <Link
-    href="/services/it-development"
-    className="inline-block px-8 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-800 transition"
-  >
-    Explore IT Development Services
-  </Link> */}
-</section>
 
-<section className="py-10 px-6 bg-white">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6 text-gray-900">
-          IT Development Services
-        </h2>
-        {/* <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-          We offer a range of modern development services tailored to your business goals — from data engineering to full-stack development, testing, and deployment support.
-        </p> */}
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {itServices.map(({ title, image }) => (
-            <div
-              key={title}
-              className="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group"
-            >
-              <div className="relative w-full h-48 sm:h-56 overflow-hidden">
-                <Image
-                  src={image}
-                  alt={title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-5">
-                <h3 className="text-lg text-gray-800 font-semibold text-center">
-                  {title}
-                </h3>
-              </div>
-            </div>
-          ))}
-        </div>
-
-
-        {/* <Link
-  href="/services/it-development"
-  className="inline-block px-8 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
->
-  Explore Development Services
-</Link> */}
-        <Link
-  href="/it-development"
-  className="inline-block px-8 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
->
-  Explore
-</Link>
-      </div>
-    </section>
   
 
 

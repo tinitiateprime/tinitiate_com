@@ -1,145 +1,36 @@
-// // src/app/it-development/page.jsx
 // "use client"
 
+// import { useRouter, usePathname } from 'next/navigation'
+// import { useEffect, useState } from 'react'
 // import Image from 'next/image'
-// import Link from 'next/link'
+// import { motion } from 'framer-motion'
 
 // const itDevelopmentServices = [
 //   {
 //     title: 'Data Engineering',
 //     duration: 'Project Based',
-//     image: '/images/it-development/data-engineering.png',
+//     image: '/images/it-development/data-engineering-1.png',
 //     description: 'Design and build scalable data pipelines and warehousing solutions using AWS, Azure, and modern data tools.',
 //     href: '/it-development/data-engineering',
 //   },
 //   {
 //     title: 'App Development',
 //     duration: 'Custom Timeline',
-//     image: '/images/it-development/app-development.jpg',
-//     description: 'Build cross-platform mobile and web apps tailored to client needs with seamless UX and secure APIs.',
-//     href: '/services/it-development/app-development',
-//   },
-//   {
-//     title: 'Web/Backend Development',
-//     duration: 'Project Based',
-//     image: '/images/it-development/web-backend.png',
-//     description: 'Develop scalable, secure backend systems and responsive web applications using modern frameworks.',
-//     href: '/services/it-development/web-backend',
-//   },
-//   {
-//     title: 'Testing and Support',
-//     duration: 'Ongoing',
-//     image: '/images/it-development/testing-support.png',
-//     description: 'Ensure quality through automated/manual testing, bug fixing, and continuous support for deployments.',
-//     href: '/services/it-development/testing-support',
-//   },
-// ]
-
-
-// const developmentOverview = [
-//     "We provide a wide range of IT development services designed to meet the diverse needs of modern businesses. Our data engineering expertise allows us to transform raw data into valuable insights, utilizing cloud platforms like Azure and AWS to build robust data pipelines and integrate various data sources efficiently.",
-//     "In app development, we create custom applications tailored to your business requirements, focusing on both Android and iOS platforms. Our team ensures a seamless development process, delivering high-quality, user-friendly apps.",
-//     "Our backend development services are focused on creating scalable and secure backend systems that support your applications. We specialize in developing IoT backend systems with message queues and offer API development on AWS and Azure to ensure smooth communication between your applications and external services.",
-//     "To ensure your software's quality and reliability, we offer comprehensive testing and support services. Our testing includes both automated and manual methods to identify and fix issues, while our ongoing support ensures your applications remain up-to-date and secure."
-//   ];
-  
-
-// function ServiceGrid({ title, services }) {
-//     return (
-//         <section className="py-20 px-6 bg-white">
-//           <div className="max-w-7xl mx-auto">
-//             <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">{title}</h2>
-    
-//             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-//               {services.map(({ title, image, duration, description, href }) => (
-//                 <div
-//                   key={title}
-//                   className="bg-gray-50 border hover:shadow-md rounded-2xl p-5 flex flex-col transition-all"
-//                 >
-//                   <div className="relative w-full h-40 mb-4 rounded overflow-hidden shadow-sm">
-//                     <Image src={image} alt={title} fill className="object-cover rounded" />
-//                   </div>
-//                   <h3 className="text-lg font-semibold text-gray-800 mb-1">{title}</h3>
-//                   <p className="text-xs text-gray-500 mb-1">Timeline: {duration}</p>
-//                   <p className="text-sm text-gray-700 flex-grow">{description}</p>
-//                   <Link
-//                     href={href}
-//                     className="mt-4 text-sm font-medium inline-block px-4 py-2 rounded-full text-white bg-blue-400 hover:bg-blue-600 transition"
-//                   >
-//                     Explore Service
-//                   </Link>
-//                 </div>
-//               ))}
-//             </div>
-    
-//             {/* Overview Below Cards */}
-//             <div className="mt-20 border-t pt-10">
-//               <h3 className="text-2xl font-semibold text-gray-800 text-center mb-6">
-//                 Why Choose Our Development Services?
-//               </h3>
-//               <div className="max-w-4xl mx-auto space-y-5 text-gray-700 text-base leading-relaxed text-center">
-//                 {developmentOverview.map((para, idx) => (
-//                   <p key={idx}>{para}</p>
-//                 ))}
-//               </div>
-//             </div>
-//           </div>
-//         </section>
-//       )
-//     }
-
-// export default function ITDevelopmentPage() {
-//   return (
-//     <main className="text-gray-800">
-//       <section className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6">
-//         <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">IT Development Services</h1>
-//         <p className="max-w-2xl mx-auto text-lg text-gray-700">
-//           Explore our professional development services, offering end-to-end solutions in engineering, applications, backend systems, and deployment support.
-//         </p>
-//       </section>
-//       <ServiceGrid title="Explore Our Expertise" services={itDevelopmentServices} />
-//     </main>
-//   )
-// }
-
-
-
-
-
-
-
-// // src/app/it-development/page.js
-// "use client"
-
-// import Image from 'next/image'
-// import Link from 'next/link'
-
-// const itDevelopmentServices = [
-//   {
-//     title: 'Data Engineering',
-//     duration: 'Project Based',
-//     image: '/images/it-development/data-engineering.png',
-//     description: 'Design and build scalable data pipelines and warehousing solutions using AWS, Azure, and modern data tools.',
-//     href: '/it-development/data-engineering',
-//   },
-//   {
-//     title: 'App Development',
-//     duration: 'Custom Timeline',
-//     image: '/images/it-development/app-development.jpg',
+//     image: '/images/it-development/app-development-1.jpg',
 //     description: 'Build cross-platform mobile and web apps tailored to client needs with seamless UX and secure APIs.',
 //     href: '/it-development/app-development',
 //   },
 //   {
 //     title: 'Web/Backend Development',
 //     duration: 'Project Based',
-//     image: '/images/it-development/web-backend.png',
+//     image: '/images/it-development/web-backend-2.jpg',
 //     description: 'Develop scalable, secure backend systems and responsive web applications using modern frameworks.',
 //     href: '/it-development/web-backend',
 //   },
 //   {
 //     title: 'Testing and Support',
 //     duration: 'Ongoing',
-//     image: '/images/it-development/testing-support.png',
+//     image: '/images/it-development/testing-support-2.jpg',
 //     description: 'Ensure quality through automated/manual testing, bug fixing, and continuous support for deployments.',
 //     href: '/it-development/testing-support',
 //   },
@@ -152,41 +43,52 @@
 //   "To ensure your software's quality and reliability, we offer comprehensive testing and support services. Our testing includes both automated and manual methods to identify and fix issues, while our ongoing support ensures your applications remain up-to-date and secure."
 // ]
 
-// function ServiceGrid({ title, services }) {
+// function ServiceGrid({ title, services, onCardClick }) {
 //   return (
 //     <section className="py-20 px-6 bg-white">
 //       <div className="max-w-7xl mx-auto">
-//         <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">{title}</h2>
-
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-//           {services.map(({ title, image, duration, description, href }) => (
-//             <div
+//         <h2 className="text-5xl font-extrabold text-center mb-16 text-blue-900 tracking-tight">
+//           {title}
+//         </h2>
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+//           {services.map(({ title, image, duration, description, href }, i) => (
+//             <motion.div
 //               key={title}
-//               className="bg-gray-50 border hover:shadow-md rounded-2xl p-5 flex flex-col transition-all"
+//               onClick={() => onCardClick(href)}
+//               className="bg-white shadow hover:shadow-xl rounded-2xl p-6 cursor-pointer transition-all border border-blue-100"
+//               initial={{ opacity: 0, y: 20 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               viewport={{ once: true }}
+//               transition={{ duration: 0.6, delay: i * 0.1 }}
 //             >
 //               <div className="relative w-full h-40 mb-4 rounded overflow-hidden shadow-sm">
 //                 <Image src={image} alt={title} fill className="object-cover rounded" />
 //               </div>
-//               <h3 className="text-lg font-semibold text-gray-800 mb-1">{title}</h3>
-//               <p className="text-xs text-gray-500 mb-1">Timeline: {duration}</p>
-//               <p className="text-sm text-gray-700 flex-grow">{description}</p>
-//               <Link
-//                 href={href}
-//                 className="mt-4 text-sm font-medium inline-block px-4 py-2 rounded-full text-white bg-blue-400 hover:bg-blue-600 transition"
-//               >
+//               <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
+//               <p className="text-xs text-gray-500 mb-2">Timeline: {duration}</p>
+//               <p className="text-sm text-gray-700 mb-4 line-clamp-3">{description}</p>
+//               <span className="text-sm font-semibold inline-block px-5 py-2 rounded-full text-white bg-blue-500 hover:bg-blue-700 transition text-center">
 //                 Explore Service
-//               </Link>
-//             </div>
+//               </span>
+//             </motion.div>
 //           ))}
 //         </div>
 
-//         <div className="mt-20 border-t pt-10">
-//           <h3 className="text-2xl font-semibold text-gray-800 text-center mb-6">
+//         <div className="mt-24 border-t pt-12">
+//           <h3 className="text-3xl font-bold text-center mb-6 text-gray-900">
 //             Why Choose Our Development Services?
 //           </h3>
-//           <div className="max-w-4xl mx-auto space-y-5 text-gray-700 text-base leading-relaxed text-center">
+//           <div className="max-w-4xl mx-auto space-y-6 text-gray-700 text-base leading-relaxed text-center">
 //             {developmentOverview.map((para, idx) => (
-//               <p key={idx}>{para}</p>
+//               <motion.p
+//                 key={idx}
+//                 initial={{ opacity: 0, y: 10 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 viewport={{ once: true }}
+//                 transition={{ delay: idx * 0.2 }}
+//               >
+//                 {para}
+//               </motion.p>
 //             ))}
 //           </div>
 //         </div>
@@ -196,15 +98,64 @@
 // }
 
 // export default function ITDevelopmentPage() {
+//   const router = useRouter()
+//   const pathname = usePathname()
+//   const [selectedService, setSelectedService] = useState(null)
+
+//   useEffect(() => {
+//     const match = itDevelopmentServices.find(service =>
+//       pathname === service.href
+//     )
+//     setSelectedService(match || null)
+//   }, [pathname])
+
+//   const handleNavigate = (href) => {
+//     router.push(href)
+//   }
+
 //   return (
 //     <main className="text-gray-800">
-//       <section className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6">
+//       <motion.section
+//         className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6"
+//         initial={{ opacity: 0 }}
+//         animate={{ opacity: 1 }}
+//         transition={{ duration: 1 }}
+//       >
 //         <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">IT Development Services</h1>
 //         <p className="max-w-2xl mx-auto text-lg text-gray-700">
 //           Explore our professional development services, offering end-to-end solutions in engineering, applications, backend systems, and deployment support.
 //         </p>
-//       </section>
-//       <ServiceGrid title="Explore Our Expertise" services={itDevelopmentServices} />
+//       </motion.section>
+
+//       {selectedService ? (
+//         <div className="max-w-4xl mx-auto py-16 px-6">
+//           <button
+//             onClick={() => router.push('/it-development')}
+//             className="text-sm text-blue-500 hover:underline mb-6"
+//           >
+//             ← Back to All Services
+//           </button>
+//           <motion.div
+//             className="bg-white rounded-xl shadow-md p-6"
+//             initial={{ opacity: 0, y: 20 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 0.6 }}
+//           >
+//             <div className="relative w-full h-60 mb-4">
+//               <Image src={selectedService.image} alt={selectedService.title} fill className="object-cover rounded" />
+//             </div>
+//             <h2 className="text-3xl font-bold mb-2">{selectedService.title}</h2>
+//             <p className="text-sm text-gray-500 mb-4">Timeline: {selectedService.duration}</p>
+//             <p className="text-base text-gray-700">{selectedService.description}</p>
+//           </motion.div>
+//         </div>
+//       ) : (
+//         <ServiceGrid
+//           title="Explore Our Expertise"
+//           services={itDevelopmentServices}
+//           onCardClick={handleNavigate}
+//         />
+//       )}
 //     </main>
 //   )
 // }
@@ -218,141 +169,134 @@
 
 
 
-
-
 "use client"
 
-import { useRouter, usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const itDevelopmentServices = [
   {
     title: 'Data Engineering',
     duration: 'Project Based',
-    image: '/images/it-development/data-engineering.png',
+    image: '/images/it-development/data-engineering-1.png',
     description: 'Design and build scalable data pipelines and warehousing solutions using AWS, Azure, and modern data tools.',
     href: '/it-development/data-engineering',
   },
   {
     title: 'App Development',
     duration: 'Custom Timeline',
-    image: '/images/it-development/app-development.jpg',
+    image: '/images/it-development/app-development-1.jpg',
     description: 'Build cross-platform mobile and web apps tailored to client needs with seamless UX and secure APIs.',
     href: '/it-development/app-development',
   },
   {
     title: 'Web/Backend Development',
     duration: 'Project Based',
-    image: '/images/it-development/web-backend.png',
+    image: '/images/it-development/web-backend-2.jpg',
     description: 'Develop scalable, secure backend systems and responsive web applications using modern frameworks.',
     href: '/it-development/web-backend',
   },
   {
     title: 'Testing and Support',
     duration: 'Ongoing',
-    image: '/images/it-development/testing-support.png',
+    image: '/images/it-development/testing-support-2.jpg',
     description: 'Ensure quality through automated/manual testing, bug fixing, and continuous support for deployments.',
     href: '/it-development/testing-support',
   },
 ]
 
-const developmentOverview = [
-  "We provide a wide range of IT development services designed to meet the diverse needs of modern businesses. Our data engineering expertise allows us to transform raw data into valuable insights, utilizing cloud platforms like Azure and AWS to build robust data pipelines and integrate various data sources efficiently.",
-  "In app development, we create custom applications tailored to your business requirements, focusing on both Android and iOS platforms. Our team ensures a seamless development process, delivering high-quality, user-friendly apps.",
-  "Our backend development services are focused on creating scalable and secure backend systems that support your applications. We specialize in developing IoT backend systems with message queues and offer API development on AWS and Azure to ensure smooth communication between your applications and external services.",
-  "To ensure your software's quality and reliability, we offer comprehensive testing and support services. Our testing includes both automated and manual methods to identify and fix issues, while our ongoing support ensures your applications remain up-to-date and secure."
-]
-
-function ServiceGrid({ title, services, onCardClick }) {
-  return (
-    <section className="py-20 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">{title}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map(({ title, image, duration, description, href }) => (
-            <div
-              key={title}
-              onClick={() => onCardClick(href)}
-              className="bg-gray-50 border hover:shadow-md rounded-2xl p-5 flex flex-col transition-all cursor-pointer"
-            >
-              <div className="relative w-full h-40 mb-4 rounded overflow-hidden shadow-sm">
-                <Image src={image} alt={title} fill className="object-cover rounded" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-1">{title}</h3>
-              <p className="text-xs text-gray-500 mb-1">Timeline: {duration}</p>
-              <p className="text-sm text-gray-700 flex-grow">{description}</p>
-              <span className="mt-4 text-sm font-medium inline-block px-4 py-2 rounded-full text-white bg-blue-400 hover:bg-blue-600 transition text-center">
-                Explore Service
-              </span>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-20 border-t pt-10">
-          <h3 className="text-2xl font-semibold text-gray-800 text-center mb-6">
-            Why Choose Our Development Services?
-          </h3>
-          <div className="max-w-4xl mx-auto space-y-5 text-gray-700 text-base leading-relaxed text-center">
-            {developmentOverview.map((para, idx) => (
-              <p key={idx}>{para}</p>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
+const ServiceCard = ({ title, duration, image, description, href, onClick }) => (
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.98 }}
+    className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
+    onClick={() => onClick(href)}
+  >
+    <div className="relative w-full h-48">
+      <Image src={image} alt={title} fill className="object-cover" />
+    </div>
+    <div className="p-5">
+      <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">{title}</h3>
+      <p className="text-sm text-gray-500 mt-1">Timeline: {duration}</p>
+      <p className="text-sm text-gray-700 mt-2 line-clamp-3">{description}</p>
+      <span className="mt-4 inline-block text-sm font-medium text-blue-600 hover:underline">Learn More →</span>
+    </div>
+  </motion.div>
+)
 
 export default function ITDevelopmentPage() {
   const router = useRouter()
-  const pathname = usePathname()
-  const [selectedService, setSelectedService] = useState(null)
 
-  useEffect(() => {
-    const match = itDevelopmentServices.find(service =>
-      pathname === service.href
-    )
-    setSelectedService(match || null)
-  }, [pathname])
-
-  const handleNavigate = (href) => {
+  const handleCardClick = (href) => {
     router.push(href)
   }
 
   return (
     <main className="text-gray-800">
-      <section className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6">
-        <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">IT Development Services</h1>
-        <p className="max-w-2xl mx-auto text-lg text-gray-700">
-          Explore our professional development services, offering end-to-end solutions in engineering, applications, backend systems, and deployment support.
-        </p>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-tr from-gray-200 via-gray-200 to-gray-100 text-gray-900 py-28 text-center px-6 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/it-development/hero-bg.jpg')] bg-cover bg-center opacity-10" />
+        <div className="relative z-10">
+          <motion.h1
+            className="text-5xl font-extrabold leading-tight mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Enterprise IT Development Services
+          </motion.h1>
+          <motion.p
+            className="max-w-2xl mx-auto text-lg text-gray-900"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          >
+            Scalable, secure, and modern solutions across engineering, application development, backend architecture, and testing support.
+          </motion.p>
+        </div>
       </section>
 
-      {selectedService ? (
-        <div className="max-w-4xl mx-auto py-16 px-6">
-          <button
-            onClick={() => router.push('/it-development')}
-            className="text-sm text-blue-500 hover:underline mb-6"
+      {/* Service Cards Grid */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <motion.h2
+            className="text-4xl font-bold text-center text-gray-900 mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
           >
-            ← Back to All Services
-          </button>
-          <div className="bg-white rounded-xl shadow-md p-6">
-            <div className="relative w-full h-60 mb-4">
-              <Image src={selectedService.image} alt={selectedService.title} fill className="object-cover rounded" />
-            </div>
-            <h2 className="text-3xl font-bold mb-2">{selectedService.title}</h2>
-            <p className="text-sm text-gray-500 mb-4">Timeline: {selectedService.duration}</p>
-            <p className="text-base text-gray-700">{selectedService.description}</p>
+            Our Expertise
+          </motion.h2>
+         
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {itDevelopmentServices.map((service, i) => (
+              <ServiceCard key={i} {...service} onClick={handleCardClick} />
+            ))}
           </div>
         </div>
-      ) : (
-        <ServiceGrid
-          title="Explore Our Expertise"
-          services={itDevelopmentServices}
-          onCardClick={handleNavigate}
-        />
-      )}
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-r from-blue-900 to-blue-500 text-white py-20 px-6 text-center">
+        <motion.div
+          className="max-w-3xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-3xl font-bold mb-4">Need Custom IT Solutions?</h2>
+          <p className="mb-6 text-blue-100">
+            Connect with our senior consultants to explore tailored strategies for digital transformation and operational growth.
+          </p>
+          <button className="bg-white text-blue-900 px-6 py-3 font-semibold rounded-xl hover:bg-blue-100 transition">
+            Book Consultation
+          </button>
+        </motion.div>
+      </section>
     </main>
   )
 }
