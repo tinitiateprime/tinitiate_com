@@ -305,7 +305,8 @@ export default function HomePage() {
             </p>
           </div>
           <Link
-            href={`/programs/${prog.title.toLowerCase().replace(/\s+/g, '-')}`}
+            // href={`/programs/${prog.title.toLowerCase().replace(/\s+/g, '-')}`}
+            href={`/request-callback/`}
             className="inline-block px-4 py-2 bg-blue-400 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
           >
             Register Course
