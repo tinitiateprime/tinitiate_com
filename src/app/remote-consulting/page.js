@@ -46,24 +46,22 @@ export default function RemoteConsultingPage() {
   return (
     <main className="bg-white text-gray-800">
       {/* Hero Section */}
-<section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
-    
-    
-    {/* Background Image Container (with height) */}
+{/* <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
+    Background Image Container (with height)
     <div className="absolute inset-0 w-full h-full ">
       <Image
-        src="/images/banners/remote-consulting.svg" // Replace with your actual image
+        src="/images/banners/remote-consulting.jpg" // Replace with your actual image
         alt="Remote Consulting Background"
         fill
         className="object-cover"
         priority
         sizes="100vw"
       />
-      {/* Optional dark overlay to enhance text contrast */}
+      Optional dark overlay to enhance text contrast
       <div className="absolute inset-0 bg-black/60" />
     </div>
 
-    {/* Foreground Text Content */}
+    Foreground Text Content
     <div className="relative z-10 max-w-4xl mx-auto">
       <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white leading-tight">
         Enterprise Remote Consulting
@@ -72,7 +70,35 @@ export default function RemoteConsultingPage() {
         Empower your database architecture with expert-led consulting services tailored to scalability, reliability, and performance — all delivered remotely.
       </p>
     </div>
-  </section>
+  </section> */}
+
+  <section className="relative bg-black py-20 sm:py-10 md:py-15 ">
+    <div className="max-w-7xl sm:px-5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      
+      {/* Text Section */}
+      <div className="text-center md:text-left">
+
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+          Enterprise Remote Consulting
+        </h1>
+        <p className="text-base sm:text-lg text-white mb-6 max-w-xl">
+          Empower your database architecture with expert-led consulting services tailored to scalability, reliability, and performance — all delivered remotely.
+        </p>
+      </div>
+  
+      {/* Image Section */}
+      <div className="relative w-full h-64 p-2 sm:h-80 md:h-[22rem] rounded-lg overflow-hidden shadow-lg">
+        <Image
+          src="/images/banners/remote-consulting.jpg" // Replace with a real high-quality hero image
+          alt="IT Development Solutions"
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          priority
+        />
+      </div>
+    </div>
+    </section>
 
       {/* Zig-Zag Services Sections */}
       {services.map(({ title, description, icon, href }, idx) => (

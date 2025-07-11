@@ -148,7 +148,7 @@ const guidanceData = [
 export default function HomePage() {
   return (
     <main className="text-gray-800">
-<section className="relative bg-black py-20 sm:py-10 md:py-15 ">
+<section className="relative bg-black py-20 sm:py-10 md:py-15  ">
   <div className="max-w-7xl sm:px-5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
     
     {/* Text Section */}
@@ -167,7 +167,7 @@ export default function HomePage() {
     {/* Image Section */}
     <div className="relative w-full h-64 p-2 sm:h-80 md:h-[22rem] rounded-lg overflow-hidden shadow-lg">
       <Image
-        src="/images/banners/tinitiate.svg" // Replace with a real high-quality hero image
+        src="/images/banners/tinitiate.jpg" // Replace with a real high-quality hero image
         alt="IT Development Solutions"
         fill
         className="object-cover"

@@ -116,7 +116,7 @@ export default function SQLServerServicePage() {
             Connect with our certified SQL Server consultants to unlock enterprise-grade performance, scalability, and reliability.
           </p>
           <Link
-            href="/contact"
+             href={`/request-callback/`}
             className="inline-block bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition"
           >
             Contact Us

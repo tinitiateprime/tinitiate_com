@@ -116,7 +116,7 @@ export default function RedshiftServicePage() {
             Partner with our AWS-certified Redshift specialists to scale your data architecture and boost analytic performance.
           </p>
           <Link
-            href="/contact"
+             href={`/request-callback/`}
             className="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-red-100 transition"
           >
             Contact Us

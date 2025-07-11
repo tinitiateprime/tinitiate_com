@@ -76,7 +76,7 @@ export default function Header() {
   const navItems = [
     { label: 'Home', href: '/' },
     { label: 'Remote Consulting', href: '/remote-consulting' },
-    // { label: 'Work Experience Program', href: '/work-experience' },
+    { label: 'Work Experience Program', href: '/work-experience-program' },
     { label: 'IT Development Services', href: '/it-development' },
     { label: 'IT Training', href: '/it-training' },
     { label: 'Company', href: '/company' },
@@ -211,10 +211,84 @@ export default function Header() {
 
 
 
-// {
-//   label: 'IT Training',
-//   dropdown: [
-//     { label: 'Beginners IT Training', href: '/it-training/beginners' },
-//     { label: 'Professional Training', href: '/it-training/professional' },
-//   ],
-// },
+
+
+
+// "use client"
+
+// import { useState } from "react"
+// import Link from "next/link"
+// import Image from "next/image"
+// import { useRouter } from "next/navigation"
+// import { Menu, X } from "lucide-react"
+
+// export default function Header() {
+//   const [isOpen, setIsOpen] = useState(false)
+//   const router = useRouter()
+
+//   const navItems = [
+//     { label: 'Home', href: '/' },
+//     { label: 'Remote Consulting', href: '/remote-consulting' },
+//     { label: 'Work Experience Program', href: '/work-experience-program' },
+//     { label: 'IT Development Services', href: '/it-development' },
+//     { label: 'IT Training', href: '/it-training' },
+//     { label: 'Company', href: '/company' },
+//   ]
+
+//   return (
+//     <header className="bg-white sticky top-0 z-50 shadow-sm">
+//       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+//         {/* Logo */}
+//         <Link href="/" className="block w-[160px] md:w-[220px] lg:w-[260px] xl:w-[300px]">
+//           <Image
+//             src="/images/tinitiatelogo.png"
+//             alt="TINITIATE Logo"
+//             width={594}
+//             height={82}
+//             className="h-auto w-full object-contain"
+//             priority
+//           />
+//         </Link>
+
+//         {/* Desktop Nav: only show above 1400px */}
+//         <ul className="hidden xlplus:flex space-x-8 text-gray-800 items-center">
+//           {navItems.map((item) => (
+//             <li
+//               key={item.href}
+//               className="hover:bg-[#f2f2f2] rounded-full px-4 py-2 transition cursor-pointer"
+//               onClick={() => router.push(item.href)}
+//             >
+//               {item.label}
+//             </li>
+//           ))}
+//         </ul>
+
+//         {/* Hamburger: show below 1400px */}
+//         <button
+//           className="xlplus:hidden text-gray-800 z-50"
+//           onClick={() => setIsOpen(!isOpen)}
+//         >
+//           {isOpen ? <X size={24} /> : <Menu size={24} />}
+//         </button>
+//       </nav>
+
+//       {/* Mobile Menu */}
+//       {isOpen && (
+//         <ul className="xlplus:hidden bg-white px-6 pb-4 space-y-4 text-gray-800">
+//           {navItems.map((item) => (
+//             <li
+//               key={item.href}
+//               className="hover:bg-[#f2f2f2] rounded-sm px-4 py-2 transition cursor-pointer"
+//               onClick={() => {
+//                 setIsOpen(false)
+//                 router.push(item.href)
+//               }}
+//             >
+//               {item.label}
+//             </li>
+//           ))}
+//         </ul>
+//       )}
+//     </header>
+//   )
+// }

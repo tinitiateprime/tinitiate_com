@@ -410,24 +410,24 @@ export default function ITTrainingPage() {
 
 
            {/* Hero Section */}
-      <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
+      {/* <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
           
           
-          {/* Background Image Container (with height) */}
+          Background Image Container (with height)
           <div className="absolute inset-0 w-full h-full ">
             <Image
-              src="/images/banners/it-training.png" // Replace with your actual image
+              src="/images/banners/it-training.jpg" // Replace with your actual image
               alt="Remote Consulting Background"
               fill
               className="object-cover"
               priority
               sizes="100vw"
             />
-            {/* Optional dark overlay to enhance text contrast */}
+            Optional dark overlay to enhance text contrast
             <div className="absolute inset-0 bg-black/60" />
           </div>
       
-          {/* Foreground Text Content */}
+          Foreground Text Content
           <div className="relative z-10 max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white leading-tight">
           IT Training Programs
@@ -437,11 +437,41 @@ export default function ITTrainingPage() {
              
             </p>
           </div>
-        </section>
+        </section> */}
+
+
+
+
+        <section className="relative bg-black py-20 sm:py-10 md:py-15 ">
+  <div className="max-w-7xl sm:px-5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    
+    {/* Text Section */}
+    <div className="text-center md:text-left">
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+     IT Training Programs
+      </h1>
+      <p className="text-base sm:text-lg text-white mb-6 max-w-xl">
+        Kickstart and propel your IT career with team TINITIATE. Explore our beginner and advanced IT courses to boost your tech career.
+      </p>
+    </div>
+
+    {/* Image Section */}
+    <div className="relative w-full h-64 p-2 sm:h-80 md:h-[22rem] rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src="/images/banners/it-training-2.jpg" // Replace with a real high-quality hero image
+        alt="IT Development Solutions"
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority
+      />
+    </div>
+  </div>
+  </section>
 
    
       {/* Tabs */}
-      <div className="bg-white py-4 ">
+      <div className="bg-white py-10 ">
         <div className="flex justify-center gap-8">
           {['Beginner', 'Advanced', 'OPT'].map((tab) => (
             <button

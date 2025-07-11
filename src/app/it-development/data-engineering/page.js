@@ -2,6 +2,7 @@
 "use client"
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 const serviceData = {
     title: 'Data Engineering Services',
@@ -44,12 +45,19 @@ export default function DataEngineeringPage() {
               {serviceData.title}
             </h1>
             <p className="text-lg text-white mb-3">{serviceData.overview}</p>
-            <p className="text-sm text-white">
+            <p className="text-sm text-white mb-4">
               <strong>Timeline:</strong> {serviceData.duration}
             </p>
-            <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">
+            {/* <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">
               Request Consultation
-            </button>
+            </button> */}
+
+                   <Link
+             href={`/request-callback/`}
+            className="mt-7 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition"
+          >
+             Request Consultation
+          </Link>
           </div>
         </div>
       </section>

@@ -175,6 +175,7 @@ import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const itDevelopmentServices = [
   {
@@ -236,22 +237,20 @@ export default function ITDevelopmentPage() {
   return (
     <main className="text-gray-800">
       {/* Hero Section */}
-  <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
-    
-    {/* Background Image */}
+  {/* <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
     <div className="absolute inset-0 w-full h-full -z-10">
       <Image
-        src="/images/banners/it-development.svg" // 🔁 Replace with your image path
+        src="/images/banners/it-development.jpg" // 🔁 Replace with your image path
         alt="IT Development Banner"
         fill
         priority
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-black/50" /> {/* Overlay for contrast */}
+      <div className="absolute inset-0 bg-black/50" /> 
     </div>
 
-    {/* Foreground Text */}
+    Foreground Text
     <div className="relative z-10 max-w-4xl mx-auto">
       <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white leading-tight">
         IT Development Services
@@ -260,14 +259,41 @@ export default function ITDevelopmentPage() {
         Scalable, secure, and modern solutions across engineering, application development, backend architecture, and testing support.
       </p>
 
-      {/* Optional CTA */}
-      {/* <Link
+      Optional CTA
+      <Link
         href="/services/it-development"
         className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
       >
         Explore IT Development
-      </Link> */}
+      </Link>
     </div>
+  </section> */}
+
+  <section className="relative bg-black py-20 sm:py-10 md:py-15 ">
+  <div className="max-w-7xl sm:px-5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    
+    {/* Text Section */}
+    <div className="text-center md:text-left">
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+      IT Development Services
+      </h1>
+      <p className="text-base sm:text-lg text-white mb-6 max-w-xl">
+         Scalable, secure, and modern solutions across engineering, application development, backend architecture, and testing support.
+      </p>
+    </div>
+
+    {/* Image Section */}
+    <div className="relative w-full h-64 p-2 sm:h-80 md:h-[22rem] rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src="/images/banners/it-development-1.png" // Replace with a real high-quality hero image
+        alt="IT Development Solutions"
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority
+      />
+    </div>
+  </div>
   </section>
 
       {/* Service Cards Grid */}
@@ -300,9 +326,15 @@ export default function ITDevelopmentPage() {
           <p className="mb-6 text-blue-100">
             Connect with our senior consultants to explore tailored strategies for digital transformation and operational growth.
           </p>
-          <button className="bg-white text-blue-900 px-6 py-3 font-semibold rounded-xl hover:bg-blue-100 transition">
+          {/* <button className="bg-white text-blue-900 px-6 py-3 font-semibold rounded-xl hover:bg-blue-100 transition">
             Book Consultation
-          </button>
+          </button> */}
+            <Link
+             href={`/request-callback/`}
+           className="bg-white text-blue-900 px-6 py-3 font-semibold rounded-xl hover:bg-blue-100 transition"
+          >
+            Contact Us
+          </Link>
         </motion.div>
       </section>
     </main>
