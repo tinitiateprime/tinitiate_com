@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const serviceData = {
     title: 'Data Engineering Services',
-    image: '/images/it-development/data-engineering.png',
+    image: '/images/it-development/data-engineering-2.jpg',
     duration: 'Project Based',
   overview:
     'Design and build scalable data pipelines and warehousing solutions using AWS, Azure, and modern data tools.',
@@ -28,7 +28,7 @@ export default function DataEngineeringPage() {
   return (
     <main className="text-gray-800 bg-white">
     {/* Hero Section */}
-      <section className="w-full bg-gradient-to-br from-blue-100 to-white py-20 px-6">
+      <section className="w-full bg-black to-white py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           <div className="relative w-full h-64 md:h-80">
             <Image
@@ -40,11 +40,11 @@ export default function DataEngineeringPage() {
             />
           </div>
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-blue-500 mb-4">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
               {serviceData.title}
             </h1>
-            <p className="text-lg text-gray-700 mb-3">{serviceData.overview}</p>
-            <p className="text-sm text-gray-600">
+            <p className="text-lg text-white mb-3">{serviceData.overview}</p>
+            <p className="text-sm text-white">
               <strong>Timeline:</strong> {serviceData.duration}
             </p>
             <button className="mt-6 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">

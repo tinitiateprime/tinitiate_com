@@ -236,40 +236,48 @@ export default function ITDevelopmentPage() {
   return (
     <main className="text-gray-800">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-tr from-gray-200 via-gray-200 to-gray-100 text-gray-900 py-28 text-center px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/it-development/hero-bg.jpg')] bg-cover bg-center opacity-10" />
-        <div className="relative z-10">
-          <motion.h1
-            className="text-5xl font-extrabold leading-tight mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            Enterprise IT Development Services
-          </motion.h1>
-          <motion.p
-            className="max-w-2xl mx-auto text-lg text-gray-900"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            Scalable, secure, and modern solutions across engineering, application development, backend architecture, and testing support.
-          </motion.p>
-        </div>
-      </section>
+  <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
+    
+    {/* Background Image */}
+    <div className="absolute inset-0 w-full h-full -z-10">
+      <Image
+        src="/images/banners/it-development.svg" // 🔁 Replace with your image path
+        alt="IT Development Banner"
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-black/50" /> {/* Overlay for contrast */}
+    </div>
+
+    {/* Foreground Text */}
+    <div className="relative z-10 max-w-4xl mx-auto">
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white leading-tight">
+        IT Development Services
+      </h1>
+      <p className="text-base sm:text-lg text-white mb-6">
+        Scalable, secure, and modern solutions across engineering, application development, backend architecture, and testing support.
+      </p>
+
+      {/* Optional CTA */}
+      {/* <Link
+        href="/services/it-development"
+        className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
+      >
+        Explore IT Development
+      </Link> */}
+    </div>
+  </section>
 
       {/* Service Cards Grid */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <motion.h2
+          <h2
             className="text-4xl font-bold text-center text-gray-900 mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
           >
             Our Expertise
-          </motion.h2>
+          </h2>
          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {itDevelopmentServices.map((service, i) => (

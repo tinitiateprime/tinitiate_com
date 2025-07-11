@@ -82,26 +82,30 @@ const itServices = [
     title: "Data Engineering",
     image1: "/images/IT-development/data-engineering-1.png",
     image2: "/images/IT-development/data-engineering-2.jpg",
-    description: "Build reliable pipelines and manage large-scale data platforms using cloud-native tools."
+    description:
+      'Design and implement scalable data pipelines, streaming systems, and data lakes using tools like Apache Spark, Kafka, and AWS Glue. We handle both batch and real-time processing needs for intelligent decision-making and analytics delivery. Our services include data ingestion, transformation, quality checks, and warehouse integration using platforms like Snowflake and Redshift.',
   },
   {
     title: "App Development",
     image1: "/images/IT-development/app-development-1.jpg",
     image2: "/images/IT-development/app-development-2.jpg",
-    description: "Create cross-platform apps with native performance and delightful user experience."
+    description:
+      'Develop modern mobile and web applications with pixel-perfect UI/UX design, scalable architecture, and secure APIs. From MVP development to enterprise-scale deployments, we specialize in React Native, Flutter, Android, and iOS apps, integrated with backend systems and analytics dashboards.',
   },
   {
     title: "Web & Backend Development",
     image1: "/images/IT-development/web-backend-1.jpg",
     image2: "/images/IT-development/web-backend-2.jpg",
-    description: "Design and build scalable APIs, admin panels, and responsive web platforms."
+    description:
+      'Build robust and secure backend systems and dynamic web apps using frameworks like Node.js, Django, and Spring Boot. We ensure clean REST and GraphQL APIs, JWT authentication, role-based access, and seamless frontend-backend integration with CI/CD pipelines.',
   },
   {
     title: "Testing & Support",
     image1: "/images/IT-development/testing-support-1.jpg",
     image2: "/images/IT-development/testing-support-2.jpg",
-    description: "Ensure stability, automation, and continuous integration with end-to-end QA solutions."
-  }
+    description:
+      'Ensure bug-free, stable software through test automation, functional and regression testing, and load/stress analysis. Our QA services are backed by tools like Selenium, Cypress, and Postman, and include post-deployment support, uptime monitoring, and 24/7 SLA-based response teams.',
+  },
 ];
 
 
@@ -144,21 +148,43 @@ const guidanceData = [
 export default function HomePage() {
   return (
     <main className="text-gray-800">
+<section className="relative bg-black py-20 sm:py-10 md:py-15 ">
+  <div className="max-w-7xl sm:px-5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    
+    {/* Text Section */}
+    <div className="text-center md:text-left">
+      <span className="inline-block bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+        Trusted IT Experts
+      </span>
+      <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+        Transform Your Business with Custom IT Development
+      </h1>
+      <p className="text-base sm:text-lg text-white mb-6 max-w-xl">
+        Scalable full-stack platforms, AI-powered workflows, and real-time data engineering — our team delivers future-ready solutions for startups and global enterprises.
+      </p>
+    </div>
 
-      <section className="bg-gradient-to-br from-gray-200 to-white py-24 px-6 text-center">
-  <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
-    Building Powerful Solutions with Custom IT Development
-  </h1>
-  <p className="max-w-2xl mx-auto text-lg text-gray-700 mb-8">
-    From full-stack applications to data pipelines and backend automation, our expert-led development services are tailored for scale, speed, and success — trusted by startups and enterprises alike.
-  </p>
-  {/* <Link
-    href="/services/it-development"
-    className="inline-block px-8 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-800 transition"
-  >
-    Explore IT Development Services
-  </Link> */}
-</section>
+    {/* Image Section */}
+    <div className="relative w-full h-64 p-2 sm:h-80 md:h-[22rem] rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src="/images/banners/tinitiate.svg" // Replace with a real high-quality hero image
+        alt="IT Development Solutions"
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority
+      />
+    </div>
+  </div>
+  </section>
+
+  {/* <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
+    <svg viewBox="0 0 500 80" preserveAspectRatio="none" className="w-full h-20 fill-white">
+      <path d="M0,0 C150,80 350,0 500,80 L500,0 L0,0 Z" />
+    </svg>
+  </div>
+</section> */}
+
 
 {/* <section className="py-10 px-6 bg-white">
       <div className="max-w-7xl mx-auto text-center">
@@ -203,29 +229,30 @@ export default function HomePage() {
 
       
     </section> */}
+    
 
-<section className="py-10 px-6 bg-white">
-  <div className="max-w-7xl mx-auto text-center">
-    <h2 className="text-4xl font-bold mb-6 text-gray-900">
+<section className="py-16 px-6 sm:px-4 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-4xl font-bold mb-12 text-center text-gray-900" >
       IT Development Services
     </h2>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-12">
-      {itServices.map(({ title, image1, image2, description }) => (
+    <div className="space-y-20">
+      {itServices.map(({ title, image1, image2, description }, index) => (
         <div
           key={title}
-          className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group"
+          className={`flex flex-col md:flex-row ${
+            index % 2 !== 0 ? 'md:flex-row-reverse' : ''
+          } items-center md:items-stretch gap-12`}
         >
-          {/* Image Container */}
-          <div className="relative w-full h-72 overflow-hidden">
-            {/* Base Image */}
+          {/* Image Section */}
+          <div className="relative w-full md:w-1/2 h-72  overflow-hidden shadow-md group">
             <Image
               src={image1}
               alt={title}
               fill
               className="object-cover transition-opacity duration-500 group-hover:opacity-0"
             />
-            {/* Hover Image */}
             <Image
               src={image2}
               alt={`${title} hover`}
@@ -234,14 +261,16 @@ export default function HomePage() {
             />
           </div>
 
-          {/* Text Content */}
-          <div className="p-6">
-            <h3 className="text-3xl font-semibold text-gray-800 text-center mb-2">
-              {title}
-            </h3>
-            <p className="text-1xl text-gray-600 text-center">
-              {description}
-            </p>
+          {/* Text Section */}
+          <div className="md:w-1/2 flex items-start">
+            <div>
+              <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center md:text-left">
+                {title}
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed text-center md:text-left">
+                {description}
+              </p>
+            </div>
           </div>
         </div>
       ))}
@@ -249,14 +278,8 @@ export default function HomePage() {
   </div>
 </section>
 
-
-
-
-
-
-      
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-100 to-white py-24 px-6 text-center">
+      <section className="bg-gradient-to-br from-blue-200 to-white py-24 px-6 text-center">
         <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
           Empowering Careers with Real Time Experience
         </h1>
@@ -272,7 +295,7 @@ export default function HomePage() {
       </section>
 
       {/* Training Programs */}
-<section id="programs" className="py-16 px-6 bg-white ">
+<section id="programs" className="py-5 px-6 bg-white ">
   <h2 className="text-3xl font-bold text-center mb-12">
     Our Top Training Programs
   </h2>
@@ -316,10 +339,6 @@ export default function HomePage() {
     ))}
   </div>
 </section>
-
-
-  
-
 
         {/* About Us */}
         {/*
@@ -373,7 +392,7 @@ export default function HomePage() {
        */}
 
 
-<section id="about" className="py-20 px-6 bg-gray-50">
+<section id="about" className="py-10 px-6 bg-gray-50">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
       Why Choose TINITIATE?
@@ -427,7 +446,7 @@ export default function HomePage() {
   </div>
 </section>
 
-    <section className="py-20 px-6 bg-white">
+    <section className="py-10 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
           Career Support
@@ -450,7 +469,7 @@ export default function HomePage() {
     </section>
 
       {/* Services */}
-      <section id="services" className="py-20 px-6 bg-gray-50">
+      <section id="services" className="py-10 px-6 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((svc) => (

@@ -398,15 +398,46 @@ export default function ITTrainingPage() {
 
   return (
     <main className="text-gray-800">
-      <section className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6">
+      {/* <section className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6">
         <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
           IT Training Programs
         </h1>
         <p className="max-w-2xl mx-auto text-lg text-gray-700">
-          {/* Explore our beginner and advanced IT courses to boost your tech career. */}
+          Explore our beginner and advanced IT courses to boost your tech career.
           Kickstart and propel your IT career with team TINITIATE
         </p>
-      </section>
+      </section> */}
+
+
+           {/* Hero Section */}
+      <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
+          
+          
+          {/* Background Image Container (with height) */}
+          <div className="absolute inset-0 w-full h-full ">
+            <Image
+              src="/images/banners/it-training.png" // Replace with your actual image
+              alt="Remote Consulting Background"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+            {/* Optional dark overlay to enhance text contrast */}
+            <div className="absolute inset-0 bg-black/60" />
+          </div>
+      
+          {/* Foreground Text Content */}
+          <div className="relative z-10 max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white leading-tight">
+          IT Training Programs
+            </h1>
+            <p className="text-base sm:text-lg text-white mb-6">
+             Kickstart and propel your IT career with team TINITIATE. Explore our beginner and advanced IT courses to boost your tech career.
+             
+            </p>
+          </div>
+        </section>
 
    
       {/* Tabs */}

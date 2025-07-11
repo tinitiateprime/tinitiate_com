@@ -8,12 +8,12 @@ export default function OracleServicePage() {
     <main className="text-gray-800 bg-white">
       {/* Hero Section */}
       <section className="relative w-full h-[50vh] bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center text-center px-4">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 h-auto">
           <Image
             src="/images/remote-consulting/oracle.png"
             alt="Oracle Banner"
             fill
-            className="object-cover opacity-30"
+            className=" opacity-30"
             priority
           />
         </div>

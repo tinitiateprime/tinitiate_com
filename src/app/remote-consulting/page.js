@@ -46,43 +46,50 @@ export default function RemoteConsultingPage() {
   return (
     <main className="bg-white text-gray-800">
       {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-center py-24 bg-gradient-to-br from-gray-100 to-white"
-      >
-        <h1 className="text-5xl font-extrabold mb-6 tracking-tight text-gray-900 leading-tight">
-          Enterprise Remote Consulting
-        </h1>
-        <p className="max-w-3xl mx-auto text-lg text-gray-700">
-          Empower your database architecture with expert-led consulting services tailored to scalability, reliability, and performance — all delivered remotely.
-        </p>
-      </motion.section>
+<section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
+    
+    
+    {/* Background Image Container (with height) */}
+    <div className="absolute inset-0 w-full h-full ">
+      <Image
+        src="/images/banners/remote-consulting.svg" // Replace with your actual image
+        alt="Remote Consulting Background"
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
+      />
+      {/* Optional dark overlay to enhance text contrast */}
+      <div className="absolute inset-0 bg-black/60" />
+    </div>
+
+    {/* Foreground Text Content */}
+    <div className="relative z-10 max-w-4xl mx-auto">
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white leading-tight">
+        Enterprise Remote Consulting
+      </h1>
+      <p className="text-base sm:text-lg text-white mb-6">
+        Empower your database architecture with expert-led consulting services tailored to scalability, reliability, and performance — all delivered remotely.
+      </p>
+    </div>
+  </section>
 
       {/* Zig-Zag Services Sections */}
       {services.map(({ title, description, icon, href }, idx) => (
-        <motion.section
-          key={idx}
-          initial={{ opacity: 0, x: idx % 2 === 0 ? -50 : 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className={`py-16 px-6 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 ${idx % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
+        <div     key={href || idx}  // ✅ Safe fallback using idx 
+         className={`py-10 sm:py-16 px-4 sm:px-6 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center ${idx % 2 === 1 ? 'md:flex-row-reverse' : ''} gap-6 md:gap-12`}
         >
-          <div className="md:w-1/2">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">{title}</h3>
-            <p className="text-lg text-gray-600 mb-6">{description}</p>
-            <Link href={href} className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+          <div className="md:w-1/2 text-center md:text-left">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">{title}</h3>
+            <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">{description}</p>
+            <Link href={href} className="inline-block bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition">
               Learn More
             </Link>
           </div>
-          <motion.div
-            className="md:w-1/2"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: 'spring', stiffness: 200 }}
+          <div
+            className="md:w-1/2 w-full"
           >
-            <div className="relative w-full h-64">
+            <div className="relative w-full h-48 sm:h-64">
               <Image
                 src={icon}
                 alt={title}
@@ -91,8 +98,8 @@ export default function RemoteConsultingPage() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-          </motion.div>
-        </motion.section>
+          </div>
+        </div>
       ))}
     </main>
   )

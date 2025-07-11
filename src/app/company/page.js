@@ -1,16 +1,45 @@
 // src/app/company/page.jsx
 "use client"
-
+import Image from "next/image"
 export default function CompanyPage() {
   return (
     <main className="text-gray-800">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6">
+      {/* <section className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6">
         <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900"> TINITIATE</h1>
         <p className="max-w-2xl mx-auto text-lg text-gray-700">
           Empowering individuals and businesses through innovative IT training and development services.
         </p>
-      </section>
+      </section> */}
+
+            <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">
+                
+                
+                {/* Background Image Container (with height) */}
+                <div className="absolute inset-0 w-full h-full ">
+                  <Image
+                    src="/images/banners/company.png" // Replace with your actual image
+                    alt="Remote Consulting Background"
+                    fill
+                    className="object-cover"
+                    priority
+                    sizes="100vw"
+                  />
+                  {/* Optional dark overlay to enhance text contrast */}
+                  <div className="absolute inset-0 bg-black/60" />
+                </div>
+            
+                {/* Foreground Text Content */}
+                <div className="relative z-10 max-w-4xl mx-auto">
+                  <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white leading-tight">
+            TINITIATE
+                  </h1>
+                  <p className="text-base sm:text-lg text-white mb-6">
+                  Empowering individuals and businesses through innovative IT training and development services.
+                   
+                  </p>
+                </div>
+              </section>
 
       {/* Who We Are */}
       <section className="bg-white py-20 px-6">
