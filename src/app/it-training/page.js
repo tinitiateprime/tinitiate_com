@@ -224,21 +224,21 @@ const beginnerCourses = [
     duration: '1 Month',
     image: '/images/courses/java.png',
     description: 'Object-oriented programming with Java—ideal for Android development and backend systems.',
-    href: '/courses/java-basics',
+    href: '/courses/java-language-course',
   },
   {
     title: 'SQL Database Course',
     duration: '3 Weeks',
     image: '/images/courses/sql.png',
     description: 'Understand data modeling, querying, and reporting using relational databases and SQL.',
-    href: '/courses/sql-basics',
+    href: '/courses/sql-language-course',
   },
   {
     title: 'JavaScript Course',
     duration: '1 Month',
     image: '/images/courses/js.png',
     description: 'Core scripting for the web—learn variables, DOM, events, and client-side interactions.',
-    href: '/courses/javascript-basics',
+    href: '/courses/javascript-language-course',
   },
   {
     title: 'Data Structures & Algorithms Course',
@@ -252,7 +252,7 @@ const beginnerCourses = [
     duration: '3 Weeks',
     image: '/images/courses/php.png',
     description: 'Backend scripting with PHP for dynamic websites and CMS platforms like WordPress.',
-    href: '/courses/php-basics',
+    href: '/courses/php-language-course',
   },
   {
     title: 'C Language Course',

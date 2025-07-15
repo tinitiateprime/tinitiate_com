@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Globe, Users, Clock, UserCheck, Briefcase, CheckCircle, Star, BookOpen, Code2, FileText, ClipboardCheck, UserCircle2 } from 'lucide-react'
 
+
 const services = [
   {
     title: 'IT Development Services',
@@ -261,7 +262,7 @@ export default function HomePage() {
           </div>
 
           {/* Text Section */}
-          <div className="md:w-1/2 flex items-start">
+          <div className="md:w-1/2 flex items-center">
             <div>
               <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center md:text-left">
                 {title}

@@ -7,16 +7,6 @@
     "image": "/images/courses/python.png",
     "description": "Master the basics of Python for scripting, automation, and foundational backend development.",
     "prerequisites": "None",
-    "learnings": [
-      "Variables, loops, and functions",
-      "Data types and file handling",
-      "OOP in Python",
-      "Error handling and modules"
-    ],
-    "outcomes": [
-      "Write scripts and basic backend logic",
-      "Understand Python in automation and data workflows"
-    ],
     "offerings": [
       "Coding Tutorials",
       "Exercises & Live Projects",
@@ -26,6 +16,676 @@
       "1:1 Career Mentorship with Domain Experts",
       "Live Projects with GitHub Portfolio",
       "Placement Assistance & Job Readiness"
+    ],
+    "courseStructure": [
+  {
+    "title": "Python Basics",
+    "topics": [
+      "Print Statement",
+      "Variables and Data Types",
+      "Operators",
+      "String Manipulation"
+    ]
+  },
+  {
+    "title": "Data Structures",
+    "topics": [
+      "Lists",
+      "Tuples",
+      "Dictionaries",
+      "Sets"
+    ]
+  },
+  {
+    "title": "Control Flow",
+    "topics": [
+      "Conditional Statements (if, elif, else)",
+      "Loops Overview",
+      "For Loops",
+      "While Loops",
+      "Break and Continue"
+    ]
+  },
+  {
+    "title": "Exception Handling",
+    "topics": [
+      "Try and Except",
+      "Finally Block",
+      "Raising Exceptions",
+      "Custom Exceptions"
+    ]
+  },
+  {
+    "title": "Functions",
+    "topics": [
+      "Defining Functions",
+      "Function Parameters",
+      "Return Statements",
+      "Lambda Functions",
+      "Variable Scope"
+    ]
+  },
+  {
+    "title": "Object-Oriented Programming",
+    "topics": [
+      "Classes and Objects",
+      "Constructors (__init__)",
+      "Instance vs Class Variables",
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation"
+    ]
+  },
+  {
+    "title": "File and Data Handling",
+    "topics": [
+      "File I/O (Read/Write)",
+      "Working with CSV",
+      "Working with JSON",
+      "Working with XML",
+      "Pickle Module"
+    ]
+  },
+  {
+    "title": "Working with Libraries",
+    "topics": [
+      "Date and Time",
+      "Logging",
+      "Requests Library",
+      "Multithreading",
+      "Regular Expressions",
+      "Database Access (SQL / ORM)"
+    ]
+  },
+  {
+    "title": "Testing and Debugging",
+    "topics": [
+      "Unit Testing with unittest",
+      "Assertions",
+      "Common Debugging Techniques"
+    ]
+  },
+  {
+    "title": "Advanced Topics",
+    "topics": [
+      "Dynamic Programming Basics",
+      "Performance Optimization Tips",
+      "Decorators and Generators"
     ]
   }
+]
+
+
+  },
+  {
+  "slug": "java-language-course",
+  "title": "Java Language Course",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/java.png",
+  "description": "Master Java programming from core concepts to advanced application building, including OOP, JDBC, and multithreading.",
+  "prerequisites": "Basic programming knowledge is helpful but not required",
+  "offerings": [
+    "Coding Tutorials",
+    "Exercises & Live Projects",
+    "Business Domain Knowledge",
+    "Interview Preparation & Mock Sessions",
+    "Resume Building & LinkedIn Optimization",
+    "1:1 Career Mentorship with Domain Experts",
+    "Live Projects with GitHub Portfolio",
+    "Placement Assistance & Job Readiness"
+  ],
+  "courseStructure": [
+    {
+      "title": "Core Java",
+      "topics": [
+        "Basic Syntax",
+        "Classes",
+        "Methods",
+        "Objects",
+        "Conditional Statements (if/else)",
+        "Loops (for, while, do-while)",
+        "Arrays",
+        "Strings",
+        "Date and Time",
+        "Regular Expressions",
+        "File I/O and User Input",
+        "OS Commands",
+        "Exceptions and Errors",
+        "Interfaces",
+        "Packages",
+        "Data Structures",
+        "Collections Framework"
+      ]
+    },
+    {
+      "title": "Java Object-Oriented Programming",
+      "topics": [
+        "Inheritance",
+        "Polymorphism",
+        "Abstract Classes",
+        "Method Overriding",
+        "Encapsulation"
+      ]
+    },
+    {
+      "title": "Advanced Java",
+      "topics": [
+        "Serialization",
+        "Multithreading",
+        "Concurrency",
+        "JDBC (Database Connectivity)",
+        "Reflection API",
+        "Properties File Handling",
+        "Working with XML",
+        "Annotations"
+      ]
+    },
+    {
+      "title": "Java Common Libraries",
+      "topics": [
+        "JavaMail API",
+        "Log4j Logging",
+        "JUnit Testing"
+      ]
+    }
+  ]
+},
+{
+  "slug": "javascript-language-course",
+  "title": "JavaScript Language Course",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/js.png",
+  "description": "Learn JavaScript from scratch covering everything from syntax to DOM, AJAX, and modern Web APIs for building dynamic web applications.",
+  "prerequisites": "Basic HTML & CSS knowledge is recommended",
+  "offerings": [
+    "Hands-on JavaScript Projects",
+    "Modern Frontend Workflows",
+    "Interview Preparation & Practice Tasks",
+    "Resume Building & LinkedIn Optimization",
+    "1:1 Mentorship from JavaScript Developers",
+    "Portfolio Building with GitHub",
+    "Placement Assistance & Job Readiness"
+  ],
+  "courseStructure": [
+    {
+      "title": "JavaScript Fundamentals",
+      "topics": [
+        "JS Output",
+        "JS Statements",
+        "JS Syntax",
+        "JS Comments",
+        "JS Variables",
+        "JS Let",
+        "JS Const",
+        "JS Operators",
+        "JS Arithmetic",
+        "JS Assignment",
+        "JS Data Types",
+        "JS Typeof",
+        "JS Type Conversion",
+        "JS Bitwise",
+        "JS Precedence",
+        "JS Errors",
+        "JS Scope",
+        "JS Hoisting",
+        "JS Strict Mode",
+        "JS this Keyword",
+        "JS Arrow Function"
+      ]
+    },
+    {
+      "title": "JavaScript Functions",
+      "topics": [
+        "Function Definitions",
+        "Function Parameters",
+        "Function Invocation",
+        "Function Call",
+        "Function Apply",
+        "Function Bind",
+        "Function Closures"
+      ]
+    },
+    {
+      "title": "JavaScript Objects",
+      "topics": [
+        "Object Definitions",
+        "Object Properties",
+        "Object Methods",
+        "Object Display",
+        "Object Accessors",
+        "Object Constructors",
+        "Object Prototypes",
+        "Object Iterables",
+        "Object Sets",
+        "Object Maps",
+        "Object Reference"
+      ]
+    },
+    {
+      "title": "JavaScript Arrays and Strings",
+      "topics": [
+        "JS Strings",
+        "JS String Methods",
+        "JS String Search",
+        "JS String Templates",
+        "JS Arrays",
+        "JS Array Methods",
+        "JS Array Sort",
+        "JS Array Iteration",
+        "JS Array Const"
+      ]
+    },
+    {
+      "title": "JavaScript Numbers and Math",
+      "topics": [
+        "JS Numbers",
+        "JS BigInt",
+        "JS Number Methods",
+        "JS Number Properties",
+        "JS Math",
+        "JS Random"
+      ]
+    },
+    {
+      "title": "JavaScript Date & Time",
+      "topics": [
+        "JS Dates",
+        "JS Date Formats",
+        "JS Date Get Methods",
+        "JS Date Set Methods"
+      ]
+    },
+    {
+      "title": "Control Flow & Iteration",
+      "topics": [
+        "JS Booleans",
+        "JS Comparisons",
+        "JS If Else",
+        "JS Switch",
+        "JS Loop For",
+        "JS Loop For In",
+        "JS Loop For Of",
+        "JS Loop While",
+        "JS Break",
+        "JS Iterables"
+      ]
+    },
+    {
+      "title": "JavaScript Classes & Modules",
+      "topics": [
+        "Class Intro",
+        "Class Inheritance",
+        "Class Static",
+        "JS Modules"
+      ]
+    },
+    {
+      "title": "JavaScript Async Programming",
+      "topics": [
+        "JS Callbacks",
+        "JS Asynchronous",
+        "JS Promises",
+        "JS Async/Await"
+      ]
+    },
+    {
+      "title": "JavaScript Events",
+      "topics": [
+        "JS Events"
+      ]
+    },
+    {
+      "title": "HTML DOM Manipulation",
+      "topics": [
+        "DOM Intro",
+        "DOM Methods",
+        "DOM Document",
+        "DOM Elements",
+        "DOM HTML",
+        "DOM Forms",
+        "DOM CSS",
+        "DOM Animations",
+        "DOM Events",
+        "DOM Event Listener",
+        "DOM Navigation",
+        "DOM Nodes",
+        "DOM Collections",
+        "DOM Node Lists"
+      ]
+    },
+    {
+      "title": "Browser BOM (Browser Object Model)",
+      "topics": [
+        "JS Window",
+        "JS Screen",
+        "JS Location",
+        "JS History",
+        "JS Navigator",
+        "JS Popup Alert",
+        "JS Timing",
+        "JS Cookies"
+      ]
+    },
+    {
+      "title": "Web APIs",
+      "topics": [
+        "Web API Intro",
+        "Web Forms API",
+        "Web History API",
+        "Web Storage API",
+        "Web Worker API",
+        "Web Fetch API",
+        "Web Geolocation API"
+      ]
+    },
+    {
+      "title": "AJAX (Asynchronous JavaScript and XML)",
+      "topics": [
+        "AJAX Intro",
+        "AJAX XML Http",
+        "AJAX Request",
+        "AJAX Response",
+        "AJAX XML File",
+        "AJAX PHP",
+        "AJAX ASP",
+        "AJAX Database",
+        "AJAX Applications",
+        "AJAX Examples"
+      ]
+    },
+    {
+      "title": "Working with JSON",
+      "topics": [
+        "JSON Intro",
+        "JSON Syntax",
+        "JSON vs XML",
+        "JSON Data Types",
+        "JSON Parse",
+        "JSON Stringify",
+        "JSON Objects",
+        "JSON Arrays",
+        "JSON Server",
+        "JSON PHP",
+        "JSON HTML",
+        "JSON JSONP"
+      ]
+    },
+    {
+      "title": "Best Practices and Debugging",
+      "topics": [
+        "JS Debugging",
+        "JS Style Guide",
+        "JS Best Practices",
+        "JS Mistakes",
+        "JS Performance",
+        "JS Reserved Words"
+      ]
+    }
+  ]
+},
+{
+  "slug": "sql-language-course",
+  "title": "SQL Language Course",
+  "duration": "3 Weeks",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/sql.png",
+  "description": "Learn SQL from scratch covering data definition, manipulation, and querying. Ideal for database professionals and backend developers.",
+  "prerequisites": "None",
+  "offerings": [
+    "Hands-on SQL Practice",
+    "Real-World Business Scenarios",
+    "Interview Preparation & Query Challenges",
+    "Live SQL Projects on RDBMS",
+    "Resume Building & LinkedIn Optimization",
+    "1:1 Mentorship from SQL Experts",
+    "Portfolio Building with SQL Queries",
+    "Job Readiness Support & Certification"
+  ],
+  "courseStructure": [
+    {
+      "title": "DDL (Data Definition Language)",
+      "topics": [
+        "SQL Database",
+        "SQL Create DB",
+        "SQL Drop DB",
+        "SQL Data Types",
+        "Create Table",
+        "Alter Table",
+        "Drop Table"
+      ]
+    },
+    {
+      "title": "DML (Data Manipulation Language)",
+      "topics": [
+        "Insert",
+        "Update",
+        "Delete"
+      ]
+    },
+    {
+      "title": "DQL (Data Query Language)",
+      "topics": [
+        "SQL Select",
+        "SQL Select Distinct",
+        "SQL Min and Max",
+        "SQL Count",
+        "SQL Sum",
+        "SQL Avg",
+        "SQL Like",
+        "SQL Wildcards",
+        "SQL Select Top",
+        "SQL Comments",
+        "SQL Operators",
+        "SQL Aliases",
+        "SQL Where",
+        "SQL And",
+        "SQL Or",
+        "SQL Not",
+        "SQL In",
+        "SQL Between",
+        "SQL Exists",
+        "SQL Group By",
+        "SQL Having",
+        "SQL Order By",
+        "Joins Overview",
+        "SQL Inner Join",
+        "SQL Left Join",
+        "SQL Right Join",
+        "SQL Full Join",
+        "SQL Self Join",
+        "Union",
+        "Minus"
+      ]
+    },
+    {
+      "title": "DCL (Data Control Language)",
+      "topics": [
+        "Grant",
+        "Revoke"
+      ]
+    },
+    {
+      "title": "TCL (Transaction Control Language)",
+      "topics": [
+        "Commit",
+        "Rollback"
+      ]
+    },
+    {
+      "title": "Advanced SQL Concepts",
+      "topics": [
+        "SQL Null Values",
+        "SQL Case Statement",
+        "SQL Dates",
+        "SQL Strings",
+        "SQL Stored Procedures",
+        "SQL Index",
+        "SQL Auto Increment"
+      ]
+    },
+    {
+      "title": "SQL Constraints and Keys",
+      "topics": [
+        "SQL Constraints Overview",
+        "SQL Primary Key",
+        "SQL Foreign Key",
+        "SQL Check",
+        "SQL Default"
+      ]
+    },
+    {
+      "title": "SQL Views and Abstraction",
+      "topics": [
+        "SQL Views"
+      ]
+    }
+  ]
+},
+{
+  "slug": "data-structures",
+  "title": "Data Structures and Algorithms (DSA) Course",
+  "duration": "1.5 Months",
+  "level": "Intermediate",
+  "image": "/images/courses/dsa.png",
+  "description": "Master Data Structures and Algorithms to build efficient and optimized solutions for technical interviews and real-world problems.",
+  "prerequisites": "Basic programming knowledge (in Python, Java, or C++)",
+  "offerings": [
+    "Visualized Concepts for Better Understanding",
+    "Hands-on Problem Solving",
+    "Interview-Oriented Question Sets",
+    "Live Problem Walkthroughs",
+    "1:1 Mentoring for Competitive Coding",
+    "Resume & LinkedIn Support",
+    "LeetCode & HackerRank Practice Guidance",
+    "Placement Assistance"
+  ],
+  "courseStructure": [
+    {
+      "title": "Data Structures",
+      "topics": [
+        "Array Data Structure",
+        "String Data Structure",
+        "Linked Lists",
+        "Linked List Data Structure",
+        "Stack Data Structure",
+        "Queue Data Structure",
+        "Stacks & Queues",
+        "Tree Data Structure",
+        "Trees",
+        "Heap Data Structure",
+        "Heaps",
+        "Graph Data Structure",
+        "Graphs",
+        "Hashing Data Structure",
+        "Matrix Data Structure",
+        "Sets",
+        "Maps / Dictionaries"
+      ]
+    },
+    {
+      "title": "Algorithms",
+      "topics": [
+        "Searching Algorithms",
+        "Sorting Algorithms",
+        "Recursion Algorithms",
+        "Backtracking Algorithms",
+        "Greedy Algorithms",
+        "Dynamic Programming",
+        "Pattern Searching",
+        "Divide and Conquer",
+        "Mathematical Algorithms",
+        "Geometric Algorithms",
+        "Bitwise Algorithms",
+        "Randomized Algorithms",
+        "Branch and Bound Algorithm"
+      ]
+    }
+  ]
+},
+{
+  "slug": "php-language-course",
+  "title": "PHP Language Course",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/php.png",
+  "description": "Learn core PHP programming with practical examples, covering variables, loops, forms, sessions, file handling, and server-side scripting.",
+  "prerequisites": "Basic HTML knowledge is recommended",
+  "offerings": [
+    "Server-side Scripting Projects",
+    "Practical Form Handling",
+    "File Upload & Email Integration",
+    "Interview Preparation & Live Debugging",
+    "Resume Support & LinkedIn Optimization",
+    "1:1 Career Mentorship with PHP Developers",
+    "Live Project with GitHub Showcase",
+    "Placement & Freelance Guidance"
+  ],
+  "courseStructure": [
+    {
+      "title": "PHP Basics",
+      "topics": [
+        "Print Comments",
+        "Variables",
+        "Constants",
+        "Operators",
+        "Conditionals",
+        "Loops"
+      ]
+    },
+    {
+      "title": "Functions and Error Handling",
+      "topics": [
+        "Functions",
+        "Error",
+        "Exceptions"
+      ]
+    },
+    {
+      "title": "Data Handling",
+      "topics": [
+        "Arrays",
+        "Strings",
+        "Global Variables"
+      ]
+    },
+    {
+      "title": "File and OS Operations",
+      "topics": [
+        "file_io_read",
+        "file_io_write",
+        "os_commands"
+      ]
+    },
+    {
+      "title": "Session and Cookie Management",
+      "topics": [
+        "Sessions",
+        "Cookies"
+      ]
+    },
+    {
+      "title": "Web Features",
+      "topics": [
+        "send_email",
+        "file_upload",
+        "include_require",
+        "date_time"
+      ]
+    },
+    {
+      "title": "Form Handling",
+      "topics": [
+        "forms_text_box",
+        "forms_text_area",
+        "forms_radio_buttons",
+        "forms_check_boxes",
+        "forms_drop_down",
+        "forms_get_request",
+        "forms_post_request"
+      ]
+    }
+  ]
+}
 ]
