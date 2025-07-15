@@ -2,21 +2,11 @@
   {
     "slug": "python-language-course",
     "title": "Python Language Course",
-    "duration": "1 Month",
+    "duration": "2 Month",
     "level": "Beginner",
     "image": "/images/courses/python.png",
     "description": "Master the basics of Python for scripting, automation, and foundational backend development.",
     "prerequisites": "None",
-    "offerings": [
-      "Coding Tutorials",
-      "Exercises & Live Projects",
-      "Business Domain Knowledge",
-      "Interview Preparation & Mock Sessions",
-      "Resume Building & LinkedIn Optimization",
-      "1:1 Career Mentorship with Domain Experts",
-      "Live Projects with GitHub Portfolio",
-      "Placement Assistance & Job Readiness"
-    ],
     "courseStructure": [
   {
     "title": "Python Basics",
@@ -39,11 +29,16 @@
   {
     "title": "Control Flow",
     "topics": [
-      "Conditional Statements (if, elif, else)",
+       "Conditional Statements (if, elif, else)",
+       "Break and Continue"
+    ]
+  },
+    {
+    "title": "Loops",
+    "topics": [
       "Loops Overview",
       "For Loops",
-      "While Loops",
-      "Break and Continue"
+      "While Loops"
     ]
   },
   {
@@ -98,21 +93,12 @@
     ]
   },
   {
-    "title": "Testing and Debugging",
+    "title": "Unit Testing",
     "topics": [
-      "Unit Testing with unittest",
-      "Assertions",
-      "Common Debugging Techniques"
-    ]
-  },
-  {
-    "title": "Advanced Topics",
-    "topics": [
-      "Dynamic Programming Basics",
-      "Performance Optimization Tips",
-      "Decorators and Generators"
+     
     ]
   }
+
 ]
 
 
@@ -120,21 +106,11 @@
   {
   "slug": "java-language-course",
   "title": "Java Language Course",
-  "duration": "1 Month",
-  "level": "Beginner to Intermediate",
+  "duration": "2 Month",
+  "level": "Beginner",
   "image": "/images/courses/java.png",
   "description": "Master Java programming from core concepts to advanced application building, including OOP, JDBC, and multithreading.",
   "prerequisites": "Basic programming knowledge is helpful but not required",
-  "offerings": [
-    "Coding Tutorials",
-    "Exercises & Live Projects",
-    "Business Domain Knowledge",
-    "Interview Preparation & Mock Sessions",
-    "Resume Building & LinkedIn Optimization",
-    "1:1 Career Mentorship with Domain Experts",
-    "Live Projects with GitHub Portfolio",
-    "Placement Assistance & Job Readiness"
-  ],
   "courseStructure": [
     {
       "title": "Core Java",
@@ -194,20 +170,11 @@
 {
   "slug": "javascript-language-course",
   "title": "JavaScript Language Course",
-  "duration": "1 Month",
+  "duration": "2 Month",
   "level": "Beginner to Intermediate",
   "image": "/images/courses/js.png",
   "description": "Learn JavaScript from scratch covering everything from syntax to DOM, AJAX, and modern Web APIs for building dynamic web applications.",
   "prerequisites": "Basic HTML & CSS knowledge is recommended",
-  "offerings": [
-    "Hands-on JavaScript Projects",
-    "Modern Frontend Workflows",
-    "Interview Preparation & Practice Tasks",
-    "Resume Building & LinkedIn Optimization",
-    "1:1 Mentorship from JavaScript Developers",
-    "Portfolio Building with GitHub",
-    "Placement Assistance & Job Readiness"
-  ],
   "courseStructure": [
     {
       "title": "JavaScript Fundamentals",
@@ -428,21 +395,11 @@
 {
   "slug": "sql-language-course",
   "title": "SQL Language Course",
-  "duration": "3 Weeks",
-  "level": "Beginner to Intermediate",
+  "duration": "2 Months ",
+  "level": "Beginner",
   "image": "/images/courses/sql.png",
   "description": "Learn SQL from scratch covering data definition, manipulation, and querying. Ideal for database professionals and backend developers.",
   "prerequisites": "None",
-  "offerings": [
-    "Hands-on SQL Practice",
-    "Real-World Business Scenarios",
-    "Interview Preparation & Query Challenges",
-    "Live SQL Projects on RDBMS",
-    "Resume Building & LinkedIn Optimization",
-    "1:1 Mentorship from SQL Experts",
-    "Portfolio Building with SQL Queries",
-    "Job Readiness Support & Certification"
-  ],
   "courseStructure": [
     {
       "title": "DDL (Data Definition Language)",
@@ -546,21 +503,11 @@
 {
   "slug": "data-structures",
   "title": "Data Structures and Algorithms (DSA) Course",
-  "duration": "1.5 Months",
+  "duration": "2 Months",
   "level": "Intermediate",
   "image": "/images/courses/dsa.png",
   "description": "Master Data Structures and Algorithms to build efficient and optimized solutions for technical interviews and real-world problems.",
   "prerequisites": "Basic programming knowledge (in Python, Java, or C++)",
-  "offerings": [
-    "Visualized Concepts for Better Understanding",
-    "Hands-on Problem Solving",
-    "Interview-Oriented Question Sets",
-    "Live Problem Walkthroughs",
-    "1:1 Mentoring for Competitive Coding",
-    "Resume & LinkedIn Support",
-    "LeetCode & HackerRank Practice Guidance",
-    "Placement Assistance"
-  ],
   "courseStructure": [
     {
       "title": "Data Structures",
@@ -607,21 +554,11 @@
 {
   "slug": "php-language-course",
   "title": "PHP Language Course",
-  "duration": "1 Month",
+  "duration": "2 Month",
   "level": "Beginner to Intermediate",
   "image": "/images/courses/php.png",
   "description": "Learn core PHP programming with practical examples, covering variables, loops, forms, sessions, file handling, and server-side scripting.",
   "prerequisites": "Basic HTML knowledge is recommended",
-  "offerings": [
-    "Server-side Scripting Projects",
-    "Practical Form Handling",
-    "File Upload & Email Integration",
-    "Interview Preparation & Live Debugging",
-    "Resume Support & LinkedIn Optimization",
-    "1:1 Career Mentorship with PHP Developers",
-    "Live Project with GitHub Showcase",
-    "Placement & Freelance Guidance"
-  ],
   "courseStructure": [
     {
       "title": "PHP Basics",
@@ -687,5 +624,718 @@
       ]
     }
   ]
+},
+{
+  "slug": "Python-AWS-Developer-Program",
+  "title": "Python AWS Developer Program",
+  "duration": "3 Months",
+  "level": "Professional",
+  "image": "/images/courses/python-aws.png",
+  "description": "Gain expertise in Python programming, data handling, SQL queries, and AWS cloud services. This course is designed for real-world backend and cloud development workflows.",
+  "prerequisites": "Basic programming understanding recommended",
+  "courseStructure": [
+    {
+      "title": "Python Language Fundamentals",
+      "topics": [
+        "Introduction to Python",
+        "Print Statement",
+        "Variables and Operators",
+        "Strings",
+        "Lists",
+        "Tuples",
+        "Dictionaries",
+        "Conditional Statements (if/else)",
+        "Loops (for, while)",
+        "Functions",
+        "Reading Keyboard Input",
+        "Exception Handling"
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming in Python",
+      "topics": [
+        "Object-Oriented vs Functional Programming",
+        "Object Oriented Programming Classes ",
+        "Object Oriented Programming Built-ins Attributes and Functions ",
+        "Object Oriented Programming Inheritance "
+      ]
+    },
+    {
+      "title": "Modules",
+      "topics": [
+        "File I/O Operations",
+        "XML File Processing",
+        "JSON File Handling",
+        "Pickle for Serialization",
+        "Iterators and Generators",
+        "Date and Time Handling",
+        "Logging with Logger",
+        "Lambda Functions",
+        "Decorators",
+        "Regular Expressions",
+        "Multithreading"
+      ]
+    },
+    {
+      "title": "Data Analysis",
+      "topics": [
+        "Introduction to Pandas",
+        "Introduction to NumPy",
+        "Handling Missing Data",
+        "Cleaning and Preprocessing Data",
+        "Filtering, Sorting, and Grouping Data"
+      ]
+    },
+    {
+      "title": "SQL for Data Handling and Integration",
+      "topics": [
+        "SQL Queries and Syntax",
+        "Data Elements on a Dashboard",
+        "Understanding Dimensions, Facts, and DataMart",
+        "Working with CSV Datasets in SQL",
+        "Working with XML Datasets in SQL",
+        "Connecting to RDBMS",
+        "Working with JSON from Web Services",
+        "Handling RefCursor Datasets"
+      ]
+    },
+    {
+      "title": "AWS Cloud Development with Python",
+      "topics": [
+        "Local Development with AWS",
+        "AWS CLI Essentials",
+        "AWS SAM CLI",
+        "AWS SDK (Boto3) Integration",
+        "Serverless Application Model (SAM)",
+        "AWS Lambda Functions with Python",
+        "Building Workflows with Step Functions",
+        "API Development with API Gateway"
+      ]
+    },
+    {
+      "title": "AWS Cloud Database and Storage Services",
+      "topics": [
+        "Working with DynamoDB",
+        "Querying Data using Athena",
+        "Using Amazon S3 for Storage and Hosting"
+      ]
+    },
+    {
+      "title": "Deployment and DevOps Essentials",
+      "topics": [
+        "Version Control with GIT",
+        "Containerization with Docker",
+        "Working with AWS ECR",
+        "CI/CD Pipelines using GitHub Actions"
+      ]
+    }
+  ]
+},
+{
+  "slug": "python-django-backend-developer",
+  "title": "Python Django Backend Developer Course",
+  "duration": "3 Months",
+  "level": "Professional",
+  "image": "/images/courses/django.png",
+  "description": "Master backend development using Python and Django. Learn to build scalable, secure, and production-ready web applications with REST APIs and deployment strategies.",
+  "prerequisites": "Basic programming knowledge and Python fundamentals are recommended",
+  "offerings": [
+    "Full-Stack Backend Development with Django",
+    "Database Design & ORM Mastery",
+    "Django REST Framework (DRF) for APIs",
+    "Authentication, Authorization, and Security",
+    "Unit Testing and Debugging Tools",
+    "Hands-on Projects & GitHub Portfolio",
+    "Production Deployment & CI/CD Pipelines",
+    "1:1 Mentorship and Placement Support"
+  ],
+  "courseStructure": [
+    {
+      "title": "Core Python Programming",
+      "topics": [
+        "Python Basics",
+        "Print Statement",
+        "Variables",
+        "Operators",
+        "Strings",
+        "Lists",
+        "Tuples",
+        "Dictionaries",
+        "Control Flow",
+        "Exceptions (try/except)",
+        "Loops (for, while)",
+        "Functions (parameters, return)",
+        "Class and Objects",
+        "Constructors",
+        "Inheritance",
+        "Polymorphism"
+      ]
+    },
+    {
+      "title": "Python Scripting and Libraries",
+      "topics": [
+        "File I/O",
+        "Date and Time",
+        "Multithreading",
+        "Database SQL / ORM",
+        "Regular Expressions",
+        "JSON Handling",
+        "CSV File Handling",
+        "XML File Handling",
+        "Requests Library",
+        "Pickle Module",
+        "Logging",
+        "Email Integration",
+        "Dynamic Programming Basics",
+        "Unit Testing"
+      ]
+    },
+    {
+      "title": "Django Framework",
+      "topics": [
+        "Introduction to Django Framework",
+        "Setting Up Django Environment",
+        "MVC Architecture in Django",
+        "Creating a Django Project",
+        "Managing Django Applications"
+      ]
+    },
+    {
+      "title": "Models and Databases",
+      "topics": [
+        "Defining Models with Django ORM",
+        "Model Relationships",
+        "CRUD Operations",
+        "Database Migrations",
+        "Advanced Querying with ORM"
+      ]
+    },
+    {
+      "title": "Views and Templates",
+      "topics": [
+        "Views and URL Routing",
+        "Handling HTTP Requests",
+        "Dynamic Templates and Template Language",
+        "Forms and Form Submissions"
+      ]
+    },
+    {
+      "title": "Authentication and Authorization",
+      "topics": [
+        "User Registration and Authentication",
+        "Sessions and Cookies",
+        "Third-Party Authentication",
+        "Role-Based Access Control",
+        "Security Best Practices"
+      ]
+    },
+    {
+      "title": "RESTful APIs with Django",
+      "topics": [
+        "Introduction to REST APIs",
+        "Building APIs with Django REST Framework (DRF)",
+        "Serializers and Deserializers",
+        "Authentication and Permissions for APIs",
+        "API Testing and Documentation"
+      ]
+    },
+    {
+      "title": "Advanced Django Concepts",
+      "topics": [
+        "Middleware Usage",
+        "Caching and Optimization",
+        "Static Files and Media Uploads",
+        "Background Tasks with Celery",
+        "Django Signals"
+      ]
+    },
+    {
+      "title": "Testing and Debugging in Django",
+      "topics": [
+        "Unit Testing with Django",
+        "Test Framework Usage",
+        "Debugging Techniques",
+        "Performance Profiling",
+        "Error Handling and Exception Logging"
+      ]
+    },
+    {
+      "title": "Deployment and Scaling",
+      "topics": [
+        "Production Configuration",
+        "Deployment on Hosting Platforms",
+        "Load Balancing and Scaling",
+        "Monitoring and Performance Tuning"
+      ]
+    },
+    {
+      "title": "Security and Best Practices",
+      "topics": [
+        "Mitigating Common Vulnerabilities",
+        "Secure Auth Flows",
+        "XSS & CSRF Protection",
+        "Best Practices in Django Development",
+        "Code Maintainability and Documentation"
+      ]
+    },
+    {
+      "title": "Capstone Project Deployment",
+      "topics": [
+        "Building a Complete Django Application",
+        "Using Git for Version Control",
+        "Collaborative Development Workflow",
+        "Deployment Strategy for Final Project"
+      ]
+    }
+  ]
+},
+{
+  "slug": "power-bi-developer-program",
+  "title": "Power BI Developer Program",
+  "duration": "2 Months",
+  "level": "Professional",
+  "image": "/images/courses/powerbi.png",
+  "description": "Learn to transform raw data into meaningful insights using Power BI. Master data modeling, DAX, visualization, and real-world dashboard creation with publishing and maintenance strategies.",
+  "prerequisites": "Basic understanding of Excel and database concepts is helpful",
+  "offerings": [
+    "Database and Data Modeling Foundation",
+    "Hands-on Power BI Desktop Practice",
+    "Complete Power BI Visualization Coverage",
+    "Advanced DAX and Time Intelligence",
+    "Interactive Dashboard Development",
+    "Big Data Integration and Query Optimization",
+    "Project-Based Learning with Git Portfolio",
+    "Publishing, Sharing, and Maintenance Support"
+  ],
+  "courseStructure": [
+    {
+      "title": "Database and Data Modeling Concepts",
+      "topics": [
+        "Data Modeling Concepts",
+        "Database Concepts",
+        "Datawarehouse Concepts"
+
+      ]
+    },
+    {
+      "title": "Introduction to SQL",
+      "topics": [
+        "Database, Schema, and User",
+        "Datatypes",
+        "DDL (Data Definition Language)",
+        "DML (Data Manipulation Language)",
+        "DQL (Data Query Language)",
+        "Basic Operators",
+        "Set Operations",
+        "Joins",
+        "String Functions",
+        "Date Functions",
+        "Aggregate Functions",
+        "Analytical Functions"
+      ]
+    },
+    {
+      "title": "Introduction to Power BI",
+      "topics": [
+        "Overview of BI and Power BI Desktop",
+        "Data Discovery and Transformation Techniques",
+        "Basic and Advanced Data Modeling",
+        "What-If Parameters",
+        "Calculated Columns and Tables",
+        "Basic Measures",
+        "Time Intelligence Functions"
+      ]
+    },
+    {
+      "title": "Working with Power BI Reports and Visuals",
+      "topics": [
+        "Understanding Power BI Visuals and Models",
+        "Designing and Connecting Data Models",
+        "Manipulating Power BI Queries",
+        "Working with Power BI Visualizations",
+        "Creating Interactive Reports and Dashboards",
+        "Big Data Integration",
+        "Using Power BI Visualization Tools"
+      ]
+    },
+    {
+      "title": "DAX (Data Analysis Expressions)",
+      "topics": [
+        "DAX Basics and Tabular Modeling",
+        "Calculated Columns and Measures",
+        "Navigation, Conditional, Logical, Table Functions",
+        "Time Intelligence and X-Functions"
+      ]
+    },
+    {
+      "title": "Advanced DAX and Filter Logic",
+      "topics": [
+        "Filter Context and Variables",
+        "Advanced CALCULATE and FILTER Functions",
+        "Time Intelligence Deep Dive",
+        "Row Context and Iterators",
+        "Error Handling and Security",
+        "Role Playing Dimensions"
+      ]
+    },
+    {
+      "title": "Publishing and Maintenance",
+      "topics": [
+        "Publishing Power BI Reports",
+        "Sharing Reports and Dashboards",
+        "Troubleshooting Visuals and Data Issues",
+        "Maintenance and Performance Optimization"
+      ]
+    }
+  ]
+},{
+  "slug": "azure-sql-server-developer",
+  "title": "Azure SQL Server Developer",
+  "duration": "3 Months",
+  "level": "Professional",
+  "image": "/images/courses/azure-sql.png",
+  "description": "Become proficient in SQL Server development, T-SQL scripting, performance tuning, and enterprise-level data integration with SSIS. Ideal for professionals working with Azure-hosted SQL Server solutions.",
+  "prerequisites": "Basic database and SQL knowledge is recommended",
+  "offerings": [
+    "Comprehensive SQL Server & T-SQL Training",
+    "Hands-on Assignments and Projects",
+    "Performance Tuning and Query Optimization",
+    "SSIS ETL Pipelines and Real-Time Integrations",
+    "Azure SQL + SQLCMD + Docker Usage",
+    "Industry-Based TSQL Invoicing Project",
+    "Monitoring, Scheduling, and Automation",
+    "Job-Ready Skills for Enterprise Deployment"
+  ],
+  "courseStructure": [
+    {
+      "title": "SQL Fundamentals",
+      "topics": [
+        "Database (Create, Alter, Drop)",
+        "Tables (Create, Alter, Drop)",
+        "DQL - Basics (Select, From, Where)",
+        "DQL - Aggregate Functions (Group By, Having, Order By)",
+        "DQL - Joins",
+        "DQL - Set Operations",
+        "DQL - Analytical Functions",
+        "DML - Insert",
+        "DML - Update",
+        "DML - Delete",
+        "String Functions",
+        "Date Functions"
+      ]
+    },
+    {
+      "title": "T-SQL Programming",
+      "topics": [
+        "Variables and Operators",
+        "Conditional Statements",
+        "Loops",
+        "Code Blocks (BEGIN..END)",
+        "Cursors",
+        "Exception Handling",
+        "Functions",
+        "Stored Procedures",
+        "Views",
+        "Synonyms",
+        "Triggers",
+        "Dynamic SQL",
+        "Temporary Tables"
+      ]
+    },
+    {
+      "title": "Performance Tuning",
+      "topics": [
+        "Indexes",
+        "Partitioning",
+        "Materialized Views",
+        "Explain Plan"
+      ]
+    },
+    {
+      "title": "Advanced SQL Server Concepts",
+      "topics": [
+        "System Views",
+        "SET Parameters",
+        "SP_ Functions / System Procedures",
+        "Working with JSON",
+        "Working with XML",
+        "Logger Implementation",
+        "Job Scheduler",
+        "SQL Server System Architecture"
+      ]
+    },
+    {
+      "title": "Client Tools and Utilities",
+      "topics": [
+        "SQLCMD",
+        "BCP"
+      ]
+    },
+    {
+      "title": "Assignments and Project Work",
+      "topics": [
+        "DDL Assignment",
+        "SQL Assignments",
+        "T-SQL Invoicing Project"
+      ]
+    },
+    {
+      "title": "MS SSIS (SQL Server Integration Services)",
+      "topics": [
+        "Introduction to SSIS",
+        "SSIS Components Overview",
+        "Sources, Targets, and Control Flow",
+        "Common Tasks and Containers",
+        "Data Flow Architecture",
+        "Parameters, Event Handlers, Execution",
+        "Precedence Constraints and Variables",
+        "Expressions and SSIS Transformations",
+        "Derived Column and Type Casting",
+        "Copy Column and Sort",
+        "Merge, Group By, Pivot",
+        "Multicast",
+        "Control Flow Tasks",
+        "Containers: Sequence, For Loop, For Each Loop",
+        "Event Handlers and Execute Package Task (Parent-Child)",
+        "Blocking, Non-Blocking, Semi-Blocking",
+        "SSIS Performance Improvement",
+        "SSIS Catalog Deployment",
+        "SQL Server Agent Scheduling",
+        "FTP Site Files to SQL Server",
+        "BLOB Files to SQL Server",
+        "MySQL Docker DB to SQL Server",
+        "OLTP to FILE to OLAP"
+      ]
+    }
+  ]
+},{
+  "slug": "oracle-plsql-developer-program",
+  "title": "Oracle PL/SQL Developer Program",
+  "duration": "2 Months",
+  "level": "Professional",
+  "image": "/images/courses/plsql.png",
+  "description": "Master Oracle PL/SQL development with hands-on experience in procedures, functions, packages, triggers, and performance tuning. Designed for professionals aiming to work on enterprise-grade Oracle-based systems.",
+  "prerequisites": "Basic knowledge of SQL and relational databases is recommended",
+  "offerings": [
+    "Complete PL/SQL Programming Coverage",
+    "Subprograms, Packages, and Triggers",
+    "Exception Handling and Debugging Techniques",
+    "Performance Tuning and SQL Optimization",
+    "Hands-on Assignments and Real Projects",
+    "Dynamic SQL and Collections",
+    "Production-Ready Code Practices",
+    "Job Readiness and Mentoring"
+  ],
+  "courseStructure": [
+    {
+      "title": "Module 1: Introduction to PL/SQL",
+      "topics": [
+        "Overview of PL/SQL and Its Advantages",
+        "PL/SQL Architecture and Components",
+        "PL/SQL Data Types and Variables",
+        "PL/SQL Block Structure and Syntax",
+        "PL/SQL Tools and Development Environment"
+      ]
+    },
+    {
+      "title": "Module 2: PL/SQL Programming Constructs",
+      "topics": [
+        "Conditional Statements (IF-THEN-ELSE, CASE)",
+        "Looping Statements (FOR, WHILE, CURSOR Loops)",
+        "Exception Handling (RAISE, EXCEPTION, EXCEPTION_INIT)",
+        "Cursors and Record Variables",
+        "Bulk Operations and Collections"
+      ]
+    },
+    {
+      "title": "Module 3: PL/SQL Subprograms",
+      "topics": [
+        "Procedures and Functions Overview",
+        "Creating and Calling Subprograms",
+        "Parameter Modes and Value Passing",
+        "Overloading Procedures and Functions",
+        "Using Built-in Functions in PL/SQL"
+      ]
+    },
+    {
+      "title": "Module 4: PL/SQL Cursors and Records",
+      "topics": [
+        "Explicit and Implicit Cursors",
+        "Cursor Attributes and Operations",
+        "Cursor Exception Handling",
+        "Working with Record Variables",
+        "Cursor FOR Loops and Nested Cursors"
+      ]
+    },
+    {
+      "title": "Module 5: PL/SQL Error Handling and Debugging",
+      "topics": [
+        "Error and Exception Handling",
+        "Predefined and User-Defined Exceptions",
+        "Exception Propagation and Logging",
+        "Debugging with DBMS_OUTPUT and SQL Developer Debugger",
+        "Best Practices in Error Logging"
+      ]
+    },
+    {
+      "title": "Module 6: PL/SQL Packages",
+      "topics": [
+        "Introduction to Packages",
+        "Creating and Using Packages",
+        "Public and Private Components",
+        "Overloading in Packages",
+        "Package Initialization and Finalization"
+      ]
+    },
+    {
+      "title": "Module 7: Advanced PL/SQL Concepts",
+      "topics": [
+        "Dynamic SQL Overview",
+        "Native Dynamic SQL Execution",
+        "PL/SQL Tables and Collections",
+        "Advanced Error Handling with SQLCODE/SQLERRM",
+        "Triggers: Row-Level and Statement-Level"
+      ]
+    },
+    {
+      "title": "Module 8: PL/SQL Performance Tuning and Optimization",
+      "topics": [
+        "Identifying Performance Bottlenecks",
+        "EXPLAIN PLAN and SQL Trace Tools",
+        "Efficient SQL in PL/SQL",
+        "Bulk Operations, Binding, and Parallelism",
+        "Indexing and Performance Hints"
+      ]
+    }
+  ]
+},
+{
+  "slug": "snowflake-platform-program",
+  "title": "Snowflake Platform Program",
+  "duration": "2 Months",
+  "level": "Professional",
+  "image": "/images/courses/snowflake.png",
+  "description": "Master the Snowflake cloud data platform with end-to-end training on architecture, SQL operations, data modeling, constraints, sessions, and real-world warehousing concepts. Ideal for professionals working with data engineering or cloud analytics.",
+  "prerequisites": "Basic knowledge of databases and SQL is recommended",
+  "offerings": [
+    "Complete Snowflake SQL Development Training",
+    "Architecture, Warehouses, Schemas, and Constraints",
+    "Time Travel and Fail-Safe Concepts",
+    "Real-Time DML, CTAS, and Data Recovery",
+    "SnowSight GUI and SQL-Based Data Loading",
+    "Hands-on Labs and Live Workspace Projects",
+    "Cloud Computing Foundation (PaaS/SaaS)",
+    "Job Readiness and Project Mentoring"
+  ],
+  "courseStructure": [
+    {
+      "title": "Introduction to Cloud & Snowflake",
+      "topics": [
+        "Introduction to Databases",
+        "Introduction to Cloud Platforms",
+        "Platform as a Service (PaaS)",
+        "Software as a Service (SaaS)",
+        "Snowflake SaaS Cloud Platform",
+        "Traditional RDBMS vs. Snowflake",
+        "Snowflake Versions, Architecture, and Pricing"
+      ]
+    },
+    {
+      "title": "Snowflake UI and Quick Start",
+      "topics": [
+        "Working with Snowflake Components",
+        "Warehouses (Create/Alter/Drop)",
+        "Schemas, Roles, Worksheets, Accounts",
+        "UI and Navigation Overview",
+        "Quick Start: Accessing a Trial Account"
+      ]
+    },
+    {
+      "title": "Snowflake SQL & Database Management",
+      "topics": [
+        "Snowflake Databases and Storage",
+        "Need for Compute and Warehouse",
+        "Database Objects and Hierarchy",
+        "Worksheet Parameters and Context",
+        "Database Creation via UI",
+        "Retention, DB Listing, and Connections",
+        "Permanent and Transient Databases"
+      ]
+    },
+    {
+      "title": "Snowflake Table Operations",
+      "topics": [
+        "Permanent, Transient, and Temp Tables",
+        "Creating Tables with SnowSight",
+        "Describe Options and Data Inserts",
+        "CREATE TABLE AS SELECT (CTAS)",
+        "Cloning Tables and Case Sensitivity",
+        "Collation, ALTER, DROP & UNDROP"
+      ]
+    },
+    {
+      "title": "Constraints and Validations",
+      "topics": [
+        "NULL and NOT NULL",
+        "Unique, Primary, and Foreign Keys",
+        "Named Constraints",
+        "Single & Multi-Column Constraints",
+        "Inline vs Out-of-Line Constraints",
+        "Constraint Properties: ENFORCED, DEFERRED, IMMEDIATE"
+      ]
+    },
+    {
+      "title": "Data Types in Snowflake",
+      "topics": [
+        "Numeric, String, and Binary Types",
+        "Boolean Types and Usage",
+        "Date and Time Types",
+        "Semi-Structured Data Types",
+        "Geospatial and Variant Types"
+      ]
+    },
+    {
+      "title": "Time Travel and Fail Safe",
+      "topics": [
+        "DML Operations and Silent Audits",
+        "Continuous Data Protection",
+        "Time Travel Overview",
+        "Time Travel by Offset",
+        "Time Travel by Query ID",
+        "Data Recovery Using Timestamp",
+        "OFFSET Use Cases",
+        "Fail Safe & UNDROP Operations",
+        "Transient vs Permanent Table Use Cases"
+      ]
+    },
+    {
+      "title": "Snowflake Schema Management",
+      "topics": [
+        "Schema Creation and Usage",
+        "Permanent and Transient Schemas",
+        "Managed Schemas Overview",
+        "Verifying & Cloning Schemas",
+        "Invoking Schemas, ALTER SCHEMA Options",
+        "Working with Managed Schema"
+      ]
+    },
+    {
+      "title": "Snowflake Sessions and Context",
+      "topics": [
+        "Session Context: Role & Warehouse",
+        "Session Context: Database & Schema",
+        "Using Fully Qualified Object Names"
+      ]
+    },
+    {
+      "title": "Data Loading and Query Execution",
+      "topics": [
+        "CTAS: Create Table As Select",
+        "Data Loading with GUI and SQL Scripts",
+        "Using Query Tab and History in GUI"
+      ]
+    }
+  ]
 }
+
 ]
