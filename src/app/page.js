@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Globe, Users, Clock, UserCheck, Briefcase, CheckCircle, Star, BookOpen, Code2, FileText, ClipboardCheck, UserCircle2 } from 'lucide-react'
 
-
 const services = [
   {
     title: 'IT Development Services',
