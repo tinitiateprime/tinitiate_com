@@ -4,13 +4,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Globe, Users, Clock, UserCheck, Briefcase, CheckCircle, Star, BookOpen, Code2, FileText, ClipboardCheck, UserCircle2 } from 'lucide-react'
+import { useRouter } from 'next/navigation';
 
 
 const services = [
   {
     title: 'IT Development Services',
     href: '/it-development',
-    image: '/images/services-development.jpg',
+    image: '/images/it-development-services.jpg',
   },
   {
     title: 'IT Training',
@@ -19,13 +20,13 @@ const services = [
   },
   {
     title: 'Work Experience Program',
-    href: '/work-experience',
-    image: '/images/work-experience-program.png',
+    href: '/work-experience-program',
+    image: '/images/work-experience-program.jpg',
   },
   {
     title: 'Remote Consulting',
     href: '/remote-consulting',
-    image: '/images/Remote-consulting.png',
+    image: '/images/Remote-consulting-service.jpg',
   },
 ]
 
@@ -34,12 +35,14 @@ const programs = [
     title: 'Python AWS Developer Program',
     duration: '3 Months',
     image: '/images/IT-training/Python-AWS-Developer-Program.png',
+    href: '/courses/Python-AWS-Developer-Program',
     description: 'Master Python backend, AWS Lambda, API Gateway, and DynamoDB through hands-on projects.',
   },
   {
     title: 'Power BI Developer Program',
     duration: '2 Months',
     image: '/images/IT-training/Power-BI-Developer-Program.png',
+    href: '/courses/power-bi-developer-program',
     description: 'Learn powerful BI reporting, data modeling, and dashboard creation using real-world business data.',
   },
   // {
@@ -53,6 +56,7 @@ const programs = [
     duration: '3 Months',
     image: '/images/courses/sql.png',
     description: 'Understand data modeling, querying, and reporting using relational databases and SQL.',
+    href: '/courses/sql-language-course',
   },
 ]
 
@@ -82,6 +86,7 @@ const itServices = [
     title: "Data Engineering",
     image1: "/images/IT-development/data-engineering-1.png",
     image2: "/images/IT-development/data-engineering-2.jpg",
+    href: '/it-development/data-engineering',
     description:
       'Design and implement scalable data pipelines, streaming systems, and data lakes using tools like Apache Spark, Kafka, and AWS Glue. We handle both batch and real-time processing needs for intelligent decision-making and analytics delivery. Our services include data ingestion, transformation, quality checks, and warehouse integration using platforms like Snowflake and Redshift.',
   },
@@ -89,6 +94,7 @@ const itServices = [
     title: "App Development",
     image1: "/images/IT-development/app-development-1.jpg",
     image2: "/images/IT-development/app-development-2.jpg",
+    href: '/it-development/app-development',
     description:
       'Develop modern mobile and web applications with pixel-perfect UI/UX design, scalable architecture, and secure APIs. From MVP development to enterprise-scale deployments, we specialize in React Native, Flutter, Android, and iOS apps, integrated with backend systems and analytics dashboards.',
   },
@@ -96,6 +102,7 @@ const itServices = [
     title: "Web & Backend Development",
     image1: "/images/IT-development/web-backend-1.jpg",
     image2: "/images/IT-development/web-backend-2.jpg",
+    href: '/it-development/web-backend',
     description:
       'Build robust and secure backend systems and dynamic web apps using frameworks like Node.js, Django, and Spring Boot. We ensure clean REST and GraphQL APIs, JWT authentication, role-based access, and seamless frontend-backend integration with CI/CD pipelines.',
   },
@@ -103,6 +110,7 @@ const itServices = [
     title: "Testing & Support",
     image1: "/images/IT-development/testing-support-1.jpg",
     image2: "/images/IT-development/testing-support-2.jpg",
+    href: '/it-development/testing-support',
     description:
       'Ensure bug-free, stable software through test automation, functional and regression testing, and load/stress analysis. Our QA services are backed by tools like Selenium, Cypress, and Postman, and include post-deployment support, uptime monitoring, and 24/7 SLA-based response teams.',
   },
@@ -146,6 +154,10 @@ const guidanceData = [
 ]
 
 export default function HomePage() {
+
+   const router = useRouter();
+
+
   return (
     <main className="text-gray-800">
 <section className="relative bg-black py-20 sm:py-10 md:py-15  ">
@@ -238,7 +250,7 @@ export default function HomePage() {
     </h2>
 
     <div className="space-y-20">
-      {itServices.map(({ title, image1, image2, description }, index) => (
+      {itServices.map(({ title, image1, image2, description, href }, index) => (
         <div
           key={title}
           className={`flex flex-col md:flex-row ${
@@ -246,7 +258,9 @@ export default function HomePage() {
           } items-center md:items-stretch gap-12`}
         >
           {/* Image Section */}
-          <div className="relative w-full md:w-1/2 h-72  overflow-hidden shadow-md group">
+           <Link 
+           href={href}
+          className="relative w-full md:w-1/2 h-72  overflow-hidden shadow-md group">
             <Image
               src={image1}
               alt={title}
@@ -259,7 +273,7 @@ export default function HomePage() {
               fill
               className="object-cover absolute top-0 left-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
             />
-          </div>
+          </Link>
 
           {/* Text Section */}
           <div className="md:w-1/2 flex items-center">
@@ -306,14 +320,14 @@ export default function HomePage() {
         className="rounded-xl shadow-sm bg-white overflow-hidden flex flex-col transition-all hover:shadow-md"
       >
         {/* Smaller, full-cover image */}
-        <div className="relative w-2/3 h-40">
+        <Link href={prog.href} className="relative w-2/3 h-40">
           <Image
             src={prog.image}
             alt={prog.title}
             fill
             className=""
           />
-        </div>
+        </Link>
 
         <div className="p-6 flex flex-col justify-between grow">
           <div className="mb-6">
@@ -327,13 +341,14 @@ export default function HomePage() {
               {prog.description}
             </p>
           </div>
-          <Link
+        <button
+        onClick={() => router.push('/request-callback')}
             // href={`/programs/${prog.title.toLowerCase().replace(/\s+/g, '-')}`}
             href={`/request-callback/`}
             className="inline-block px-4 py-2 bg-blue-400 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
           >
             Register Course
-          </Link>
+        </button>
         </div>
       </div>
     ))}

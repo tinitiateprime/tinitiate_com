@@ -100,7 +100,7 @@ export default function WorkExperienceProgramPage() {
       </section>
 
       {/* 🎁 Benefits */}
-      <section className="py-12 px-6 bg-gray-50">
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-4 text-gray-900">💼 Program Benefits</h2>
           <ul className="grid md:grid-cols-2 gap-4 list-disc pl-6 text-gray-700">
