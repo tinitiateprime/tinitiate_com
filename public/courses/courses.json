@@ -552,6 +552,416 @@
   ]
 },
 {
+  "slug": "c-language",
+  "title": "C Language Course",
+  "duration": "1.5 Month",
+  "level": "Beginner",
+  "image": "/images/courses/c.png",
+  "description": "Learn C programming from basics to advanced topics including memory management, pointers, and file handling with hands-on coding practice.",
+  "prerequisites": "No prior programming experience required. Suitable for beginners.",
+  "courseStructure": [
+    {
+      "title": "Introduction to C",
+      "topics": [
+        "History and Features of C",
+        "Structure of a C Program",
+        "Setting up the Development Environment",
+        "Compiling and Running C Programs"
+      ]
+    },
+    {
+      "title": "Variables, Data Types & Operators",
+      "topics": [
+        "Keywords and Identifiers",
+        "Data Types and Constants",
+        "Type Conversion and Casting",
+        "Arithmetic, Logical, Relational Operators",
+        "Bitwise and Assignment Operators"
+      ]
+    },
+    {
+      "title": "Control Flow",
+      "topics": [
+        "if, if-else, nested if",
+        "switch-case",
+        "for, while, do-while Loops",
+        "break, continue, goto"
+      ]
+    },
+    {
+      "title": "Functions in C",
+      "topics": [
+        "Defining and Calling Functions",
+        "Function Arguments and Return Values",
+        "Recursion",
+        "Scope and Storage Classes"
+      ]
+    },
+    {
+      "title": "Arrays and Strings",
+      "topics": [
+        "Single and Multi-dimensional Arrays",
+        "String Handling Functions",
+        "Manual String Operations"
+      ]
+    },
+    {
+      "title": "Pointers",
+      "topics": [
+        "Introduction to Pointers",
+        "Pointer Arithmetic",
+        "Pointers and Arrays",
+        "Pointers to Functions",
+        "Dynamic Memory Allocation (malloc, calloc, free)"
+      ]
+    },
+    {
+      "title": "Structures and Unions",
+      "topics": [
+        "Declaring and Using Structures",
+        "Array of Structures",
+        "Nested Structures",
+        "Union vs Structure"
+      ]
+    },
+    {
+      "title": "File Handling",
+      "topics": [
+        "File Operations (fopen, fclose, fread, fwrite)",
+        "Text vs Binary Files",
+        "File Modes (r, w, a, rb, wb)",
+        "Random File Access (fseek, ftell)"
+      ]
+    },
+    {
+      "title": "Preprocessor Directives",
+      "topics": [
+        "#define, #include",
+        "Macros and Inline Code",
+        "Conditional Compilation"
+      ]
+    },
+    {
+      "title": "Mini Projects and Interview Prep",
+      "topics": [
+        "Student Record System",
+        "Bank Management System",
+        "Technical Q&A and MCQs",
+        "Resume Building for Freshers"
+      ]
+    }
+  ]
+},
+{
+  "slug": "cpp",
+  "title": "C++ Language Course",
+  "duration": "2 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/cpp.png",
+  "description": "Master the fundamentals of C++ programming with a focus on Object-Oriented Programming (OOP), Standard Template Library (STL), and real-world application development.",
+  "prerequisites": "Basic understanding of programming (C knowledge is helpful but not mandatory).",
+  "courseStructure": [
+    {
+      "title": "Introduction to C++",
+      "topics": [
+        "History and Evolution of C++",
+        "Structure of a C++ Program",
+        "Compiling and Running C++ Programs",
+        "C++ vs C"
+      ]
+    },
+    {
+      "title": "Basics of C++ Programming",
+      "topics": [
+        "Variables, Constants, and Data Types",
+        "Operators and Expressions",
+        "Input and Output (cin, cout)",
+        "Type Casting"
+      ]
+    },
+    {
+      "title": "Control Flow",
+      "topics": [
+        "Conditional Statements (if, if-else, switch)",
+        "Loops (for, while, do-while)",
+        "break, continue, goto"
+      ]
+    },
+    {
+      "title": "Functions",
+      "topics": [
+        "Function Declaration and Definition",
+        "Function Overloading",
+        "Default Arguments",
+        "Inline Functions",
+        "Recursion"
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming",
+      "topics": [
+        "Classes and Objects",
+        "Constructors and Destructors",
+        "this Pointer",
+        "Static Members",
+        "Friend Functions and Classes"
+      ]
+    },
+    {
+      "title": "OOP Concepts in Depth",
+      "topics": [
+        "Encapsulation",
+        "Inheritance",
+        "Polymorphism",
+        "Function Overriding",
+        "Virtual Functions",
+        "Abstract Classes and Interfaces"
+      ]
+    },
+    {
+      "title": "Pointers and Memory Management",
+      "topics": [
+        "Pointers and References",
+        "Dynamic Memory (new, delete)",
+        "Pointer to Objects",
+        "Smart Pointers (intro only)"
+      ]
+    },
+    {
+      "title": "Advanced Features",
+      "topics": [
+        "Operator Overloading",
+        "Exception Handling",
+        "Namespaces",
+        "Templates (Function and Class Templates)"
+      ]
+    },
+    {
+      "title": "Standard Template Library (STL)",
+      "topics": [
+        "Vectors, Lists, Stacks, Queues",
+        "Sets and Maps",
+        "Iterators",
+        "Algorithms and Functional Programming"
+      ]
+    },
+    {
+      "title": "File Handling and Projects",
+      "topics": [
+        "File I/O Streams (ifstream, ofstream, fstream)",
+        "Text vs Binary Files",
+        "Project: Library Management / Student DB",
+        "Mock Interviews and Problem Solving"
+      ]
+    }
+  ]
+},
+{
+  "slug": "csharp",
+  "title": "C# Language Course",
+  "duration": "2 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/csharp.png",
+  "description": "Learn C# programming from the basics to building real-world applications with .NET, covering object-oriented programming, LINQ, async programming, and Windows Forms.",
+  "prerequisites": "Basic understanding of programming logic. Familiarity with C/C++/Java is helpful.",
+  "courseStructure": [
+    {
+      "title": "Introduction to C# and .NET",
+      "topics": [
+        "Overview of .NET Platform",
+        "C# History and Features",
+        "Setting Up Visual Studio",
+        "Hello World Program",
+        "C# Compilation and Execution Flow"
+      ]
+    },
+    {
+      "title": "Basic C# Syntax",
+      "topics": [
+        "Data Types and Variables",
+        "Operators and Expressions",
+        "Type Conversion",
+        "Console Input and Output",
+        "Comments and Naming Conventions"
+      ]
+    },
+    {
+      "title": "Control Flow and Arrays",
+      "topics": [
+        "Conditionals (if, if-else, switch)",
+        "Loops (for, while, do-while, foreach)",
+        "Break and Continue",
+        "Arrays and Multidimensional Arrays",
+        "Collections Overview"
+      ]
+    },
+    {
+      "title": "Methods and Parameters",
+      "topics": [
+        "Method Declaration and Usage",
+        "Pass by Value and Reference",
+        "Method Overloading",
+        "Recursion",
+        "Named and Optional Parameters"
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming",
+      "topics": [
+        "Classes and Objects",
+        "Constructors and Destructors",
+        "Encapsulation and Access Modifiers",
+        "Inheritance",
+        "Polymorphism (Method Overriding, Virtual Methods)",
+        "Abstract Classes and Interfaces"
+      ]
+    },
+    {
+      "title": "Advanced C# Features",
+      "topics": [
+        "Properties and Indexers",
+        "Static Classes and Members",
+        "Namespaces and Assemblies",
+        "Exception Handling (try-catch-finally)",
+        "Enums and Structs",
+        "Events and Delegates"
+      ]
+    },
+    {
+      "title": "LINQ and Collections",
+      "topics": [
+        "Generic Collections (List, Dictionary, etc.)",
+        "Lambda Expressions",
+        "LINQ Basics",
+        "Filtering, Projection, Aggregation",
+        "Query vs Method Syntax"
+      ]
+    },
+    {
+      "title": "File Handling and Serialization",
+      "topics": [
+        "FileStream, StreamReader, StreamWriter",
+        "Text and Binary Files",
+        "JSON Serialization/Deserialization",
+        "Working with XML",
+        "System.IO Namespace"
+      ]
+    },
+    {
+      "title": "Asynchronous Programming",
+      "topics": [
+        "Async and Await",
+        "Tasks and Multithreading",
+        "Parallel Programming Concepts",
+        "BackgroundWorker and Timer Classes"
+      ]
+    },
+    {
+      "title": "Windows Forms (Desktop GUI)",
+      "topics": [
+        "Creating a WinForms App",
+        "Form Events and Controls",
+        "Data Binding",
+        "Simple CRUD Operation with WinForms",
+        "Project: Expense Tracker / Contact Manager"
+      ]
+    }
+  ]
+},
+{
+  "slug": "unix-os-course",
+  "title": "UNIX Operating System Course",
+  "duration": "1.5 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/unix.png",
+  "description": "Master the fundamentals of UNIX operating system, shell commands, scripting, and system administration tasks essential for developers, testers, and DevOps professionals.",
+  "prerequisites": "Basic familiarity with computers. Programming background is helpful but not required.",
+  "courseStructure": [
+    {
+      "title": "Introduction to UNIX",
+      "topics": [
+        "History and Evolution of UNIX",
+        "UNIX Architecture and Kernel Basics",
+        "Shell Types (sh, bash, csh, ksh)",
+        "Logging in and Working with Terminals",
+        "File System Structure"
+      ]
+    },
+    {
+      "title": "File and Directory Management",
+      "topics": [
+        "Basic Commands: ls, pwd, cd, mkdir, rmdir",
+        "File Commands: cat, cp, mv, rm, touch",
+        "Viewing Files: less, more, head, tail",
+        "Permissions and Ownership: chmod, chown, chgrp",
+        "Hidden Files and File Wildcards"
+      ]
+    },
+    {
+      "title": "Working with Text and Filters",
+      "topics": [
+        "Redirection and Pipes",
+        "grep, cut, sort, uniq, tr",
+        "wc, tee, head, tail",
+        "find and locate",
+        "awk and sed basics"
+      ]
+    },
+    {
+      "title": "User and Process Management",
+      "topics": [
+        "Creating and Managing Users and Groups",
+        "Switching Users: su, sudo",
+        "ps, top, kill, nice, renice",
+        "Foreground and Background Jobs",
+        "Crontab and Scheduling Tasks"
+      ]
+    },
+    {
+      "title": "Shell Scripting Basics",
+      "topics": [
+        "What is Shell Script?",
+        "Writing First Shell Script",
+        "Variables, Conditionals, and Loops",
+        "Input/Output Redirection",
+        "Functions in Shell Script",
+        "Positional Parameters and Arguments"
+      ]
+    },
+    {
+      "title": "Networking and System Utilities",
+      "topics": [
+        "Network Commands: ping, netstat, ifconfig, ssh, scp",
+        "Checking Disk Usage: df, du",
+        "Mounting and Unmounting Drives",
+        "System Logs and Monitoring",
+        "Environment Variables and Aliases"
+      ]
+    },
+    {
+      "title": "Advanced Shell Scripting & Automation",
+      "topics": [
+        "Case Statements",
+        "File Test Operators",
+        "Debugging Shell Scripts",
+        "Automated Backups with Scripts",
+        "Real-time Scripting Examples"
+      ]
+    },
+    {
+      "title": "Practical Projects and Use Cases",
+      "topics": [
+        "Backup Script using tar and cron",
+        "User Activity Monitoring Script",
+        "Disk Space Alert Script",
+        "Text Parsing with awk and sed",
+        "Mini Project: Log File Analyzer"
+      ]
+    }
+  ]
+},
+
+{
   "slug": "php-language-course",
   "title": "PHP Language Course",
   "duration": "2 Month",
@@ -1209,6 +1619,107 @@
     }
   ]
 },
+{
+  "slug": "aws-devops-program",
+  "title": "AWS DevOps Program",
+  "duration": "3 Months",
+  "level": "Advanced",
+  "image": "/images/courses/aws-devops.png",
+  "description": "Learn to automate, monitor, and scale infrastructure using AWS services and DevOps tools. Master CI/CD pipelines, infrastructure as code, containerization, and cloud-native deployment practices.",
+  "prerequisites": "Prior knowledge of AWS fundamentals, Linux, Git, and basic scripting is recommended.",
+  "courseStructure": [
+    {
+      "title": "DevOps Foundation",
+      "topics": [
+        "DevOps Principles & Lifecycle",
+        "Agile & Scrum for DevOps Teams",
+        "CI/CD Overview",
+        "Version Control with Git and GitHub",
+        "DevOps Tools Landscape"
+      ]
+    },
+    {
+      "title": "AWS Core Services for DevOps",
+      "topics": [
+        "EC2, IAM, VPC Essentials",
+        "S3 for Artifacts and Backup",
+        "CloudWatch for Monitoring and Logs",
+        "Elastic Load Balancer and Auto Scaling",
+        "EBS, AMI and Snapshots"
+      ]
+    },
+    {
+      "title": "Infrastructure as Code (IaC)",
+      "topics": [
+        "Introduction to IaC & Benefits",
+        "AWS CloudFormation Deep Dive",
+        "Terraform for AWS",
+        "State Management, Workspaces",
+        "Hands-on: Deploy Multi-tier App with Terraform"
+      ]
+    },
+    {
+      "title": "Configuration Management",
+      "topics": [
+        "Introduction to Ansible",
+        "Writing Playbooks and Roles",
+        "Provisioning EC2 with Ansible",
+        "User Management, Software Installs",
+        "Ansible with Dynamic Inventory and Tags"
+      ]
+    },
+    {
+      "title": "Containerization & Orchestration",
+      "topics": [
+        "Docker Basics and Dockerfiles",
+        "Docker Compose",
+        "ECS (Elastic Container Service)",
+        "EKS (Elastic Kubernetes Service) Basics",
+        "Deploying Microservices on ECS/EKS"
+      ]
+    },
+    {
+      "title": "CI/CD Pipeline with AWS",
+      "topics": [
+        "Jenkins for Build Automation",
+        "AWS CodeCommit, CodeBuild, CodeDeploy, CodePipeline",
+        "GitHub Actions for AWS Deployment",
+        "Integrating Static Code Analysis",
+        "Blue/Green and Canary Deployments"
+      ]
+    },
+    {
+      "title": "Monitoring & Logging",
+      "topics": [
+        "AWS CloudWatch (Metrics, Logs, Dashboards)",
+        "X-Ray for Tracing",
+        "Custom Alarms and SNS Notifications",
+        "Log Aggregation with ELK Stack (optional)"
+      ]
+    },
+    {
+      "title": "Security and Best Practices",
+      "topics": [
+        "IAM Policies and Role-based Access",
+        "Secrets Management with AWS Secrets Manager",
+        "KMS for Encryption",
+        "Audit Trails using CloudTrail",
+        "DevSecOps Integration"
+      ]
+    },
+    {
+      "title": "Project: End-to-End DevOps Pipeline",
+      "topics": [
+        "Plan, Design and Document a CI/CD Pipeline",
+        "Provision Infra with Terraform & Ansible",
+        "Containerize and Deploy using Jenkins and ECS",
+        "Monitor, Alert and Auto-Heal",
+        "Version Control, Team Collaboration & GitOps"
+      ]
+    }
+  ]
+},
+
 {
   "slug": "snowflake-platform-program",
   "title": "Snowflake Platform Program",

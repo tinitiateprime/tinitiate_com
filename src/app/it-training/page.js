@@ -266,21 +266,21 @@ const beginnerCourses = [
     duration: '1 Month',
     image: '/images/courses/cpp.png',
     description: 'Object-oriented programming with C++—commonly used in game development and system software.',
-    href: '/courses/cpp-basics',
+    href: '/courses/cpp',
   },
   {
     title: 'C# Language Course',
     duration: '1 Month',
     image: '/images/courses/csharp.png',
     description: 'C# with .NET—used in enterprise development, desktop apps, and game engines like Unity.',
-    href: '/courses/csharp-basics',
+    href: '/courses/csharp',
   },
   {
     title: 'UNIX OS Course',
     duration: '2 Weeks',
     image: '/images/courses/unix.png',
     description: 'Command-line mastery, shell scripting, and working with file systems in UNIX/Linux.',
-    href: '/courses/unix-basics',
+    href: '/courses/unix-os-course',
   },
 ]
 
@@ -326,7 +326,7 @@ const advancedCourses = [
     duration: '2.5 Months',
     image: '/images/courses/aws-devops.png',
     description: 'CI/CD pipelines, Docker, Kubernetes, and AWS services for efficient software delivery.',
-    href: '/courses/aws-devops',
+    href: '/courses/aws-devops-program',
   },
   {
     title: 'Snowflake Platform Program',

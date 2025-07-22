@@ -272,7 +272,7 @@ export default function Header() {
   return (
     <header className="bg-white sticky top-0 z-50">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="block w-[140px] md:w-[170px] lg:w-[220px] xl:w-[160px]">
+        <Link href="/" className="block w-[140px] md:w-[170px] lg:w-[220px] xl:w-[220px]">
           <Image
             src="/images/tinitiatelogo.png"
             alt="TINITIATE Logo"
