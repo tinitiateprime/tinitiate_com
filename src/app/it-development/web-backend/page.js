@@ -2,19 +2,60 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import {
+  faReact
+} from '@fortawesome/free-brands-svg-icons'
+
+import {
+  faServer,
+  faDatabase,
+  faUserShield,
+  faCloudUploadAlt,
+  faProjectDiagram
+} from '@fortawesome/free-solid-svg-icons'
+
+
 const serviceData = {
   title: 'Web & Backend Development Services',
   image: '/images/banners/web-backend.jpg', // 🔁 Replace with your actual image path
   duration: 'Project Based or Retainer Model',
   overview:
     'Develop robust, secure, and scalable backend systems and web applications using modern frameworks and APIs tailored to business needs.',
-  details: [
-    'Custom website and web app development with React, Next.js, and Angular',
-    'Backend APIs using Node.js, Express, Django, or Spring Boot',
-    'Database modeling and integration with PostgreSQL, MySQL, and MongoDB',
-    'Authentication, authorization, and role-based access control (RBAC)',
-    'DevOps and deployment on AWS, Azure, or self-managed servers'
-  ],
+details: [
+  {
+    icon: faReact,
+    title: 'Frontend Development',
+    description: 'Beautiful UIs using React, Next.js, Angular for modern user experience.'
+  },
+  {
+    icon: faServer,
+    title: 'Backend Architecture',
+    description: 'Robust APIs using Node.js, Django, Spring Boot with scalable design.'
+  },
+  {
+    icon: faDatabase,
+    title: 'Database Integration',
+    description: 'PostgreSQL, MySQL, MongoDB database modeling and secure access.'
+  },
+  {
+    icon: faUserShield,
+    title: 'Security & Auth',
+    description: 'Authentication, RBAC, and secure user management.'
+  },
+  {
+    icon: faCloudUploadAlt,
+    title: 'DevOps & Cloud',
+    description: 'CI/CD and deployment on AWS, Azure, and on-prem environments.'
+  },
+  {
+    icon: faProjectDiagram,
+    title: 'API Development',
+    description: 'REST and GraphQL APIs to power modern apps and services.'
+  }
+],
+
   benefits: [
     'High-performance and secure web platforms',
     'Custom workflows tailored to business logic',
@@ -63,24 +104,97 @@ export default function WebBackendDevelopmentPage() {
       </section>
 
       {/* Offerings */}
-      <section className="py-12 px-6 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-900">Service Offerings</h2>
-        <ul className="list-disc space-y-2 pl-5 text-gray-700">
-          {serviceData.details.map((d, i) => (
-            <li key={i}>{d}</li>
-          ))}
-        </ul>
-      </section>
+{/* <section className="py-16 px-6 max-w-6xl mx-auto">
+  <h2 className="text-3xl font-bold mb-10 text-center text-gray-900">
+    Service Offerings
+  </h2>
+  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+    {serviceData.details.map((item, index) => (
+      <div
+        key={index}
+        className="bg-white shadow-md border rounded-xl p-6 hover:shadow-lg transition"
+      >
+        <div className="flex items-center space-x-4 mb-4">
+          <FontAwesomeIcon
+            icon={item.icon}
+            className="text-blue-600 w-6 h-6"
+          />
+          <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
+        </div>
+        <p className="text-gray-600 text-sm">{item.description}</p>
+      </div>
+    ))}
+  </div>
+</section> */}
 
-      {/* Benefits */}
-      <section className="py-12 px-6 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-900">Why Choose This Service</h2>
-        <ul className="list-disc space-y-2 pl-5 text-gray-700">
-          {serviceData.benefits.map((b, i) => (
-            <li key={i}>{b}</li>
-          ))}
-        </ul>
-      </section>
+<section className="py-20 px-6 bg-gray-50">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+      Service Offerings
+    </h2>
+
+    <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      {serviceData.details.map((item, index) => (
+        <div
+          key={index}
+          className="group bg-white border border-gray-200 shadow-md rounded-2xl p-6 transition-transform transform hover:-translate-y-1 hover:shadow-xl"
+        >
+          <div className="flex items-center mb-4 space-x-4">
+            <div className="bg-blue-100 text-blue-600 rounded-full p-3 transition group-hover:bg-blue-500 group-hover:text-white">
+              <FontAwesomeIcon icon={item.icon} className="w-6 h-6" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
+          </div>
+          <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+      {/* Why Choose Us */}
+<section className="py-20 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+      Why Choose This Service
+    </h2>
+
+    <div className="grid gap-5 grid-cols-1 sm:grid-cols-2">
+      {serviceData.benefits.map((benefit, i) => (
+        <div
+          key={i}
+          className="flex items-center bg-white border border-gray-200 shadow-md rounded-2xl p-3 hover:shadow-xl hover:border-blue-500 transition"
+        >
+          {/* Icon */}
+          <div className="flex-shrink-0">
+            <div className=" text-blue-600 rounded-full p-3 flex items-center justify-center">
+              <svg
+                className="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+
+          {/* Text */}
+          <div className="">
+            <p className="text-gray-800 text-base leading-relaxed">
+              {benefit}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
     </main>
   )
 }

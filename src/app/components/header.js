@@ -338,6 +338,15 @@ export default function Header() {
               </li>
             )
           )}
+          <li>
+  <button
+    onClick={() => router.push('/request-callback')}
+    className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm font-medium"
+  >
+    Contact Us
+  </button>
+</li>
+
         </ul>
       </nav>
 
@@ -376,6 +385,15 @@ export default function Header() {
               </li>
             )
           )}
+          <li>
+  <button
+    onClick={() => router.push('/request-callback')}
+    className="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm font-medium"
+  >
+    Contact Us
+  </button>
+</li>
+
         </ul>
       )}
     </header>
