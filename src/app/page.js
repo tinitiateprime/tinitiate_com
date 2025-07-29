@@ -120,36 +120,42 @@ const itServices = [
 
 
 
-const guidanceData = [
+const careerSupport = [
   {
     icon: Briefcase,
     title: 'IT Career Guidance',
     description: 'Personalized guidance from industry experts to align your goals with real-world roles in IT.',
+    href:'/it-career-guidance',
   },
   {
     icon: BookOpen,
     title: 'Basics to Advanced Learning',
     description: 'Step-by-step learning paths from foundational concepts to advanced tech stacks and real use cases.',
+    href:'/basics-to-advanced-learning'
   },
   {
     icon: Code2,
     title: 'Hands-On Coding Exercises',
     description: 'Daily challenges and practice labs to build strong coding logic and practical development skills.',
+      href:'/hands-on-coding-exercises'
   },
   {
     icon: FileText,
     title: 'Live Projects',
     description: 'Build real-world applications with mentorship support to strengthen your portfolio and confidence.',
+      href:'/live-projects'
   },
   {
     icon: UserCircle2,
     title: 'Resume Preparation',
     description: 'Get help crafting a standout, recruiter-friendly resume tailored for your desired job roles.',
+      href:'/resume-preparation'
   },
   {
     icon: ClipboardCheck,
     title: 'Interview Preparation',
     description: 'Mock interviews, HR tips, and technical assessments to boost your readiness and confidence.',
+      href:'/interview-preparation'
   },
 ]
 
@@ -278,8 +284,10 @@ export default function HomePage() {
           {/* Text Section */}
           <div className="md:w-1/2 flex items-center">
             <div>
-              <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center md:text-left">
+              <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center md:text-left hover:indigo-500">
+              <button  onClick={() => router.push(href)} className='hover:text-blue-700'>
                 {title}
+                </button>
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed text-center md:text-left">
                 {description}
@@ -341,17 +349,33 @@ export default function HomePage() {
               {prog.description}
             </p>
           </div>
-        <button
+        {/* <button
         onClick={() => router.push('/request-callback')}
             // href={`/programs/${prog.title.toLowerCase().replace(/\s+/g, '-')}`}
             href={`/request-callback/`}
-            className="inline-block px-4 py-2 bg-blue-400 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
+            className="inline-block px-4 py-2 bg-blue-500 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
           >
             Register Course
-        </button>
+        </button> */}
+        <button
+  onClick={() => router.push(`/request-callback?course=${encodeURIComponent(prog.title)}`)}
+  className="inline-block px-4 py-2 bg-blue-500 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
+>
+  Register Course
+</button>
+
         </div>
       </div>
     ))}
+
+  </div>
+  <div className=' text-center mt-10'>
+              <Link
+  href="/it-training"
+  className="inline-block px-8 py-3 bg-gray-500 mb-5 text-center text-white rounded-lg hover:bg-gray-700 transition-colors duration-300"
+>
+  Explore all our Programs
+  </Link>
   </div>
 </section>
 
@@ -467,7 +491,7 @@ export default function HomePage() {
           Career Support
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {guidanceData.map(({ icon: Icon, title, description }) => (
+          {careerSupport.map(({ icon: Icon, title, description,href }) => (
             <div
               key={title}
               className="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col items-center text-center"
@@ -475,7 +499,9 @@ export default function HomePage() {
               <div className="mb-4 bg-blue-100 p-3 rounded-full">
                 <Icon className="w-8 h-8 text-blue-700" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 hover:text-blue-700">
+                <button onClick={() => router.push(href)}>{title}</button>
+                </h3>
               <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
             </div>
           ))}
@@ -501,7 +527,7 @@ export default function HomePage() {
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="p-4">
-                <h3 className="text-xl text-center text-gray-800">{svc.title}</h3>
+                <h3 className="text-xl text-center text-gray-800 hover:text-blue-700">{svc.title}</h3>
               </div>
             </Link>
           ))}
