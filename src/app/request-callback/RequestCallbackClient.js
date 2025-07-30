@@ -92,18 +92,17 @@ export default function RequestCallbackPage() {
               <Phone className="text-gray-400 m-3" />
               <input name="phone" type="tel" placeholder="Phone Number" required value={form.phone} onChange={handleChange} className="flex-1 p-3 placeholder-gray-500 text-gray-900 focus:outline-none rounded-r-lg" />
             </div>
-             { form.course? 
+             
              <div className="flex items-center border-gray-200 rounded-lg border focus-within:ring-2 focus-within:ring-blue-500">
               <Book className="text-gray-400 m-3" />
               <input name="course" required type="text" placeholder="Requested Course" value={form.course} readOnly className="flex-1 p-3 bg-gray-100 text-gray-900 rounded-r-lg" />
             </div>
-            :
+            
             <div className="flex items-center border-gray-200 rounded-lg focus-within:ring-2 focus-within:ring-blue-500 border">
               <Clock className="text-gray-400 m-3" />
               <input name="preferredTime" type="text" placeholder="Preferred Time (e.g. Mon-Fri, 2-4pm)" required value={form.preferredTime} onChange={handleChange} className="flex-1 p-3 placeholder-gray-500 text-gray-900 focus:outline-none rounded-r-lg" />
             </div>
-            }
-
+            
             <div className="flex items-start border-gray-200 rounded-lg focus-within:ring-2 focus-within:ring-blue-500 border">
               <MessageSquare className="text-gray-400 m-3 mt-4" />
               <textarea name="message" rows={4} placeholder="Additional Message (Optional)" value={form.message} onChange={handleChange} className="flex-1 p-3 placeholder-gray-500 text-gray-900 focus:outline-none rounded-r-lg" />
