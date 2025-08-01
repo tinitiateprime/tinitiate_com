@@ -206,6 +206,37 @@ const itDevelopmentServices = [
     description: 'Ensure quality through automated/manual testing, bug fixing, and continuous support for deployments.',
     href: '/it-development/testing-support',
   },
+  {
+  title: 'IT Reporting Services',
+  duration: 'Monthly / On-Demand',
+  image: '/images/it-development/reporting.jpg',
+  description: 'Build interactive dashboards, automated reports, and business intelligence systems for actionable insights.',
+  href: '/it-development/reporting'
+},
+{
+  title: 'DevOps Services',
+  duration: 'Ongoing / Project-Based',
+  image: '/images/it-development/devops.jpg',
+  description: 'Streamline development and deployment with CI/CD pipelines, containerization, and infrastructure automation.',
+  href: '/it-development/devops'
+},
+{
+  title: 'Database Services',
+  duration: 'Project / Ongoing',
+  image: '/images/it-development/database.jpg', 
+  description: 'Design, optimize, and manage relational and NoSQL databases with high availability, replication, and backup strategies.',
+  href: '/it-development/database'
+},
+{
+  title: 'Full Stack Development',
+  duration: 'Custom Timeline',
+  image: '/images/it-development-services.jpg', 
+  description: 'End-to-end development using modern frontend and backend technologies, delivering complete web and mobile solutions.',
+  href: '/it-development/full-stack-development'
+}
+
+
+
 ]
 
 const ServiceCard = ({ title, duration, image, description, href, onClick }) => (
