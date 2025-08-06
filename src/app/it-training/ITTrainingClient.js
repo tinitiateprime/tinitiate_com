@@ -237,12 +237,23 @@ export default function ITTrainingPage() {
                 OPT Student Training Services
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center mb-16">
-                {optServices.map((service, idx) => (
-                  <div key={idx} className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-md">
-                    <p className="text-blue-800 font-semibold">{service}</p>
-                  </div>
-                ))}
-              </div>
+  {optServices.map((service, idx) => {
+    const isItTraining = service === 'IT Training'
+    const href = '/it-training'
+
+    return (
+      <div key={idx} className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-md">
+        {isItTraining ? (
+          <Link href={href} className="text-blue-800 font-semibold hover:underline">
+            {service}
+          </Link>
+        ) : (
+          <p className="text-blue-800 font-semibold">{service}</p>
+        )}
+      </div>
+    )
+  })}
+</div>
               <h3 className="text-2xl font-bold text-center text-gray-900 mb-4">
                 Discover Your IT Career Path
               </h3>

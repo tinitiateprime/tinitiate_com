@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import DatabaseServices from '@/app/components/DatabaseServices'
 import {
   faCogs,
   faDatabase,
@@ -112,6 +113,7 @@ export default function DatabaseServicesPage() {
           </div>
         </div>
       </section>
+      <DatabaseServices />
 
       {/* Benefits */}
       <section className="py-20 px-6 bg-white">
