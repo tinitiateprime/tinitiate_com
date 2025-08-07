@@ -316,7 +316,7 @@ export default function WorkExperienceProgramPageV2() {
 </section>
 
 {/* 📷 Image: HR Onboarding Roadmap */}
-<section className="py-15 px-6 bg-gray-50">
+ {/* <section className="py-15 px-6 bg-gray-50">
   <div className="max-w-6xl mx-auto text-center">
    
     <img
@@ -325,7 +325,7 @@ export default function WorkExperienceProgramPageV2() {
       className="rounded-xl shadow-lg mx-auto max-w-full"
     />
   </div>
-</section>
+</section> */}
 
 {/* Program Objectives */}
 <section className="py-15 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
