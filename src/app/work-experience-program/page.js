@@ -284,33 +284,57 @@ export default function WorkExperienceProgramPageV2() {
 
 
    {/* Training Timeline */}
+  {/* Training Timeline */}
 <section className="py-6 px-6 bg-gray-50">
   <div className="max-w-6xl mx-auto">
-    <h2 className="text-5xl font-bold text-indigo-600 mb-8 text-center">Training Timeline</h2>
-    <div className="space-y-6">
-      {[
-        "Month 1: Beginner Training",
-        "Month 2: Intermediate Training",
-        "Month 3: Advanced Training & Project Onboarding",
-        "Month 4–6: Corporate Projects, Communication, Placement Prep",
-      ].map((phase, idx) => (
-        <div key={idx} className="flex items-center bg-white p-4 rounded-lg shadow">
-          <div className="h-12 w-12 flex-shrink-0 flex items-center justify-center bg-indigo-500 text-white rounded-full font-bold">
-            {idx + 1}
-          </div>
-          <p className="ml-4 text-gray-700">{phase}</p>
-        </div>
-      ))}
-    </div>
 
     {/* 📷 Image: Work Experience Timeline */}
-    <div className="mt-12 text-center">
-      {/* <h3 className="text-xl font-semibold text-gray-800 mb-4">Work Experience Timeline</h3> */}
+    <div className="mb-8 text-center">
       <img
         src="/images/Work-experience-timeline.jpg"
         alt="Work Experience Timeline"
         className="rounded-xl shadow-lg mx-auto max-w-full"
       />
+    </div>
+
+    {/* Heading */}
+    <h2 className="text-5xl font-bold text-indigo-600 mb-8 text-center">
+      Training Timeline
+    </h2>
+
+    {/* Timeline Items */}
+    <div className="space-y-6">
+      {[
+        {
+          title: "Month 1: Beginner Training",
+          desc: "Foundation-level training covering basic technical skills, tools, and workflow essentials."
+        },
+        {
+          title: "Month 2: Intermediate Training",
+          desc: "Deeper focus on core concepts, intermediate project work, and structured assignments."
+        },
+        {
+          title: "Month 3: Advanced Training & Project Onboarding",
+          desc: "Hands-on exposure to advanced tools, live project onboarding, and mentorship sessions."
+        },
+        {
+          title: "Month 4–6: Corporate Projects, Communication, Placement Prep",
+          desc: "Real-world project execution, communication skill enhancement, and job placement readiness."
+        }
+      ].map((phase, idx) => (
+        <div
+          key={idx}
+          className="flex items-start bg-white p-4 rounded-lg shadow"
+        >
+          <div className="h-8 w-8 flex-shrink-0 flex items-center justify-center bg-indigo-500 text-white rounded-full font-bold">
+            {idx + 1}
+          </div>
+          <div className="ml-4">
+            <p className="text-gray-900 font-semibold">{phase.title}</p>
+            <p className="text-gray-700 text-sm mt-1">{phase.desc}</p>
+          </div>
+        </div>
+      ))}
     </div>
   </div>
 </section>
