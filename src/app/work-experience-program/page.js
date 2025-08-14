@@ -304,7 +304,7 @@ export default function WorkExperienceProgramPageV2() {
 
     {/* Timeline Items */}
     <div className="space-y-6">
-      {[
+ {[
         {
           title: "Month 1: Beginner Training",
           desc: "Foundation-level training covering basic technical skills, tools, and workflow essentials."
@@ -318,8 +318,16 @@ export default function WorkExperienceProgramPageV2() {
           desc: "Hands-on exposure to advanced tools, live project onboarding, and mentorship sessions."
         },
         {
-          title: "Month 4–6: Corporate Projects, Communication, Placement Prep",
-          desc: "Real-world project execution, communication skill enhancement, and job placement readiness."
+          title: "Month 4: Corporate Project Kickoff",
+          desc: "Join a real project squad, set up environments, understand requirements, plan sprints, and start feature development with daily standups."
+        },
+        {
+          title: "Month 5: Iteration & Delivery",
+          desc: "Ship features in sprint cycles, write tests, handle code reviews, track issues, and present stakeholder demos with clear communication."
+        },
+        {
+          title: "Month 6: Placement Prep & Handover",
+          desc: "Polish resume/LinkedIn, mock interviews, finalize project documentation, handover, and receive experience certificate & stipend (if applicable)."
         }
       ].map((phase, idx) => (
         <div
