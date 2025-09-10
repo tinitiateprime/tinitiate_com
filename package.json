@@ -26,10 +26,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
     "tailwindcss": "^4",
-    "puppeteer": "19.0.0",
-    "puppeteer-screen-recorder": "3.0.6"
-  },,
-  "overrides": {
     "puppeteer": "19.0.0"
   }
 }
