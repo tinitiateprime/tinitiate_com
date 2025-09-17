@@ -584,7 +584,7 @@ export default function CloudServicesPage() {
                 aria-label="Microsoft Azure"
               />
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Cloud Service — Microsoft Azure
+                Microsoft Azure
               </h2>
             </div>
             <p className="text-gray-700 mb-4">
@@ -686,7 +686,7 @@ export default function CloudServicesPage() {
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Cloud Service — Google Cloud
+                Google Cloud Platform
               </h2>
             </div>
 
@@ -724,9 +724,9 @@ export default function CloudServicesPage() {
       </section>
 
       {/* Service Offerings */}
-      <section className="py-10 px-6 ">
+      <section className="py-10 mb-2 px-6 ">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
             Service Offerings
           </h2>
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">

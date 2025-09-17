@@ -254,16 +254,17 @@ const navItems = [
   { label: 'Remote Consulting', href: '/remote-consulting' },
   { label: 'Work Experience Program', href: '/work-experience-program' },
   { label: 'IT Development Services', href: '/it-development' },
-  { label: 'IT Training', href: '/it-training' }, // keep your existing IT Training page
+  // { label: 'IT Training', href: '/it-training' }, // keep your existing IT Training page
   {
     label: 'Training',
     href: '/training',
     dropdown: [
-      { label: 'New Batches', href: '/training/new-batches' },
-      { label: 'Online Training', href: '/training/online-training' },
+      // { label: 'New Batches', href: '/training/new-batches' },
+      // { label: 'Online Training', href: '/training/online-training' },
+      { label: 'IT Training', href: '/training/it-training' },
       { label: 'Personalized Training', href: '/training/personalized-training' },
       { label: 'Corporate Training', href: '/training/corporate-training' },
-      { label: 'Campus Training', href: '/training/campus-training' },
+      // { label: 'Campus Training', href: '/training/campus-training' },
     ],
   },
   { label: 'Company', href: '/company' },
@@ -321,7 +322,7 @@ const navItems = [
                 {showDropdown && (
                   <ul
                     ref={dropdownRef}
-                    className="absolute left-0 top-full mt-2 bg-white border rounded-lg shadow-lg w-64 z-50"
+                    className="absolute left-0 top-full mt-2 bg-white rounded-lg shadow-lg w-64 z-50"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >
