@@ -10,11 +10,18 @@ export default function ServiceCards() {
 
   const itDevelopmentServices = [
     {
-      title: 'Data Engineering',
+      title: 'Cloud Services',
       duration: 'Project Based',
-      image: '/images/it-development/data-engineering-1.png',
-      description: 'Design and build scalable data pipelines and warehousing solutions using AWS, Azure, and modern data tools.',
-      href: '/it-development/data-engineering',
+      image: '/images/it-development/cloud.jpg',
+      description: 'Architect, migrate, and manage workloads on AWS, Azure, and GCP—IaC, containers, serverless, CI/CD, observability, security, and cost optimization.',
+      href: '/it-development/cloud-services',
+    },
+    {
+      title: 'AI-Powered Development',
+      duration: 'Project Based',
+      image: '/images/it-development/ai-powered.jpg',
+      description: 'Design and ship LLM apps, RAG search, agents, and AI copilots. Integrate OpenAI/Azure OpenAI/Bedrock, build secure data pipelines, and ensure responsible AI.',
+      href: '/it-development/ai-powered-development',
     },
     {
       title: 'App Development',

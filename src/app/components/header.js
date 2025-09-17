@@ -249,14 +249,26 @@ export default function Header() {
   const timeoutRef = useRef(null)
   const router = useRouter()
 
-  const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'Remote Consulting', href: '/remote-consulting' },
-    { label: 'Work Experience Program', href: '/work-experience-program' },
-    { label: 'IT Development Services', href: '/it-development' },
-    { label: 'IT Training', href: '/it-training' },
-    { label: 'Company', href: '/company' },
-  ]
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Remote Consulting', href: '/remote-consulting' },
+  { label: 'Work Experience Program', href: '/work-experience-program' },
+  { label: 'IT Development Services', href: '/it-development' },
+  { label: 'IT Training', href: '/it-training' }, // keep your existing IT Training page
+  {
+    label: 'Training',
+    href: '/training',
+    dropdown: [
+      { label: 'New Batches', href: '/training/new-batches' },
+      { label: 'Online Training', href: '/training/online-training' },
+      { label: 'Personalized Training', href: '/training/personalized-training' },
+      { label: 'Corporate Training', href: '/training/corporate-training' },
+      { label: 'Campus Training', href: '/training/campus-training' },
+    ],
+  },
+  { label: 'Company', href: '/company' },
+];
+
 
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current)
