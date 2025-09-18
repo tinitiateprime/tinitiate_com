@@ -18,7 +18,7 @@ import { useRouter } from 'next/navigation';
 
 const services = [
   {
-    title: 'IT Development Services',
+    title: 'Development Services',
     href: '/it-development',
     image: '/images/it-development-services.jpg',
   },
