@@ -3,7 +3,16 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Globe, Users, Clock, UserCheck, Briefcase, CheckCircle, Star, BookOpen, Code2, FileText, ClipboardCheck, UserCircle2 } from 'lucide-react'
+import { Globe, Users, Clock, UserCheck, Briefcase, CheckCircle, Star, BookOpen, FileText, ClipboardCheck,  Code2,
+  ShoppingCart,
+  ShieldCheck,
+  Truck,
+  HeartPulse,
+  Hospital ,
+  Plane,
+  Factory, UserCircle2,Settings ,Database, Cloud, Brain, BarChart3, Layers, Smartphone, Server, Bug  } from 'lucide-react'
+
+
 import { useRouter } from 'next/navigation';
 
 
@@ -81,41 +90,102 @@ const programs = [
 // ]
 
 
+
+
 const itServices = [
   {
-    title: "Data Engineering",
-    image1: "/images/IT-development/data-engineering-1.png",
-    image2: "/images/IT-development/data-engineering-2.jpg",
-    href: '/it-development/data-engineering',
+    title: "Cloud Services",
+    icon: Cloud,
+    image1: "/images/IT-development/cloud.jpg",
+    href: "/it-development/cloud-services",
     description:
-      'Design and implement scalable data pipelines, streaming systems, and data lakes using tools like Apache Spark, Kafka, and AWS Glue. We handle both batch and real-time processing needs for intelligent decision-making and analytics delivery. Our services include data ingestion, transformation, quality checks, and warehouse integration using platforms like Snowflake and Redshift.',
+      "Seamless cloud migration, hosting, and managed services across AWS & Azure, ensuring scalability, security, and cost efficiency.",
+    features: ["AWS & Azure expertise", "Scalable Hosting", "Cloud Cost Optimization"],
+  },
+  {
+    title: "AI-Powered Development",
+    icon: Brain,
+    image1: "/images/IT-development/ai-powered.jpg",
+    href: "/it-development/ai-powered-development",
+    description:
+      "Build intelligent applications with AI/ML models, natural language processing, and automation that deliver smarter business outcomes.",
+    features: ["Custom AI Models", "NLP & Chatbots", "Predictive Analytics"],
+  },
+  {
+    title: "IT Reporting Services",
+    icon: BarChart3,
+    image1: "/images/IT-development/reporting.jpg",
+    href: "/it-development/reporting",
+    description:
+      "Transform raw data into actionable insights with BI dashboards, interactive reports, and real-time analytics tailored to business needs.",
+    features: ["Power BI, Tableau", "Real-time Dashboards", "Interactive Reports"],
+  },
+  {
+    title: "Full Stack Development",
+    icon: Layers,
+    image1: "/images/it-development-services.jpg",
+    href: "/it-development/full-stack-development",
+    description:
+      "End-to-end web and application development from frontend to backend, integrating secure APIs, databases, and cloud infrastructure.",
+    features: ["React, Next.js, Node.js", "Secure APIs", "Database Integration"],
   },
   {
     title: "App Development",
+    icon: Smartphone,
     image1: "/images/IT-development/app-development-1.jpg",
-    image2: "/images/IT-development/app-development-2.jpg",
-    href: '/it-development/app-development',
+    href: "/it-development/app-development",
     description:
-      'Develop modern mobile and web applications with pixel-perfect UI/UX design, scalable architecture, and secure APIs. From MVP development to enterprise-scale deployments, we specialize in React Native, Flutter, Android, and iOS apps, integrated with backend systems and analytics dashboards.',
+      "Modern mobile & web apps with pixel-perfect UI/UX, scalable architecture, and secure APIs. From MVP to enterprise scale deployments.",
+    features: ["React Native", "Flutter", "Android & iOS"],
   },
   {
     title: "Web & Backend Development",
+    icon: Server,
     image1: "/images/IT-development/web-backend-1.jpg",
-    image2: "/images/IT-development/web-backend-2.jpg",
-    href: '/it-development/web-backend',
+    href: "/it-development/web-backend",
     description:
-      'Build robust and secure backend systems and dynamic web apps using frameworks like Node.js, Django, and Spring Boot. We ensure clean REST and GraphQL APIs, JWT authentication, role-based access, and seamless frontend-backend integration with CI/CD pipelines.',
+      "Robust backend systems & dynamic web apps with REST/GraphQL APIs, authentication, and CI/CD pipelines.",
+    features: ["Node.js, Django, Spring Boot", "REST & GraphQL APIs", "Role-based Access"],
   },
   {
     title: "Testing & Support",
+    icon: Bug,
     image1: "/images/IT-development/testing-support-1.jpg",
-    image2: "/images/IT-development/testing-support-2.jpg",
-    href: '/it-development/testing-support',
+    href: "/it-development/testing-support",
     description:
-      'Ensure bug-free, stable software through test automation, functional and regression testing, and load/stress analysis. Our QA services are backed by tools like Selenium, Cypress, and Postman, and include post-deployment support, uptime monitoring, and 24/7 SLA-based response teams.',
+      "Ensure bug-free, stable software with automation, regression testing, and SLA-based support teams.",
+    features: ["Selenium & Cypress", "Postman Testing", "24/7 Support"],
   },
-];
+  {
+  title: "DevOps Services",
+  icon: Settings, // you can replace with a suitable Lucide/FA icon
+  image1: "/images/IT-development/DevOPs.jpg",
+  href: "/it-development/devops",
+  description:
+    "Accelerate software delivery with automation, CI/CD pipelines, containerization, and reliable cloud-native infrastructure.",
+  features: [
+    "CI/CD Pipelines",
+    "Kubernetes & Docker",
+    "Infrastructure as Code",
+    "Monitoring & Logging"
+  ],
+},
+{
+  title: "Database Services",
+  icon: Database,
+  image1: "/images/IT-development/database.jpg",
+  href: "/it-development/database",
+  description:
+    "Design, optimize, and manage relational & NoSQL databases with high availability, scalability, and strong security.",
+  features: [
+    "SQL & NoSQL Databases",
+    "Performance Tuning",
+    "Backup & Disaster Recovery",
+    "Data Migration & Replication"
+  ],
+},
 
+];
 
 
 
@@ -166,7 +236,7 @@ export default function HomePage() {
 
   return (
     <main className="text-gray-800">
-<section className="relative bg-black py-20 sm:py-10 md:py-15  ">
+    <section className="relative bg-black py-20 sm:py-10 md:py-15  ">
   <div className="max-w-7xl sm:px-5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
     
     {/* Text Section */}
@@ -248,76 +318,85 @@ export default function HomePage() {
       
     </section> */}
     
-
-<section className="py-16 px-6 sm:px-4 bg-white">
+<section className="py-16 px-6 bg-gray-50">
   <div className="max-w-7xl mx-auto">
-    <h2 className="text-4xl font-bold mb-12 text-center text-gray-900" >
-      IT Development Services
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
+      Development Services
     </h2>
 
-    <div className="space-y-20">
-      {itServices.map(({ title, image1, image2, description, href }, index) => (
-        <div
-          key={title}
-          className={`flex flex-col md:flex-row ${
-            index % 2 !== 0 ? 'md:flex-row-reverse' : ''
-          } items-center md:items-stretch gap-12`}
-        >
-          {/* Image Section */}
-           <Link 
-           href={href}
-          className="relative w-full md:w-1/2 h-72  overflow-hidden shadow-md group">
-            <Image
-              src={image1}
-              alt={title}
-              fill
-              className="object-cover transition-opacity duration-500 group-hover:opacity-0"
-            />
-            <Image
-              src={image2}
-              alt={`${title} hover`}
-              fill
-              className="object-cover absolute top-0 left-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-            />
-          </Link>
+    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 ">
+      {itServices.map((service, index) => {
+        const Icon = service.icon;
+        return (
+          <div
+            key={index}
+            className="group relative bg-white border border-gray-200 
+                       rounded-b-2xl shadow-md hover:shadow-xl 
+                       transition-all duration-500 overflow-hidden"
+          >
+            {/* Background Image (Clickable) */}
+            <a href={service.href} className="block relative h-60 w-full overflow-hidden">
+              <Image
+                src={service.image1}
+                alt={service.title}
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </a>
 
-          {/* Text Section */}
-          <div className="md:w-1/2 flex items-center">
-            <div>
-              <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center md:text-left hover:indigo-500">
-              <button  onClick={() => router.push(href)} className='hover:text-blue-700'>
-                {title}
-                </button>
-              </h3>
-              <p className="text-lg text-gray-600 leading-relaxed text-center md:text-left">
-                {description}
+            {/* Content */}
+            <div className="p-6 flex flex-col h-full">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="bg-blue-100 p-3 rounded-full text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
+                  <Icon className="w-6 h-6" />
+                </div>
+                <a
+                  href={service.href}
+                  className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition"
+                >
+                  {service.title}
+                </a>
+              </div>
+
+              <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                {service.description}
               </p>
+
+              <ul className="text-sm text-gray-700 space-y-1 mb-6">
+                {service.features.map((feat, i) => (
+                  <li key={i} className="flex items-center space-x-2">
+                    <span className="text-blue-500">✔</span>
+                    <span>{feat}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   </div>
 </section>
 
+
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-200 to-white py-24 px-6 text-center">
+      <section className="bg-gradient-to-br from-blue-200 to-white py-20 px-6 text-center">
         <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
           Empowering Careers with Real Time Experience
         </h1>
         <p className="max-w-xl mx-auto text-lg text-gray-700 mb-8">
           TINITIATE provides job-ready IT training, hands-on coding, and real-world consulting services led by 15+ years of industry expertise.
         </p>
-        <Link
+        {/* <Link
           href="#about"
           className="inline-block px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-900 transition"
         >
           Learn More
-        </Link>
+        </Link> */}
       </section>
 
       {/* Training Programs */}
-<section id="programs" className="py-5 px-6 bg-white ">
+<section id="programs" className="py-10 px-6 bg-white ">
   <h2 className="text-3xl font-bold text-center mb-12">
     Our Top Training Programs
   </h2>
@@ -379,6 +458,10 @@ export default function HomePage() {
   </div>
 </section>
 
+
+
+
+
         {/* About Us */}
         {/*
         <section id="about" className="py-20 px-6 bg-gray-50">
@@ -430,6 +513,9 @@ export default function HomePage() {
       </section>
        */}
 
+       
+
+
 
 <section id="about" className="py-10 px-6 bg-gray-50">
   <div className="max-w-6xl mx-auto">
@@ -461,7 +547,7 @@ export default function HomePage() {
       {/* Right: IT Development Services */}
       <div>
         <h4 className="text-xl font-bold mb-4 text-gray-900">
-          IT Development Services
+          Development Services
         </h4>
         <p className="text-gray-700 mb-4 leading-relaxed">
           From scalable backend systems to robust data pipelines and mobile apps, TINITIATE offers full-spectrum development services tailored to modern business needs.
@@ -485,7 +571,41 @@ export default function HomePage() {
   </div>
 </section>
 
-    <section className="py-10 px-6 bg-white">
+{/* Industries Section */}
+<section id="industries" className="py-16 px-6 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 tracking-tight">
+      🌍 Industries We Serve
+    </h2>
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 text-center">
+      {[
+        { name: "Technology", icon: Code2 },
+        { name: "E-Commerce", icon: ShoppingCart },
+        { name: "Insurance", icon: ShieldCheck },
+        { name: "Logistics & Shipping", icon: Truck },
+        { name: "Hospital / Healthcare", icon: Hospital },
+        { name: "Travel", icon: Plane },
+        { name: "Education", icon: BookOpen },
+        { name: "Manufacturing", icon: Factory },
+      ].map(({ name, icon: Icon }) => (
+        <div
+          key={name}
+          className="flex flex-col items-center justify-center group"
+        >
+          <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-md">
+            <Icon className="w-8 h-8" />
+          </div>
+          <span className="mt-3 text-md font-bold text-gray-800 group-hover:text-blue-600">
+            {name}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+    <section className="py-10 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
           Career Support
@@ -494,7 +614,7 @@ export default function HomePage() {
           {careerSupport.map(({ icon: Icon, title, description,href }) => (
             <div
               key={title}
-              className="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col items-center text-center"
+              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col items-center text-center"
             >
               <div className="mb-4 bg-blue-100 p-3 rounded-full">
                 <Icon className="w-8 h-8 text-blue-700" />
@@ -510,7 +630,7 @@ export default function HomePage() {
     </section>
 
       {/* Services */}
-      <section id="services" className="py-10 px-6 bg-gray-50">
+      <section id="services" className="py-10 px-6 bg-white">
         <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((svc) => (

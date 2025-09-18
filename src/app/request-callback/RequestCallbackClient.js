@@ -95,7 +95,8 @@ export default function RequestCallbackPage() {
 
             <div className="flex items-center border-gray-200 rounded-lg focus-within:ring-2 focus-within:ring-blue-500 border">
               <Phone className="text-gray-400 m-3" />
-              <input name="phone" type="tel" placeholder="Phone Number" required value={form.phone} onChange={handleChange} className="flex-1 p-3 placeholder-gray-500 text-gray-900 focus:outline-none rounded-r-lg" />
+              <input name="phone" type="tel" placeholder="Phone Number" required value={form.phone} onChange={handleChange}  pattern="^[0-9]{10}$"
+              title="Phone number should be 10 digits" className="flex-1 p-3 placeholder-gray-500 text-gray-900 focus:outline-none rounded-r-lg" />
             </div>
              { form.course &&
              <div className="flex items-center border-gray-200 rounded-lg border focus-within:ring-2 focus-within:ring-blue-500">
