@@ -253,7 +253,7 @@ const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Remote Consulting', href: '/remote-consulting' },
   { label: 'Work Experience Program', href: '/work-experience-program' },
-  { label: 'IT Development Services', href: '/it-development' },
+  { label: 'Development Services', href: '/it-development' },
   // { label: 'IT Training', href: '/it-training' }, // keep your existing IT Training page
   {
     label: 'Training',

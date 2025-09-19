@@ -44,11 +44,11 @@ details: [
     title: 'Security & Auth',
     description: 'Authentication, RBAC, and secure user management.'
   },
-  {
-    icon: faCloudUploadAlt,
-    title: 'DevOps & Cloud',
-    description: 'CI/CD and deployment on AWS, Azure, and on-prem environments.'
-  },
+  // {
+  //   icon: faCloudUploadAlt,
+  //   title: 'DevOps & Cloud',
+  //   description: 'CI/CD and deployment on AWS, Azure, and on-prem environments.'
+  // },
   {
     icon: faProjectDiagram,
     title: 'API Development',

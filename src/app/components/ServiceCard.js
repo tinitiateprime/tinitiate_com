@@ -45,7 +45,7 @@ export default function ServiceCards() {
       href: '/it-development/testing-support',
     },
     {
-      title: 'IT Reporting Services',
+      title: 'Reporting Services',
       duration: 'Monthly / On-Demand',
       image: '/images/it-development/reporting.jpg',
       description: 'Build interactive dashboards, automated reports, and business intelligence systems for actionable insights.',

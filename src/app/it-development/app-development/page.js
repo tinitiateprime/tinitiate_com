@@ -128,11 +128,11 @@ const serviceData = {
       title: 'API Integration',
       description: 'Connect to backend systems, third-party APIs, and cloud platforms seamlessly.'
     },
-    {
-      icon: faCloudUploadAlt,
-      title: 'CI/CD & App Store Deployment',
-      description: 'Automated delivery pipelines with Play Store / App Store deployments.'
-    },
+    // {
+    //   icon: faCloudUploadAlt,
+    //   title: 'CI/CD & App Store Deployment',
+    //   description: 'Automated delivery pipelines with Play Store / App Store deployments.'
+    // },
     {
       icon: faCodeBranch,
       title: 'Versioning & Maintenance',

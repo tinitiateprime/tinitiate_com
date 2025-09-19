@@ -311,7 +311,7 @@ export default function ITDevelopmentPage() {
     {/* Text Section */}
     <div className="text-center md:text-left">
       <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-      IT Development Services
+      Development Services
       </h1>
       <p className="text-base sm:text-lg text-white mb-6 max-w-xl">
          Scalable, secure, and modern solutions across engineering, application development, backend architecture, and testing support.

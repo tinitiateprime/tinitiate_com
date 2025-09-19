@@ -23,8 +23,8 @@ const services = [
     image: '/images/it-development-services.jpg',
   },
   {
-    title: 'IT Training',
-    href: '/it-training',
+    title: 'Training program',
+    href: '/training/personalized-training',
     image: '/images/services-training.png',
   },
   {
@@ -112,7 +112,7 @@ const itServices = [
     features: ["Custom AI Models", "NLP & Chatbots", "Predictive Analytics"],
   },
   {
-    title: "IT Reporting Services",
+    title: "Reporting Services",
     icon: BarChart3,
     image1: "/images/IT-development/reporting.jpg",
     href: "/it-development/reporting",
@@ -458,65 +458,6 @@ export default function HomePage() {
   </div>
 </section>
 
-
-
-
-
-        {/* About Us */}
-        {/*
-        <section id="about" className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">
-                Why Choose TINITIATE?
-              </h2>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                With <strong>15+ years of hands-on IT experience</strong>, our training isn’t just theory—It&apos;s real-time knowledge paired with live projects, bonus technologies, and business domain immersion.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Expert faculty with deep industry background',
-                  'Structured training from basics to advanced',
-                  'Business domain training included',
-                  'Extensive hands-on exercises',
-                  'Bonus technologies taught free-of-cost',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-600 mt-1" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Perfect for:</h3>
-              <ul className="space-y-3 pl-3 list-disc text-gray-700">
-                <li>USA OPT Candidates</li>
-                <li>Freshers</li>
-                <li>Career Gap Professionals</li>
-                <li>Working IT Professionals</li>
-              </ul>
-              <div className="mt-6">
-                <Image
-                  src="/images/services-training.png"
-                  width={450}
-                  height={300}
-                  alt="TINITIATE Training"
-                  className="rounded-xl shadow-md object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-       */}
-
-       
-
-
-
 <section id="about" className="py-10 px-6 bg-gray-50">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
@@ -570,6 +511,67 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+
+{/* Capabilities / Expertise Section */}
+{/* <section className="py-16 px-6 bg-gray-50">
+  <div className="max-w-7xl mx-auto">
+
+    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-6">
+      Driving Business Growth with Reliable IT Services & Innovative Solutions
+    </h2>
+
+    <p className="max-w-3xl mx-auto text-lg text-gray-700 text-center mb-12">
+      TINITIATE brings a wealth of real-world expertise by collaborating closely with clients
+      to understand their unique business challenges. We design and deliver customized IT solutions
+      that align with organizational goals, enhance efficiency, and create measurable value.
+      Our team of seasoned professionals ensures that every project is executed with precision,
+      helping businesses thrive in today’s competitive digital landscape.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <div className="flex justify-center">
+        <div className="relative w-full max-w-md h-80 md:h-[450px]">
+          <Image
+            src="/images/banners/it-development.jpg" // replace with your image
+            alt="TINITIATE Expertise"
+            fill
+            className="object-contain rounded-xl shadow-md"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+      </div>
+
+      <div className="w-full max-w-lg mx-auto">
+        {[
+          { title: "Web Development", percent: 85 },
+          { title: "App Development", percent: 80 },
+          { title: "Cloud Services", percent: 90 },
+          { title: "AI-Powered Development", percent: 75 },
+          { title: "Database Services", percent: 88 },
+          { title: "Testing & Support", percent: 82 },
+          { title: "DevOps Services", percent: 86 },
+          { title: "Reporting & Analytics", percent: 83 },
+        ].map((service, i) => (
+          <div key={i} className="mb-4">
+            <div className="flex justify-between mb-1">
+              <span className="text-sm font-medium text-gray-900">{service.title}</span>
+              <span className="text-sm font-semibold text-gray-700">{service.percent}%</span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-3">
+              <div
+                className="bg-blue-600 h-3 rounded-full"
+                style={{ width: `${service.percent}%` }}
+              ></div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section> */}
+
 
 {/* Industries Section */}
 <section id="industries" className="py-16 px-6 bg-white">
@@ -652,6 +654,15 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+      </section>
+
+      {/* Final CTA Banner */}
+      <section className="py-16 px-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Career or Business?</h2>
+        <p className="mb-6 text-lg">Join our training programs or consult with us for IT development and cloud solutions tailored for startups and enterprises.</p>
+        <Link href="/request-callback" className="inline-block px-8 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition">
+          Get Started Today
+        </Link>
       </section>
     
     </main>
