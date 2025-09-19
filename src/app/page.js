@@ -513,14 +513,14 @@ export default function HomePage() {
 </section>
 
 {/* Capabilities / Expertise Section */}
-{/* <section className="py-16 px-6 bg-gray-50">
+<section className="py-16 px-6 bg-gray-50">
   <div className="max-w-7xl mx-auto">
 
     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 text-center mb-6">
       Driving Business Growth with Reliable IT Services & Innovative Solutions
     </h2>
 
-    <p className="max-w-3xl mx-auto text-lg text-gray-700 text-center mb-12">
+    <p className="max-w-7xl mx-auto text-lg text-gray-700 text-center mb-12">
       TINITIATE brings a wealth of real-world expertise by collaborating closely with clients
       to understand their unique business challenges. We design and deliver customized IT solutions
       that align with organizational goals, enhance efficiency, and create measurable value.
@@ -533,7 +533,7 @@ export default function HomePage() {
       <div className="flex justify-center">
         <div className="relative w-full max-w-md h-80 md:h-[450px]">
           <Image
-            src="/images/banners/it-development.jpg" // replace with your image
+            src="/images/statistics.jpg" // replace with your image
             alt="TINITIATE Expertise"
             fill
             className="object-contain rounded-xl shadow-md"
@@ -545,22 +545,22 @@ export default function HomePage() {
       <div className="w-full max-w-lg mx-auto">
         {[
           { title: "Web Development", percent: 85 },
-          { title: "App Development", percent: 80 },
-          { title: "Cloud Services", percent: 90 },
-          { title: "AI-Powered Development", percent: 75 },
-          { title: "Database Services", percent: 88 },
-          { title: "Testing & Support", percent: 82 },
-          { title: "DevOps Services", percent: 86 },
-          { title: "Reporting & Analytics", percent: 83 },
+          { title: "App Development", percent: 90 },
+          { title: "Cloud Services", percent: 80 },
+          { title: "AI-Powered Development", percent: 87 },
+          { title: "Database Services", percent: 92 },
+          { title: "Testing & Support", percent: 95 },
+          { title: "DevOps Services", percent: 74 },
+          { title: "Reporting & Analytics", percent: 86 },
         ].map((service, i) => (
           <div key={i} className="mb-4">
             <div className="flex justify-between mb-1">
-              <span className="text-sm font-medium text-gray-900">{service.title}</span>
+              <span className="text-md font-medium text-gray-900">{service.title}</span>
               <span className="text-sm font-semibold text-gray-700">{service.percent}%</span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
+            <div className="w-full bg-gray-200 rounded-full h-2">
               <div
-                className="bg-blue-600 h-3 rounded-full"
+                className="bg-blue-600 h-2 rounded-full"
                 style={{ width: `${service.percent}%` }}
               ></div>
             </div>
@@ -570,7 +570,7 @@ export default function HomePage() {
 
     </div>
   </div>
-</section> */}
+</section>
 
 
 {/* Industries Section */}

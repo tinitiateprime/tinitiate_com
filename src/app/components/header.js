@@ -261,7 +261,7 @@ const navItems = [
     dropdown: [
       // { label: 'New Batches', href: '/training/new-batches' },
       // { label: 'Online Training', href: '/training/online-training' },
-      { label: 'IT Training', href: '/training/it-training' },
+      // { label: 'IT Training', href: '/training/it-training' },
       { label: 'Personalized Training', href: '/training/personalized-training' },
       { label: 'Corporate Training', href: '/training/corporate-training' },
       // { label: 'Campus Training', href: '/training/campus-training' },
