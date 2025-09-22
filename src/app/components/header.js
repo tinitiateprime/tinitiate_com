@@ -251,7 +251,7 @@ export default function Header() {
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Remote Consulting', href: '/remote-consulting' },
+  { label: 'Consulting Services', href: '/remote-consulting' },
   { label: 'Work Experience Program', href: '/work-experience-program' },
   { label: 'Development Services', href: '/it-development' },
   // { label: 'IT Training', href: '/it-training' }, // keep your existing IT Training page
@@ -264,6 +264,7 @@ const navItems = [
       // { label: 'IT Training', href: '/training/it-training' },
       { label: 'Personalized Training', href: '/training/personalized-training' },
       { label: 'Corporate Training', href: '/training/corporate-training' },
+      { label: 'Campus Training', href: '/training/campus-training' },
       // { label: 'Campus Training', href: '/training/campus-training' },
     ],
   },
