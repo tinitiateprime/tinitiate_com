@@ -574,9 +574,16 @@ export default function HomePage() {
 
 
 {/* Industries Section */}
-<section id="industries" className="py-16 px-6 bg-white">
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-gray-900 tracking-tight">
+<section
+  id="industries"
+  className="relative py-16 px-6 bg-cover bg-center " 
+  style={{ backgroundImage: "url('/images/bg-images/6.jpg')" }} // replace with your image path
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  <div className="relative max-w-7xl mx-auto z-10">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-white tracking-tight">
       🌍 Industries We Serve
     </h2>
 
@@ -595,10 +602,10 @@ export default function HomePage() {
           key={name}
           className="flex flex-col items-center justify-center group"
         >
-          <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-md">
+          <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/80 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-md">
             <Icon className="w-8 h-8" />
           </div>
-          <span className="mt-3 text-md font-bold text-gray-800 group-hover:text-blue-600">
+          <span className="mt-3 text-md font-bold text-white group-hover:text-blue-300">
             {name}
           </span>
         </div>
@@ -606,6 +613,7 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+
 
     <section className="py-10 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -631,7 +639,7 @@ export default function HomePage() {
       </div>
     </section>
 
-      {/* Services */}
+      {/* Services
       <section id="services" className="py-10 px-6 bg-white">
         <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -654,7 +662,7 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA Banner */}
       <section className="py-16 px-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">

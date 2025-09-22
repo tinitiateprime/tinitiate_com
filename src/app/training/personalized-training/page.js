@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FiBox, FiPhone, FiCode, FiDatabase, FiCloud, FiBarChart2, FiSmartphone } from 'react-icons/fi'
+import { FiBox, FiPhone, FiCode, FiDatabase, FiCloud, FiBarChart2, FiSmartphone, FiCheckCircle} from 'react-icons/fi'
 import Image from 'next/image'
 import {
   SiPython, SiReact, SiAngular, SiNextdotjs, SiHtml5, SiCss3, SiJavascript,
@@ -42,8 +42,8 @@ const BRAND = {
 
 // -------------------- Courses --------------------
 const COURSES = [
-  { key: 'python', name: 'Python', href: '/training/python', Icon: SiPython },
-  { key: 'java', name: 'Java', href: '/training/java', Icon: SiJava, image: '/images/courses/java.png' },
+  { key: 'python', name: 'Python', href: '/courses/python-language-course', Icon: SiPython },
+  { key: 'java', name: 'Java', href: '/courses/java-language-course', Icon: SiJava, image: '/images/courses/java.png' },
   { key: 'nodejs', name: 'Node.js', href: '/training/nodejs', Icon: SiNodedotjs },
   { key: 'aws', name: 'AWS', href: '/training/aws', Icon: null, image: '/images/courses/aws-devops.png' },
   { key: 'react', name: 'React', href: '/training/react', Icon: SiReact },
@@ -60,7 +60,7 @@ const COURSES = [
   { key: 'express', name: 'Express.js', href: '/training/express', Icon: SiExpress },
   { key: 'git', name: 'Git & GitHub', href: '/training/git', Icon: SiGit },
   { key: 'html', name: 'HTML5', href: '/training/html', Icon: SiHtml5 },
-  { key: 'javascript', name: 'JavaScript', href: '/training/javascript', Icon: SiJavascript },
+  { key: 'javascript', name: 'JavaScript', href: '/courses/javascript-language-course', Icon: SiJavascript },
   { key: 'linux', name: 'Linux', href: '/training/linux', Icon: SiLinux },
   { key: 'nextjs', name: 'Next.js', href: '/training/nextjs', Icon: SiNextdotjs },
   { key: 'postgresql', name: 'PostgreSQL', href: '/training/postgresql', Icon: SiPostgresql },
@@ -220,19 +220,30 @@ export default function Page() {
       </section>
 
       {/* FAQ */}
-      <section className="px-6 py-12 bg-white">
-        <div className="mx-auto max-w-7xl">
-          <h3 className="text-xl md:text-2xl font-bold text-gray-900">FAQ</h3>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {FAQ.map(({ q, a }) => (
-              <div key={q} className="rounded-2xl border border-gray-200 bg-gray-50 p-5 shadow-sm">
-                <div className="text-sm font-semibold text-gray-900">{q}</div>
-                <p className="mt-1 text-sm text-gray-600">{a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+{/* FAQS */}
+<section className="px-6 py-12 bg-white">
+  <div className="mx-auto max-w-7xl">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-start mb-6">
+      FAQs
+    </h2>
+
+    <div className="grid gap-6 md:grid-cols-2">
+      {(Array.isArray(FAQ) ? FAQ : []).map(({ q, a }, i) => (
+        <details
+          key={q ?? i}
+          className="group rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm hover:shadow-md open:shadow-md transition"
+        >
+          <summary className="cursor-pointer list-none flex items-center justify-between">
+            <span className="text-base font-semibold text-gray-900">{q}</span>
+            <FiCheckCircle className="h-5 w-5 text-indigo-600 opacity-70 group-open:rotate-45 transition-transform" />
+          </summary>
+          <p className="mt-3 text-gray-600 text-sm leading-relaxed">{a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* CTA */}
       <section className="px-6 py-12">
