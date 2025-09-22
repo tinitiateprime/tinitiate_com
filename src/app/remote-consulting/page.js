@@ -111,7 +111,7 @@ export default function RemoteConsultingPage() {
           {/* Text Section */}
           <div className="text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-              Enterprise Remote Consulting
+              Product & Platform Consulting
             </h1>
             <p className="text-base sm:text-lg text-white mb-6 max-w-xl">
               Empower your database architecture with expert-led consulting services tailored to scalability, reliability, and performance — all delivered remotely.
@@ -136,7 +136,7 @@ export default function RemoteConsultingPage() {
       <section className="bg-gradient-to-r from-blue-50 via-white to-purple-50 py-20 px-6 sm:px-10">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-14 text-gray-900 leading-tight">
-            Choose Your Remote Consulting Path
+            Consulting Tracks for Startups & Enterprises
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
