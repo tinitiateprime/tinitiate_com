@@ -450,7 +450,7 @@ export default function HomePage() {
   </div>
   <div className=' text-center mt-10'>
               <Link
-  href="/it-training"
+  href="/training/personalized-training"
   className="inline-block px-8 py-3 bg-gray-500 mb-5 text-center text-white rounded-lg hover:bg-gray-700 transition-colors duration-300"
 >
   Explore all our Programs

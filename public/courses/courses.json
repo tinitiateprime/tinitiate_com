@@ -98,11 +98,715 @@
      
     ]
   }
-
 ]
+ },
+ {
+  "slug": "docker-beginner-course",
+  "title": "Docker Beginner Course",
+  "duration": "1.5 Month",
+  "level": "Beginner",
+  "image": "/images/courses/docker.png",
+  "description": "Learn Docker from scratch to containerize applications, manage images, and deploy lightweight, portable, and scalable solutions.",
+  "prerequisites": "Basic knowledge of Linux and command line",
+  "courseStructure": [
+    {
+      "title": "Introduction to Docker",
+      "topics": [
+        "What is Docker?",
+        "Virtual Machines vs Containers",
+        "Installing Docker",
+        "Docker Architecture (Daemon, Client, Registry)"
+      ]
+    },
+    {
+      "title": "Working with Images",
+      "topics": [
+        "Pulling Images from Docker Hub",
+        "Inspecting and Removing Images",
+        "Building Custom Images",
+        "Dockerfile Basics"
+      ]
+    },
+    {
+      "title": "Containers Basics",
+      "topics": [
+        "Running Containers",
+        "Attaching and Detaching Containers",
+        "Stopping, Starting, and Removing Containers",
+        "Container Logs and Stats"
+      ]
+    },
+    {
+      "title": "Networking in Docker",
+      "topics": [
+        "Bridge Network",
+        "Host and None Networks",
+        "Creating Custom Networks",
+        "Container-to-Container Communication"
+      ]
+    },
+    {
+      "title": "Volumes and Storage",
+      "topics": [
+        "Data Persistence in Containers",
+        "Bind Mounts vs Volumes",
+        "Creating and Managing Volumes",
+        "Sharing Data Between Containers"
+      ]
+    },
+    {
+      "title": "Docker Compose",
+      "topics": [
+        "Introduction to Docker Compose",
+        "docker-compose.yml File Structure",
+        "Running Multi-Container Applications",
+        "Scaling with Docker Compose"
+      ]
+    },
+    {
+      "title": "Docker Registry and Hub",
+      "topics": [
+        "Pushing Images to Docker Hub",
+        "Private Docker Registries",
+        "Versioning Images",
+        "Best Practices for Images"
+      ]
+    },
+    {
+      "title": "Security and Optimization",
+      "topics": [
+        "Least Privilege Principle",
+        "Reducing Image Size",
+        "Scanning Images for Vulnerabilities",
+        "Resource Limits on Containers"
+      ]
+    },
+    {
+      "title": "Orchestration Basics",
+      "topics": [
+        "Introduction to Container Orchestration",
+        "Docker Swarm Overview",
+        "Kubernetes (Intro and Comparison)"
+      ]
+    },
+    {
+      "title": "Project and Deployment",
+      "topics": [
+        "Mini Project: Multi-Container Web Application",
+        "Persisting Database with Volumes",
+        "Deploying with Docker Compose",
+        "Docker Best Practices"
+      ]
+    }
+  ]
+},
+{
+  "slug": "dotnet-beginner-course",
+  "title": ".NET Beginner Course",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/dotnet.png",
+  "description": "Learn the fundamentals of Microsoft .NET and C# to build desktop, web, and API applications using the latest .NET platform.",
+  "prerequisites": "Basic knowledge of programming concepts (variables, loops, functions)",
+  "courseStructure": [
+    {
+      "title": "Introduction to .NET",
+      "topics": [
+        "What is .NET Framework, .NET Core, and .NET 6+",
+        "CLR, BCL, and FCL",
+        "Setting up Visual Studio / VS Code",
+        "First .NET Console Application"
+      ]
+    },
+    {
+      "title": "C# Basics",
+      "topics": [
+        "Data Types and Variables",
+        "Operators and Expressions",
+        "Control Flow (if, switch, loops)",
+        "Methods and Parameters"
+      ]
+    },
+    {
+      "title": "Object-Oriented Programming in C#",
+      "topics": [
+        "Classes and Objects",
+        "Constructors",
+        "Inheritance",
+        "Polymorphism and Interfaces",
+        "Encapsulation"
+      ]
+    },
+    {
+      "title": "Collections and Generics",
+      "topics": [
+        "Arrays and Lists",
+        "Dictionaries",
+        "Stacks and Queues",
+        "Generics Basics"
+      ]
+    },
+    {
+      "title": "Exception Handling",
+      "topics": [
+        "Try-Catch-Finally",
+        "Throwing Exceptions",
+        "Custom Exceptions"
+      ]
+    },
+    {
+      "title": "File Handling",
+      "topics": [
+        "Reading and Writing Files",
+        "Working with Streams",
+        "Serialization (JSON/XML)"
+      ]
+    },
+    {
+      "title": "Introduction to LINQ",
+      "topics": [
+        "LINQ Basics",
+        "Query Syntax vs Method Syntax",
+        "Filtering, Ordering, Grouping",
+        "LINQ with Collections"
+      ]
+    },
+    {
+      "title": "ASP.NET Core Basics",
+      "topics": [
+        "What is ASP.NET Core?",
+        "Creating a Web Application",
+        "MVC Pattern (Model, View, Controller)",
+        "Routing Basics"
+      ]
+    },
+    {
+      "title": "Working with Databases",
+      "topics": [
+        "Entity Framework Core Overview",
+        "Database-first vs Code-first",
+        "CRUD Operations",
+        "Migrations"
+      ]
+    },
+    {
+      "title": "Project and Deployment",
+      "topics": [
+        "Mini Project: ASP.NET Core Web App (Blog or Task Manager)",
+        "Testing APIs with Postman",
+        "Deploying to IIS / Azure",
+        "Best Practices in .NET Development"
+      ]
+    }
+  ]
+},
+{
+  "slug": "aws-beginner-course",
+  "title": "AWS Beginner Course",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/aws.png",
+  "description": "Learn the fundamentals of Amazon Web Services (AWS) — the world’s leading cloud platform — to build, secure, and manage applications in the cloud.",
+  "prerequisites": "Basic knowledge of networking and IT concepts",
+  "courseStructure": [
+    {
+      "title": "Introduction to Cloud and AWS",
+      "topics": [
+        "What is Cloud Computing?",
+        "IaaS, PaaS, SaaS Models",
+        "AWS Global Infrastructure (Regions, AZs, Edge Locations)",
+        "AWS Free Tier Setup"
+      ]
+    },
+    {
+      "title": "Identity and Access Management (IAM)",
+      "topics": [
+        "Users, Groups, and Roles",
+        "Policies and Permissions",
+        "MFA and Security Best Practices",
+        "AWS Organizations (Intro)"
+      ]
+    },
+    {
+      "title": "Compute Services",
+      "topics": [
+        "Amazon EC2 Basics",
+        "Launching and Connecting to Instances",
+        "Elastic Load Balancer (ELB)",
+        "Auto Scaling Groups"
+      ]
+    },
+    {
+      "title": "Storage Services",
+      "topics": [
+        "Amazon S3 Basics",
+        "S3 Buckets and Objects",
+        "Lifecycle Policies",
+        "Glacier and Backup Options"
+      ]
+    },
+    {
+      "title": "Databases",
+      "topics": [
+        "Amazon RDS Overview",
+        "Creating and Managing Databases",
+        "Amazon DynamoDB Basics",
+        "Backup and Restore"
+      ]
+    },
+    {
+      "title": "Networking in AWS",
+      "topics": [
+        "VPC, Subnets, and Route Tables",
+        "Internet Gateway and NAT Gateway",
+        "Security Groups and NACLs",
+        "Elastic IPs"
+      ]
+    },
+    {
+      "title": "Serverless Computing",
+      "topics": [
+        "AWS Lambda Basics",
+        "Event-driven Applications",
+        "API Gateway Integration",
+        "Step Functions (Intro)"
+      ]
+    },
+    {
+      "title": "Monitoring and Logging",
+      "topics": [
+        "Amazon CloudWatch",
+        "CloudTrail Basics",
+        "Simple Notification Service (SNS)",
+        "Simple Queue Service (SQS)"
+      ]
+    },
+    {
+      "title": "Security and Compliance",
+      "topics": [
+        "Shared Responsibility Model",
+        "KMS (Key Management Service)",
+        "WAF and Shield (Intro)",
+        "Basic Compliance Programs"
+      ]
+    },
+    {
+      "title": "Project and Deployment",
+      "topics": [
+        "Mini Project: Deploy a Web App on AWS",
+        "Hosting a Static Website on S3",
+        "EC2 + RDS + Load Balancer Setup",
+        "Deployment Best Practices"
+      ]
+    }
+  ]
+},
+{
+  "slug": "microsoft-azure-beginner-course",
+  "title": "Microsoft Azure Beginner Course",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/azure.png",
+  "description": "Learn Microsoft Azure from scratch — covering cloud fundamentals, core Azure services, security, networking, and hands-on deployments.",
+  "prerequisites": "Basic knowledge of IT concepts, networking, and operating systems",
+  "courseStructure": [
+    {
+      "title": "Introduction to Cloud and Azure",
+      "topics": [
+        "What is Cloud Computing?",
+        "IaaS, PaaS, SaaS Models",
+        "Azure Global Infrastructure (Regions, AZs, Edge Locations)",
+        "Creating an Azure Free Account",
+        "Azure Portal Overview"
+      ]
+    },
+    {
+      "title": "Identity and Access Management",
+      "topics": [
+        "Azure Active Directory (AD)",
+        "Users, Groups, and Roles",
+        "Role-Based Access Control (RBAC)",
+        "Multi-Factor Authentication (MFA)"
+      ]
+    },
+    {
+      "title": "Resource Management",
+      "topics": [
+        "Azure Subscriptions and Resource Groups",
+        "Azure Resource Manager (ARM)",
+        "Tags and Policies",
+        "Azure CLI and PowerShell Basics"
+      ]
+    },
+    {
+      "title": "Compute Services",
+      "topics": [
+        "Azure Virtual Machines",
+        "VM Scale Sets",
+        "Azure App Services",
+        "Containers and Azure Kubernetes Service (Intro)"
+      ]
+    },
+    {
+      "title": "Storage Services",
+      "topics": [
+        "Azure Storage Accounts",
+        "Blob, File, Queue, and Table Storage",
+        "Replication and Redundancy",
+        "CDN and Lifecycle Policies"
+      ]
+    },
+    {
+      "title": "Networking in Azure",
+      "topics": [
+        "Azure Virtual Network (VNet)",
+        "Subnets, IPs, and Network Security Groups (NSG)",
+        "Load Balancers and Traffic Manager",
+        "VPN Gateway and ExpressRoute (Intro)"
+      ]
+    },
+    {
+      "title": "Databases in Azure",
+      "topics": [
+        "Azure SQL Database",
+        "Cosmos DB (Intro to NoSQL)",
+        "Backup and Restore",
+        "Data Security Basics"
+      ]
+    },
+    {
+      "title": "Monitoring and Security",
+      "topics": [
+        "Azure Monitor and Log Analytics",
+        "Azure Security Center",
+        "Azure Key Vault",
+        "Compliance and Governance Basics"
+      ]
+    },
+    {
+      "title": "Serverless and Modern Services",
+      "topics": [
+        "Azure Functions Basics",
+        "Event-driven Applications",
+        "API Management and API Gateway",
+        "Azure Logic Apps (Intro)"
+      ]
+    },
+    {
+      "title": "Project and Deployment",
+      "topics": [
+        "Mini Project: Deploy a Web App with Database",
+        "Hosting a Static Website on Azure Storage",
+        "Deploying and Scaling VMs",
+        "Azure Best Practices"
+      ]
+    }
+  ]
+},
+{
+  "slug": "kubernetes-beginner-course",
+  "title": "Kubernetes Beginner Course",
+  "duration": "1.5 Month",
+  "level": "Beginner",
+  "image": "/images/courses/kubernetes.png",
+  "description": "Learn Kubernetes to orchestrate, scale, and manage containerized applications efficiently in production environments.",
+  "prerequisites": "Basic knowledge of Docker and Linux",
+  "courseStructure": [
+    {
+      "title": "Introduction to Kubernetes",
+      "topics": [
+        "What is Kubernetes?",
+        "Why Kubernetes vs Docker Swarm?",
+        "Kubernetes Architecture (Master & Worker Nodes)",
+        "Setting up a Local Cluster (Minikube / Kind)"
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "topics": [
+        "Pods",
+        "ReplicaSets",
+        "Deployments",
+        "Namespaces"
+      ]
+    },
+    {
+      "title": "Services and Networking",
+      "topics": [
+        "ClusterIP, NodePort, LoadBalancer",
+        "Ingress Controller Basics",
+        "Service Discovery",
+        "DNS in Kubernetes"
+      ]
+    },
+    {
+      "title": "Storage in Kubernetes",
+      "topics": [
+        "Volumes",
+        "Persistent Volumes (PV)",
+        "Persistent Volume Claims (PVC)",
+        "Storage Classes"
+      ]
+    },
+    {
+      "title": "Configuring Applications",
+      "topics": [
+        "ConfigMaps",
+        "Secrets",
+        "Environment Variables",
+        "Managing Application Configurations"
+      ]
+    },
+    {
+      "title": "Scaling and Auto-healing",
+      "topics": [
+        "Horizontal Pod Autoscaling",
+        "Self-healing with ReplicaSets",
+        "Rolling Updates",
+        "Rollback Strategies"
+      ]
+    },
+    {
+      "title": "Monitoring and Logging",
+      "topics": [
+        "kubectl describe and logs",
+        "Liveness and Readiness Probes",
+        "Basic Monitoring with Metrics Server",
+        "Logging Best Practices"
+      ]
+    },
+    {
+      "title": "Security in Kubernetes",
+      "topics": [
+        "Role-Based Access Control (RBAC)",
+        "Service Accounts",
+        "Network Policies",
+        "Pod Security Basics"
+      ]
+    },
+    {
+      "title": "Kubernetes Tools and Ecosystem",
+      "topics": [
+        "kubectl Commands",
+        "Helm Charts Basics",
+        "Kustomize",
+        "Intro to Operators"
+      ]
+    },
+    {
+      "title": "Project and Deployment",
+      "topics": [
+        "Mini Project: Multi-tier App on Kubernetes",
+        "Exposing Application via Ingress",
+        "Scaling with Horizontal Pod Autoscaler",
+        "Deploying on Cloud Kubernetes (GKE/EKS/AKS)"
+      ]
+    }
+  ]
+},
+{
+  "slug": "git-github-beginner-course",
+  "title": "Git & GitHub Beginner Course",
+  "duration": "1 Month",
+  "level": "Beginner",
+  "image": "/images/courses/git-github.png",
+  "description": "Learn Git for version control and GitHub for collaboration to manage code efficiently and work on projects with teams.",
+  "prerequisites": "Basic knowledge of programming and command line",
+  "courseStructure": [
+    {
+      "title": "Introduction to Version Control",
+      "topics": [
+        "What is Version Control?",
+        "Centralized vs Distributed VCS",
+        "Why Git?",
+        "Overview of GitHub"
+      ]
+    },
+    {
+      "title": "Getting Started with Git",
+      "topics": [
+        "Installing Git",
+        "Configuring Git (username, email)",
+        "Initializing a Repository",
+        "Basic Workflow (add, commit, status, log)"
+      ]
+    },
+    {
+      "title": "Working with Repositories",
+      "topics": [
+        "Cloning Repositories",
+        "Understanding .git Folder",
+        "Ignoring Files with .gitignore",
+        "Viewing Commit History"
+      ]
+    },
+    {
+      "title": "Branching and Merging",
+      "topics": [
+        "What are Branches?",
+        "Creating and Switching Branches",
+        "Merging Branches",
+        "Resolving Merge Conflicts"
+      ]
+    },
+    {
+      "title": "Remote Repositories",
+      "topics": [
+        "Adding a Remote",
+        "Fetching and Pulling Changes",
+        "Pushing Commits",
+        "Upstream and Origin"
+      ]
+    },
+    {
+      "title": "GitHub Basics",
+      "topics": [
+        "Creating a GitHub Account",
+        "Creating a Repository on GitHub",
+        "Cloning from GitHub",
+        "Syncing Local and Remote"
+      ]
+    },
+    {
+      "title": "Collaboration Workflow",
+      "topics": [
+        "Forking Repositories",
+        "Creating Pull Requests",
+        "Code Reviews",
+        "Merging Pull Requests"
+      ]
+    },
+    {
+      "title": "Undoing and Fixing Mistakes",
+      "topics": [
+        "Undoing Commits",
+        "Reverting Changes",
+        "Reset vs Rebase",
+        "Stashing Work"
+      ]
+    },
+    {
+      "title": "Advanced GitHub Features",
+      "topics": [
+        "GitHub Issues",
+        "Project Boards (Kanban Basics)",
+        "GitHub Actions (Intro)",
+        "Managing Releases"
+      ]
+    },
+    {
+      "title": "Project and Best Practices",
+      "topics": [
+        "Mini Project: Collaborative Repository",
+        "Following Git Commit Conventions",
+        "Branch Naming Strategies",
+        "Open Source Contribution Workflow"
+      ]
+    }
+  ]
+},
 
-
-  },
+ {
+  "slug": "linux-beginner-course",
+  "title": "Linux Beginner Course",
+  "duration": "1.5 Month",
+  "level": "Beginner",
+  "image": "/images/courses/linux.png",
+  "description": "Learn Linux fundamentals, essential commands, shell scripting, and system navigation to become confident in using Linux for development and administration.",
+  "prerequisites": "None (basic computer knowledge recommended)",
+  "courseStructure": [
+    {
+      "title": "Introduction to Linux",
+      "topics": [
+        "What is Linux? (Kernel vs Distributions)",
+        "Popular Distros (Ubuntu, CentOS, Debian, Fedora)",
+        "Linux File System Hierarchy",
+        "Navigating the Shell"
+      ]
+    },
+    {
+      "title": "Essential Commands",
+      "topics": [
+        "pwd, ls, cd",
+        "cp, mv, rm",
+        "cat, less, head, tail",
+        "touch, mkdir, rmdir"
+      ]
+    },
+    {
+      "title": "Working with Files",
+      "topics": [
+        "File Permissions (rwx)",
+        "chmod, chown, chgrp",
+        "Links (hard vs soft)",
+        "find and locate"
+      ]
+    },
+    {
+      "title": "Users and Groups",
+      "topics": [
+        "Adding and Managing Users",
+        "Group Management",
+        "Switching Users (su, sudo)",
+        "Password Policies"
+      ]
+    },
+    {
+      "title": "Process Management",
+      "topics": [
+        "ps, top, htop",
+        "kill, pkill, killall",
+        "jobs, fg, bg",
+        "nice and renice"
+      ]
+    },
+    {
+      "title": "Package Management",
+      "topics": [
+        "apt, yum, dnf Basics",
+        "Installing and Removing Software",
+        "Updating the System",
+        "Working with Repositories"
+      ]
+    },
+    {
+      "title": "Networking Basics",
+      "topics": [
+        "ifconfig, ip, ping",
+        "netstat, ss",
+        "scp, rsync, wget, curl",
+        "Basic Firewall (ufw/iptables intro)"
+      ]
+    },
+    {
+      "title": "Shell Scripting Basics",
+      "topics": [
+        "Writing Your First Script",
+        "Variables and Arguments",
+        "Conditional Statements",
+        "Loops in Shell Scripts"
+      ]
+    },
+    {
+      "title": "System Monitoring and Logs",
+      "topics": [
+        "df, du, free, uptime",
+        "Checking Running Services",
+        "Log Files in /var/log",
+        "tail -f for Live Monitoring"
+      ]
+    },
+    {
+      "title": "Project and Practice",
+      "topics": [
+        "Mini Project: Automated Backup Script",
+        "User and Permission Management Task",
+        "System Health Check Script",
+        "Linux Best Practices"
+      ]
+    }
+  ]
+},
   {
   "slug": "java-language-course",
   "title": "Java Language Course",
@@ -392,6 +1096,691 @@
     }
   ]
 },
+
+{
+  "slug": "react-beginner-course",
+  "title": "React Beginner Course",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/react.png",
+  "description": "Learn the fundamentals of React.js to build interactive, component-based web applications with modern JavaScript.",
+  "prerequisites": "Basic knowledge of HTML, CSS, and JavaScript",
+  "courseStructure": [
+    {
+      "title": "Introduction to React",
+      "topics": [
+        "What is React?",
+        "React vs Vanilla JavaScript",
+        "Setting up Development Environment",
+        "Understanding JSX"
+      ]
+    },
+    {
+      "title": "Components and Props",
+      "topics": [
+        "Functional Components",
+        "Class Components (Overview)",
+        "Props and Data Passing",
+        "Children in Components"
+      ]
+    },
+    {
+      "title": "State and Lifecycle",
+      "topics": [
+        "Understanding State",
+        "setState and State Updates",
+        "Component Lifecycle (useEffect basics)",
+        "Event Handling"
+      ]
+    },
+    {
+      "title": "Styling in React",
+      "topics": [
+        "Inline Styling",
+        "CSS Modules",
+        "Styled Components",
+        "Tailwind CSS (Intro)"
+      ]
+    },
+    {
+      "title": "Lists and Forms",
+      "topics": [
+        "Rendering Lists with map()",
+        "Controlled vs Uncontrolled Components",
+        "Handling Forms and Inputs",
+        "Form Validation Basics"
+      ]
+    },
+    {
+      "title": "React Hooks",
+      "topics": [
+        "Introduction to Hooks",
+        "useState",
+        "useEffect",
+        "useRef",
+        "Custom Hooks (Intro)"
+      ]
+    },
+    {
+      "title": "Routing",
+      "topics": [
+        "Introduction to React Router",
+        "Setting up Routes",
+        "Dynamic Routing",
+        "Navigation and Links"
+      ]
+    },
+    {
+      "title": "State Management",
+      "topics": [
+        "Prop Drilling Problem",
+        "Context API",
+        "useReducer (Intro)"
+      ]
+    },
+    {
+      "title": "Working with APIs",
+      "topics": [
+        "Fetching Data with Fetch API",
+        "Fetching Data with Axios",
+        "Displaying and Updating Data",
+        "Error Handling and Loading States"
+      ]
+    },
+    {
+      "title": "Project and Testing",
+      "topics": [
+        "Mini Project: Todo App / Weather App",
+        "Introduction to Unit Testing with Jest",
+        "React Testing Library Basics"
+      ]
+    }
+  ]
+},
+{
+  "slug": "spring-beginner-course",
+  "title": "Spring Framework Beginner Course",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/spring.png",
+  "description": "Learn the fundamentals of Spring and Spring Boot to build enterprise-level Java applications, REST APIs, and microservices.",
+  "prerequisites": "Basic knowledge of Java programming",
+  "courseStructure": [
+    {
+      "title": "Introduction to Spring",
+      "topics": [
+        "What is Spring Framework?",
+        "Advantages of Spring",
+        "Spring Modules Overview",
+        "Setting up Development Environment"
+      ]
+    },
+    {
+      "title": "Spring Core Basics",
+      "topics": [
+        "Inversion of Control (IoC)",
+        "Dependency Injection (DI)",
+        "Spring Beans and Bean Lifecycle",
+        "ApplicationContext and Configuration"
+      ]
+    },
+    {
+      "title": "Spring Boot Essentials",
+      "topics": [
+        "What is Spring Boot?",
+        "Spring Initializr",
+        "Auto-Configuration",
+        "Application Properties and Profiles"
+      ]
+    },
+    {
+      "title": "Data Access with Spring",
+      "topics": [
+        "Spring JDBC",
+        "Spring Data JPA",
+        "Connecting to Databases",
+        "CRUD Operations with Repositories"
+      ]
+    },
+    {
+      "title": "Building REST APIs",
+      "topics": [
+        "Spring MVC Overview",
+        "Creating REST Controllers",
+        "Request Mapping and Path Variables",
+        "RequestBody and ResponseEntity"
+      ]
+    },
+    {
+      "title": "Validation and Error Handling",
+      "topics": [
+        "Input Validation with Annotations",
+        "Exception Handling with @ControllerAdvice",
+        "Custom Error Responses"
+      ]
+    },
+    {
+      "title": "Spring Security Basics",
+      "topics": [
+        "Introduction to Spring Security",
+        "Authentication and Authorization",
+        "Role-Based Access Control",
+        "Password Encoding"
+      ]
+    },
+    {
+      "title": "Spring Boot Advanced Features",
+      "topics": [
+        "Spring Boot Actuator",
+        "Configuration with YAML",
+        "Working with CommandLineRunner",
+        "Spring DevTools"
+      ]
+    },
+    {
+      "title": "Microservices with Spring Boot (Intro)",
+      "topics": [
+        "What are Microservices?",
+        "Spring Boot for Microservices",
+        "Service Discovery Basics (Eureka Intro)",
+        "API Gateway Concept"
+      ]
+    },
+    {
+      "title": "Project and Deployment",
+      "topics": [
+        "Project: Build a RESTful API with Spring Boot",
+        "Database Integration with Spring Data JPA",
+        "Securing the API with Spring Security",
+        "Deploying to Tomcat / Cloud"
+      ]
+    }
+  ]
+},
+{
+  "slug": "angular-beginner-course",
+  "title": "Angular Beginner Course",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/angular.png",
+  "description": "Learn Angular step by step to build dynamic, component-driven, single-page applications with TypeScript.",
+  "prerequisites": "Basic knowledge of HTML, CSS, and JavaScript",
+  "courseStructure": [
+    {
+      "title": "Introduction to Angular",
+      "topics": [
+        "What is Angular?",
+        "Angular vs React vs Vue",
+        "Installing Angular CLI",
+        "Creating and Running Angular Projects"
+      ]
+    },
+    {
+      "title": "TypeScript Basics",
+      "topics": [
+        "Why TypeScript?",
+        "Types and Interfaces",
+        "Classes and Modules",
+        "Arrow Functions and ES6 Features"
+      ]
+    },
+    {
+      "title": "Components and Templates",
+      "topics": [
+        "Creating Components",
+        "Component Decorators",
+        "Template Syntax and Interpolation",
+        "Property and Event Binding"
+      ]
+    },
+    {
+      "title": "Directives",
+      "topics": [
+        "Built-in Directives (ngIf, ngFor, ngSwitch)",
+        "Attribute Directives",
+        "Creating Custom Directives"
+      ]
+    },
+    {
+      "title": "Data Binding and Forms",
+      "topics": [
+        "One-way vs Two-way Binding",
+        "Template-driven Forms",
+        "Reactive Forms",
+        "Form Validation"
+      ]
+    },
+    {
+      "title": "Services and Dependency Injection",
+      "topics": [
+        "What are Services?",
+        "Creating and Using Services",
+        "Dependency Injection in Angular"
+      ]
+    },
+    {
+      "title": "Routing and Navigation",
+      "topics": [
+        "Angular Router Basics",
+        "Setting up Routes",
+        "Route Parameters",
+        "Child Routes and Lazy Loading"
+      ]
+    },
+    {
+      "title": "Working with HTTP",
+      "topics": [
+        "HttpClient Module",
+        "GET and POST Requests",
+        "Handling Errors",
+        "Observables and RxJS Basics"
+      ]
+    },
+    {
+      "title": "Pipes and Data Transformation",
+      "topics": [
+        "Using Built-in Pipes",
+        "Chaining Pipes",
+        "Custom Pipes"
+      ]
+    },
+    {
+      "title": "Project and Testing",
+      "topics": [
+        "Mini Project: Task Manager App",
+        "Unit Testing with Jasmine",
+        "End-to-End Testing with Protractor (Intro)"
+      ]
+    }
+  ]
+},
+{
+  "slug": "html-beginner-course",
+  "title": "HTML Beginner Course",
+  "duration": "1 Month",
+  "level": "Beginner",
+  "image": "/images/courses/html.png",
+  "description": "Learn the foundations of web development with HTML — the building block of every website.",
+  "prerequisites": "None",
+  "courseStructure": [
+    {
+      "title": "Introduction to HTML",
+      "topics": [
+        "What is HTML?",
+        "HTML Document Structure",
+        "Doctype and HTML Versions",
+        "First HTML Page"
+      ]
+    },
+    {
+      "title": "Text and Formatting",
+      "topics": [
+        "Headings and Paragraphs",
+        "Bold, Italic, Underline",
+        "Line Breaks and Horizontal Rules",
+        "HTML Entities"
+      ]
+    },
+    {
+      "title": "Links and Multimedia",
+      "topics": [
+        "Anchor Tags (Links)",
+        "Images and Image Attributes",
+        "Embedding Audio and Video",
+        "Iframes"
+      ]
+    },
+    {
+      "title": "Lists and Tables",
+      "topics": [
+        "Ordered and Unordered Lists",
+        "Nested Lists",
+        "Creating Tables",
+        "Table Attributes (colspan, rowspan)"
+      ]
+    },
+    {
+      "title": "Forms and Input Elements",
+      "topics": [
+        "Form Tag and Attributes",
+        "Input Types (text, password, checkbox, radio, etc.)",
+        "Textarea, Select, Option",
+        "Form Validation Basics"
+      ]
+    },
+    {
+      "title": "Semantic HTML",
+      "topics": [
+        "Why Semantic HTML?",
+        "Header, Nav, Main, Footer",
+        "Section, Article, Aside",
+        "SEO Benefits"
+      ]
+    },
+    {
+      "title": "Attributes and Metadata",
+      "topics": [
+        "Global Attributes (id, class, title)",
+        "Meta Tags",
+        "Linking CSS and JS",
+        "Favicon Setup"
+      ]
+    },
+    {
+      "title": "Accessibility Basics",
+      "topics": [
+        "Alt Attributes for Images",
+        "Labels for Forms",
+        "ARIA Roles (Intro)",
+        "Best Practices"
+      ]
+    },
+    {
+      "title": "Project Work",
+      "topics": [
+        "Mini Project: Personal Portfolio Page",
+        "Creating a Resume with HTML",
+        "Simple Website with Navigation and Forms"
+      ]
+    }
+  ]
+},
+
+{
+  "slug": "css-beginner-course",
+  "title": "CSS Beginner Course",
+  "duration": "1 Month",
+  "level": "Beginner",
+  "image": "/images/courses/css.png",
+  "description": "Learn how to style websites with CSS, control layouts, apply colors, and make pages visually appealing and responsive.",
+  "prerequisites": "Basic knowledge of HTML",
+  "courseStructure": [
+    {
+      "title": "Introduction to CSS",
+      "topics": [
+        "What is CSS?",
+        "Inline, Internal, and External CSS",
+        "CSS Syntax and Selectors",
+        "Applying CSS to HTML"
+      ]
+    },
+    {
+      "title": "Colors, Fonts, and Text",
+      "topics": [
+        "CSS Colors (names, HEX, RGB, HSL)",
+        "Font Families and Sizes",
+        "Text Styling (bold, italic, alignment)",
+        "Google Fonts Integration"
+      ]
+    },
+    {
+      "title": "Box Model and Spacing",
+      "topics": [
+        "Understanding the Box Model",
+        "Margin, Border, Padding",
+        "Width and Height",
+        "Box-Sizing Property"
+      ]
+    },
+    {
+      "title": "Backgrounds and Borders",
+      "topics": [
+        "Background Colors and Images",
+        "Gradient Backgrounds",
+        "Border Styles and Radius",
+        "Box Shadow"
+      ]
+    },
+    {
+      "title": "Selectors and Combinators",
+      "topics": [
+        "Class vs ID Selectors",
+        "Descendant, Child, and Sibling Selectors",
+        "Attribute Selectors",
+        "Pseudo-classes (:hover, :nth-child)"
+      ]
+    },
+    {
+      "title": "Positioning and Display",
+      "topics": [
+        "Static, Relative, Absolute, Fixed",
+        "Z-index",
+        "Block vs Inline vs Inline-block",
+        "Display: none vs Visibility: hidden"
+      ]
+    },
+    {
+      "title": "Flexbox Layout",
+      "topics": [
+        "Flex Container and Items",
+        "Row vs Column Layouts",
+        "Alignment and Justify Content",
+        "Building Responsive Navbars with Flexbox"
+      ]
+    },
+    {
+      "title": "Grid Layout",
+      "topics": [
+        "Grid Container and Tracks",
+        "Rows, Columns, and Gaps",
+        "Grid Template Areas",
+        "Responsive Grid Examples"
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "topics": [
+        "Media Queries",
+        "Mobile-First Design",
+        "Viewport Units",
+        "Responsive Images"
+      ]
+    },
+    {
+      "title": "Project Work",
+      "topics": [
+        "Mini Project: Styled Resume Page",
+        "Landing Page with Flexbox and Grid",
+        "Responsive Portfolio Website"
+      ]
+    }
+  ]
+},
+{
+  "slug": "nextjs-beginner-course",
+  "title": "Next.js Beginner Course",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/nextjs.png",
+  "description": "Learn Next.js from scratch to build modern, server-rendered, and optimized full-stack web applications with React.",
+  "prerequisites": "Basic knowledge of React.js, HTML, CSS, and JavaScript",
+  "courseStructure": [
+    {
+      "title": "Introduction to Next.js",
+      "topics": [
+        "What is Next.js?",
+        "Next.js vs React",
+        "Project Setup with create-next-app",
+        "Folder Structure Overview"
+      ]
+    },
+    {
+      "title": "Pages and Routing",
+      "topics": [
+        "Pages in Next.js",
+        "File-based Routing",
+        "Dynamic Routes",
+        "Nested Routes"
+      ]
+    },
+    {
+      "title": "Components and Styling",
+      "topics": [
+        "Creating Components",
+        "Global CSS and CSS Modules",
+        "Styled JSX",
+        "Tailwind CSS Setup"
+      ]
+    },
+    {
+      "title": "Data Fetching",
+      "topics": [
+        "getStaticProps",
+        "getServerSideProps",
+        "getStaticPaths",
+        "Client-side Data Fetching (SWR)"
+      ]
+    },
+    {
+      "title": "API Routes",
+      "topics": [
+        "Creating API Endpoints",
+        "Handling GET and POST Requests",
+        "Connecting to a Database",
+        "API Best Practices"
+      ]
+    },
+    {
+      "title": "Navigation and Linking",
+      "topics": [
+        "Using next/link",
+        "Programmatic Navigation",
+        "Dynamic Navigation"
+      ]
+    },
+    {
+      "title": "Image and Asset Optimization",
+      "topics": [
+        "Using next/image",
+        "Static File Serving",
+        "Fonts and Metadata"
+      ]
+    },
+    {
+      "title": "Authentication Basics",
+      "topics": [
+        "Introduction to NextAuth.js",
+        "OAuth and JWT Overview",
+        "Simple Login/Logout Flow"
+      ]
+    },
+    {
+      "title": "Deployment",
+      "topics": [
+        "Environment Variables",
+        "Building and Exporting",
+        "Deploying to Vercel",
+        "Deploying to Other Platforms"
+      ]
+    },
+    {
+      "title": "Project and Testing",
+      "topics": [
+        "Mini Project: Blog App",
+        "Unit Testing with Jest",
+        "Integration Testing Basics"
+      ]
+    }
+  ]
+},
+
+{
+  "slug": "expressjs-beginner-course",
+  "title": "Express.js Beginner Course",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/express.png",
+  "description": "Learn Express.js from scratch to build fast, lightweight, and scalable backend applications with Node.js.",
+  "prerequisites": "Basic knowledge of JavaScript and Node.js",
+  "courseStructure": [
+    {
+      "title": "Introduction to Express.js",
+      "topics": [
+        "What is Express.js?",
+        "Why Express for Backend?",
+        "Installing Node.js and Express",
+        "Hello World App"
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "topics": [
+        "Understanding Middleware",
+        "Request and Response Objects",
+        "Basic Routing",
+        "Application vs Router"
+      ]
+    },
+    {
+      "title": "Routing in Depth",
+      "topics": [
+        "GET, POST, PUT, DELETE",
+        "Route Parameters",
+        "Query Parameters",
+        "Chained and Modular Routes"
+      ]
+    },
+    {
+      "title": "Working with Middleware",
+      "topics": [
+        "Built-in Middleware",
+        "Third-party Middleware",
+        "Custom Middleware"
+      ]
+    },
+    {
+      "title": "Templating Engines",
+      "topics": [
+        "Introduction to EJS",
+        "Passing Data to Views",
+        "Layout and Partials"
+      ]
+    },
+    {
+      "title": "Static Files and Assets",
+      "topics": [
+        "Serving HTML, CSS, JS",
+        "Public Directory Setup",
+        "File Upload Basics"
+      ]
+    },
+    {
+      "title": "Working with Databases",
+      "topics": [
+        "Connecting to MongoDB",
+        "CRUD Operations with Mongoose",
+        "Intro to SQL Databases with Sequelize/Knex"
+      ]
+    },
+    {
+      "title": "Authentication and Security",
+      "topics": [
+        "User Registration and Login",
+        "Sessions and Cookies",
+        "JWT Authentication",
+        "Helmet and CORS Basics"
+      ]
+    },
+    {
+      "title": "Error Handling and Logging",
+      "topics": [
+        "Express Error Middleware",
+        "Custom Error Messages",
+        "Using Morgan for Logging"
+      ]
+    },
+    {
+      "title": "Project and Deployment",
+      "topics": [
+        "Mini Project: RESTful API (Todo App or Notes App)",
+        "Environment Variables",
+        "Deploying on Heroku / Render",
+        "Testing APIs with Postman"
+      ]
+    }
+  ]
+},
+
 {
   "slug": "sql-language-course",
   "title": "SQL Language Course",
@@ -496,6 +1885,345 @@
       "title": "SQL Views and Abstraction",
       "topics": [
         "SQL Views"
+      ]
+    }
+  ]
+},
+
+{
+  "slug": "mysql-beginner-course",
+  "title": "MySQL Beginner Course",
+  "duration": "2 Months",
+  "level": "Beginner",
+  "image": "/images/courses/mysql.png",
+  "description": "Learn SQL using MySQL — one of the most popular open-source relational database systems. Covers SQL fundamentals, MySQL tools, and practical hands-on projects.",
+  "prerequisites": "Basic computer knowledge; no prior SQL experience required",
+  "courseStructure": [
+    {
+      "title": "Introduction to MySQL",
+      "topics": [
+        "What is MySQL?",
+        "MySQL vs Other Databases",
+        "Installing MySQL Server and MySQL Workbench",
+        "Connecting to a Database"
+      ]
+    },
+    {
+      "title": "MySQL DDL (Data Definition Language)",
+      "topics": [
+        "Creating and Dropping Databases",
+        "Data Types in MySQL",
+        "Creating Tables",
+        "Altering and Dropping Tables",
+        "AUTO_INCREMENT in MySQL"
+      ]
+    },
+    {
+      "title": "MySQL DML (Data Manipulation Language)",
+      "topics": [
+        "Inserting Data",
+        "Updating Data",
+        "Deleting Data"
+      ]
+    },
+    {
+      "title": "MySQL DQL (Data Query Language)",
+      "topics": [
+        "SELECT and SELECT DISTINCT",
+        "WHERE Clause and Operators",
+        "Sorting with ORDER BY",
+        "Filtering with LIMIT",
+        "Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)",
+        "GROUP BY and HAVING",
+        "Joins in MySQL (INNER, LEFT, RIGHT, CROSS)",
+        "UNION and UNION ALL"
+      ]
+    },
+    {
+      "title": "MySQL DCL & TCL",
+      "topics": [
+        "User Management with GRANT and REVOKE",
+        "Transactions in MySQL",
+        "COMMIT and ROLLBACK",
+        "SAVEPOINT"
+      ]
+    },
+    {
+      "title": "Constraints and Keys",
+      "topics": [
+        "Primary Key",
+        "Foreign Key",
+        "NOT NULL and UNIQUE",
+        "DEFAULT and CHECK"
+      ]
+    },
+    {
+      "title": "Indexes and Performance",
+      "topics": [
+        "Creating Indexes",
+        "Composite Indexes",
+        "EXPLAIN Command for Query Optimization"
+      ]
+    },
+    {
+      "title": "Views and Stored Programs",
+      "topics": [
+        "Creating and Using Views",
+        "Stored Procedures",
+        "Stored Functions",
+        "Triggers in MySQL"
+      ]
+    },
+    {
+      "title": "Backup and Security",
+      "topics": [
+        "Exporting and Importing Data (mysqldump)",
+        "MySQL User Accounts and Passwords",
+        "Privileges and Roles"
+      ]
+    },
+    {
+      "title": "Project and Practice",
+      "topics": [
+        "Mini Project: Library Management Database",
+        "Designing ER Diagrams and Converting to MySQL",
+        "Writing Queries for Reports",
+        "Backup and Restore Exercise"
+      ]
+    }
+  ]
+},
+{
+  "slug": "sql-server-beginner-course",
+  "title": "SQL Server Beginner Course",
+  "duration": "2 Months",
+  "level": "Beginner",
+  "image": "/images/courses/sql-server.png",
+  "description": "Learn SQL and T-SQL using Microsoft SQL Server. Build strong fundamentals in database design, querying, stored procedures, transactions, indexing, and basic administration with SSMS/Azure Data Studio.",
+  "prerequisites": "Basic computer knowledge; no prior SQL experience required",
+  "courseStructure": [
+    {
+      "title": "Introduction to SQL Server & Tools",
+      "topics": [
+        "SQL Server Editions & Components",
+        "Installing SQL Server Developer Edition",
+        "SQL Server Management Studio (SSMS) & Azure Data Studio",
+        "Databases, Files, and Filegroups (overview)"
+      ]
+    },
+    {
+      "title": "T-SQL Basics",
+      "topics": [
+        "Batches and the GO keyword",
+        "Data Types (INT, DECIMAL, NVARCHAR, DATETIME2, BIT)",
+        "Variables, Comments, and Printing",
+        "SET vs SELECT for variables"
+      ]
+    },
+    {
+      "title": "DDL (Data Definition Language)",
+      "topics": [
+        "CREATE/DROP DATABASE",
+        "Schemas and Ownership",
+        "CREATE/ALTER/DROP TABLE",
+        "IDENTITY, DEFAULT, and SEQUENCE"
+      ]
+    },
+    {
+      "title": "DML (Data Manipulation Language)",
+      "topics": [
+        "INSERT (single/multiple rows)",
+        "UPDATE with WHERE",
+        "DELETE vs TRUNCATE",
+        "OUTPUT clause (intro)"
+      ]
+    },
+    {
+      "title": "DQL (Querying Data)",
+      "topics": [
+        "SELECT & SELECT DISTINCT",
+        "WHERE with Operators (IN, BETWEEN, LIKE)",
+        "ORDER BY, TOP, OFFSET FETCH",
+        "Aliases and Comments"
+      ]
+    },
+    {
+      "title": "Aggregations & Grouping",
+      "topics": [
+        "COUNT, SUM, AVG, MIN, MAX",
+        "GROUP BY and HAVING",
+        "ISNULL vs COALESCE",
+        "Date/Time functions (GETDATE, DATEADD, DATEDIFF, FORMAT)"
+      ]
+    },
+    {
+      "title": "Joins & Set Operations",
+      "topics": [
+        "INNER / LEFT / RIGHT / FULL JOIN",
+        "CROSS JOIN (overview)",
+        "UNION vs UNION ALL",
+        "INTERSECT and EXCEPT"
+      ]
+    },
+    {
+      "title": "Programmability: Views, Procedures, Functions",
+      "topics": [
+        "Creating and Using Views",
+        "Stored Procedures (parameters, result sets)",
+        "User-Defined Functions (scalar & table-valued)",
+        "TRY_CONVERT, CAST, PARSE (common conversions)"
+      ]
+    },
+    {
+      "title": "Transactions & Error Handling",
+      "topics": [
+        "BEGIN TRAN / COMMIT / ROLLBACK",
+        "Transaction Isolation Levels (intro)",
+        "TRY...CATCH blocks",
+        "XACT_STATE and error handling patterns"
+      ]
+    },
+    {
+      "title": "Temporary Data & CTEs",
+      "topics": [
+        "Temporary Tables (#temp) vs Table Variables",
+        "Common Table Expressions (CTE)",
+        "Recursive CTE (intro)",
+        "MERGE (overview & cautions)"
+      ]
+    },
+    {
+      "title": "Indexes & Performance Basics",
+      "topics": [
+        "Clustered vs Nonclustered Index",
+        "Included Columns & Filtered Indexes (intro)",
+        "Reading Execution Plans (SSMS)",
+        "SARGability basics"
+      ]
+    },
+    {
+      "title": "Security, Import/Export, and Backup",
+      "topics": [
+        "Logins, Users, and Roles",
+        "GRANT/REVOKE/DENY",
+        "Import/Export (BCP, BULK INSERT, SSMS wizard)",
+        "BACKUP and RESTORE (full backup basics)"
+      ]
+    },
+    {
+      "title": "Project and Practice",
+      "topics": [
+        "Mini Project: Sales/Orders Database Schema",
+        "Write Reporting Queries (joins, groups, windows)",
+        "Create a Stored Procedure & a View",
+        "Add an Index and Measure Impact (execution plan)"
+      ]
+    }
+  ]
+},
+{
+  "slug": "postgresql-beginner-course",
+  "title": "PostgreSQL Beginner Course",
+  "duration": "2 Months",
+  "level": "Beginner",
+  "image": "/images/courses/postgresql.png",
+  "description": "Learn SQL using PostgreSQL — a powerful open-source relational database with advanced features like JSON support, window functions, and CTEs.",
+  "prerequisites": "Basic computer knowledge; no prior SQL experience required",
+  "courseStructure": [
+    {
+      "title": "Introduction to PostgreSQL",
+      "topics": [
+        "What is PostgreSQL?",
+        "Postgres vs Other Databases",
+        "Installing PostgreSQL and pgAdmin",
+        "Connecting to Databases"
+      ]
+    },
+    {
+      "title": "PostgreSQL DDL (Data Definition Language)",
+      "topics": [
+        "Creating and Dropping Databases",
+        "PostgreSQL Data Types (TEXT, SERIAL, JSON, etc.)",
+        "Creating and Managing Schemas",
+        "Creating and Dropping Tables",
+        "ALTER TABLE and Sequences"
+      ]
+    },
+    {
+      "title": "PostgreSQL DML (Data Manipulation Language)",
+      "topics": [
+        "Inserting Data",
+        "Updating Data",
+        "Deleting Data",
+        "RETURNING Clause in INSERT/UPDATE"
+      ]
+    },
+    {
+      "title": "PostgreSQL DQL (Data Query Language)",
+      "topics": [
+        "Basic SELECT Queries",
+        "WHERE Clause and Operators",
+        "Sorting with ORDER BY",
+        "LIMIT and OFFSET",
+        "Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)",
+        "GROUP BY and HAVING",
+        "Joins in PostgreSQL (INNER, LEFT, RIGHT, FULL)",
+        "Set Operations (UNION, INTERSECT, EXCEPT)",
+        "Subqueries and EXISTS"
+      ]
+    },
+    {
+      "title": "Advanced Querying",
+      "topics": [
+        "Common Table Expressions (CTEs)",
+        "Window Functions (ROW_NUMBER, RANK, etc.)",
+        "Working with JSON and JSONB",
+        "Array Data Types"
+      ]
+    },
+    {
+      "title": "Constraints and Keys",
+      "topics": [
+        "Primary Key and Foreign Key",
+        "NOT NULL and UNIQUE",
+        "CHECK and DEFAULT",
+        "Composite Keys"
+      ]
+    },
+    {
+      "title": "Transactions and Security",
+      "topics": [
+        "Transactions in PostgreSQL",
+        "COMMIT and ROLLBACK",
+        "GRANT and REVOKE",
+        "Roles and Privileges"
+      ]
+    },
+    {
+      "title": "Views and Functions",
+      "topics": [
+        "Creating and Using Views",
+        "Materialized Views",
+        "Stored Functions and Procedures",
+        "Triggers in PostgreSQL"
+      ]
+    },
+    {
+      "title": "Performance and Tools",
+      "topics": [
+        "Indexes in PostgreSQL",
+        "EXPLAIN and ANALYZE for Query Plans",
+        "Vacuum and Analyze",
+        "pgAdmin and psql CLI Basics"
+      ]
+    },
+    {
+      "title": "Project and Practice",
+      "topics": [
+        "Mini Project: E-commerce Database",
+        "Design Schema and Relationships",
+        "Queries for Reports and Analytics",
+        "Performance Tuning with Indexes"
       ]
     }
   ]
