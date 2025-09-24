@@ -44,10 +44,10 @@ const BRAND = {
 const COURSES = [
   { key: 'python', name: 'Python', href: '/courses/python-language-course', Icon: SiPython },
   { key: 'java', name: 'Java', href: '/courses/java-language-course', Icon: SiJava, image: '/images/courses/java.png' },
-  { key: 'nodejs', name: 'Node.js', href: '/training/nodejs', Icon: SiNodedotjs },
+  { key: 'nodejs', name: 'Node.js', href: '/courses/nodejs-beginner-course', Icon: SiNodedotjs },
   { key: 'aws', name: 'AWS', href: '/courses/aws-beginner-course', Icon: null, image: '/images/courses/aws-devops.png' },
   { key: 'react', name: 'React', href: '/courses/react-beginner-course', Icon: SiReact },
-  { key: 'power-bi', name: 'Power BI', href: '/training/power-bi', Icon: SiPowerbi, image: '/images/courses/powerbi.png' },
+  { key: 'power-bi', name: 'Power BI', href: '/courses/powerbi-beginner-course', Icon: SiPowerbi, image: '/images/courses/powerbi.png' },
   { key: 'sql-server', name: 'SQL Server', href: '/courses/sql-server-beginner-course', Icon: null, image: '/images/courses/sql.png' },
   { key: 'mysql', name: 'MySQL', href: '/courses/mysql-beginner-course', Icon: SiMysql },
   { key: 'docker', name: 'Docker', href: '/courses/docker-beginner-course', Icon: SiDocker },
@@ -55,7 +55,7 @@ const COURSES = [
   { key: 'angular', name: 'Angular', href: '/courses/angular-beginner-course', Icon: SiAngular },
   { key: 'azure', name: 'Microsoft Azure', href: '/courses/microsoft-azure-beginner-course', Icon: SiMicrosoftazure },
   { key: 'css', name: 'CSS3', href: '/courses/css-beginner-course', Icon: SiCss3 },
-  { key: 'django', name: 'Django', href: '/training/django', Icon: SiDjango },
+  { key: 'django', name: 'Django', href: '/courses/django-beginner-course', Icon: SiDjango },
   { key: 'dotnet', name: '.NET', href: '/courses/dotnet-beginner-course', Icon: SiDotnet, image: '/images/courses/dotnet.png' },
   { key: 'express', name: 'Express.js', href: '/courses/expressjs-beginner-course', Icon: SiExpress },
   { key: 'git', name: 'Git & GitHub', href: '/courses/git-github-beginner-course', Icon: SiGit },
@@ -64,11 +64,11 @@ const COURSES = [
   { key: 'linux', name: 'Linux', href: '/courses/linux-beginner-course', Icon: SiLinux },
   { key: 'nextjs', name: 'Next.js', href: '/courses/nextjs-beginner-course', Icon: SiNextdotjs },
   { key: 'postgresql', name: 'PostgreSQL', href: '/courses/postgresql-beginner-course', Icon: SiPostgresql },
-  { key: 'spark', name: 'Apache Spark', href: '/training/spark', Icon: SiApachespark },
+  { key: 'spark', name: 'Apache Spark', href: '/courses/apache-spark-beginner-course', Icon: SiApachespark },
   { key: 'spring', name: 'Spring', href: '/courses/spring-beginner-course', Icon: SiSpring },
-  { key: 'tableau', name: 'Tableau', href: '/training/tableau', Icon: SiTableau },
-  { key: 'kafka', name: 'Apache Kafka', href: '/training/apache-kafka', Icon: SiApachekafka },
-  { key: 'oracle', name: 'Oracle Database', href: '/training/oracle', Icon: SiOracle,  },
+  { key: 'tableau', name: 'Tableau', href: '/courses/tableau-beginner-course', Icon: SiTableau },
+  { key: 'kafka', name: 'Apache Kafka', href: '/courses/apache-kafka-beginner-course', Icon: SiApachekafka },
+  { key: 'oracle', name: 'Oracle Database', href: '/courses/oracle-beginner-course', Icon: SiOracle,  },
 
 ]
 
@@ -96,7 +96,7 @@ const CATEGORY_HEADING_COLOR = 'from-purple-700 to-pink-500'
 // -------------------- CATEGORIES (Reordered) --------------------
 const CATEGORIES = [
   { name: 'Cloud & DevOps', items: ['aws', 'azure', 'docker', 'kubernetes', 'linux', 'git'] },
-  { name: 'Web & App Development', items: ['react', 'angular', 'nextjs', 'express', 'javascript', 'html', 'css'] },
+  { name: 'Web & App Development', items: ['react', 'angular', 'nextjs', 'javascript', 'html', 'css'] },
   { name: 'Mobile Development', items: ['java', 'spring', 'dotnet', 'nodejs'] },
   { name: 'Databases', items: ['mysql', 'postgresql', 'sql-server', 'oracle'] },  // 👈 Added Oracle
   { name: 'Data & Analytics', items: ['python', 'spark', 'kafka', 'power-bi', 'tableau'] },

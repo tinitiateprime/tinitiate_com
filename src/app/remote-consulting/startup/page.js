@@ -213,8 +213,8 @@ export default function StartupConsultingPage() {
        <section className="bg-black text-white py-28 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-              Remote Startup Consulting
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+              Startup Acceleration & Architecture
             </h1>
             <p className="text-lg md:text-xl mb-4 text-gray-300">
               <strong className="text-white">Empowering Startups to Scale Smarter, Not Just Faster.</strong>

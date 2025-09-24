@@ -109,59 +109,62 @@ export default function ClassroomToCodebasePage() {
         </div>
       </section>
 
-      {/* Enhanced sub-hero */}
-      <section className="px-6 py-16 bg-white">
-        <div className="mx-auto max-w-7xl grid gap-10 md:grid-cols-12 items-center">
-          <div className="md:col-span-7">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-              Why This Program Works
-            </h2>
-            <p className="mt-3 text-gray-700 leading-relaxed">
-              Empowering the next generation of software engineers — delivered
-              right inside your campus with live lectures, guided labs, biometric
-              attendance, and masterclasses by reputed instructors.
-            </p>
-            <ul className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {[
-                "Biometric-verified attendance",
-                "On-site admin oversight",
-                "Live + remote trainers",
-                "Masterclasses recorded",
-              ].map((chip, i) => (
-                <li
-                  key={i}
-                  className="flex items-center gap-2 rounded-full border bg-white px-3 py-1 text-sm text-gray-700 shadow-sm"
-                >
-                  <FiCheckCircle className="h-4 w-4 text-blue-600" />
-                  <span>{chip}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+     {/* SECTION 1: Why This Program Works */}
+<section className="px-6 py-10 bg-white">
+  <div className="mx-auto max-w-7xl">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+      Why This Program Works
+    </h2>
+    <p className="mt-3 text-gray-700 leading-relaxed">
+      Empowering the next generation of software engineers — delivered
+      right inside your campus with live lectures, guided labs, biometric
+      attendance, and masterclasses by reputed instructors.
+    </p>
 
-          <aside className="md:col-span-5">
-            <div className="rounded-2xl border bg-white shadow-md p-6">
-              <p className="text-xs font-medium uppercase tracking-wide text-indigo-600">
-                In Action
-              </p>
-              <ul className="mt-3 space-y-3 text-sm text-gray-700">
-                <li className="flex items-start gap-2">
-                  <FiCheckCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
-                  Live lecture + lab combo every morning
-                </li>
-                <li className="flex items-start gap-2">
-                  <FiCheckCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
-                  Afternoon project sprints with trainer support
-                </li>
-                <li className="flex items-start gap-2">
-                  <FiCheckCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
-                  Daily reports and weekly KPIs for transparency
-                </li>
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </section>
+    <ul className="mt-6 grid grid-cols-1 sm:grid-cols-4 gap-3">
+      {[
+        "Biometric-verified attendance",
+        "On-site admin oversight",
+        "Live + remote trainers",
+        "Masterclasses recorded",
+      ].map((chip, i) => (
+        <li
+          key={i}
+          className="flex items-center gap-2 rounded- border bg-white px-3 py-1 text-sm text-gray-700 shadow-sm"
+        >
+          <FiCheckCircle className="h-4 w-4 text-blue-600" />
+          <span>{chip}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+{/* SECTION 2: In Action */}
+<section className="px-6 py-1 bg-white">
+  <div className="mx-auto max-w-7xl">
+    <div className="rounded-2xl border bg-white shadow-md p-6">
+      <p className="text-xs font-medium uppercase tracking-wide text-indigo-600">
+        In Action
+      </p>
+      <ul className="mt-3 space-y-3 text-sm text-gray-700">
+        <li className="flex items-start gap-2">
+          <FiCheckCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
+          Live lecture + lab combo every morning
+        </li>
+        <li className="flex items-start gap-2">
+          <FiCheckCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
+          Afternoon project sprints with trainer support
+        </li>
+        <li className="flex items-start gap-2">
+          <FiCheckCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
+          Daily reports and weekly KPIs for transparency
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
       {/* VALUE PROPS */}
       <section className="px-6 py-16">
@@ -225,7 +228,7 @@ export default function ClassroomToCodebasePage() {
       {/* (unchanged — same as before) */}
 
       {/* PROGRAMS */}
-      <section className="py-16 px-6">
+      {/* <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
             Programs We Deliver
@@ -262,7 +265,7 @@ export default function ClassroomToCodebasePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* MASTERCLASSES */}
       <section className="py-16 px-6 bg-indigo-50/60">

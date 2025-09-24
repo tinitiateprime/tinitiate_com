@@ -396,7 +396,7 @@ export default function HomePage() {
       </section>
 
       {/* Training Programs */}
-<section id="programs" className="py-10 px-6 bg-white ">
+{/* <section id="programs" className="py-10 px-6 bg-white ">
   <h2 className="text-3xl font-bold text-center mb-12">
     Our Top Training Programs
   </h2>
@@ -406,7 +406,7 @@ export default function HomePage() {
         key={prog.title}
         className="rounded-xl shadow-sm bg-white overflow-hidden flex flex-col transition-all hover:shadow-md"
       >
-        {/* Smaller, full-cover image */}
+  
         <Link href={prog.href} className="relative w-2/3 h-40">
           <Image
             src={prog.image}
@@ -428,14 +428,14 @@ export default function HomePage() {
               {prog.description}
             </p>
           </div>
-        {/* <button
+        <button
         onClick={() => router.push('/request-callback')}
             // href={`/programs/${prog.title.toLowerCase().replace(/\s+/g, '-')}`}
             href={`/request-callback/`}
             className="inline-block px-4 py-2 bg-blue-500 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
           >
             Register Course
-        </button> */}
+        </button>
         <button
   onClick={() => router.push(`/request-callback?course=${encodeURIComponent(prog.title)}`)}
   className="inline-block px-4 py-2 bg-blue-500 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
@@ -456,7 +456,7 @@ export default function HomePage() {
   Explore all our Programs
   </Link>
   </div>
-</section>
+</section> */}
 
 <section id="about" className="py-10 px-6 bg-gray-50">
   <div className="max-w-6xl mx-auto">
