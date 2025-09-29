@@ -50,6 +50,15 @@ export default function ClassroomToCodebasePage() {
     { step: "Step 3", title: "Report & Improve", desc: "Admin daily report + weekly KPIs (attendance, quiz averages, lab completion, at-risk flags)." },
   ]), [])
 
+  // -------------------- FAQ --------------------
+const FAQ = [
+  { q: "Is this fully on-campus?", a: "Yes—delivered in your classrooms with remote experts joining as needed." },
+  { q: "What if internet fails?", a: "We switch to offline lecture + lab packs; attendance is queued and synced later." },
+  { q: "Can you customize the syllabus?", a: "Absolutely. We map to department goals and semester timelines." },
+  { q: "Do students get certificates?", a: "Yes—based on attendance, assessments, and capstone completion." },
+]
+
+
   return (
     <main className="bg-white text-gray-900">
       {/* Decorative background grid */}
@@ -287,31 +296,27 @@ export default function ClassroomToCodebasePage() {
         </div>
       </section>
 
-      {/* FAQS */}
-      <section className="px-6 py-12">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-start mb-6">
-            FAQs
-          </h2>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {[ 
-              { q: "Is this fully on-campus?", a: "Yes—delivered in your classrooms with remote experts joining as needed." },
-              { q: "What if internet fails?", a: "We switch to offline lecture + lab packs; attendance is queued and synced later." },
-              { q: "Can you customize the syllabus?", a: "Absolutely. We map to department goals and semester timelines." },
-              { q: "Do students get certificates?", a: "Yes—based on attendance, assessments, and capstone completion." },
-            ].map(({ q, a }, i) => (
-              <details key={i} className="group rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm open:shadow-md transition">
-                <summary className="cursor-pointer list-none flex items-center justify-between">
-                  <span className="text-base font-semibold text-gray-900">{q}</span>
-                  <FiCheckCircle className="h-5 w-5 text-indigo-600 opacity-70 group-open:rotate-45 transition-transform" />
-                </summary>
-                <p className="mt-3 text-gray-600 text-sm leading-relaxed">{a}</p>
-              </details>
-            ))}
+       <section className="px-6 py-12">
+  <div className="mx-auto max-w-7xl">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-start mb-6">
+      FAQs
+    </h2>
+    <div className="grid gap-6 md:grid-cols-2">
+      {FAQ.map(({ q, a }, i) => (
+        <div
+          key={i}
+          className="rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm hover:shadow-md transition"
+        >
+          <div className="flex items-center gap-2 mb-3">
+            <FiCheckCircle className="h-5 w-5 text-indigo-600 opacity-80" />
+            <h3 className="text-base font-semibold text-gray-900">{q}</h3>
           </div>
+          <p className="text-gray-600 text-sm leading-relaxed">{a}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* CTA FOOTER */}
       <section className="py-16 px-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">

@@ -219,7 +219,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* FAQ */}
 {/* FAQS */}
 <section className="px-6 py-12 bg-white">
   <div className="mx-auto max-w-7xl">
@@ -229,20 +228,21 @@ export default function Page() {
 
     <div className="grid gap-6 md:grid-cols-2">
       {(Array.isArray(FAQ) ? FAQ : []).map(({ q, a }, i) => (
-        <details
+        <div
           key={q ?? i}
-          className="group rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm hover:shadow-md open:shadow-md transition"
+          className="rounded-2xl border border-gray-200 bg-gray-50 p-5 shadow-sm hover:shadow-md transition"
         >
-          <summary className="cursor-pointer list-none flex items-center justify-between">
-            <span className="text-base font-semibold text-gray-900">{q}</span>
-            <FiCheckCircle className="h-5 w-5 text-indigo-600 opacity-70 group-open:rotate-45 transition-transform" />
-          </summary>
-          <p className="mt-3 text-gray-600 text-sm leading-relaxed">{a}</p>
-        </details>
+          <div className="flex items-center gap-2 mb-3">
+            <FiCheckCircle className="h-5 w-5 text-indigo-600 opacity-80" />
+            <h3 className="text-base font-semibold text-gray-900">{q}</h3>
+          </div>
+          <p className="text-gray-600 text-sm leading-relaxed">{a}</p>
+        </div>
       ))}
     </div>
   </div>
 </section>
+
 
 
       {/* CTA */}
