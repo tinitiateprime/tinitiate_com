@@ -53,7 +53,7 @@ const COURSES = [
   { key: 'docker', name: 'Docker', href: '/courses/docker-beginner-course', Icon: SiDocker },
   { key: 'kubernetes', name: 'Kubernetes', href: '/courses/kubernetes-beginner-course', Icon: SiKubernetes },
   { key: 'angular', name: 'Angular', href: '/courses/angular-beginner-course', Icon: SiAngular },
-  { key: 'azure', name: 'Microsoft Azure', href: '/courses/microsoft-azure-beginner-course', Icon: SiMicrosoftazure },
+  { key: 'azure', name: 'Microsoft Azure', href: '/courses/microsoft-azure-beginner-course', Icon: null, image:'/images/courses/microsoftAzure.png' },
   { key: 'css', name: 'CSS3', href: '/courses/css-beginner-course', Icon: SiCss3 },
   { key: 'django', name: 'Django', href: '/courses/django-beginner-course', Icon: SiDjango },
   { key: 'dotnet', name: '.NET', href: '/courses/dotnet-beginner-course', Icon: SiDotnet, image: '/images/courses/dotnet.png' },
@@ -71,6 +71,7 @@ const COURSES = [
   { key: 'oracle', name: 'Oracle Database', href: '/courses/oracle-beginner-course', Icon: SiOracle,  },
 
 ]
+
 
 // -------------------- FAQ --------------------
 const FAQ = [

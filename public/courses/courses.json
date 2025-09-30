@@ -2,10 +2,10 @@
   {
   "slug": "aws-beginner-course",
   "title": "AWS Course",
-  "icon": "SiAmazonaws",
+  "icon": "null",
   "duration": "3 Months",
   "level": "Beginner to Advanced",
-  "image": "/images/courses/aws.png",
+  "image": "/images/courses/aws-devops.png",
   "description": "End-to-end AWS training from fundamentals to advanced architecture, DevOps, security, networking, data, and serverless—balanced with hands-on labs and capstone projects.",
   "prerequisites": "Basic knowledge of networking and IT concepts",
   "courseStructure": [
@@ -160,10 +160,10 @@
 {
   "slug": "microsoft-azure-beginner-course",
   "title": "Microsoft Azure Course",
-  "icon": "SiMicrosoftazure",
+  "icon": "null",
   "duration": "2 Month",
   "level": "Beginner",
-  "image": "/images/courses/azure.png",
+  "image": "/images/courses/microsoftAzure.png",
   "description": "Learn Microsoft Azure from scratch — covering cloud fundamentals, core Azure services, security, networking, DevOps tools, and hands-on deployments.",
   "prerequisites": "Basic knowledge of IT concepts, networking, and operating systems",
   "courseStructure": [
