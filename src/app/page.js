@@ -109,7 +109,7 @@ const itServices = [
     href: "/it-development/ai-powered-development",
     description:
       "Build intelligent applications with AI/ML models, natural language processing, and automation that deliver smarter business outcomes.",
-    features: ["Custom AI Models", "NLP & Chatbots", "Predictive Analytics"],
+    features: ["Custom AI Models", "Agentic & Chatbots","Azure AI & Aws AI Services","Predictive Analytics"],
   },
   {
     title: "Reporting Services",

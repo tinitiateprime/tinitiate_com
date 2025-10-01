@@ -325,7 +325,7 @@ const brandColors = {
   SiNextdotjs: "#000000",
   SiExpress: "#000000",
   SiAmazonaws: "#FF9900",
-  SiMicrosoftazure: "#0078D4",
+  SiMicrosoft: "#0078D4",        // ✅ fixed Azure (no SiMicrosoftazure)
   SiDocker: "#2496ED",
   SiKubernetes: "#326CE5",
   SiLinux: "#FCC624",
@@ -348,7 +348,15 @@ const brandColors = {
   SiApachekafka: "#231F20",
   SiPowerbi: "#F2C811",
   SiTableau: "#E97627",
+  SiFlask: "#000000",            // ✅ added Flask
+  SiGooglecloud: "#4285F4",      // ✅ added GCP
+  SiFastapi: "#009688",          // ✅ added FastAPI
+  SiLangchain: "#1C3C3C",   // dark green from LangChain brand
+SiHuggingface: "#FFCC4D", // hugging face yellow
+SiOpenai: "#412991",      // OpenAI purple
+
 }
+
 
 // --- Aliases to tolerate friendly names / typos ---
 const ICON_ALIASES = {
@@ -356,15 +364,22 @@ const ICON_ALIASES = {
   "aws": "SiAmazonaws",
   "amazon": "SiAmazonaws",
   "amazon-aws": "SiAmazonaws",
-  "azure": "SiMicrosoftazure",
-  "microsoft-azure": "SiMicrosoftazure",
+  "azure": "SiMicrosoft",        // ✅ No SiMicrosoftazure, use SiMicrosoft
+  "microsoft-azure": "SiMicrosoft",
+  "gcp": "SiGooglecloud",
+  "google-cloud": "SiGooglecloud",
+  "google-cloud-platform": "SiGooglecloud",
 
   // Langs/FE
   "js": "SiJavascript",
+  "javascript": "SiJavascript",
   "ts": "SiTypescript",
+  "typescript": "SiTypescript",
   "next": "SiNextdotjs",
   "reactjs": "SiReact",
+  "react": "SiReact",
   "angularjs": "SiAngular",
+  "angular": "SiAngular",
   "html": "SiHtml5",
   "css": "SiCss3",
 
@@ -373,6 +388,9 @@ const ICON_ALIASES = {
   "nodejs": "SiNodedotjs",
   "node-dot-js": "SiNodedotjs",
   "express": "SiExpress",
+  "flask": "SiFlask",
+  "fastapi": "SiFastapi",
+  "django": "SiDjango",
 
   // Databases
   "mysql-server": "SiMysql",
@@ -382,12 +400,23 @@ const ICON_ALIASES = {
   "sql-server": "SiMicrosoftsqlserver",
   "mssql": "SiMicrosoftsqlserver",
   "oracle-db": "SiOracle",
+  "oracle": "SiOracle",
 
   // BI/Tools
   "power-bi": "SiPowerbi",
   "powerbi": "SiPowerbi",
   "tableau-software": "SiTableau",
-}
+  "tableau": "SiTableau",
+
+  // AI / LLMs
+"langchain": "SiLangchain",
+"huggingface": "SiHuggingface",
+"hugging-face": "SiHuggingface",
+"gpt": "SiOpenai",
+"openai": "SiOpenai",
+
+};
+
 
 function resolveIconName(name) {
   if (!name || typeof name !== "string") return null

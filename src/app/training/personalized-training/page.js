@@ -1,12 +1,13 @@
 import Link from 'next/link'
-import { FiBox, FiPhone, FiCode, FiDatabase, FiCloud, FiBarChart2, FiSmartphone, FiCheckCircle} from 'react-icons/fi'
+import { FiBox, FiPhone, FiCode, FiDatabase, FiCloud, FiBarChart2, FiSmartphone, FiCheckCircle, FiCpu } from 'react-icons/fi'
 import Image from 'next/image'
 import {
   SiPython, SiReact, SiAngular, SiNextdotjs, SiHtml5, SiCss3, SiJavascript,
   SiOracle, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiPowerbi,
   SiJava, SiNodedotjs, SiDocker, SiKubernetes, SiLinux, SiGit, SiDjango,
-  SiSpring, SiExpress, SiDotnet, SiApachespark, SiTableau, SiApachekafka,
-  SiMicrosoftazure, SiAmazonaws
+  SiSpring, SiExpress, SiDotnet, SiApachespark, SiTableau, SiApachekafka,SiFlask,SiFastapi,SiGooglecloud ,
+  SiMicrosoftazure, SiAmazonaws,
+  SiLangchain, SiHuggingface, SiOpenai
 } from 'react-icons/si'
 
 
@@ -36,8 +37,13 @@ const BRAND = {
   mysql: '#4479A1', postgresql: '#336791', 'sql-server': '#CC2927',SiOracle:'#DD0031',SiNodedotjs:'#6fce30ff',
   'power-bi': '#F2C811', azure: '#0078D4', docker: '#2496ED', kubernetes: '#326CE5',
   linux: '#FCC624', git: '#F05032', django: '#092E20', spring: '#6DB33F',
-  express: '#000000', dotnet: '#512BD4', spark: '#E25A1C', tableau: '#E97627',
+  express: '#000000', dotnet: '#512BD4', spark: '#E25A1C', tableau: '#E97627',flask: '#000000',gcp: '#4285F4',
+  fastapi: '#009688',
   kafka: '#231F20',
+SiLangchain: "#1C3C3C",   // dark green from LangChain brand
+SiHuggingface: "#FFCC4D", // hugging face yellow
+SiOpenai: "#412991",      // OpenAI purple
+
 }
 
 // -------------------- Courses --------------------
@@ -69,6 +75,14 @@ const COURSES = [
   { key: 'tableau', name: 'Tableau', href: '/courses/tableau-beginner-course', Icon: SiTableau },
   { key: 'kafka', name: 'Apache Kafka', href: '/courses/apache-kafka-beginner-course', Icon: SiApachekafka },
   { key: 'oracle', name: 'Oracle Database', href: '/courses/oracle-beginner-course', Icon: SiOracle,  },
+  { key: 'flask', name: 'Flask', href: '/courses/flask-beginner-course', Icon: SiFlask },
+  { key: 'fastapi', name: 'FastAPI', href: '/courses/fastapi-beginner-course', Icon: SiFastapi },
+  { key: 'gcp', name: 'Google Cloud Platform', href: '/courses/gcp-beginner-course', Icon: SiGooglecloud },
+  { key: 'gpt', name: 'OpenAI GPT', href: '/courses/gpt-beginner-course', Icon: SiOpenai },
+  { key: 'langchain', name: 'LangChain', href: '/courses/langchain-beginner-course', Icon: SiLangchain },
+  { key: 'huggingface', name: 'Hugging Face', href: '/courses/huggingface-beginner-course', Icon: SiHuggingface },
+
+
 
 ]
 
@@ -88,22 +102,22 @@ const CATEGORY_ICONS = {
   'Mobile Development': FiSmartphone,
   'Databases': FiDatabase,
   'Data & Analytics': FiBarChart2,
-  'Frameworks': FiBox
+   'AI': FiCpu
 }
 
 // -------------------- Unified Heading Color --------------------
 const CATEGORY_HEADING_COLOR = 'from-purple-700 to-pink-500'
 
 // -------------------- CATEGORIES (Reordered) --------------------
+// -------------------- CATEGORIES (Reordered) --------------------
 const CATEGORIES = [
-  { name: 'Cloud & DevOps', items: ['aws', 'azure', 'docker', 'kubernetes', 'linux', 'git'] },
-  { name: 'Web & App Development', items: ['react', 'angular', 'nextjs', 'javascript', 'html', 'css'] },
+  { name: 'Cloud & DevOps', items: ['aws', 'azure', 'gcp', 'docker', 'kubernetes',  'git'] },
+  { name: 'Web & App Development', items: ['react', 'angular', 'nextjs', 'django', 'flask', 'fastapi'] },
   { name: 'Mobile Development', items: ['java', 'spring', 'dotnet', 'nodejs'] },
-  { name: 'Databases', items: ['mysql', 'postgresql', 'sql-server', 'oracle'] },  // 👈 Added Oracle
+  { name: 'Databases', items: ['mysql', 'postgresql', 'sql-server', 'oracle'] },  // 👈 Oracle kept
   { name: 'Data & Analytics', items: ['python', 'spark', 'kafka', 'power-bi', 'tableau'] },
-  { name: 'Frameworks', items: ['django'] }
-]
-
+  { name: 'AI', items: ['gpt', 'langchain', 'huggingface'] }
+];
 
 // -------------------- Course Icon --------------------
 function CourseIcon({ keyName, Icon, image }) {

@@ -278,6 +278,168 @@
   ]
 },
 {
+  "slug": "gcp-beginner-course",
+  "title": "Google Cloud Platform (GCP)",
+  "icon": "SiGooglecloud",
+  "duration": "3 Months",
+  "level": "Beginner to Advanced",
+  "image": "/images/courses/gcp-devops.png",
+  "description": "Comprehensive GCP training covering cloud fundamentals, networking, compute, storage, databases, security, DevOps, AI/ML services, and hands-on labs aligned with industry use cases and certification paths.",
+  "prerequisites": "Basic knowledge of networking and IT concepts",
+  "courseStructure": [
+    {
+      "title": "Cloud Fundamentals & GCP Account Setup",
+      "topics": [
+        "Cloud models: IaaS, PaaS, SaaS",
+        "Google Cloud global infrastructure: Regions, Zones, Edge locations",
+        "GCP resource hierarchy: Organizations, Folders, Projects",
+        "Billing accounts, budgets, and quotas"
+      ]
+    },
+    {
+      "title": "Identity & Access Management",
+      "topics": [
+        "IAM roles: primitive, predefined, custom",
+        "Service accounts & key management",
+        "Organization policies & resource hierarchy controls",
+        "Cloud Identity basics"
+      ]
+    },
+    {
+      "title": "Networking Deep Dive",
+      "topics": [
+        "VPCs, subnets, firewalls, routes",
+        "Shared VPC & VPC peering",
+        "Cloud NAT, VPNs, and Interconnect",
+        "Load balancing: global/regional (HTTP(S), TCP/UDP, Internal)",
+        "Cloud DNS & traffic management"
+      ]
+    },
+    {
+      "title": "Compute & Containers",
+      "topics": [
+        "Compute Engine: VM families, images, disks",
+        "Instance groups, autoscaling & load balancing",
+        "Preemptible VMs & committed use discounts",
+        "Google Kubernetes Engine (GKE): clusters, node pools, add-ons",
+        "Cloud Run: serverless containers"
+      ]
+    },
+    {
+      "title": "Storage & Content Delivery",
+      "topics": [
+        "Cloud Storage buckets: classes (Standard, Nearline, Coldline, Archive)",
+        "Versioning, lifecycle rules, CMEK/KMS encryption",
+        "Persistent Disks, Local SSDs",
+        "Filestore (NFS), Backup & Disaster Recovery",
+        "Cloud CDN caching basics"
+      ]
+    },
+    {
+      "title": "Databases & Data Warehousing",
+      "topics": [
+        "Cloud SQL (MySQL, PostgreSQL, SQL Server)",
+        "Cloud Spanner (global relational database)",
+        "Bigtable (NoSQL wide-column)",
+        "Firestore (document database)",
+        "BigQuery (data warehouse, DML, partitions, federated queries)"
+      ]
+    },
+    {
+      "title": "Serverless & App Development",
+      "topics": [
+        "App Engine: standard vs flexible",
+        "Cloud Functions: triggers, runtimes",
+        "Cloud Tasks & Pub/Sub patterns",
+        "API Gateway & Apigee (intro)"
+      ]
+    },
+    {
+      "title": "Observability & Operations",
+      "topics": [
+        "Cloud Logging & Cloud Monitoring (metrics, dashboards, alerts)",
+        "Cloud Trace, Debugger, Profiler",
+        "Error Reporting & Service Monitoring",
+        "Cloud Audit Logs"
+      ]
+    },
+    {
+      "title": "Security & Compliance",
+      "topics": [
+        "Shared Responsibility Model (GCP focus)",
+        "Cloud KMS & customer-managed encryption",
+        "VPC Service Controls",
+        "Cloud Armor (DDoS protection), Web Security Scanner",
+        "Security Command Center (threat detection)"
+      ]
+    },
+    {
+      "title": "DevOps & IaC on GCP",
+      "topics": [
+        "Deployment Manager templates",
+        "Terraform on GCP",
+        "Cloud Build (CI/CD pipelines)",
+        "Artifact Registry & Container Registry",
+        "Blue/Green & Canary deployments with GKE/Cloud Run"
+      ]
+    },
+    {
+      "title": "Data Engineering & Analytics (Intro)",
+      "topics": [
+        "Dataflow (Apache Beam pipelines)",
+        "Dataproc (Hadoop/Spark clusters)",
+        "Pub/Sub for streaming data",
+        "BigQuery ML & BI Engine",
+        "Looker Studio (dashboards)"
+      ]
+    },
+    {
+      "title": "AI & Machine Learning on GCP",
+      "topics": [
+        "Vertex AI: pipelines, AutoML, model training/deployment",
+        "Pre-trained APIs: Vision, Speech, Translation, NLP",
+        "TensorFlow on GCP (overview)",
+        "AI Infrastructure: TPUs, GPUs"
+      ]
+    },
+    {
+      "title": "Cost Management & Best Practices",
+      "topics": [
+        "Pricing calculator & TCO",
+        "Budgets, billing alerts, quota monitoring",
+        "Rightsizing VMs, committed use contracts",
+        "Architecting for cost efficiency & resilience"
+      ]
+    },
+    {
+      "title": "Hybrid & Multi-Cloud",
+      "topics": [
+        "Anthos (multi-cloud/hybrid platform)",
+        "Migrate for Compute Engine",
+        "Database Migration Service (DMS)",
+        "Storage Transfer Service"
+      ]
+    },
+    {
+      "title": "Capstone Projects & Labs",
+      "topics": [
+        "Project 1: Deploy 3-tier web app on Compute Engine + Cloud SQL + Load Balancer",
+        "Project 2: Serverless API with Cloud Functions + API Gateway + Firestore",
+        "Project 3: Data analytics pipeline (Pub/Sub + Dataflow + BigQuery + Looker Studio)",
+        "Bonus Labs: GKE with CI/CD on Cloud Build"
+      ]
+    },
+    {
+      "title": "Certification Path (Optional)",
+      "topics": [
+        "Exam mapping: Associate Cloud Engineer → Professional Cloud Architect / Data Engineer",
+        "Preparation strategy & practice tests",
+        "Hands-on focus areas per exam blueprint"
+      ]
+    }
+  ]
+},
+{
   "slug": "docker-beginner-course",
   "title": "Docker Beginner Course",
   "icon": "SiDocker",
@@ -1053,6 +1215,262 @@
         "Unit Testing with Jest",
         "Integration Testing Basics",
         "Playwright (Intro to E2E Testing)"
+      ]
+    }
+  ]
+},
+{
+  "slug": "flask-beginner-course",
+  "title": "Flask Course",
+  "icon": "SiFlask",
+  "duration": "2 Months",
+  "level": "Beginner to Advanced",
+  "image": "/images/courses/flask-webdev.png",
+  "description": "Complete Flask training that covers Python web fundamentals, routing, templates, databases, authentication, APIs, testing, deployment, and advanced extensions—balanced with hands-on projects and real-world use cases.",
+  "prerequisites": "Basic knowledge of Python programming",
+  "courseStructure": [
+    {
+      "title": "Introduction & Setup",
+      "topics": [
+        "What is Flask? (micro-framework philosophy)",
+        "Installing Flask & environment setup",
+        "Creating your first Flask app",
+        "Project structure and best practices"
+      ]
+    },
+    {
+      "title": "Flask Routing & Views",
+      "topics": [
+        "URL routing & dynamic routes",
+        "Handling HTTP methods (GET, POST, PUT, DELETE)",
+        "Request & response objects",
+        "Error handling & custom error pages"
+      ]
+    },
+    {
+      "title": "Templates & Static Files",
+      "topics": [
+        "Jinja2 template engine basics",
+        "Template inheritance & macros",
+        "Passing data to templates",
+        "Serving static files (CSS, JS, images)"
+      ]
+    },
+    {
+      "title": "Forms & User Input",
+      "topics": [
+        "Handling HTML forms",
+        "WTForms basics (validation, CSRF protection)",
+        "File uploads",
+        "Form error handling & messages"
+      ]
+    },
+    {
+      "title": "Database Integration",
+      "topics": [
+        "SQLite integration with Flask",
+        "SQLAlchemy ORM basics",
+        "Defining models & relationships",
+        "Performing CRUD operations"
+      ]
+    },
+    {
+      "title": "Authentication & Authorization",
+      "topics": [
+        "Flask-Login basics",
+        "User registration & login flow",
+        "Password hashing (Werkzeug)",
+        "Role-based access control"
+      ]
+    },
+    {
+      "title": "Building REST APIs",
+      "topics": [
+        "Creating REST endpoints",
+        "JSON responses & serialization",
+        "Flask-RESTful extension",
+        "JWT authentication with Flask-JWT-Extended"
+      ]
+    },
+    {
+      "title": "Blueprints & Modularization",
+      "topics": [
+        "Using Blueprints for modular apps",
+        "Application factory pattern",
+        "Configuring environments (dev, prod, test)",
+        "Best practices for scalable projects"
+      ]
+    },
+    {
+      "title": "Advanced Flask Extensions",
+      "topics": [
+        "Flask-Migrate (database migrations)",
+        "Flask-Mail (sending emails)",
+        "Flask-Admin (admin dashboards)",
+        "Flask-Caching (improving performance)"
+      ]
+    },
+    {
+      "title": "Testing & Debugging",
+      "topics": [
+        "Flask test client basics",
+        "Unit testing with Pytest",
+        "Mocking & fixtures",
+        "Debug toolbar & profiling"
+      ]
+    },
+    {
+      "title": "Deployment & Production",
+      "topics": [
+        "Serving Flask with Gunicorn/uWSGI",
+        "Reverse proxy with Nginx",
+        "Environment variables & .env files",
+        "Deploying to Heroku / Docker basics"
+      ]
+    },
+    {
+      "title": "Capstone Projects & Labs",
+      "topics": [
+        "Project 1: Blog platform with authentication & database",
+        "Project 2: REST API with JWT authentication",
+        "Project 3: E-commerce mini-app with Flask + Stripe integration",
+        "Bonus Lab: Deploy Flask app with Docker"
+      ]
+    },
+    {
+      "title": "Certification & Next Steps",
+      "topics": [
+        "Flask vs Django vs FastAPI (when to choose what)",
+        "Preparation for real-world interviews",
+        "Best resources for continuing Flask learning"
+      ]
+    }
+  ]
+},
+{
+  "slug": "fastapi-beginner-course",
+  "title": "FastAPI Course",
+  "icon": "SiFastapi",
+  "duration": "2 Months",
+  "level": "Beginner to Advanced",
+  "image": "/images/courses/fastapi-webdev.png",
+  "description": "End-to-end FastAPI training covering fundamentals, Pydantic validation, dependency injection, authentication, databases, async programming, testing, deployment, and real-world projects with modern best practices.",
+  "prerequisites": "Basic knowledge of Python programming and REST APIs",
+  "courseStructure": [
+    {
+      "title": "Introduction & Setup",
+      "topics": [
+        "What is FastAPI? (performance & async design)",
+        "Installing FastAPI & Uvicorn",
+        "Your first FastAPI app",
+        "Project structure & conventions"
+      ]
+    },
+    {
+      "title": "Routing & Request Handling",
+      "topics": [
+        "Path & query parameters",
+        "Request bodies & JSON handling",
+        "Path operations with decorators",
+        "Response models & status codes"
+      ]
+    },
+    {
+      "title": "Data Validation with Pydantic",
+      "topics": [
+        "Defining Pydantic models",
+        "Type hints & validation",
+        "Nested models & enums",
+        "Data serialization & conversion"
+      ]
+    },
+    {
+      "title": "Dependency Injection",
+      "topics": [
+        "Understanding dependencies in FastAPI",
+        "Shared dependencies & reusability",
+        "Security dependencies",
+        "Global dependency overrides"
+      ]
+    },
+    {
+      "title": "Authentication & Security",
+      "topics": [
+        "OAuth2 with Password Flow",
+        "JWT authentication",
+        "Scopes & role-based access",
+        "CORS & API key security"
+      ]
+    },
+    {
+      "title": "Databases & Persistence",
+      "topics": [
+        "Connecting with SQLAlchemy",
+        "Async ORM with SQLModel / Tortoise ORM",
+        "CRUD operations with FastAPI",
+        "Alembic for migrations"
+      ]
+    },
+    {
+      "title": "Async & Background Tasks",
+      "topics": [
+        "Async vs sync endpoints",
+        "Concurrency with asyncio",
+        "Background tasks in FastAPI",
+        "WebSockets for real-time apps"
+      ]
+    },
+    {
+      "title": "APIs & Documentation",
+      "topics": [
+        "Interactive docs with Swagger & ReDoc",
+        "API versioning",
+        "Custom response classes",
+        "OpenAPI schema customization"
+      ]
+    },
+    {
+      "title": "Testing & Debugging",
+      "topics": [
+        "TestClient for integration tests",
+        "Unit testing with Pytest",
+        "Mocking dependencies",
+        "Debugging async issues"
+      ]
+    },
+    {
+      "title": "Advanced Features",
+      "topics": [
+        "Middleware (logging, CORS, compression)",
+        "Custom exception handlers",
+        "Event handlers (startup/shutdown)",
+        "FastAPI with GraphQL (Strawberry/Graphene)"
+      ]
+    },
+    {
+      "title": "Deployment & Production",
+      "topics": [
+        "Running with Uvicorn/Gunicorn",
+        "Dockerizing a FastAPI app",
+        "NGINX reverse proxy setup",
+        "Deploying to cloud (AWS/GCP/Azure/Heroku)"
+      ]
+    },
+    {
+      "title": "Capstone Projects & Labs",
+      "topics": [
+        "Project 1: To-do API with CRUD & JWT",
+        "Project 2: Real-time chat app with WebSockets",
+        "Project 3: E-commerce API with payments integration",
+        "Bonus Lab: Async data pipeline with FastAPI + Kafka"
+      ]
+    },
+    {
+      "title": "Certification & Next Steps",
+      "topics": [
+        "FastAPI vs Flask vs Django Rest Framework",
+        "Best practices for production APIs",
+        "Next steps: microservices & async architectures"
       ]
     }
   ]
@@ -3041,6 +3459,63 @@
         "Deploying the Application"
       ]
     }
+  ]
+},
+{
+  "slug": "langchain-beginner-course",
+  "title": "LangChain Course",
+  "icon": "SiLangchain",
+  "duration": "2 Months",
+  "level": "Beginner to Advanced",
+  "image": "/images/courses/langchain.png",
+  "description": "Hands-on LangChain training covering LLM orchestration, prompt chaining, memory, agents, and tool integrations for building production-ready AI apps.",
+  "prerequisites": "Basic Python knowledge and familiarity with LLMs",
+  "courseStructure": [
+    { "title": "Introduction to LangChain", "topics": ["What is LangChain?", "Core concepts: LLMs, Chains, Agents", "Installing LangChain"] },
+    { "title": "Prompt Templates & Chains", "topics": ["PromptTemplate basics", "LLMChain usage", "Sequential & parallel chains"] },
+    { "title": "Memory & Context Management", "topics": ["ConversationBufferMemory", "Vector store memory", "Session-level memory"] },
+    { "title": "Tool Integrations", "topics": ["Search & API calls", "Databases (SQL/NoSQL)", "Custom tools"] },
+    { "title": "Agents", "topics": ["Agent types: zero-shot, conversational", "Planning & reasoning", "Multi-tool orchestration"] },
+    { "title": "Retrieval-Augmented Generation (RAG)", "topics": ["Vector databases", "LangChain retrievers", "Document QA pipeline"] },
+    { "title": "Deployment", "topics": ["LangServe intro", "Integrating with FastAPI", "Production best practices"] },
+    { "title": "Capstone Project", "topics": ["Build a chatbot over company docs", "Deploy with FastAPI + LangServe"] }
+  ]
+},
+{
+  "slug": "huggingface-beginner-course",
+  "title": "Hugging Face Course",
+  "icon": "SiHuggingface",
+  "duration": "2 Months",
+  "level": "Beginner to Advanced",
+  "image": "/images/courses/huggingface.png",
+  "description": "Comprehensive Hugging Face course covering Transformers, Datasets, Tokenizers, fine-tuning, and deploying NLP and generative AI models.",
+  "prerequisites": "Python knowledge and basic ML/NLP understanding",
+  "courseStructure": [
+    { "title": "Introduction to Hugging Face", "topics": ["What is Hugging Face?", "Model hub overview", "Transformers library basics"] },
+    { "title": "Working with Models", "topics": ["Loading pre-trained models", "Pipelines (sentiment, summarization, translation)", "Custom inference"] },
+    { "title": "Tokenizers & Datasets", "topics": ["Using HF Tokenizers", "Hugging Face Datasets library", "Preprocessing for NLP tasks"] },
+    { "title": "Fine-Tuning", "topics": ["Fine-tuning BERT/GPT models", "Trainer API", "Custom datasets"] },
+    { "title": "Deployment", "topics": ["Spaces (Gradio/Streamlit apps)", "Inference API", "Hosting models locally"] },
+    { "title": "Capstone Project", "topics": ["Build & deploy a fine-tuned NLP model with Hugging Face"] }
+  ]
+},
+{
+  "slug": "gpt-beginner-course",
+  "title": "OpenAI GPT Course",
+  "icon": "SiOpenai",
+  "duration": "2 Months",
+  "level": "Beginner to Advanced",
+  "image": "/images/courses/openai-gpt.png",
+  "description": "Practical OpenAI GPT training covering prompt engineering, embeddings, fine-tuning, and building real-world AI applications with the API.",
+  "prerequisites": "Basic Python or JavaScript skills",
+  "courseStructure": [
+    { "title": "Introduction to GPT", "topics": ["What is GPT?", "Transformer architecture basics", "OpenAI API setup"] },
+    { "title": "Prompt Engineering", "topics": ["Zero-shot, few-shot prompting", "Chain-of-thought prompting", "Role-based system prompts"] },
+    { "title": "Embeddings & Search", "topics": ["Text embeddings", "Vector databases", "Semantic search with GPT"] },
+    { "title": "Fine-Tuning", "topics": ["Preparing datasets", "Fine-tuning GPT models", "Best practices & limitations"] },
+    { "title": "Applications", "topics": ["Chatbots", "Summarizers", "Code assistants"] },
+    { "title": "Deployment", "topics": ["Building apps with FastAPI/Next.js", "Cost optimization", "Scaling considerations"] },
+    { "title": "Capstone Project", "topics": ["Build & deploy a GPT-powered chatbot with custom knowledge base"] }
   ]
 }
 ]
