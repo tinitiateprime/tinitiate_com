@@ -6,7 +6,7 @@ export const openai = new OpenAI({
 });
 
 export const CHAT_MODEL =
-  process.env.OPENAI_MODEL?.trim() || "gpt-4.1-mini";
+  process.env.OPENAI_MODEL?.trim() || "gpt-4o-mini";
 
 export const EMBED_MODEL =
   process.env.OPENAI_EMBED_MODEL?.trim() || "text-embedding-3-small";
