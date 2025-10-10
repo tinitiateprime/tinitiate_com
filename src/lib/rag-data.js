@@ -38,7 +38,7 @@ export const DOCS = [
   {
     id: "faq-corporate",
     title: "Corporate Training",
-    url: "/corporate-training",
+    url: "/training/corporate-training",
     content:
       "Customized upskilling programs for teams — on-site or remote — focused on real-world outcomes and post-training project support."
   }
