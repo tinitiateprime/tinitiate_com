@@ -31,9 +31,10 @@
 
 
 
-// src/app/layout.jsx
+// src/app/layout.js
 import Header from './components/header';
 import Footer from './components/footer'
+import ChatWidget from './components/ChatWidget';
 import { MessageCircle } from 'lucide-react' // or any icon like 'PhoneCall', 'MessageSquare'
 import './globals.css'    // Tailwind utilities and base styles
 
@@ -63,7 +64,10 @@ export default function RootLayout({ children }) {
          <main className="flex-grow pt-14">
           {children}
         </main>
-<a
+
+        <ChatWidget />
+
+{/* <a
   href="https://wa.me/919553495553"
   target="_blank"
   rel="noopener noreferrer"
@@ -71,7 +75,7 @@ export default function RootLayout({ children }) {
   aria-label="Chat on WhatsApp"
 >
   <MessageCircle className="text-white w-6 h-6" />
-</a>
+</a> */}
         <Footer />
       </body>
     </html>
