@@ -430,8 +430,6 @@
 
 
 
-
-
 // File: src/app/components/header.js
 "use client";
 
@@ -457,13 +455,13 @@ export default function Header() {
     menuCloseTimer.current = setTimeout(() => {
       setOpenMenu(null);
       setOpenSub(null);
-    }, 180); // small cushion
+    }, 160);
   };
   const cancelMenuClose = () => clearTimeout(menuCloseTimer.current);
 
   const startSubClose = () => {
     clearTimeout(subCloseTimer.current);
-    subCloseTimer.current = setTimeout(() => setOpenSub(null), 180);
+    subCloseTimer.current = setTimeout(() => setOpenSub(null), 160);
   };
   const cancelSubClose = () => clearTimeout(subCloseTimer.current);
 
@@ -512,8 +510,8 @@ export default function Header() {
     setExpandedSub((p) => ({ ...p, [key]: !p[key] }));
 
   return (
-    <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="bg-white sticky top-0 z-[100] border-b border-gray-100 overflow-visible">
+      <nav className="container mx-auto px-4 py-4 flex justify-between items-center overflow-visible">
         <Link href="/" className="block w-[140px] md:w-[170px] lg:w-[220px] xl:w-[220px]">
           <Image
             src="/images/tinitiatelogo.png"
@@ -535,7 +533,7 @@ export default function Header() {
         </button>
 
         {/* Desktop Menu — visible at/above 1280px */}
-        <ul className="hidden min-[1280px]:flex space-x-2 text-gray-800 relative items-center">
+        <ul className="hidden min-[1280px]:flex space-x-2 text-gray-800 relative items-center overflow-visible">
           {navItems.map((item) => {
             const hasDropdown = Array.isArray(item.dropdown) && item.dropdown.length > 0;
 
@@ -551,6 +549,9 @@ export default function Header() {
                 </li>
               );
             }
+
+            // Force right-edge alignment for "Company"
+            const forceRight = item.label === "Company";
 
             return (
               <li
@@ -575,9 +576,13 @@ export default function Header() {
                 {/* First-level dropdown */}
                 {openMenu === item.label && (
                   <div
-                    className="absolute left-0 top-full mt-2 bg-white rounded-lg shadow-lg w-64 z-50 border border-gray-200 p-2"
+                    className={`absolute top-full mt-2 bg-white rounded-lg shadow-lg w-64 border border-gray-200 p-2 z-[9999]
+                      ${forceRight ? "right-0 left-auto" : "left-0"}
+                      max-h-[calc(100vh-96px)] overflow-auto no-scrollbar
+                    `}
                     onMouseEnter={cancelMenuClose}
                     onMouseLeave={startMenuClose}
+                    style={{ overscrollBehavior: "contain" }}
                   >
                     <ul className="text-sm">
                       {item.dropdown.map((sub) => {
@@ -600,7 +605,10 @@ export default function Header() {
                           );
                         }
 
-                        // Nested submenu (Company → FAQ → items)
+                        // Force FAQ submenu to open left if parent is Company
+                        const forceLeft = item.label === "Company" && sub.label === "FAQ";
+                        const isSubOpen = openSub === sub.label;
+
                         return (
                           <li
                             key={sub.label}
@@ -615,17 +623,24 @@ export default function Header() {
                               type="button"
                               className="w-full flex items-center justify-between px-3 py-2 rounded-md hover:bg-gray-100"
                               aria-haspopup="true"
-                              aria-expanded={openSub === sub.label}
+                              aria-expanded={isSubOpen}
+                              onClick={() =>
+                                setOpenSub((prev) => (prev === sub.label ? null : sub.label))
+                              }
                             >
                               {sub.label}
                               <ChevronRight size={16} />
                             </button>
 
-                            {openSub === sub.label && (
+                            {isSubOpen && (
                               <div
-                                className="absolute left-full top-0 ml-2 w-64 rounded-lg border border-gray-200 bg-white shadow-lg p-2"
+                                className={`absolute top-0 w-64 rounded-lg border border-gray-200 bg-white shadow-lg p-2 z-[10000]
+                                  ${forceLeft ? "right-full mr-2" : "left-full ml-2"}
+                                  max-h-[calc(100vh-96px)] overflow-auto no-scrollbar
+                                `}
                                 onMouseEnter={cancelSubClose}
                                 onMouseLeave={startSubClose}
+                                style={{ overscrollBehavior: "contain" }}
                               >
                                 <ul className="text-sm">
                                   {sub.dropdown.map((leaf) => (
@@ -659,7 +674,7 @@ export default function Header() {
           <li className="pl-2">
             <Link
               href="/request-callback"
-              className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm font-medium"
+              className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm font-medium whitespace-nowrap"
             >
               Contact Us
             </Link>
@@ -667,7 +682,7 @@ export default function Header() {
         </ul>
       </nav>
 
-      {/* Mobile Menu — visible below 1280px */}
+      {/* Mobile Menu — unchanged (accordion) */}
       {isOpen && (
         <ul className="min-[1280px]:hidden bg-white px-4 pb-4 space-y-2 text-gray-800 border-t border-gray-100">
           {navItems.map((item) => {
@@ -691,14 +706,11 @@ export default function Header() {
                 <button
                   type="button"
                   className="w-full flex items-center justify-between px-3 py-2 rounded-md hover:bg-gray-100"
-                  onClick={() => setExpanded((p) => ({ ...p, [topKey]: !p[topKey] }))}
+                  onClick={() => toggleExpand(topKey)}
                   aria-expanded={isTopOpen}
                 >
                   <span>{item.label}</span>
-                  <ChevronDown
-                    className={`transition-transform ${isTopOpen ? "rotate-180" : ""}`}
-                    size={18}
-                  />
+                  <ChevronDown className={`transition-transform ${isTopOpen ? "rotate-180" : ""}`} size={18} />
                 </button>
 
                 {isTopOpen && (
@@ -728,14 +740,11 @@ export default function Header() {
                           <button
                             type="button"
                             className="w-full flex items-center justify-between px-3 py-2 rounded-md hover:bg-gray-100 text-sm"
-                            onClick={() => setExpandedSub((p) => ({ ...p, [subKey]: !p[subKey] }))}
+                            onClick={() => toggleExpandSub(subKey)}
                             aria-expanded={isSubOpen}
                           >
                             <span>{sub.label}</span>
-                            <ChevronDown
-                              className={`transition-transform ${isSubOpen ? "rotate-180" : ""}`}
-                              size={16}
-                            />
+                            <ChevronDown className={`transition-transform ${isSubOpen ? "rotate-180" : ""}`} size={16} />
                           </button>
 
                           {isSubOpen && (
@@ -776,6 +785,17 @@ export default function Header() {
           </li>
         </ul>
       )}
+
+      {/* Hide scrollbars when clamped */}
+      <style jsx global>{`
+        .no-scrollbar {
+          -ms-overflow-style: none; /* IE/Edge */
+          scrollbar-width: none;    /* Firefox */
+        }
+        .no-scrollbar::-webkit-scrollbar {
+          display: none; width: 0; height: 0; /* Chrome/Safari */
+        }
+      `}</style>
     </header>
   );
 }
