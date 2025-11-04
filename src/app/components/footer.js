@@ -168,9 +168,9 @@ export default function Footer() {
             <li>
               <Link href="/terms" className="hover:text-blue-600 transition">Terms & Conditions</Link>
             </li>
-             <li>
+             {/* <li>
               <Link href="/faq/why-tinitiate/parents-stem" className="hover:text-blue-600 transition">FAQ</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
