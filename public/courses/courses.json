@@ -2799,116 +2799,215 @@
   "duration": "2 Months",
   "level": "Beginner",
   "image": "/images/courses/python.png",
-  "description": "Master the basics of Python for scripting, automation, and foundational backend development.",
+  "description": "Overview-first syllabus based strictly on the provided TINITIATE outline. All library items are fully listed; other sections are summarized to essentials.",
   "prerequisites": "None",
   "courseStructure": [
     {
-      "title": "Python Basics",
+      "title": "Python Core Language",
       "topics": [
-        "Print Statement",
-        "Variables and Data Types",
-        "Operators",
-        "String Manipulation",
-        "Basic Input/Output"
+        "Introduction & syntax overview",
+        "Comments: single-line, multi-line/docstrings",
+        "Print: basic, C-style, string.format",
+        "Printing variables, numerics, ASCII/UNICODE"
       ]
     },
     {
-      "title": "Data Structures",
+      "title": "Python Datatypes",
       "topics": [
-        "Lists",
-        "Tuples",
-        "Dictionaries",
-        "Sets",
-        "Built-in Functions for Collections"
+        "Built-in types overview",
+        "Numeric: int, float, complex",
+        "Sequences: string, list, tuple",
+        "Mapping: dict",
+        "Sets: set, frozenset",
+        "Boolean & None"
       ]
     },
     {
-      "title": "Control Flow",
+      "title": "Python Variables",
       "topics": [
-        "Conditional Statements (if, elif, else)",
-        "Break and Continue",
-        "Nested Conditions"
+        "Declaration & assignment (overview)",
+        "Reassign/delete (basics)",
+        "Naming rules"
       ]
     },
     {
-      "title": "Loops",
+      "title": "Python Operators",
       "topics": [
-        "For Loops",
-        "While Loops",
-        "Loop with else",
-        "Enumerate and Zip"
+        "Arithmetic, comparison, assignment, logical",
+        "Bitwise, identity, membership"
       ]
     },
     {
-      "title": "Exception Handling",
+      "title": "Python Strings",
       "topics": [
-        "Try and Except",
-        "Finally Block",
-        "Raising Exceptions",
-        "Custom Exceptions"
+        "Indexing & slicing; concatenation",
+        "Methods: case, checks, strip, justify/pad, search, misc",
+        "Formatting & operations",
+        "Immutability"
       ]
     },
     {
-      "title": "Functions",
+      "title": "Python Lists",
       "topics": [
-        "Defining Functions",
-        "Function Parameters",
-        "Return Statements",
-        "Lambda Functions",
-        "Variable Scope",
-        "Default and Keyword Arguments"
+        "Access & slicing; common operations",
+        "Core methods & modifying lists",
+        "List comprehensions"
       ]
     },
     {
-      "title": "Object-Oriented Programming",
+      "title": "Python Sets",
       "topics": [
-        "Classes and Objects",
-        "Constructors (__init__)",
-        "Instance vs Class Variables",
-        "Inheritance",
-        "Polymorphism",
-        "Encapsulation",
-        "Magic/Dunder Methods (Intro)"
+        "Creating & modifying sets",
+        "Set operations & comprehensions",
+        "Membership testing; frozenset"
       ]
     },
     {
-      "title": "File and Data Handling",
+      "title": "Python Tuples",
       "topics": [
-        "File I/O (Read/Write)",
-        "Working with CSV",
-        "Working with JSON",
-        "Working with XML",
-        "Pickle Module"
+        "Access & slicing; pack/unpack",
+        "Key methods; membership",
+        "Immutability; tuples in lists; use cases"
       ]
     },
     {
-      "title": "Working with Libraries",
+      "title": "Python Dictionaries",
       "topics": [
-        "Date and Time",
-        "Logging",
-        "Requests Library",
-        "Multithreading and Multiprocessing (Intro)",
+        "Access (flat & nested)",
+        "Modify & core methods",
+        "Dict comprehensions"
+      ]
+    },
+    {
+      "title": "Conversions Between Lists, Tuples and Dictionaries",
+      "topics": [
+        "List ↔ Tuple; List ↔ Dict",
+        "List<Tuple> ↔ Dict; Tuple<List> ↔ Dict",
+        "Dict → List<Tuple> / keys / values",
+        "Dict → Tuple<Lists>"
+      ]
+    },
+    {
+      "title": "Conditional Decision Making",
+      "topics": [
+        "if, if-else, if-elif-else, nested if",
+        "Short-hand if; logical operators in conditions"
+      ]
+    },
+    {
+      "title": "Iterative Loops",
+      "topics": [
+        "for & while; nested loops; range",
+        "Control: break, continue, pass",
+        "Looping through dict & by index",
+        "Typical use cases"
+      ]
+    },
+    {
+      "title": "Python Functions",
+      "topics": [
+        "Define & call; function structure",
+        "Scope: local vs global",
+        "Arguments: positional, keyword, default, *args, **kwargs",
+        "Patterns: loops/conditions, returns, list/tuple/dict params",
+        "Passing: by reference vs by value (behavior)",
+        "Lambda (anonymous) functions; practical use cases"
+      ]
+    },
+    {
+      "title": "Python Exceptions",
+      "topics": [
+        "Exception hierarchy essentials (BaseException → Exception, StopIteration, SystemExit, KeyboardInterrupt, GeneratorExit)",
+        "Try/except; multiple exceptions; else/finally",
+        "Raise & custom exceptions"
+      ]
+    },
+    {
+      "title": "Python Object Oriented Programming",
+      "topics": [
+        "OOP pillars: class, object, constructor, private variables",
+        "Encapsulation, inheritance, polymorphism"
+      ]
+    },
+    {
+      "title": "OOP Inheritance",
+      "topics": [
+        "Multiple & multi-level inheritance",
+        "Overriding; super()",
+        "Constructors with inheritance"
+      ]
+    },
+    {
+      "title": "OOP BuiltIns (Special Methods & Attributes)",
+      "topics": [
+        "__init__, __del__, __str__, __repr__",
+        "__sizeof__, __len__, __add__",
+        "__getitem__, __setitem__, __iter__",
+        "__class__, __base__/__bases__, __dict__, __doc__"
+      ]
+    },
+    {
+      "title": "Object-Oriented vs Functional Programming",
+      "topics": [
+        "Create/import functional code; create/import OOP code",
+        "Compare implementations; pros & cons of each style"
+      ]
+    },
+    {
+      "title": "Python Modules",
+      "topics": [
+        "Modules & packages; importing & aliasing",
+        "Standard library overview; benefits of modularization",
+        "Custom module folder, __init__ with __all__",
+        "Executable modules, main() pattern",
+        "Accessing modules from a path"
+      ]
+    },
+    {
+      "title": "Python Libraries (Overview)",
+      "topics": [
+        "Types of libraries: module vs package vs library",
+        "Summary & conclusions (high-level only)"
+      ]
+    },
+    {
+      "title": "Standard & Third-Party Python Libraries/Modules",
+      "topics": [
+        "CSV Module",
+        "Datetime Module",
+        "File IO",
+        "JSON Module",
+        "Iterators and Generators",
+        "Lambda",
+        "Advanced Function Features",
+        "Decorators",
         "Regular Expressions",
-        "Database Access (SQL / ORM Basics)"
-      ]
-    },
-    {
-      "title": "Unit Testing",
-      "topics": [
-        "Introduction to Testing",
-        "unittest Framework Basics",
-        "Assertions",
-        "Writing and Running Test Cases",
-        "Test Organization and Best Practices"
-      ]
-    },
-    {
-      "title": "Project and Practice",
-      "topics": [
-        "Mini Project: CLI Calculator or To-Do List",
-        "File Handling Project (Log Analyzer / Report Generator)",
-        "API Integration with Requests",
-        "Unit Tested Python Script"
+        "Multithreading",
+        "ConfigParser",
+        "Pickle",
+        "Logging",
+        "Argparse",
+        "Collections",
+        "JSONSchema",
+        "CSVValidator",
+        "XML",
+        "XMLSchema",
+        "Avro",
+        "Requests",
+        "Email",
+        "Pytz",
+        "Unittest",
+        "Poetry",
+        "Pytest",
+        "Pandas",
+        "input()",
+        "pyodbc",
+        "cx_oracle",
+        "pymysql",
+        "psycopg2",
+        "pymssql",
+        "MySQL Connection Pool",
+        "Virtual ENV"
       ]
     }
   ]
