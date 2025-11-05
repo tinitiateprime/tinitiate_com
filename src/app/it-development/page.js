@@ -321,18 +321,19 @@ export default function ITDevelopmentPage() {
     {/* Image Section */}
     <div className="relative w-full h-64 p-2 sm:h-80 md:h-[22rem] rounded-lg overflow-hidden shadow-lg">
       {/* <Image
-        src="/images/banners/it-development-1.png" // Replace with a real high-quality hero image
+        src="/images/banners/it-development-1.webp" // Replace with a real high-quality hero image
         alt="IT Development Solutions"
         fill
         className="object-cover"
         sizes="(max-width: 768px) 100vw, 50vw"
         priority
-      /> */}
-       <picture className="block">
-      <source srcSet="/images/banners/it-development-1.avif" type="image/avif" />
+      />  */}
+
+      <picture className="block">
+      
       <source srcSet="/images/banners/it-development-1.webp" type="image/webp" />
       <img
-        src="/images/banners/it-development-1.png"
+        src="/images/banners/it-development-1.webp"
         width={1600}
         height={900}
         loading="lazy"
@@ -341,7 +342,7 @@ export default function ITDevelopmentPage() {
         style={{ width: "100%", height: "auto", display: "block" }}
         sizes="(max-width: 768px) 100vw, 1600px"
       />
-    </picture>
+    </picture>  
     </div>
   </div>
   </section>
