@@ -2691,7 +2691,7 @@ export default function Page() {
         {/* ===== Main column ===== */}
         <section className="md:col-span-9 space-y-8 ">
           
-          {/* --- Top Explainer Card --- */}
+          {/* --- Top Explainer Card ---
           <article
             id="why-nonstem-tech"
             aria-labelledby="nonstem-title"
@@ -2733,7 +2733,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-          </article>
+          </article> */}
 
           {/* --- FAQ List --- */}
           <FAQList faqs={normalizedFaqs} />

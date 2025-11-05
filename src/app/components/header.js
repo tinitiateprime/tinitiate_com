@@ -430,52 +430,81 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // File: src/app/components/header.js
 "use client";
 
 import { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);      // mobile menu
-  const [openMenu, setOpenMenu] = useState(null);   // desktop top-level dropdown key
-  const [openSub, setOpenSub] = useState(null);     // desktop nested dropdown key
+  const [openMenu, setOpenMenu] = useState(null);   // desktop top-level dropdown
   const [expanded, setExpanded] = useState({});     // mobile top-level expansion
-  const [expandedSub, setExpandedSub] = useState({}); // mobile nested expansion
+  const [innerOpen, setInnerOpen] = useState({});   // desktop inner (FAQ inside Company)
 
-  // --- close delay timers to prevent flicker on hover gaps ---
-  const menuCloseTimer = useRef(null);
-  const subCloseTimer = useRef(null);
-
-  const startMenuClose = () => {
-    clearTimeout(menuCloseTimer.current);
-    menuCloseTimer.current = setTimeout(() => {
-      setOpenMenu(null);
-      setOpenSub(null);
-    }, 160);
+  // --- close delay timer (prevents flicker when moving pointer) ---
+  const closeTimerRef = useRef(null);
+  const openWithCancel = (key) => {
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    setOpenMenu(key);
   };
-  const cancelMenuClose = () => clearTimeout(menuCloseTimer.current);
-
-  const startSubClose = () => {
-    clearTimeout(subCloseTimer.current);
-    subCloseTimer.current = setTimeout(() => setOpenSub(null), 160);
+  const scheduleClose = () => {
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = setTimeout(() => setOpenMenu(null), 160);
   };
-  const cancelSubClose = () => clearTimeout(subCloseTimer.current);
 
-  const router = useRouter();
+  const toggleExpand = (key) =>
+    setExpanded((p) => ({ ...p, [key]: !p[key] }));
 
+  const toggleInner = (key, value) =>
+    setInnerOpen((p) => ({ ...p, [key]: value ?? !p[key] }));
+
+  // Top-level nav
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Consulting Services", href: "/remote-consulting" },
     { label: "Work Experience Program", href: "/work-experience-program" },
     { label: "Development Services", href: "/it-development" },
 
+    // Training — single-level dropdown
     {
       label: "Training",
       href: "/training",
+      align: "left",
       dropdown: [
         { label: "Personalized Training", href: "/training/personalized-training" },
         { label: "Corporate Training", href: "/training/corporate-training" },
@@ -483,9 +512,11 @@ export default function Header() {
       ],
     },
 
+    // Company — About Us + FAQ (FAQ expands inline in the SAME panel)
     {
       label: "Company",
       href: "/company",
+      align: "right", // open inward from right edge to avoid overflow
       dropdown: [
         { label: "About Us", href: "/company" },
         {
@@ -503,15 +534,9 @@ export default function Header() {
     },
   ];
 
-  const toggleExpand = (key) =>
-    setExpanded((p) => ({ ...p, [key]: !p[key] }));
-
-  const toggleExpandSub = (key) =>
-    setExpandedSub((p) => ({ ...p, [key]: !p[key] }));
-
   return (
-    <header className="bg-white sticky top-0 z-[100] border-b border-gray-100 overflow-visible">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center overflow-visible">
+    <header className="bg-white sticky top-0 z-[100] border-b border-gray-100">
+      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="block w-[140px] md:w-[170px] lg:w-[220px] xl:w-[220px]">
           <Image
             src="/images/tinitiatelogo.png"
@@ -533,10 +558,11 @@ export default function Header() {
         </button>
 
         {/* Desktop Menu — visible at/above 1280px */}
-        <ul className="hidden min-[1280px]:flex space-x-2 text-gray-800 relative items-center overflow-visible">
+        <ul className="hidden min-[1280px]:flex space-x-2 text-gray-800 items-center">
           {navItems.map((item) => {
             const hasDropdown = Array.isArray(item.dropdown) && item.dropdown.length > 0;
 
+            // Simple link
             if (!hasDropdown) {
               return (
                 <li key={item.href} className="px-1 py-1">
@@ -550,122 +576,103 @@ export default function Header() {
               );
             }
 
-            // Force right-edge alignment for "Company"
-            const forceRight = item.label === "Company";
+            const alignClass = item.align === "right" ? "right-0" : "left-0";
+            const open = openMenu === item.label;
 
             return (
               <li
                 key={item.label}
                 className="relative px-1 py-1"
-                onMouseEnter={() => {
-                  cancelMenuClose();
-                  setOpenMenu(item.label);
+                onMouseEnter={() => openWithCancel(item.label)}
+                onMouseLeave={() => {
+                  // close panel and also reset inner state
+                  scheduleClose();
+                  setInnerOpen({});
                 }}
-                onMouseLeave={startMenuClose}
               >
                 <button
                   type="button"
                   className="flex items-center gap-1 px-4 py-2 rounded-full hover:bg-[#f2f2f2] transition"
                   aria-haspopup="true"
-                  aria-expanded={openMenu === item.label}
+                  aria-expanded={open}
                 >
                   {item.label}
                   <ChevronDown size={16} />
                 </button>
 
-                {/* First-level dropdown */}
-                {openMenu === item.label && (
-                  <div
-                    className={`absolute top-full mt-2 bg-white rounded-lg shadow-lg w-64 border border-gray-200 p-2 z-[9999]
-                      ${forceRight ? "right-0 left-auto" : "left-0"}
-                      max-h-[calc(100vh-96px)] overflow-auto no-scrollbar
-                    `}
-                    onMouseEnter={cancelMenuClose}
-                    onMouseLeave={startMenuClose}
-                    style={{ overscrollBehavior: "contain" }}
-                  >
-                    <ul className="text-sm">
-                      {item.dropdown.map((sub) => {
-                        const hasNested = Array.isArray(sub.dropdown) && sub.dropdown.length > 0;
+                {/* hover buffer to bridge trigger→panel */}
+                <span aria-hidden className="absolute left-0 right-0 top-full h-2" />
 
-                        if (!hasNested) {
-                          return (
-                            <li key={sub.href}>
-                              <Link
-                                href={sub.href}
-                                className="block px-3 py-2 rounded-md hover:bg-gray-100"
-                                onClick={() => {
-                                  setOpenMenu(null);
-                                  setOpenSub(null);
-                                }}
-                              >
-                                {sub.label}
-                              </Link>
-                            </li>
-                          );
-                        }
-
-                        // Force FAQ submenu to open left if parent is Company
-                        const forceLeft = item.label === "Company" && sub.label === "FAQ";
-                        const isSubOpen = openSub === sub.label;
-
+                {/* Panel (no scrollbar, no flyouts) */}
+                <div
+                  className={[
+                    "absolute top-full", alignClass,
+                    "w-[22rem] z-[60] border border-gray-200 rounded-xl bg-white shadow-lg p-2",
+                    "transition-all duration-150",
+                    open
+                      ? "opacity-100 pointer-events-auto translate-y-1"
+                      : "opacity-0 pointer-events-none -translate-y-1",
+                  ].join(" ")}
+                  onMouseEnter={() => openWithCancel(item.label)}
+                  onMouseLeave={scheduleClose}
+                >
+                  <ul className="text-sm">
+                    {item.dropdown.map((sub) => {
+                      const hasInner = Array.isArray(sub.dropdown) && sub.dropdown.length > 0;
+                      if (!hasInner) {
                         return (
-                          <li
-                            key={sub.label}
-                            className="relative"
-                            onMouseEnter={() => {
-                              cancelSubClose();
-                              setOpenSub(sub.label);
-                            }}
-                            onMouseLeave={startSubClose}
-                          >
-                            <button
-                              type="button"
-                              className="w-full flex items-center justify-between px-3 py-2 rounded-md hover:bg-gray-100"
-                              aria-haspopup="true"
-                              aria-expanded={isSubOpen}
-                              onClick={() =>
-                                setOpenSub((prev) => (prev === sub.label ? null : sub.label))
-                              }
+                          <li key={sub.href}>
+                            <Link
+                              href={sub.href}
+                              className="block px-3 py-2 rounded-md hover:bg-gray-100"
+                              onClick={() => setOpenMenu(null)}
                             >
                               {sub.label}
-                              <ChevronRight size={16} />
-                            </button>
-
-                            {isSubOpen && (
-                              <div
-                                className={`absolute top-0 w-64 rounded-lg border border-gray-200 bg-white shadow-lg p-2 z-[10000]
-                                  ${forceLeft ? "right-full mr-2" : "left-full ml-2"}
-                                  max-h-[calc(100vh-96px)] overflow-auto no-scrollbar
-                                `}
-                                onMouseEnter={cancelSubClose}
-                                onMouseLeave={startSubClose}
-                                style={{ overscrollBehavior: "contain" }}
-                              >
-                                <ul className="text-sm">
-                                  {sub.dropdown.map((leaf) => (
-                                    <li key={leaf.href}>
-                                      <Link
-                                        href={leaf.href}
-                                        className="block px-3 py-2 rounded-md hover:bg-gray-100"
-                                        onClick={() => {
-                                          setOpenMenu(null);
-                                          setOpenSub(null);
-                                        }}
-                                      >
-                                        {leaf.label}
-                                      </Link>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            )}
+                            </Link>
                           </li>
                         );
-                      })}
-                    </ul>
-                  </div>
-                )}
+                      }
+
+                      // FAQ inline expansion inside the same panel
+                      const innerKey = `${item.label}::${sub.label}`;
+                      const opened = !!innerOpen[innerKey];
+
+                      return (
+                        <li key={sub.label} className="rounded-md">
+                          <button
+                            type="button"
+                            className="w-full flex items-center justify-between px-3 py-2 rounded-md hover:bg-gray-100"
+                            aria-expanded={opened}
+                            onClick={() => toggleInner(innerKey)}
+                            onMouseEnter={() => toggleInner(innerKey, true)}
+                          >
+                            <span>{sub.label}</span>
+                            <ChevronDown
+                              size={16}
+                              className={`transition-transform ${opened ? "rotate-180" : ""}`}
+                            />
+                          </button>
+
+                          {opened && (
+                            <ul className="mt-1 ml-2 border-l border-gray-200 pl-3">
+                              {sub.dropdown.map((leaf) => (
+                                <li key={leaf.href}>
+                                  <Link
+                                    href={leaf.href}
+                                    className="block px-3 py-2 rounded-md hover:bg-gray-100"
+                                    onClick={() => setOpenMenu(null)}
+                                  >
+                                    {leaf.label}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
               </li>
             );
           })}
@@ -682,7 +689,7 @@ export default function Header() {
         </ul>
       </nav>
 
-      {/* Mobile Menu — unchanged (accordion) */}
+      {/* Mobile Menu — accordion with nested support */}
       {isOpen && (
         <ul className="min-[1280px]:hidden bg-white px-4 pb-4 space-y-2 text-gray-800 border-t border-gray-100">
           {navItems.map((item) => {
@@ -698,27 +705,27 @@ export default function Header() {
               );
             }
 
-            const topKey = item.label;
-            const isTopOpen = !!expanded[topKey];
+            const key = item.label;
+            const sectionOpen = !!expanded[key];
 
             return (
-              <li key={topKey} className="rounded-md">
+              <li key={key} className="rounded-md">
                 <button
                   type="button"
                   className="w-full flex items-center justify-between px-3 py-2 rounded-md hover:bg-gray-100"
-                  onClick={() => toggleExpand(topKey)}
-                  aria-expanded={isTopOpen}
+                  onClick={() => toggleExpand(key)}
+                  aria-expanded={sectionOpen}
                 >
                   <span>{item.label}</span>
-                  <ChevronDown className={`transition-transform ${isTopOpen ? "rotate-180" : ""}`} size={18} />
+                  <ChevronDown className={`transition-transform ${sectionOpen ? "rotate-180" : ""}`} size={18} />
                 </button>
 
-                {isTopOpen && (
+                {sectionOpen && (
                   <ul className="ml-3 mt-1 space-y-1 border-l border-gray-200 pl-3">
                     {item.dropdown.map((sub) => {
-                      const hasNested = Array.isArray(sub.dropdown) && sub.dropdown.length > 0;
+                      const hasInner = Array.isArray(sub.dropdown) && sub.dropdown.length > 0;
 
-                      if (!hasNested) {
+                      if (!hasInner) {
                         return (
                           <li key={sub.href}>
                             <Link
@@ -732,22 +739,26 @@ export default function Header() {
                         );
                       }
 
-                      const subKey = `${topKey}::${sub.label}`;
-                      const isSubOpen = !!expandedSub[subKey];
+                      // Mobile nested accordion for FAQ
+                      const subKey = `${key}::${sub.label}`;
+                      const innerSectionOpen = !!expanded[subKey];
 
                       return (
-                        <li key={subKey}>
+                        <li key={subKey} className="rounded-md">
                           <button
                             type="button"
                             className="w-full flex items-center justify-between px-3 py-2 rounded-md hover:bg-gray-100 text-sm"
-                            onClick={() => toggleExpandSub(subKey)}
-                            aria-expanded={isSubOpen}
+                            onClick={() => toggleExpand(subKey)}
+                            aria-expanded={innerSectionOpen}
                           >
                             <span>{sub.label}</span>
-                            <ChevronDown className={`transition-transform ${isSubOpen ? "rotate-180" : ""}`} size={16} />
+                            <ChevronDown
+                              className={`transition-transform ${innerSectionOpen ? "rotate-180" : ""}`}
+                              size={16}
+                            />
                           </button>
 
-                          {isSubOpen && (
+                          {innerSectionOpen && (
                             <ul className="ml-3 mt-1 space-y-1 border-l border-gray-200 pl-3">
                               {sub.dropdown.map((leaf) => (
                                 <li key={leaf.href}>
@@ -773,29 +784,16 @@ export default function Header() {
 
           {/* Mobile CTA */}
           <li className="pt-2">
-            <button
-              onClick={() => {
-                setIsOpen(false);
-                router.push("/request-callback");
-              }}
-              className="bg-blue-600 text-white w-full px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm font-medium"
+            <Link
+              href="/request-callback"
+              className="bg-blue-600 text-white w-full block text-center px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm font-medium"
+              onClick={() => setIsOpen(false)}
             >
               Contact Us
-            </button>
+            </Link>
           </li>
         </ul>
       )}
-
-      {/* Hide scrollbars when clamped */}
-      <style jsx global>{`
-        .no-scrollbar {
-          -ms-overflow-style: none; /* IE/Edge */
-          scrollbar-width: none;    /* Firefox */
-        }
-        .no-scrollbar::-webkit-scrollbar {
-          display: none; width: 0; height: 0; /* Chrome/Safari */
-        }
-      `}</style>
     </header>
   );
 }
