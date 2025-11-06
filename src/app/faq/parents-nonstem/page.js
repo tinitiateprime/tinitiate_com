@@ -2498,7 +2498,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import FAQList from "../../components/FAQList";
-import faqData from "../../../../public/data/faq/studentFaqNonStem.json";
+import faqData from "../../../../public/data/faq/parentsFaqNonStem.json";
 
 export const metadata = {
   title: "Parent FAQ — Why Tech Skills Matter for Non-STEM Students | TINITIATE",

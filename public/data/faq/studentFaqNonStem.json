@@ -2,7 +2,7 @@
   "faqs": [
     {
       "id": "why-learn-tech-non-stem",
-      "title": "1) Why Should I Learn STEM or IT Skills If I'm Not From a Technical Background?",
+      "title": "Why Should I Learn STEM or IT Skills If I'm Not From a Technical Background?",
       "blocks": [
         {
           "type": "p",
@@ -111,7 +111,7 @@
     },
     {
       "id": "who-teaches-you",
-      "title": "6) Who Teaches You?",
+      "title": "Who Teaches You?",
       "blocks": [
         {
           "type": "p",
