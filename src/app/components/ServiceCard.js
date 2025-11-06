@@ -75,26 +75,64 @@ export default function ServiceCards() {
   ]
 
   return (
+    // <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 ">
+    //   {itDevelopmentServices.map((service, index) => (
+    //     <motion.div
+    //       key={index}
+    //       whileHover={{ scale: 1.05 }}
+    //       whileTap={{ scale: 0.98 }}
+    //       className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
+    //       onClick={() => router.push(service.href)}
+    //     >
+    //       <div className="relative w-full h-48">
+    //         <Image src={service.image} alt={service.title} fill className="object-cover" />
+    //       </div>
+    //       <div className="p-5">
+    //         <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">{service.title}</h3>
+    //         <p className="text-sm text-gray-500 mt-1">Timeline: {service.duration}</p>
+    //         <p className="text-sm text-gray-700 mt-2 line-clamp-3">{service.description}</p>
+    //         <span className="mt-4 inline-block text-sm font-medium text-blue-600 hover:underline">Learn More →</span>
+    //       </div>
+    //     </motion.div>
+    //   ))}
+    // </div>
+
+
+
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 ">
-      {itDevelopmentServices.map((service, index) => (
-        <motion.div
-          key={index}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.98 }}
-          className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
-          onClick={() => router.push(service.href)}
-        >
-          <div className="relative w-full h-48">
-            <Image src={service.image} alt={service.title} fill className="object-cover" />
-          </div>
-          <div className="p-5">
-            <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">{service.title}</h3>
-            <p className="text-sm text-gray-500 mt-1">Timeline: {service.duration}</p>
-            <p className="text-sm text-gray-700 mt-2 line-clamp-3">{service.description}</p>
-            <span className="mt-4 inline-block text-sm font-medium text-blue-600 hover:underline">Learn More →</span>
-          </div>
-        </motion.div>
-      ))}
-    </div>
+  {itDevelopmentServices.map((service, index) => (
+    <motion.div
+      key={index}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.98 }}
+      className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
+      onClick={() => router.push(service.href)}
+    >
+      <div className="relative w-full h-48">
+        <Image
+          src={service.image}
+          alt={service.title}
+          fill
+          loading="lazy"
+          sizes="(max-width: 640px) 100vw,
+                 (max-width: 1024px) 50vw,
+                 33vw"
+          className="object-cover"
+        />
+      </div>
+      <div className="p-5">
+        <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">
+          {service.title}
+        </h3>
+        <p className="text-sm text-gray-500 mt-1">Timeline: {service.duration}</p>
+        <p className="text-sm text-gray-700 mt-2 line-clamp-3">{service.description}</p>
+        <span className="mt-4 inline-block text-sm font-medium text-blue-600 hover:underline">
+          Learn More →
+        </span>
+      </div>
+    </motion.div>
+  ))}
+</div>
+
   )
 }

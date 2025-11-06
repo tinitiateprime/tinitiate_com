@@ -253,16 +253,19 @@ export default function HomePage() {
     </div>
 
     {/* Image Section */}
-    <div className="relative w-full h-64 p-2 sm:h-80 md:h-[22rem] rounded-lg overflow-hidden shadow-lg">
-      <Image
-        src="/images/banners/tinitiate.jpg" // Replace with a real high-quality hero image
-        alt="IT Development Solutions"
-        fill
-        className="object-cover"
-        sizes="(max-width: 768px) 100vw, 50vw"
-        priority
-      />
-    </div>
+{/* Image Section */}
+<div className="relative w-full h-64 p-2 sm:h-80 md:h-[22rem] rounded-lg overflow-hidden shadow-lg">
+  <Image
+    src="/images/banners/tinitiate.jpg"
+    alt="IT Development Solutions"
+    fill
+    className="object-cover"
+    sizes="(max-width: 768px) 100vw, 50vw"
+    loading="lazy"   // <-- lazy-load this hero
+    // priority      // <-- removed
+  />
+</div>
+
   </div>
   </section>
 
@@ -335,14 +338,28 @@ export default function HomePage() {
                        transition-all duration-500 overflow-hidden"
           >
             {/* Background Image (Clickable) */}
-            <a href={service.href} className="block relative h-60 w-full overflow-hidden">
+            {/* <a href={service.href} className="block relative h-60 w-full overflow-hidden">
               <Image
                 src={service.image1}
                 alt={service.title}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
-            </a>
+            </a> */}
+
+            <a href={service.href} className="block relative h-60 w-full overflow-hidden">
+  <Image
+    src={service.image1}
+    alt={service.title}
+    fill
+    loading="lazy" 
+    sizes="(max-width: 640px) 100vw,
+           (max-width: 1024px) 50vw,
+           33vw"
+    className="object-cover group-hover:scale-110 transition-transform duration-700"
+  />
+</a>
+
 
             {/* Content */}
             <div className="p-6 flex flex-col h-full">
@@ -532,13 +549,15 @@ export default function HomePage() {
 
       <div className="flex justify-center">
         <div className="relative w-full max-w-md h-80 md:h-[450px]">
-          <Image
-            src="/images/statistics.jpg" // replace with your image
-            alt="TINITIATE Expertise"
-            fill
-            className="object-contain rounded-xl shadow-md"
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
+ <Image
+  src="/images/statistics.jpg"
+  alt="TINITIATE Expertise"
+  fill
+  loading="lazy"
+  className="object-contain rounded-xl shadow-md"
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>
+
         </div>
       </div>
 
@@ -572,14 +591,14 @@ export default function HomePage() {
   </div>
 </section>
 
-
-{/* Industries Section */}
+{/* 
+{/* Industries Section 
 <section
   id="industries"
   className="relative py-16 px-6 bg-cover bg-center " 
   style={{ backgroundImage: "url('/images/bg-images/6.jpg')" }} // replace with your image path
 >
-  {/* Overlay */}
+
   <div className="absolute inset-0 bg-black/40"></div>
 
   <div className="relative max-w-7xl mx-auto z-10">
@@ -612,7 +631,57 @@ export default function HomePage() {
       ))}
     </div>
   </div>
+</section> */}
+
+
+
+{/* Industries Section */}
+<section
+  id="industries"
+  className="relative py-16 px-6 overflow-hidden" // removed bg-cover/bg-center
+>
+  {/* Background as a real Image → now optimized & lazy */}
+  <Image
+    src="/images/bg-images/6.jpg"
+    alt=""                 // decorative
+    fill
+    loading="lazy"
+    sizes="100vw"
+    className="object-cover -z-10" // sit behind everything
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/40 z-0"></div>
+
+  <div className="relative max-w-7xl mx-auto z-10">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-white tracking-tight">
+      🌍 Industries We Serve
+    </h2>
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 text-center">
+      {[
+        { name: "Technology", icon: Code2 },
+        { name: "E-Commerce", icon: ShoppingCart },
+        { name: "Insurance", icon: ShieldCheck },
+        { name: "Logistics & Shipping", icon: Truck },
+        { name: "Hospital / Healthcare", icon: Hospital },
+        { name: "Travel", icon: Plane },
+        { name: "Education", icon: BookOpen },
+        { name: "Manufacturing", icon: Factory },
+      ].map(({ name, icon: Icon }) => (
+        <div key={name} className="flex flex-col items-center justify-center group">
+          <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/80 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-md">
+            <Icon className="w-8 h-8" />
+          </div>
+          <span className="mt-3 text-md font-bold text-white group-hover:text-blue-300">
+            {name}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
 </section>
+
 
 
     <section className="py-10 px-6 bg-gray-50">
