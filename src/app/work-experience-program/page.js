@@ -160,6 +160,7 @@ export default function WorkExperienceProgramPageV2() {
               alt="Work Experience Banner"
               width={600}
               height={400}
+              loading="lazy"  // <-- lazy load
               className="object-cover"
             />
           </div>
@@ -186,7 +187,10 @@ export default function WorkExperienceProgramPageV2() {
       </p>
     </div>
     <div>
-      <img src="/images/work-experience-program.jpg" alt="Work Experience Program" className="rounded-lg shadow-md w-full object-cover" />
+      <img src="/images/work-experience-program.jpg" 
+      alt="Work Experience Program" 
+      loading="lazy"  // <-- lazy load
+      className="rounded-lg shadow-md w-full object-cover" />
     </div>
   </div>
 
@@ -293,6 +297,7 @@ export default function WorkExperienceProgramPageV2() {
       <img
         src="/images/Work-experience-timeline.jpg"
         alt="Work Experience Timeline"
+        loading="lazy"  // <-- lazy load
         className="rounded-xl shadow-lg mx-auto max-w-full"
       />
     </div>

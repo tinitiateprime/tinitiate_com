@@ -103,13 +103,15 @@ export default function MySQLServicePage() {
       {/* Hero Section */}
       <section className="relative w-full h-[50vh] bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center text-center px-4">
         <div className="absolute inset-0">
-          <Image
-            src="/images/remote-consulting/mysql.png"
-            alt="MySQL Banner"
-            fill
-            className="object-container opacity-30"
-            priority
-          />
+  <Image
+    src="/images/remote-consulting/mysql.png"
+    alt=""                  // if decorative; otherwise keep your alt text
+    fill
+    loading="lazy"
+    sizes="100vw"           // tell the browser how wide it will render
+    className="object-contain opacity-30 pointer-events-none -z-10" 
+    /* lazy load */
+  />
         </div>
         <div className="relative z-10 text-white max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">

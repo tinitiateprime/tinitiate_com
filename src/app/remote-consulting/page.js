@@ -124,9 +124,10 @@ export default function RemoteConsultingPage() {
               src="/images/banners/remote-consulting.jpg"
               alt="IT Development Solutions"
               fill
+              loading="lazy"  // <-- lazy load
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
-              priority
+              
             />
           </div>
         </div>

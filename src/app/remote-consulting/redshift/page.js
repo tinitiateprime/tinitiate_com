@@ -14,7 +14,7 @@ export default function RedshiftServicePage() {
             alt="Amazon Redshift Banner"
             fill
             className="object-cover opacity-30"
-            priority
+            loading="lazy"  // <-- lazy load
           />
         </div>
         <div className="relative z-10 text-white max-w-4xl mx-auto">

@@ -66,7 +66,7 @@ export default function DatabaseServicesPage() {
               alt={databaseServiceData.title}
               fill
               className="object-contain rounded-lg"
-              priority
+              loading="lazy"  // <-- lazy load
             />
           </div>
           <div>

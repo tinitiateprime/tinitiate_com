@@ -261,8 +261,9 @@ export default function HomePage() {
     fill
     className="object-cover"
     sizes="(max-width: 768px) 100vw, 50vw"
-    loading="lazy"   // <-- lazy-load this hero
-    // priority      // <-- removed
+    priority
+    fetchPriority="high"
+ 
   />
 </div>
 

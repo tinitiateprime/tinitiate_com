@@ -78,6 +78,8 @@ export default function WebBackendDevelopmentPage() {
               fill
               className="object-contain rounded-lg"
               priority
+              fetchPriority="high"
+ 
             />
           </div>
 

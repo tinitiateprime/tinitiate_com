@@ -169,7 +169,7 @@ export default function TestingSupportPage() {
               alt={serviceData.title}
               fill
               className="object-contain rounded-lg"
-              priority
+              loading="lazy"  // <-- lazy load
             />
           </div>
 

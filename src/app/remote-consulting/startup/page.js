@@ -226,13 +226,15 @@ export default function StartupConsultingPage() {
             </p>
           </div>
           <div className="relative w-full h-72 md:h-[420px] rounded-2xl overflow-hidden shadow-2xl">
-            <Image
-              src="/images/banners/startup.png"
-              alt="Startup Consulting"
-              fill
-              className="object-cover"
-              priority
-            />
+    <Image
+  src="/images/banners/startup.png"
+  alt="Startup Consulting"
+  fill
+  loading="lazy"
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="object-cover"
+/>
+
           </div>
         </div>
       </section>

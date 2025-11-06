@@ -165,6 +165,8 @@ export default function AppDevelopmentPage() {
               fill
               className="object-contain rounded-lg"
               priority
+              fetchPriority="high"
+ 
             />
           </div>
           <div>

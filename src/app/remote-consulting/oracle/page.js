@@ -14,7 +14,7 @@ export default function OracleServicePage() {
             alt="Oracle Banner"
             fill
             className=" opacity-30"
-            priority
+            loading="lazy"  // <-- lazy load
           />
         </div>
         <div className="relative z-10 text-white max-w-4xl mx-auto">

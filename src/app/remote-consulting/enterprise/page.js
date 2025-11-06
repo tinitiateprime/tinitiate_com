@@ -28,7 +28,7 @@ export default function EnterpriseConsultingPage() {
               alt="Enterprise Consulting"
               fill
               className="object-cover"
-              priority
+              loading="lazy"  // <-- lazy load
             />
           </div>
         </div>

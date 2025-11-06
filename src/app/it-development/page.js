@@ -331,13 +331,12 @@ export default function ITDevelopmentPage() {
 
       <picture className="block">
       
-      <source srcSet="/images/banners/it-development-1.webp" type="image/webp" />
-      <img
-        src="/images/banners/it-development-1.webp"
+      <Image
+        src="/images/banners/it-development-1.png"
         width={1600}
         height={900}
-        loading="lazy"
-        decoding="async"
+        priority
+        fetchPriority="high"
         alt="IT Development banner"
         style={{ width: "100%", height: "auto", display: "block" }}
         sizes="(max-width: 768px) 100vw, 1600px"
