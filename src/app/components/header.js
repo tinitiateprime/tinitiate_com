@@ -566,6 +566,8 @@ export default function Header() {
       href: "/training",
       align: "left",
       dropdown: [
+        { label: "Beginner Training", href: "/training/beginner-training" },
+        { label: "Professional Training", href: "/training/professional-training" },
         { label: "Personalized Training", href: "/training/personalized-training" },
         { label: "Corporate Training", href: "/training/corporate-training" },
         { label: "Campus Training", href: "/training/campus-training" },
