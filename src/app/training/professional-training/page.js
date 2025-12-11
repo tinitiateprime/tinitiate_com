@@ -799,6 +799,7 @@ import {
   FiSmartphone,
   FiBarChart2,
   FiCpu,
+  FiPhone 
 } from 'react-icons/fi'
 import {
   SiOracle,
@@ -1509,7 +1510,7 @@ export default function Page() {
             </div>
           </div>
 
-          <aside className="lg:pl-4">
+          {/* <aside className="lg:pl-4">
             <h3 className="text-xl font-semibold text-gray-900">
               How Professional Training works
             </h3>
@@ -1544,44 +1545,55 @@ export default function Page() {
                 product company, remote work, etc.). We’ll suggest a precise combination of tracks.
               </p>
             </div>
-          </aside>
+          </aside> */}
         </div>
       </section>
 
-      {/* FAQ (LIGHT) */}
-      <section className="bg-white px-6 pb-16">
-        <div className="mx-auto max-w-7xl border-t border-gray-200 pt-12">
-          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-                Professional training FAQs
-              </h2>
-              <p className="mt-2 text-sm text-gray-600 md:text-base">
-                If you still have questions, we&apos;re just a callback away.
-              </p>
-            </div>
-            <Link
-              href="/request-callback"
-              className="inline-flex items-center gap-2 rounded-full border border-indigo-500/60 bg-white px-5 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-500 hover:text-white transition"
-            >
-              Request a Callback
-              <FiArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {FAQ.map(({ q, a }) => (
+     {/* FAQS */}
+      <section className="px-6 py-12 bg-white">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-start mb-6">
+            FAQs
+          </h2>
+      
+          <div className="grid gap-6 md:grid-cols-2">
+            {(Array.isArray(FAQ) ? FAQ : []).map(({ q, a }, i) => (
               <div
-                key={q}
-                className="rounded-2xl border border-gray-200 bg-gray-50 p-4 text-sm text-gray-800"
+                key={q ?? i}
+                className="rounded-2xl border border-gray-200 bg-gray-50 p-5 shadow-sm hover:shadow-md transition"
               >
-                <div className="mb-2 flex items-center gap-2">
-                  <FiCheckCircle className="h-4 w-4 text-emerald-500" />
-                  <h3 className="font-semibold text-gray-900">{q}</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <FiCheckCircle className="h-5 w-5 text-indigo-600 opacity-80" />
+                  <h3 className="text-base font-semibold text-gray-900">{q}</h3>
                 </div>
-                <p className="text-xs text-gray-700 md:text-sm">{a}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{a}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+            {/* CTA */}
+      <section className="px-6 py-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 to-white p-6">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div>
+                <h4 className="text-lg font-bold text-gray-900">Want a personalized study plan?</h4>
+                <p className="text-sm text-gray-700">
+                  Tell us your goals—career switch, upskilling, or interview prep—and we’ll map the path.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href="/request-callback"
+                  className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2 text-sm font-medium text-white hover:bg-blue-700 transition"
+                >
+                  <FiPhone className="h-4 w-4" />
+                  Request a Callback
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

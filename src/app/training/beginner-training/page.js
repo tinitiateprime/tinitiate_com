@@ -423,7 +423,8 @@ import {
   FiArrowRight,
   FiUsers,
   FiCheckCircle,
-  FiPhone 
+  FiPhone,
+  FiGitBranch 
 } from 'react-icons/fi'
 import {
   SiPython,
@@ -441,6 +442,7 @@ const BRAND = {
   typescript: '#3178C6',
   java: '#007396',
   mysql: '#4479A1',
+  datastructures: '#8B5CF6', // purple for DS
 }
 
 // -------------------- DATA --------------------
@@ -527,6 +529,22 @@ const COURSES = [
     ],
     href: '/courses/sql-server-beginner-course',
   },
+  {
+  key: 'data-structures',
+  name: 'Data Structures',
+  Icon: FiGitBranch,
+  color: 'from-violet-500 to-fuchsia-500',
+  brandKey: 'datastructures', // optional – add in BRAND if you want a custom color
+  level: 'Beginner–Intermediate',
+  duration: '6–8 weeks',
+  outcomes: [
+    'Arrays, linked lists, stacks, queues',
+    'Trees, graphs, hashing basics',
+    'Time & space complexity intuition',
+  ],
+  href: '/courses/data-structures-course',
+},
+
 ]
 
 const STEPS = [

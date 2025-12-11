@@ -3,8 +3,7 @@ import { FiBox, FiPhone, FiCode, FiDatabase, FiCloud, FiBarChart2, FiSmartphone,
 import Image from 'next/image'
 import {
   SiPython, SiReact, SiAngular, SiNextdotjs, SiHtml5, SiCss3, SiJavascript,
-  SiOracle, SiMysql, SiPostgresql, SiMicrosoftsqlserver, SiPowerbi,
-  SiJava, SiNodedotjs, SiDocker, SiKubernetes, SiLinux, SiGit, SiDjango,
+  SiOracle, SiMysql, SiPostgresql, SiMicrosoftsqlserver,SiNodedotjs, SiDocker, SiKubernetes, SiLinux, SiGit, SiDjango,
   SiSpring, SiExpress, SiDotnet, SiApachespark, SiTableau, SiApachekafka,SiFlask,SiFastapi,SiGooglecloud ,
   SiMicrosoftazure, SiAmazonaws,
   SiLangchain, SiHuggingface, SiOpenai
@@ -43,17 +42,16 @@ const BRAND = {
 SiLangchain: "#1C3C3C",   // dark green from LangChain brand
 SiHuggingface: "#FFCC4D", // hugging face yellow
 SiOpenai: "#412991",      // OpenAI purple
-
 }
 
 // -------------------- Courses --------------------
 const COURSES = [
   { key: 'python', name: 'Python', href: '/courses/python-language-course', Icon: SiPython },
-  { key: 'java', name: 'Java', href: '/courses/java-language-course', Icon: SiJava, image: '/images/courses/java.png' },
+  { key: 'java', name: 'Java', href: '/courses/java-language-course', Icon: null, image: '/images/courses/java.png' },
   { key: 'nodejs', name: 'Node.js', href: '/courses/nodejs-beginner-course', Icon: SiNodedotjs },
   { key: 'aws', name: 'AWS', href: '/courses/aws-beginner-course', Icon: null, image: '/images/courses/aws-devops.png' },
   { key: 'react', name: 'React', href: '/courses/react-beginner-course', Icon: SiReact },
-  { key: 'power-bi', name: 'Power BI', href: '/courses/powerbi-beginner-course', Icon: SiPowerbi, image: '/images/courses/powerbi.png' },
+  { key: 'power-bi', name: 'Power BI', href: '/courses/powerbi-beginner-course', Icon: null, image: '/images/courses/powerbi.png' },
   { key: 'sql-server', name: 'SQL Server', href: '/courses/sql-server-beginner-course', Icon: null, image: '/images/courses/sql.png' },
   { key: 'mysql', name: 'MySQL', href: '/courses/mysql-beginner-course', Icon: SiMysql },
   { key: 'docker', name: 'Docker', href: '/courses/docker-beginner-course', Icon: SiDocker },
