@@ -1220,6 +1220,210 @@
   ]
 },
 {
+  "slug": "typescript-beginner-course",
+  "title": "TypeScript Course",
+  "icon": "SiTypescript",
+  "duration": "2 Month",
+  "level": "Beginner",
+  "image": "/images/courses/typescript.png",
+  "description": "Learn TypeScript from scratch and write safer, cleaner, and more scalable JavaScript code for modern web applications.",
+  "prerequisites": "Good understanding of JavaScript fundamentals (variables, functions, objects, arrays, ES6 basics)",
+  "courseStructure": [
+    {
+      "title": "Introduction to TypeScript",
+      "topics": [
+        "What is TypeScript and why use it?",
+        "TypeScript vs JavaScript",
+        "Installing TypeScript (tsc)",
+        "Setting up a basic TypeScript project"
+      ]
+    },
+    {
+      "title": "TypeScript Basics",
+      "topics": [
+        "Type annotations (number, string, boolean)",
+        "any, unknown, null, undefined",
+        "Union types and literal types",
+        "Type inference basics"
+      ]
+    },
+    {
+      "title": "Working with Objects and Arrays",
+      "topics": [
+        "Typed objects and optional properties",
+        "Readonly properties",
+        "Typed arrays and tuples",
+        "Type aliases"
+      ]
+    },
+    {
+      "title": "Functions in TypeScript",
+      "topics": [
+        "Function parameter and return types",
+        "Optional and default parameters",
+        "Function overloads (intro)",
+        "Arrow functions with types"
+      ]
+    },
+    {
+      "title": "Interfaces and Type Aliases",
+      "topics": [
+        "Defining interfaces",
+        "Extending interfaces",
+        "Type aliases vs interfaces",
+        "Using interfaces with functions and objects"
+      ]
+    },
+    {
+      "title": "Classes and Object-Oriented Features",
+      "topics": [
+        "Classes, fields, and constructors",
+        "public, private, protected, readonly",
+        "Inheritance and abstract classes (overview)",
+        "Implementing interfaces in classes"
+      ]
+    },
+    {
+      "title": "Generics (Beginner Level)",
+      "topics": [
+        "Why generics are needed",
+        "Generic functions (basic examples)",
+        "Generic interfaces and types (intro)",
+        "Working with generics in arrays and utility functions"
+      ]
+    },
+    {
+      "title": "Modules and Project Structure",
+      "topics": [
+        "ES modules with TypeScript (import/export)",
+        "Organizing code into files and folders",
+        "tsconfig.json essentials",
+        "Compiling TypeScript to JavaScript"
+      ]
+    },
+    {
+      "title": "TypeScript with React or Node.js (Overview)",
+      "topics": [
+        "Using TypeScript in a React project (props and state typing – overview)",
+        "Using TypeScript in Node.js (basic example)",
+        "Working with DefinitelyTyped (@types packages)",
+        "Common patterns and best practices"
+      ]
+    },
+    {
+      "title": "Mini Project and Best Practices",
+      "topics": [
+        "Mini Project: Typed Todo App or API Client",
+        "Avoiding any and improving type safety",
+        "Basic type-safe error handling",
+        "Next steps: Advanced types, generics, and frameworks"
+      ]
+    }
+  ]
+},{
+  "slug": "data-structures-beginner-course",
+  "title": "Data Structures Course",
+  "icon": "FiLayers",
+  "duration": "2 Month",
+  "level": "Beginner–Intermediate",
+  "image": "/images/courses/data-structures.png",
+  "description": "Learn core data structures step-by-step and understand how arrays, linked lists, stacks, queues, trees, graphs, and hash maps actually work under the hood. Build a strong foundation for problem-solving, competitive coding, and technical interviews.",
+  "prerequisites": "Basic programming knowledge in at least one language (Java, Python, C, or JavaScript) — variables, loops, functions, and arrays.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Data Structures",
+      "topics": [
+        "What are data structures and why they matter",
+        "Types of data structures (linear vs non-linear)",
+        "Time and space complexity (Big-O overview)",
+        "How data structures relate to real-world problems"
+      ]
+    },
+    {
+      "title": "Arrays and Strings",
+      "topics": [
+        "Static vs dynamic arrays",
+        "Common array operations (insert, delete, search)",
+        "Basic array-based problems",
+        "Introduction to string manipulation problems"
+      ]
+    },
+    {
+      "title": "Linked Lists",
+      "topics": [
+        "Singly linked list – concept and implementation",
+        "Insertion and deletion in linked lists",
+        "Doubly linked lists – when and why",
+        "Common linked list interview patterns (reverse, middle, cycle)"
+      ]
+    },
+    {
+      "title": "Stacks and Queues",
+      "topics": [
+        "Stack using array and linked list",
+        "Applications: undo, backtracking, expression evaluation",
+        "Queue and circular queue basics",
+        "Priority queue (intro) and real-world use cases"
+      ]
+    },
+    {
+      "title": "Searching and Sorting Basics",
+      "topics": [
+        "Linear search vs binary search",
+        "Selection sort, bubble sort, insertion sort (concepts)",
+        "Merge sort and quicksort (overview)",
+        "Where sorting and searching appear in interviews"
+      ]
+    },
+    {
+      "title": "Hashing and Hash Maps",
+      "topics": [
+        "Hash functions and collisions",
+        "Implementing a simple hash map (conceptually)",
+        "Use cases: frequency counting, lookups, caching",
+        "Common hash map based interview problems"
+      ]
+    },
+    {
+      "title": "Trees and Binary Search Trees",
+      "topics": [
+        "Tree terminology (node, root, leaf, height, depth)",
+        "Binary trees vs binary search trees (BST)",
+        "Tree traversals (inorder, preorder, postorder, level order)",
+        "Basic BST operations (insert, search, min, max)"
+      ]
+    },
+    {
+      "title": "Heaps and Priority Queues",
+      "topics": [
+        "Min-heap vs max-heap",
+        "Heap as an array representation",
+        "Heap operations (insert, extract, heapify)",
+        "Use cases: top K elements, scheduling, Dijkstra (intro)"
+      ]
+    },
+    {
+      "title": "Graphs (Conceptual Introduction)",
+      "topics": [
+        "Graph basics – vertices, edges, adjacency list, adjacency matrix",
+        "Types of graphs (directed, undirected, weighted)",
+        "BFS and DFS (concept and simple use cases)",
+        "Real world examples: social networks, maps, dependencies"
+      ]
+    },
+    {
+      "title": "Problem-Solving Practice & Mini Project",
+      "topics": [
+        "Step-by-step approach to solving DSA problems",
+        "Practice set: arrays, strings, stacks/queues, hash maps",
+        "Mini project: simple data-structure-powered feature (like undo history, playlist manager, or task scheduler)",
+        "Next steps: advanced algorithms, competitive programming, and interview prep"
+      ]
+    }
+  ]
+},
+
+{
   "slug": "flask-beginner-course",
   "title": "Flask Course",
   "icon": "SiFlask",

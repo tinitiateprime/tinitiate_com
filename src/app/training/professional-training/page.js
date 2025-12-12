@@ -787,84 +787,75 @@
 
 
 
-
+import Image from 'next/image'
 import Link from 'next/link'
 import {
-  FiArrowRight,
-  FiUsers,
-  FiCheckCircle,
-  FiDatabase,
-  FiCloud,
-  FiCode,
-  FiSmartphone,
-  FiBarChart2,
-  FiCpu,
-  FiPhone 
+  FiArrowRight,FiUsers,FiCheckCircle,FiDatabase,FiCloud,FiCode,FiSmartphone,FiBarChart2,FiCpu,FiPhone 
 } from 'react-icons/fi'
 import {
-  SiOracle,
-  SiPostgresql,
-  SiMysql,
-  SiDocker,
-  SiKubernetes,
-  SiGit,
-  SiDjango,
-  SiFlask,
-  SiFastapi,
-  SiSpring,
-  SiApachespark,
-  SiTableau,
-  SiApachekafka,
-  SiGooglecloud,
-  SiReact,
-  SiNextdotjs,
-  SiAngular,
-  SiLangchain,
-  SiHuggingface,
-  SiOpenai,
+  SiOracle,SiPostgresql,SiMysql,SiMongodb,SiApachehadoop,SiDocker,SiKubernetes,SiGit,SiDjango,
+  SiFlask,SiFastapi,SiSpring,SiApachespark,SiTableau,SiApachekafka,SiGooglecloud,SiReact,SiNextdotjs,
+  SiAngular,SiLangchain,SiHuggingface,SiOpenai,SiSnowflake,SiDatabricks,SiTerraform,SiJenkins ,SiVite, SiFalcon, SiApacheairflow 
+
 } from 'react-icons/si'
+import {FaAws, FaVuejs } from 'react-icons/fa6'
 
 // -------------------- BRAND COLORS (same idea as other page) --------------------
+
 const BRAND = {
   // Databases
   mysql: '#4479A1',
   postgresql: '#336791',
   'sql-server': '#CC2927',
   oracle: '#DD0031',
+  mongodb: '#19cf31ff',
+  hadoop: '#c0bd16ff',
+  snowflake: '#2cd4e0ff',
+  databricks: '#f14f0eff',
 
   // Cloud / DevOps / Tools
+  aws: '#e7913fff',
   docker: '#2496ED',
   kubernetes: '#326CE5',
   git: '#F05032',
   gcp: '#4285F4',
   'power-bi': '#F2C811',
+  terraform: '#4d4fcfff',
+  jenkins: '#c74613ff',
 
   // Web / Frameworks
   react: '#61DAFB',
   nextjs: '#000000',
   angular: '#DD0031',
+  vue: '#41B883',
+  vite: '#5987b3ff',
   django: '#092E20',
   flask: '#000000',
   fastapi: '#009688',
   spring: '#6DB33F',
+  falcon: '#1b53a7ff',
 
   // Data / Analytics / Streaming
   spark: '#E25A1C',
   tableau: '#E97627',
   kafka: '#231F20',
+  SiApache : '#ec3e12ff',
+  airflow : '#6442ddff',
 
   // AI / LLM
   langchain: '#1C3C3C',
   huggingface: '#FFCC4D',
   openai: '#412991',
+  reactNative:'#661db9ff',
 }
+
 
 // -------------------- HERO --------------------
 const HERO = {
   title: 'Professional Training',
   subtitle:
     'Deep-dive programs for working professionals and serious learners in Databases, Cloud, DevOps, Web, Data Engineering, Analytics, and AI.',
-  badge: 'Hands-on, project-driven, enterprise focused',
+ badge: 'Professional Training • TINITIATE',
 }
 
 // -------------------- TRACKS (Categories) --------------------
@@ -956,7 +947,6 @@ const TRACKS = [
 ]
 
 // -------------------- COURSES (Per-course data with icons) --------------------
-// -------------------- COURSES (Per-course data with icons) --------------------
 const COURSES = [
   // Databases & NoSQL
   {
@@ -995,14 +985,16 @@ const COURSES = [
     key: 'mongodb-nosql',
     name: 'MongoDB',
     trackKey: 'databases',
-    Icon: FiDatabase,
+    Icon: SiMongodb,
+    brandKey: 'mongodb',
     tagline: 'Document database for high-scale modern applications.',
   },
   {
     key: 'hadoop-nosql',
     name: 'Hadoop (Hive / HBase)',
     trackKey: 'databases',
-    Icon: FiDatabase,
+    Icon: SiApachehadoop ,
+    brandKey: 'hadoop',
     tagline: 'Big data storage and querying with Hive & HBase.',
   },
 
@@ -1011,14 +1003,16 @@ const COURSES = [
     key: 'aws-data-eng',
     name: 'AWS Data Engineering',
     trackKey: 'cloud-data-eng',
-    Icon: FiCloud,
+    Icon: FaAws,
+    brandKey: 'aws',
     tagline: 'Data lakes, ETL pipelines, and analytics on AWS.',
   },
   {
     key: 'azure-data-eng',
     name: 'Azure Data Engineering',
     trackKey: 'cloud-data-eng',
-    Icon: FiCloud,
+    Icon: 'none',
+    image:'/images/courses/microsoftAzure.png',
     tagline: 'Data Factory, Synapse, and end-to-end pipelines on Azure.',
   },
   {
@@ -1033,14 +1027,16 @@ const COURSES = [
     key: 'snowflake-data-eng',
     name: 'Snowflake Data Engineering',
     trackKey: 'cloud-data-eng',
-    Icon: FiCloud,
+    Icon: SiSnowflake,
+    brandKey: 'snowflake',
     tagline: 'Cloud data warehousing and ELT on Snowflake.',
   },
   {
     key: 'databricks-data-eng',
     name: 'Databricks Data Engineering',
     trackKey: 'cloud-data-eng',
-    Icon: FiCloud,
+    Icon: SiDatabricks,
+    brandKey: 'databricks',
     tagline: 'Lakehouse architecture and Spark on Databricks.',
   },
   {
@@ -1056,14 +1052,16 @@ const COURSES = [
     key: 'azure-devops',
     name: 'Azure DevOps',
     trackKey: 'cloud-devops',
-    Icon: FiCloud,
+    Icon: 'none',
+    image:'/images/courses/microsoftAzure.png',
+    brandKey: 'aws',
     tagline: 'CI/CD, pipelines, and infra automation in Azure.',
   },
   {
     key: 'aws-devops',
     name: 'AWS DevOps',
     trackKey: 'cloud-devops',
-    Icon: FiCloud,
+    Icon: FaAws,
     tagline: 'DevOps practices and tooling on AWS.',
   },
   {
@@ -1078,14 +1076,16 @@ const COURSES = [
     key: 'terraform',
     name: 'Terraform',
     trackKey: 'cloud-devops',
-    Icon: FiCloud,
+    Icon: SiTerraform,
+    brandKey: 'terraform',
     tagline: 'Infrastructure as Code across cloud providers.',
   },
   {
     key: 'jenkins',
     name: 'Jenkins',
     trackKey: 'cloud-devops',
-    Icon: FiCloud,
+    Icon: SiJenkins  ,
+    brandKey: 'jenkins',
     tagline: 'CI/CD orchestration with Jenkins pipelines.',
   },
   {
@@ -1151,14 +1151,16 @@ const COURSES = [
     key: 'vue',
     name: 'Vue',
     trackKey: 'web-dev-node',
-    Icon: FiCode,
+    Icon: FaVuejs ,
+    brandKey: 'vue',
     tagline: 'Progressive web apps using Vue.js.',
   },
   {
     key: 'vite',
     name: 'Vite',
     trackKey: 'web-dev-node',
-    Icon: FiCode,
+    Icon: SiVite ,
+    brandKey: 'vite',
     tagline: 'Lightning-fast dev bundler for modern frontends.',
   },
 
@@ -1191,7 +1193,8 @@ const COURSES = [
     key: 'falcon',
     name: 'Falcon',
     trackKey: 'web-dev-python',
-    Icon: FiCode,
+    Icon: SiFalcon ,
+    brandKey: 'falcon',
     tagline: 'Minimal, high-performance Python framework for APIs and services.',
   },
 
@@ -1218,14 +1221,18 @@ const COURSES = [
     key: 'rn-ios',
     name: 'React Native – iOS',
     trackKey: 'app-dev',
-    Icon: FiSmartphone,
+    // Icon: FiSmartphone,
+    Icon: SiReact,
+    brandKey: 'reactNative',
     tagline: 'Building and testing iOS apps with React Native.',
   },
   {
     key: 'rn-android',
     name: 'React Native – Android',
     trackKey: 'app-dev',
-    Icon: FiSmartphone,
+    // Icon: FiSmartphone,
+    Icon: SiReact,
+    brandKey: 'reactNative',
     tagline: 'React Native apps for Android devices.',
   },
 
@@ -1256,7 +1263,7 @@ const COURSES = [
   {
     key: 'spark',
     name: 'Apache Spark',
-    trackKey: 'data-analytics',
+
     Icon: SiApachespark,
     brandKey: 'spark',
     tagline: 'Big data processing with Spark RDDs and DataFrames.',
@@ -1273,7 +1280,8 @@ const COURSES = [
     key: 'airflow',
     name: 'Apache Airflow',
     trackKey: 'data-analytics',
-    Icon: FiBarChart2,
+    Icon: SiApacheairflow ,
+    brandKey: 'airflow',
     tagline: 'Workflow orchestration and pipeline scheduling.',
   },
 
@@ -1402,35 +1410,52 @@ function TrackCard({ track }) {
       </div>
 
       {/* Course logos & data */}
-      <div className="relative mt-4 grid grid-cols-2 gap-3">
-        {coursesForTrack.map((course) => {
-          const CourseIcon = course.Icon || FiCode
-          const brandColor = BRAND[course.brandKey] || '#4B5563' // default gray if no brand
-          return (
-            <div
-              key={course.key}
-              className="flex items-center gap-2 rounded-2xl bg-gray-50 px-3 py-2 transition group-hover:bg-gray-100"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white ring-1 ring-gray-200">
-                <CourseIcon
-                  className="h-6 w-6 sm:h-7 sm:w-7"
-                  style={{ color: brandColor }}
-                />
-              </div>
-              <div className="flex-1">
-                <p className="text-[11px] font-semibold text-gray-900 leading-snug">
-                  {course.name}
-                </p>
-                {course.tagline && (
-                  <p className="mt-0.5 text-[10px] text-gray-500">
-                    {course.tagline}
-                  </p>
-                )}
-              </div>
-            </div>
-          )
-        })}
+      {/* Course logos & data */}
+<div className="relative mt-4 grid grid-cols-2 gap-3">
+  {coursesForTrack.map((course) => {
+    const CourseIcon = course.Icon
+    const hasIcon = typeof CourseIcon === 'function'
+    const hasImage = !!course.image
+    const brandColor = BRAND[course.brandKey] || '#4B5563' // default gray
+
+    return (
+      <div
+        key={course.key}
+        className="flex items-center gap-2 rounded-2xl bg-gray-50 px-3 py-2 transition group-hover:bg-gray-100"
+      >
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white ring-1 ring-gray-200 overflow-hidden">
+          {hasIcon ? (
+            <CourseIcon
+              className="h-6 w-6 sm:h-7 sm:w-7"
+              style={{ color: brandColor }}
+            />
+          ) : hasImage ? (
+            <Image
+              src={course.image}
+              alt={course.name}
+              width={28}
+              height={28}
+              className="h-7 w-7 object-contain"
+            />
+          ) : (
+            <FiCode className="h-6 w-6 sm:h-7 sm:w-7 text-gray-500" />
+          )}
+        </div>
+
+        <div className="flex-1">
+          <p className="text-[11px] font-semibold text-gray-900 leading-snug">
+            {course.name}
+          </p>
+          {course.tagline && (
+            <p className="mt-0.5 text-[10px] text-gray-500">
+              {course.tagline}
+            </p>
+          )}
+        </div>
       </div>
+    )
+  })}
+</div>
     </div>
   )
 }
@@ -1440,60 +1465,73 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       {/* HERO (black) */}
-      <section className="relative overflow-hidden bg-black px-6 py-20">
-        <div className="pointer-events-none absolute inset-0 bg-black opacity-60" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-black opacity-40" />
-        <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row md:items-center">
-          <div className="flex-1">
-            <span className="inline-flex items-center gap-2 rounded-full border border-slate-600 bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-200">
-              <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-              Professional Training • TINITIATE
-            </span>
+<section className="relative overflow-hidden bg-black px-6 py-20">
+  <div className="pointer-events-none absolute inset-0 bg-black opacity-60" />
+  <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-black opacity-40" />
+  <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row md:items-center">
+    <div className="flex-1">
+<span className="inline-flex items-center gap-2 rounded-full border border-slate-600 bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-200">
+  <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
+  {/* Main badge text */}
+  {HERO.badge}
+  {/* Divider */}
+  <span className="mx-2 h-3 w-px bg-slate-600" />
+  {/* Online highlight in green */}
+  <span className="font-semibold text-emerald-300">
+    Online Training
+  </span>
+</span>
 
-            <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
-              {HERO.title}
-            </h1>
-            <p className="mt-4 max-w-xl text-sm md:text-base text-slate-200">
-              {HERO.subtitle}
-            </p>
 
-            <div className="mt-5 flex flex-wrap gap-2 text-xs md:text-sm">
-              {[
-                'Databases',
-                'Cloud Data Engineering',
-                'Cloud & DevOps',
-                'Web Development',
-                'Application Development',
-                'Data & Analytics',
-                'AI Engineering',
-              ].map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-slate-100"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
+      <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
+        {HERO.title}
+      </h1>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/request-callback"
-                className="inline-flex items-center gap-2 rounded-full bg-indigo-500 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-600 transition"
-              >
-                Schedule a counselling call
-                <FiArrowRight className="h-4 w-4" />
-              </Link>
-              <div className="flex flex-wrap items-center gap-3 text-xs text-slate-300 md:text-sm">
-                <div className="flex items-center gap-1.5">
-                  <FiUsers className="h-4 w-4" />
-                  1:1 and small-group options
-                </div>
-              </div>
-            </div>
-          </div>
+      <p className="mt-4 max-w-xl text-sm md:text-base text-slate-200">
+        All professional programs are delivered as{' '}
+        <span className="font-semibold text-emerald-300">
+          online classes
+        </span>{' '}
+        with project-focused mentor guidance. Deep-dive into Databases,
+        Cloud Data Engineering, Cloud &amp; DevOps, Web Development,
+        Application Development, Data &amp; Analytics, and AI Engineering —
+        tailored for working professionals and serious learners.
+      </p>
+
+      <div className="mt-5 flex flex-wrap gap-2 text-xs md:text-sm">
+        {[
+          'Databases',
+          'Cloud Data Engineering',
+          'Cloud & DevOps',
+          'Web Development',
+          'Application Development',
+          'Data & Analytics',
+          'AI Engineering',
+        ].map((item) => (
+          <span
+            key={item}
+            className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-slate-100"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+
+      <div className="mt-8 flex flex-wrap items-center gap-4">
+        <Link
+          href="/request-callback"
+          className="inline-flex items-center gap-2 rounded-full bg-indigo-500 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-600 transition"
+        >
+          Schedule a counselling call
+          <FiArrowRight className="h-4 w-4" />
+        </Link>
+        <div className="flex flex-wrap items-center gap-3 text-xs text-slate-300 md:text-sm">
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* TRACKS + HOW IT WORKS (LIGHT) */}
       <section className="bg-gray-50 px-6 py-16">

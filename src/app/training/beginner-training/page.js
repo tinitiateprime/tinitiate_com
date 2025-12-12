@@ -447,11 +447,12 @@ const BRAND = {
 
 // -------------------- DATA --------------------
 const HERO = {
-  title: 'Beginner Training Program',
-  subtitle: 'Start your IT journey with the right foundations. Learn programming, web development, and databases from scratch.',
+  title: 'Beginner Online Training Program',
+  subtitle: 'Live online IT training with strong foundations in programming, web development, and databases.',
   badge: 'No prior experience required',
-  image: '/images/banners/beginner-training.jpg',
+  // ...
 }
+
 
 const COURSES = [
   {
@@ -499,21 +500,21 @@ const COURSES = [
     ],
     href: '/courses/typescript-beginner-course',
   },
-  {
-    key: 'java',
-    name: 'Java',
-    Icon: FaJava,
-    color: 'from-red-500 to-amber-500',
-    brandKey: 'java',
-    level: 'Beginner',
-    duration: '8–10 weeks',
-    outcomes: [
-      'OOP concepts in depth',
-      'Console & basic project work',
-      'Foundation for backend & Android',
-    ],
-    href: '/courses/java-language-course',
-  },
+{
+  key: 'java',
+  name: 'Java',
+  Icon: FaJava,
+  color: 'from-red-500 to-amber-500',
+  brandKey: 'java',
+  level: 'Beginner',
+  duration: '8–10 weeks',
+  outcomes: [
+    'OOP concepts in depth',
+    'Console & basic project work',
+    'Strong foundation for advanced Java',
+  ],
+  href: '/courses/java-language-course',
+},
   {
     key: 'sql',
     name: 'SQL',
@@ -542,7 +543,7 @@ const COURSES = [
     'Trees, graphs, hashing basics',
     'Time & space complexity intuition',
   ],
-  href: '/courses/data-structures-course',
+  href: '/courses/data-structures-beginner-course',
 },
 
 ]
@@ -647,54 +648,62 @@ export default function Page() {
   return (
     <main className="bg-white text-gray-900">
       {/* HERO (black) */}
-      <section className="relative overflow-hidden bg-black px-6 py-20">
-        <div className="pointer-events-none absolute inset-0 bg-black opacity-60" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-black opacity-40" />
-        <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row md:items-center">
-          <div className="flex-1">
-            <span className="inline-flex items-center gap-2 rounded-full border border-slate-600 bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-200">
-              <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-              {HERO.badge}
-            </span>
+<section className="relative overflow-hidden bg-black px-6 py-20">
+  <div className="pointer-events-none absolute inset-0 bg-black opacity-60" />
+  <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-black opacity-40" />
+  <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row md:items-center">
+    <div className="flex-1">
+      <span className="inline-flex items-center gap-2 rounded-full border border-slate-600 bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-200">
+        <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
+        {/* You can also change HERO.badge text if you want */}
+        {HERO.badge}
+        <span className="mx-2 h-3 w-px bg-slate-600" />
+        <span className="font-semibold text-emerald-300">
+          Online Training
+        </span>
+      </span>
 
-            <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
-              {HERO.title}
-            </h1>
-            <p className="mt-4 max-w-xl text-sm md:text-base text-slate-200">
-              We focus on the essentials first: Python, JavaScript/HTML/CSS, TypeScript, Java, and SQL.
-              Get the fundamentals clear so you can grow into Full Stack, Data, Cloud or AI roles with confidence.
-            </p>
+      <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
+        {HERO.title}
+      </h1>
 
-            {/* Quick list of what is covered */}
-            <div className="mt-5 flex flex-wrap gap-2 text-xs md:text-sm">
-              {['Python', 'JavaScript / HTML / CSS', 'TypeScript', 'Java', 'SQL'].map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-slate-100"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
+      <p className="mt-4 max-w-xl text-sm md:text-base text-slate-200">
+        {/* All sessions are delivered as{' '}
+        <span className="font-semibold text-emerald-300">
+        online classes
+        </span>{' '}
+        with mentor support. */}
+        We focus on the essentials first:
+        Python, JavaScript/HTML/CSS, TypeScript, Java, and SQL.
+        Get the fundamentals clear so you can grow into Full Stack,
+        Data, Cloud or AI roles with confidence — from anywhere.
+      </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/request-callback"
-                className="inline-flex items-center gap-2 rounded-full bg-indigo-500 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-600 transition"
-              >
-                Talk to a Mentor
-                <FiArrowRight className="h-4 w-4" />
-              </Link>
-              <div className="flex items-center gap-3 text-xs text-slate-300 md:text-sm">
-                <div className="flex items-center gap-1.5">
-                  <FiUsers className="h-4 w-4" />
-                  1:1 or small batches
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Quick list of what is covered */}
+      <div className="mt-5 flex flex-wrap gap-2 text-xs md:text-sm">
+        {['Python', 'JavaScript / HTML / CSS', 'TypeScript', 'Java', 'SQL'].map((item) => (
+          <span
+            key={item}
+            className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-slate-100"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+
+      <div className="mt-8 flex flex-wrap items-center gap-4">
+        <Link
+          href="/request-callback"
+          className="inline-flex items-center gap-2 rounded-full bg-indigo-500 px-6 py-2.5 text-sm font-semibold text-white hover:bg-indigo-600 transition"
+        >
+          Talk to a Mentor
+          <FiArrowRight className="h-4 w-4" />
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* COURSES + HOW IT WORKS (LIGHT THEME) */}
       <section className="bg-gray-50 px-6 py-16">
