@@ -1284,6 +1284,15 @@ const COURSES = [
     brandKey: 'airflow',
     tagline: 'Workflow orchestration and pipeline scheduling.',
   },
+  {
+  key: 'python-seaborn',
+  name: 'Python Seaborn',
+  trackKey: 'data-analytics',
+  Icon: FiBarChart2,           // already imported from 'react-icons/fi'
+  brandKey: 'seaborn',
+  tagline: 'Statistical data visualization in Python using Seaborn on top of Matplotlib.',
+},
+
 
   // AI Engineering
   {
