@@ -3076,6 +3076,7 @@ import {
   FiSliders,
 } from "react-icons/fi";
 
+import { SiDatabricks } from "react-icons/si";
 
 
 // -------------------- HERO --------------------
@@ -3174,7 +3175,7 @@ const STACK_TECH = {
 
   // PySpark (re-using spark icon)
   pyspark: { name: "PySpark", Icon: SiApachespark, color: "text-orange-600" },
-  
+
 // File formats (use Fi icons instead of images)
 csv: { name: "CSV", Icon: FiFileText, color: "text-slate-700" },
 json: { name: "JSON", Icon: FiFileText, color: "text-slate-700" },
@@ -3198,6 +3199,23 @@ stepfunctions: { name: "Step Functions", Icon: FiGitBranch, color: "text-slate-8
 snowpark: { name: "Snowpark", Icon: "none", img: "/images/courses/snowpark.png" },
 snowpipe: { name: "Snowpipe", Icon: "none", img: "/images/courses/snowpipe.png" },
 
+// Azure Data Engineering Services
+adls: { name: "ADLS Gen2", Icon: FiLayers, color: "text-slate-800" },
+adf: { name: "Azure Data Factory", Icon: FiTool, color: "text-slate-800" },
+databricks: { name: "Azure Databricks", Icon: SiDatabricks, color: "text-red-600" },
+synapse: { name: "Azure Synapse", Icon: FiDatabase, color: "text-slate-800" },
+eventhubs: { name: "Azure Event Hubs", Icon: FiActivity, color: "text-slate-800" },
+streamanalytics: { name: "Azure Stream Analytics", Icon: FiBarChart2, color: "text-slate-800" },
+functions: { name: "Azure Functions", Icon: FiZap, color: "text-slate-800" },
+logicapps: { name: "Azure Logic Apps", Icon: FiGitBranch, color: "text-slate-800" },
+delta: { name: "Delta Lake", Icon: FiLayers, color: "text-slate-800" },
+
+
+// GCP Data Engineering services (generic icons)
+gcs: { name: "Google Cloud Storage (GCS)", Icon: FiLayers, color: "text-slate-800" },
+dataflow: { name: "Dataflow", Icon: FiTool, color: "text-slate-800" },
+bigquery: { name: "BigQuery", Icon: FiDatabase, color: "text-slate-800" },
+pubsub: { name: "Pub/Sub", Icon: FiActivity, color: "text-slate-800" },
 
 
 };
@@ -3275,28 +3293,29 @@ const DATA_ENGINEERING_PACKAGES = [
     title: "Azure Data Engineering",
     subtitle: "ADLS • ADF • Databricks (Delta) • Synapse",
     heroTech: "azure",
-blocks: {
-  "Core Skills": ["python", "sql", "csv", "json", "xml", "parquet"],
-  "Data Lake": ["s3", "redshift", "rds"],
-  "Batch ETL": ["glue", "emr", "pyspark", "athena", "lambda", "stepfunctions"],
-  "Streaming and Orchestration": ["kinesis", "kafka", "airflow"],
-  "CI/CD": ["terraform", "git", "docker"],
-},
-  },
-  {
-    key: "gcp-data-engineering",
-    title: "GCP Data Engineering",
-    subtitle: "GCS • Dataflow • BigQuery • Pub/Sub",
-    heroTech: "gcp",
     blocks: {
-      "Core Skills": ["python"],
-      "Storage": ["gcp"],
-      "Processing": ["spark"],
-      "Streaming": ["kafka"],
-      "Orchestration": ["airflow"],
-      "CI/CD": ["terraform", "docker", "git"],
+      "Core Skills": ["python", "sql", "csv", "json", "xml", "parquet"],
+      "Data Lake": ["adls"],
+      "Batch ETL": ["adf", "databricks", "pyspark", "delta", "synapse"],
+      "Streaming and Orchestration": ["eventhubs", "kafka", "streamanalytics"],
+      "Automation": ["functions", "logicapps"],
+      "CI/CD": ["terraform", "git", "azuredevops", "docker"],
     },
   },
+{
+  key: "gcp-data-engineering",
+  title: "GCP Data Engineering",
+  subtitle: "GCS • Dataflow • BigQuery • Pub/Sub",
+  heroTech: "gcp",
+  blocks: {
+    "Core Skills": ["python", "sql", "csv", "json", "parquet"],
+    "Storage": ["gcs"],
+    "Processing": ["dataflow", "bigquery"],
+    "Streaming": ["pubsub"],
+    "Orchestration": ["airflow"],
+    "CI/CD": ["terraform", "docker", "git"],
+  },
+}
 ];
 
 // ⚠️ Add missing tech key used above
