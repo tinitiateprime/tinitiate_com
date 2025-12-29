@@ -3397,7 +3397,7 @@ function TechItem({ techKey }) {
       title={t.name}
     >
       <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-gray-50">
-        <StackMark techKey={techKey} size={18} />
+        <StackMark techKey={techKey} size={36} />
       </div>
 
       <div className="min-w-0">
