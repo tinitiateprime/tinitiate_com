@@ -1,7 +1,7 @@
 // File: src/app/faq/why-tinitiate/page.jsx
 import Link from "next/link";
 import Script from "next/script";
-import faqData from "../../../../public/data/faq/whyTinitiate.json";
+import faqData from "../../../data/faq/whyTinitiate.json";
 import FAQList from "../../components/FAQList";
 
 export const metadata = {

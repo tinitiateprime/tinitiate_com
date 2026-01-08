@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import FAQList from "../../components/FAQList";
-import faqData from "../../../../public/data/faq/studentFaqStem.json"; // uses the student JSON you made
+import faqData from "../../../data/faq/studentFaqStem.json"; // uses the student JSON you made
 
 export const metadata = {
   title: "Student FAQ — Why Choose TINITIATE | TINITIATE",
