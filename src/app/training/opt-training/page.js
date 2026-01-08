@@ -52,7 +52,7 @@ const TRACKS = [
   },
   {
     title: "Full Stack Web (Next.js + Postgres + Azure)",
-    href: "/courses/javascript-language-course",
+    href: "/courses/nextjs-beginner-course",
     points: [
       "Next.js full-stack applications",
       "PostgreSQL schema & APIs",
