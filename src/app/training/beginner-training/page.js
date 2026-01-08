@@ -514,7 +514,7 @@ const COURSES = [
     'Strong foundation for advanced Java',
   ],
   href: '/courses/java-language-course',
-},
+}, 
   {
     key: 'sql',
     name: 'SQL',

@@ -570,9 +570,11 @@ export default function Header() {
         { label: "Professional Training", href: "/training/professional-training" },
         // { label: "Personalized Training", href: "/training/personalized-training" },
         { label: "Corporate Training", href: "/training/corporate-training" },
-        { label: "Campus Training", href: "/training/campus-training" },
+        { label: "Campus Training", href: "/training/campus-training" }, 
+        { label: "OPT Training", href: "/training/opt-training"}
+        
       ],
-    },
+    }, 
     {
       label: "Company",
       href: "/company",

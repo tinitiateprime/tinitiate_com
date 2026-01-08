@@ -384,6 +384,7 @@ import Script from "next/script";
 import faqData from "../../../../public/data/faq/parentsFaqStem.json";
 import FAQList from "../../components/FAQList";
 
+
 export const metadata = {
   title: "Parent FAQ — TINITIATE STEM & IT Programs",
   description:
