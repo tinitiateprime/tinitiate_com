@@ -582,6 +582,8 @@
 
 
 // File: src/app/faq/why-tinitiate/parents-stem/FAQList.jsx
+
+// File: src/app/faq/why-tinitiate/parents-stem/FAQList.jsx
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -636,15 +638,17 @@ function renderBlock(block, idx) {
               </thead>
             ) : null}
             <tbody className="divide-y divide-gray-200">
-              {block.rows?.map((row, rIdx) => (
-                <tr key={`tr-${rIdx}`}>
-                  {row.map((cell, cIdx) => (
-                    <td key={`td-${rIdx}-${cIdx}`} className="p-3">
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
+              {block.rows?.map((row, rIdx) =>
+                Array.isArray(row) ? (
+                  <tr key={`tr-${rIdx}`}>
+                    {row.map((cell, cIdx) => (
+                      <td key={`td-${rIdx}-${cIdx}`} className="p-3">
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ) : null
+              )}
             </tbody>
           </table>
         </div>
@@ -662,9 +666,7 @@ function renderBlock(block, idx) {
             className="w-full rounded-xl border border-gray-200"
             loading="lazy"
           />
-          {caption ? (
-            <figcaption className="text-xs text-gray-500">{caption}</figcaption>
-          ) : null}
+          {caption && <figcaption className="text-xs text-gray-500">{caption}</figcaption>}
         </figure>
       );
     }
@@ -689,9 +691,7 @@ function renderBlock(block, idx) {
                 className="h-full w-full"
               />
             </div>
-            {caption ? (
-              <figcaption className="text-xs text-gray-500">{caption}</figcaption>
-            ) : null}
+            {caption && <figcaption className="text-xs text-gray-500">{caption}</figcaption>}
           </figure>
         );
       }
@@ -707,9 +707,7 @@ function renderBlock(block, idx) {
             <source src={src} />
             Your browser does not support the video tag.
           </video>
-          {caption ? (
-            <figcaption className="text-xs text-gray-500">{caption}</figcaption>
-          ) : null}
+          {caption && <figcaption className="text-xs text-gray-500">{caption}</figcaption>}
         </figure>
       );
     }
@@ -725,10 +723,10 @@ function renderBlock(block, idx) {
    - Mobile (<768px): questions CLOSED by default (collapsible with scroll/clamp).
    ========================================================= */
 export default function FAQList({
-  faqs,
-  headerOffsetDesktop = 112, // ~ pt-28 (for scroll-mt)
-  headerOffsetMobile = 96, // ~ pt-24
-  nextPeek = 56, // keep next question header slightly visible on mobile
+  faqs = [],
+  headerOffsetDesktop = 112,
+  headerOffsetMobile = 96,
+  nextPeek = 56,
 }) {
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -738,8 +736,14 @@ export default function FAQList({
     const mq = window.matchMedia("(min-width: 768px)");
     const update = () => setIsDesktop(mq.matches);
     update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
+
+    if (mq.addEventListener) mq.addEventListener("change", update);
+    else if (mq.addListener) mq.addListener(update);
+
+    return () => {
+      if (mq.removeEventListener) mq.removeEventListener("change", update);
+      else if (mq.removeListener) mq.removeListener(update);
+    };
   }, []);
 
   // Split blocks per item (video first ordering)
@@ -800,9 +804,9 @@ export default function FAQList({
    ========================================================= */
 function MobileCollapsible({ prepared, headerOffsetMobile, nextPeek }) {
   const [openIndex, setOpenIndex] = useState(-1);
-  const itemRefs = useRef([]); // <details>
-  const summaryRefs = useRef([]); // <summary>
-  const contentRefs = useRef([]); // answer container
+  const itemRefs = useRef([]);
+  const summaryRefs = useRef([]);
+  const contentRefs = useRef([]);
 
   const getOffset = () => headerOffsetMobile;
 
@@ -844,8 +848,7 @@ function MobileCollapsible({ prepared, headerOffsetMobile, nextPeek }) {
     if (!id) return;
     const idx = prepared.findIndex((f) => f.id === id);
     if (idx >= 0) setOpenIndex(idx);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [prepared]);
 
   // respond to hash changes
   useEffect(() => {
@@ -877,9 +880,7 @@ function MobileCollapsible({ prepared, headerOffsetMobile, nextPeek }) {
             const rect = nextSummary.getBoundingClientRect();
             const margin = 12;
             const overflow = rect.bottom - (window.innerHeight - margin);
-            if (overflow > 0) {
-              window.scrollBy({ top: overflow, behavior: "smooth" });
-            }
+            if (overflow > 0) window.scrollBy({ top: overflow, behavior: "smooth" });
           }, 260);
         }
       });
