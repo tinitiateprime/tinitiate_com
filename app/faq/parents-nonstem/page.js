@@ -2498,7 +2498,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import FAQList from "../../components/FAQList";
-import faqData from "../../../../public/data/faq/parentsFaqNonStem.json";
+import { useEffect, useState } from "react";
 
 export const metadata = {
   title: "Parent FAQ — Why Tech Skills Matter for Non-STEM Students | TINITIATE",
@@ -2548,6 +2548,20 @@ function flattenBlocksToText(blocks) {
 }
 
 export default function Page() {
+  const [faqData, setFaqData] = useState(null);
+
+  // Fetching the JSON data on component mount
+  useEffect(() => {
+    fetch("/data/faq/parentsFaqNonStem.json")
+      .then((res) => res.json())
+      .then((data) => setFaqData(data))
+      .catch((error) => console.error("Error fetching JSON:", error));
+  }, []);
+
+  if (!faqData) {
+    return <div>Loading...</div>; // Add a loading state while the JSON is being fetched
+  }
+
   const { updatedAt, faqs } = faqData;
 
   // Normalize: ensure blocks is always an array
@@ -2642,7 +2656,7 @@ export default function Page() {
 
       {/* ===== Layout ===== */}
       <div className="mx-auto grid w-[92%] max-w-[1200px] gap-8 md:grid-cols-12 ">
-        
+
         {/* ===== ToC ===== */}
         <aside className="hidden md:col-span-3 md:block mb-6">
           <div className="sticky top-20">
@@ -2690,50 +2704,6 @@ export default function Page() {
 
         {/* ===== Main column ===== */}
         <section className="md:col-span-9 space-y-8 ">
-          
-          {/* --- Top Explainer Card ---
-          <article
-            id="why-nonstem-tech"
-            aria-labelledby="nonstem-title"
-            className="rounded-2xl border border-gray-200 bg-white p-5 md:p-6"
-          >
-            <h2 id="nonstem-title" className="text-xl font-bold md:text-2xl">
-              Tech skills make non-STEM students more effective in any career
-            </h2>
-
-            <p className="mt-3 text-sm leading-relaxed text-gray-700">
-              Non-STEM students don’t need to become programmers. Learning{" "}
-              <strong>digital tools and project-based problem-solving</strong> helps in
-              every role — marketing, finance, design, HR, operations. We begin with{" "}
-              <strong>small, confidence-building projects</strong> (Excel→Python automation,
-              data analysis dashboards, simple apps/IoT demos), then guide students to{" "}
-              <strong>portfolio-ready work</strong> useful for internships and interviews.
-            </p>
-
-            <div className="mt-4 grid gap-4 md:grid-cols-12">
-              <div className="md:col-span-7">
-                <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
-                  <h3 className="text-sm font-semibold text-gray-900">Examples we build</h3>
-                  <ul className="mt-2 space-y-2 text-sm text-gray-700">
-                    <li>• Automate attendance or reports (Excel → Python).</li>
-                    <li>• Create a mini website or simple app.</li>
-                    <li>• Analyse cricket/finance data with visual dashboards.</li>
-                    <li>• Try a tiny IoT sensor demo (optional).</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="md:col-span-5">
-                <div className="rounded-xl border border-gray-200 bg-white p-4">
-                  <h3 className="text-sm font-semibold text-gray-900">Why this helps</h3>
-                  <ul className="mt-2 space-y-2 text-sm text-gray-700">
-                    <li>• Stronger problem-solving & logical thinking.</li>
-                    <li>• A practical portfolio for internships.</li>
-                    <li>• Confidence for interviews & on-the-job tasks.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </article> */}
 
           {/* --- FAQ List --- */}
           <FAQList faqs={normalizedFaqs} />
@@ -2775,3 +2745,4 @@ export default function Page() {
     </main>
   );
 }
+
