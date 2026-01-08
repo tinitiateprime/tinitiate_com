@@ -2495,9 +2495,10 @@
 
 
 // File: src/app/faq/why-tinitiate/parents-nonstem/page.jsx
+// File: src/app/faq/why-tinitiate/parents-nonstem/page.jsx
 import Link from "next/link";
 import Script from "next/script";
-import FAQList from "../../components/FAQList";
+import FAQList from "../../components/FAQList"; // This component will now be treated as a Client Component
 import { useEffect, useState } from "react";
 
 export const metadata = {
@@ -2608,7 +2609,6 @@ export default function Page() {
             <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-sky-700">
               For Parents (Non-IT / Non-STEM)
             </p>
-            {/* <p className="text-xs text-gray-500">Updated: {updatedAtLabel} (IST)</p> */}
           </div>
 
           <h1 className="mt-2 text-2xl font-extrabold leading-tight md:text-4xl">
@@ -2669,12 +2669,10 @@ export default function Page() {
               </p>
 
               <ul
-                className="
-                  mt-2 text-sm border border-gray-200 rounded-xl
+                className="mt-2 text-sm border border-gray-200 rounded-xl
                   overflow-x-hidden md:overflow-y-auto
                   md:max-h-[calc(100vh-10rem)]
-                  overscroll-contain
-                "
+                  overscroll-contain"
               >
                 {/* Top explainer first */}
                 <li className="border-b">
