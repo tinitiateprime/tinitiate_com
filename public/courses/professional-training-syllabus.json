@@ -38,7 +38,7 @@
             "Build a console-based Student Manager",
             "Refactor procedural code into OOP"
           ]
-        },
+        }, 
         {
           "module": "M2",
           "title": "Collections + Generics + Exceptions",
@@ -48,7 +48,7 @@
             "Iterators, streams basics",
             "Generics: bounded types, wildcard usage",
             "Exceptions, custom exceptions, best practices"
-          ],
+          ], 
           "labs": [
             "Implement in-memory repository using Map",
             "Input validation + exception strategy"
@@ -546,7 +546,7 @@
     {
       "key": "aws-data-engineering",
       "category": "Data Engineering",
-      "title": "AWS Data Engineering",
+      "title": "DaAWS ta Engineering",
       "subtitle": "S3 • Glue • Athena • Kinesis • Redshift",
       "level": "Intermediate → Advanced",
       "mode": "Online (Mentor-led)",
