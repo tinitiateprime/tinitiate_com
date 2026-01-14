@@ -546,7 +546,7 @@
     {
       "key": "aws-data-engineering",
       "category": "Data Engineering",
-      "title": "DaAWS ta Engineering",
+      "title": "AWS Data Engineering",
       "subtitle": "S3 • Glue • Athena • Kinesis • Redshift",
       "level": "Intermediate → Advanced",
       "mode": "Online (Mentor-led)",
