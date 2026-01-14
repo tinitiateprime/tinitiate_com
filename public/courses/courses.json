@@ -280,10 +280,10 @@
 {
   "slug": "gcp-beginner-course",
   "title": "Google Cloud Platform (GCP)",
-  "icon": "SiGooglecloud",
+  "icon": "none",
   "duration": "3 Months",
   "level": "Beginner to Advanced",
-  "image": "/images/courses/gcp-devops.png",
+  "image": "/images/courses/google-cloud.png",
   "description": "Comprehensive GCP training covering cloud fundamentals, networking, compute, storage, databases, security, DevOps, AI/ML services, and hands-on labs aligned with industry use cases and certification paths.",
   "prerequisites": "Basic knowledge of networking and IT concepts",
   "courseStructure": [
@@ -3819,6 +3819,129 @@
     { "title": "Applications", "topics": ["Chatbots", "Summarizers", "Code assistants"] },
     { "title": "Deployment", "topics": ["Building apps with FastAPI/Next.js", "Cost optimization", "Scaling considerations"] },
     { "title": "Capstone Project", "topics": ["Build & deploy a GPT-powered chatbot with custom knowledge base"] }
+  ]
+}
+,
+{
+  "slug": "snowflake-course",
+  "title": "Snowflake Cloud Engineering (SQL + Python + ETL)",
+  "icon": "SiSnowflake",
+  "duration": "2 Months",
+  "level": "Intermediate",
+  "image": "/images/courses/snowflake.png",
+  "description": "Learn Snowflake end-to-end for modern cloud data engineering: loading data, modeling, performance tuning, security, automation with Streams/Tasks, and Python integration using Snowpark. Build an enterprise-style ELT pipeline and a portfolio-ready capstone project.",
+  "prerequisites": "Comfortable with basic SQL (SELECT, JOIN, GROUP BY). Basic Python is helpful but not mandatory. Cloud fundamentals are a plus.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Snowflake & Cloud Data Warehousing",
+      "topics": [
+        "Why Snowflake? Cloud Data Warehouse vs Traditional DW",
+        "Snowflake Architecture: Storage, Compute, Cloud Services",
+        "Editions, Regions, Accounts (Overview)",
+        "Snowflake UI & Worksheets (Snowsight basics)",
+        "Key Concepts: Database, Schema, Warehouse, Role"
+      ]
+    },
+    {
+      "title": "Core SQL in Snowflake",
+      "topics": [
+        "Snowflake SQL Basics & Best Practices",
+        "Joins, Window Functions, CTEs (Quick refresh with Snowflake)",
+        "Working with Dates, Strings, NULLs",
+        "Views vs Materialized Views (When to use)",
+        "Query History & Results Cache (Intro)"
+      ]
+    },
+    {
+      "title": "Data Loading & File Handling",
+      "topics": [
+        "Stages: Internal vs External",
+        "File Formats (CSV, JSON, Parquet)",
+        "COPY INTO basics + error handling",
+        "Bulk Load Patterns & File Naming conventions",
+        "Validating Loads: Row counts, rejects, data quality checks"
+      ]
+    },
+    {
+      "title": "Semi-Structured Data (JSON / VARIANT)",
+      "topics": [
+        "VARIANT, OBJECT, ARRAY data types",
+        "Flattening arrays with FLATTEN",
+        "Parsing JSON and extracting attributes",
+        "Schema-on-read patterns",
+        "Best practices for semi-structured performance"
+      ]
+    },
+    {
+      "title": "Warehouses, Performance & Cost Optimization",
+      "topics": [
+        "Virtual Warehouses: sizing, scaling, auto-suspend/resume",
+        "Micro-partitions & clustering (concepts)",
+        "Query profile: reading execution plans and bottlenecks",
+        "Performance techniques: pruning, selective filters, join strategies",
+        "Cost controls: warehouse management and usage tracking (intro)"
+      ]
+    },
+    {
+      "title": "Data Modeling in Snowflake (Dimensional)",
+      "topics": [
+        "Star vs Snowflake schema (practical examples)",
+        "Fact & Dimension design for analytics",
+        "Surrogate keys, SCD Type 1/2 patterns (high level + implementation)",
+        "Incremental loads strategy for facts",
+        "Model validation: referential checks and reconciliation"
+      ]
+    },
+    {
+      "title": "Security, Governance & Access Control",
+      "topics": [
+        "RBAC: Users, Roles, Privileges",
+        "Warehouses and object-level permissions",
+        "Masking policies (intro) and secure views",
+        "Auditing basics: access history & query history",
+        "Data sharing overview (secure data share concepts)"
+      ]
+    },
+    {
+      "title": "Automation with Streams, Tasks & Snowpipe",
+      "topics": [
+        "Change Data Capture with Streams (basics)",
+        "Tasks for scheduling transformations",
+        "Orchestrating multi-step pipelines with tasks",
+        "Snowpipe overview for continuous ingestion",
+        "Operational reliability: retries, error tables, monitoring patterns"
+      ]
+    },
+    {
+      "title": "Python Integration with Snowpark",
+      "topics": [
+        "Snowpark overview: when to use vs SQL",
+        "DataFrames in Snowpark and transformations",
+        "UDFs / Stored Procedures (intro and usage)",
+        "Using Python for advanced processing (patterns)",
+        "Packaging & deploying Snowpark workloads (high level)"
+      ]
+    },
+    {
+      "title": "Production Readiness: Monitoring & Operations",
+      "topics": [
+        "Monitoring warehouse usage and query performance",
+        "Data pipeline observability (logs, alerts concepts)",
+        "Handling schema changes safely (patterns)",
+        "Time Travel, Cloning, and recovery strategies",
+        "Release checklist: testing, validation, rollback approach"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Capstone: Build an end-to-end ELT pipeline in Snowflake",
+        "Ingest data (batch + optional incremental/CDC simulation)",
+        "Model: facts/dimensions + SCD implementation",
+        "Automation: Streams/Tasks (and/or Snowpipe intro pattern)",
+        "Final deliverables: GitHub README, architecture diagram, and demo walkthrough"
+      ]
+    }
   ]
 }
 ]

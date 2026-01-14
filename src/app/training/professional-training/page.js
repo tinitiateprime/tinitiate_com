@@ -98,7 +98,7 @@ const STACK_TECH = {
 
   // Cloud / Hosting
   aws: { name: "AWS", Icon: FaAws, color: "text-orange-600" },
-  gcp: { name: "Google Cloud", Icon: SiGooglecloud, color: "text-blue-600" },
+  gcp: { name: "Google Cloud", Icon: 'none', color: "text-blue-600", img: "/images/courses/google-cloud.png"},
 
   // Azure as image
   azure: { name: "Azure", Icon: "none", img: "/images/courses/microsoftAzure.png" },
