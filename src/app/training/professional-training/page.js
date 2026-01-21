@@ -71,11 +71,11 @@ const HERO = {
 // =====================================================================================
 const STACK_TECH = {
   // Frontend
-  html: { name: "HTML5", Icon: SiHtml5, color: "text-orange-600" },
-  css: { name: "CSS3", Icon: SiCss3, color: "text-blue-600" },
-  js: { name: "JavaScript", Icon: SiJavascript, color: "text-yellow-500" },
-  ts: { name: "TypeScript", Icon: SiTypescript, color: "text-sky-600" },
-  react: { name: "React", Icon: SiReact, color: "text-cyan-600" },
+  html: { name: "HTML5", Icon: SiHtml5, color: "text-orange-600", path:'/courses/html-course'},
+  css: { name: "CSS3", Icon: SiCss3, color: "text-blue-600", path:'/courses/css-course'},
+  js: { name: "JavaScript", Icon: SiJavascript, color: "text-yellow-500", path:'courses/javascript-language-course'},
+  ts: { name: "TypeScript", Icon: SiTypescript, color: "text-sky-600", path:'courses/bootstrap-course'},
+  react: { name: "React", Icon: SiReact, color: "text-cyan-600", path:'courses/react-beginner-course'},
   next: { name: "Next.js", Icon: SiNextdotjs, color: "text-gray-900" },
   angular: { name: "Angular", Icon: SiAngular, color: "text-red-600" },
   bootstrap: { name: "Bootstrap", Icon: SiBootstrap, color: "text-violet-700" },
@@ -248,7 +248,7 @@ const DATA_ENGINEERING_PACKAGES = [
     heroTech: "aws",
     blocks: {
       "Core Skills": ["python", "SQL", ],
-      "Data Fomat":["csv", "json", "xml", "Parquet"],
+      "Data Format":["csv", "json", "xml", "Parquet"],
       "Database":["redshift", "rds"],
       "Data Lake": ["s3"],
       "Batch ETL": ["glue", "emr", "pyspark", "athena", "lambda functions", "Step Functions"],
@@ -379,8 +379,9 @@ function TechItem({ techKey }) {
   const t = STACK_TECH[key];
 
   if (!t) return null;
-
   return (
+    <>
+      <Link href={`${t.path}`}>
     <div
       className="flex items-center gap-3 rounded-2xl border border-gray-200 bg-white px-3 py-2 shadow-sm"
       title={t.name}
@@ -392,7 +393,10 @@ function TechItem({ techKey }) {
       <div className="min-w-0">
         <div className="truncate text-[12px] font-semibold text-gray-900">{t.name}</div>
       </div>
+  
     </div>
+        </Link>
+        </>
   );
 }
 
@@ -456,10 +460,11 @@ function DataEngCard({ pkg }) {
   const entries = Object.entries(pkg.blocks || {});
 
   return (
-    <Link href={`/training/professional-training/${pkg.key}`} className="block">
+   
       <div className="rounded-3xl border border-gray-200 bg-white p-4 shadow-sm transition hover:shadow-md">
+         <Link href={`/training/professional-training/${pkg.key}`} className="block">
         <CourseHeader course={pkg} />
-
+    </Link>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {entries.map(([title, items]) => (
             <div key={title} className="sm:col-span-2">
@@ -468,7 +473,7 @@ function DataEngCard({ pkg }) {
           ))}
         </div>
       </div>
-    </Link>
+  
   );
 }
 

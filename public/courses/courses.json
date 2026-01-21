@@ -1883,7 +1883,7 @@
   ]
 },
 {
-  "slug": "html-beginner-course",
+  "slug": "html-course",
   "title": "HTML Course",
   "icon": "SiHtml5",
   "duration": "1 Month",
@@ -3940,6 +3940,330 @@
         "Model: facts/dimensions + SCD implementation",
         "Automation: Streams/Tasks (and/or Snowpipe intro pattern)",
         "Final deliverables: GitHub README, architecture diagram, and demo walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "html-course",
+  "title": "HTML Fundamentals for Web Development",
+  "icon": "SiHtml5",
+  "duration": "1 Month",
+  "level": "Beginner",
+  "image": "/images/courses/html.png",
+  "description": "Learn the fundamentals of HTML and how it forms the backbone of every web page. Master HTML tags, forms, semantic elements, and web accessibility for building modern, responsive websites.",
+  "prerequisites": "No prior knowledge required. Basic understanding of computers and the internet is helpful.",
+  "courseStructure": [
+    {
+      "title": "Introduction to HTML",
+      "topics": [
+        "What is HTML? Understanding the structure of HTML documents",
+        "HTML Tags: Elements, Attributes, and Nesting",
+        "Basic HTML Document Structure: DOCTYPE, html, head, and body tags",
+        "HTML Comments and Code Organization",
+        "The Role of HTML in Web Development"
+      ]
+    },
+    {
+      "title": "HTML Text Formatting and Structure",
+      "topics": [
+        "Headings: `<h1> - <h6>`",
+        "Paragraphs: `<p>`",
+        "Text Formatting: `<strong>`, `<em>`, `<u>`, `<b>`, `<i>`",
+        "Line Breaks: `<br>` and White Space Handling",
+        "Lists: Ordered `<ol>` and Unordered `<ul>` Lists",
+        "Links: Creating Hyperlinks with `<a>`"
+      ]
+    },
+    {
+      "title": "Working with Images and Multimedia",
+      "topics": [
+        "Inserting Images with the `<img>` Tag",
+        "Image Attributes: `src`, `alt`, `width`, and `height`",
+        "Embedding Audio and Video with `<audio>` and `<video>`",
+        "Using `<iframe>` for Embedding External Content (YouTube, Maps, etc.)"
+      ]
+    },
+    {
+      "title": "HTML Forms and Input Handling",
+      "topics": [
+        "Creating Forms with the `<form>` Tag",
+        "Text Inputs, Radio Buttons, Checkboxes, and Submit Buttons",
+        "Input Types: Text, Email, Password, Button, Date, etc.",
+        "Form Validation with HTML5 Attributes (`required`, `minlength`, `pattern`)",
+        "Collecting and Sending Data: `GET` vs `POST` methods"
+      ]
+    },
+    {
+      "title": "HTML Tables and Data Presentation",
+      "topics": [
+        "Building Tables: `<table>`, `<tr>`, `<th>`, `<td>`",
+        "Table Layouts: `<thead>`, `<tbody>`, `<tfoot>`",
+        "Table Styling: Borders, Padding, and Spacing",
+        "Accessibility Features: Adding `scope` for better table accessibility",
+        "Data Representation: Displaying complex data in an organized manner"
+      ]
+    },
+    {
+      "title": "Semantic HTML and Accessibility",
+      "topics": [
+        "The Importance of Semantic HTML",
+        "HTML5 Semantic Tags: `<header>`, `<footer>`, `<article>`, `<section>`, `<nav>`, `<main>`",
+        "Improving Web Accessibility: `<label>`, ARIA roles, and attributes",
+        "Creating Accessible Forms and Inputs",
+        "Using `<figure>` and `<figcaption>` for media content"
+      ]
+    },
+    {
+      "title": "HTML5 New Elements and Features",
+      "topics": [
+        "HTML5 Introduction and New Features",
+        "Using New Input Types: `date`, `email`, `range`, `color`, etc.",
+        "Video and Audio Embedding with HTML5 `<video>` and `<audio>` tags",
+        "Canvas and SVG for Graphics: `<canvas>`, `<svg>`",
+        "Local Storage and Session Storage: Storing data in the browser"
+      ]
+    },
+    {
+      "title": "Responsive Web Design with HTML",
+      "topics": [
+        "Introduction to Responsive Design and Mobile-First Approach",
+        "Using Meta Tags: `viewport`",
+        "Media Queries for Different Screen Sizes",
+        "Flexible Layouts with `<div>` and `<span>`",
+        "Best Practices for Building Responsive Web Pages"
+      ]
+    },
+    {
+      "title": "Advanced HTML Techniques",
+      "topics": [
+        "HTML Forms: Advanced Use Cases (Multi-step forms, File Uploads)",
+        "Using Web Workers for Background Processing",
+        "Implementing Browser Features with HTML5 APIs (Geolocation, Web Storage)",
+        "Introduction to Web Accessibility Testing and Best Practices"
+      ]
+    }
+  ]
+},
+{
+  "slug": "css-course",
+  "title": "CSS Fundamentals for Web Development",
+  "icon": "SiCss3",
+  "duration": "1 Month",
+  "level": "Beginner",
+  "image": "/images/courses/css.png",
+  "description": "Learn the fundamentals of CSS to style and design modern, responsive websites. From basic styles to advanced layout techniques, this course covers everything you need to master CSS for web development.",
+  "prerequisites": "Basic understanding of HTML. No prior CSS experience is required.",
+  "courseStructure": [
+    {
+      "title": "Introduction to CSS",
+      "topics": [
+        "What is CSS? Understanding the role of CSS in web development",
+        "CSS Syntax: Selectors, Properties, and Values",
+        "Including CSS in HTML: Inline, Internal, and External Stylesheets",
+        "CSS Comments and Code Organization",
+        "CSS Cascade and Specificity"
+      ]
+    },
+    {
+      "title": "CSS Selectors and Box Model",
+      "topics": [
+        "Basic CSS Selectors: Element, Class, ID selectors",
+        "Grouping and Nesting Selectors",
+        "Combinators: Descendant, Child, Adjacent Sibling, General Sibling",
+        "The CSS Box Model: Content, Padding, Border, Margin",
+        "Box-sizing: `content-box` vs `border-box`",
+        "Understanding Margins and Padding"
+      ]
+    },
+    {
+      "title": "Text and Font Styling",
+      "topics": [
+        "Text Properties: `font-family`, `font-size`, `font-weight`, `line-height`",
+        "Text Alignment and Decoration: `text-align`, `text-decoration`, `text-transform`",
+        "Working with Web Fonts (Google Fonts)",
+        "Letter Spacing, Word Spacing, and Text Indentation",
+        "Creating Lists and Styling Bullets"
+      ]
+    },
+    {
+      "title": "Colors and Backgrounds",
+      "topics": [
+        "Understanding CSS Colors: Hex, RGB, RGBA, HSL",
+        "Using `transparent` and Opacity",
+        "Background Properties: `background-color`, `background-image`, `background-repeat`",
+        "Gradient Backgrounds: Linear and Radial Gradients",
+        "Background Positioning and Size"
+      ]
+    },
+    {
+      "title": "CSS Positioning and Layout",
+      "topics": [
+        "Positioning Properties: `static`, `relative`, `absolute`, `fixed`, `sticky`",
+        "The `z-index` Property and Stacking Context",
+        "Floats: Usage and Clearing Floats",
+        "CSS Flexbox: Basic Layout with Flexbox, Flex Containers and Items",
+        "Flexbox Properties: `justify-content`, `align-items`, `flex-grow`, `flex-shrink`",
+        "Creating Multi-column Layouts with Flexbox"
+      ]
+    },
+    {
+      "title": "CSS Grid Layout",
+      "topics": [
+        "Introduction to CSS Grid: Grid Containers and Grid Items",
+        "Defining Rows and Columns with `grid-template-rows` and `grid-template-columns`",
+        "Grid Lines, Gaps, and Track Sizing",
+        "Aligning and Justifying Items within a Grid",
+        "Advanced Grid Techniques: Grid Auto-Placement, Grid Templates, and Nesting Grids"
+      ]
+    },
+    {
+      "title": "Responsive Design and Media Queries",
+      "topics": [
+        "Introduction to Responsive Design",
+        "Using the `viewport` meta tag for mobile-first design",
+        "CSS Media Queries: Syntax and Application",
+        "Building Mobile-First Layouts",
+        "Responsive Typography: `rem`, `em`, and `vw` for scaling text",
+        "Designing for Multiple Devices and Screen Sizes"
+      ]
+    },
+    {
+      "title": "CSS Transitions and Animations",
+      "topics": [
+        "Understanding CSS Transitions: `transition-property`, `transition-duration`, `transition-timing-function`",
+        "Creating Hover Effects with Transitions",
+        "CSS Keyframe Animations: `@keyframes`",
+        "Animation Properties: `animation-name`, `animation-duration`, `animation-timing-function`",
+        "Combining Transitions and Animations for Interactive UI"
+      ]
+    },
+    {
+      "title": "Advanced CSS Techniques",
+      "topics": [
+        "Pseudo-classes and Pseudo-elements: `:hover`, `:focus`, `::before`, `::after`",
+        "Custom Properties (CSS Variables): Defining and Using Variables",
+        "CSS Specificity and Inheritance: Managing Stylesheets",
+        "Creating Custom Layouts with CSS Shapes and Clipping",
+        "CSS Frameworks Overview: Bootstrap, Tailwind CSS, and Material Design"
+      ]
+    }
+  ]
+},
+{
+  "slug": "bootstrap-course",
+  "title": "Bootstrap for Responsive Web Design",
+  "icon": "SiBootstrap",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/bootstrap.png",
+  "description": "Learn how to create responsive, mobile-first websites using Bootstrap, a popular front-end framework. Master its grid system, components, utilities, and themes to build modern, visually appealing websites.",
+  "prerequisites": "Basic knowledge of HTML and CSS is required. No prior experience with Bootstrap needed.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Bootstrap",
+      "topics": [
+        "What is Bootstrap? Overview of the framework",
+        "Setting up Bootstrap: CDN vs. Local installation",
+        "Bootstrap Folder Structure: CSS, JS, and Fonts",
+        "Bootstrap Grid System: Introduction and Concept",
+        "Responsive Design Principles: Mobile-First Approach"
+      ]
+    },
+    {
+      "title": "Bootstrap Grid System",
+      "topics": [
+        "Understanding the Grid System: 12-column layout",
+        "Creating Containers: `.container` vs `.container-fluid`",
+        "Defining Grid Columns: `.col-*` classes",
+        "Offsetting Columns: `.offset-*`",
+        "Nestable Grids and Responsive Adjustments",
+        "Aligning and Justifying Content in Grids"
+      ]
+    },
+    {
+      "title": "Bootstrap Typography",
+      "topics": [
+        "Font Styles: Default and Customizing Fonts",
+        "Headings: Using `.h1`, `.h2`, `.h3`, etc.",
+        "Text Alignment: `.text-left`, `.text-center`, `.text-right`",
+        "Text Transformations: `.text-uppercase`, `.text-lowercase`",
+        "Font Weight and Size Adjustments",
+        "Text Utilities: `.lead`, `.small`, `.strong`"
+      ]
+    },
+    {
+      "title": "Bootstrap Forms",
+      "topics": [
+        "Creating Basic Forms: `<form>`, `<input>`, `<textarea>`",
+        "Form Layout: `.form-group`, `.form-control`",
+        "Input Types: Text, Password, Radio, Checkbox, Date, etc.",
+        "Form Validation and Feedback with `.is-valid` and `.is-invalid`",
+        "Customizing Form Controls: Selects, Inputs, and Checkboxes",
+        "Bootstrap Forms Grid Layout"
+      ]
+    },
+    {
+      "title": "Bootstrap Buttons and Links",
+      "topics": [
+        "Creating Buttons: `.btn` classes",
+        "Button Variants: Primary, Secondary, Success, etc.",
+        "Button Grouping and Sizes: `.btn-group`, `.btn-lg`, `.btn-sm`",
+        "Links and Link Buttons: Styling links as buttons",
+        "Dropdown Buttons: Using `.dropdown` class"
+      ]
+    },
+    {
+      "title": "Bootstrap Components",
+      "topics": [
+        "Navigation Bars: `.navbar`, `.navbar-nav`",
+        "Cards: `.card` for flexible content grouping",
+        "Alerts: `.alert` for notifications and messages",
+        "Modals: Creating and Customizing Modal Windows",
+        "Carousels: `.carousel` for image sliders",
+        "List Groups: `.list-group` for ordered items"
+      ]
+    },
+    {
+      "title": "Bootstrap Utilities",
+      "topics": [
+        "Spacing Utilities: `.m-*`, `.p-*` for margin and padding",
+        "Text Utilities: `.text-*` for color, alignment, and transformation",
+        "Visibility Utilities: `.d-none`, `.d-block`, `.d-flex`",
+        "Flexbox Utilities: Aligning items using `.align-*`",
+        "Positioning Utilities: `.position-relative`, `.position-absolute`",
+        "Sizing Utilities: `.w-*`, `.h-*`, `.max-w-*`"
+      ]
+    },
+    {
+      "title": "Responsive Design with Bootstrap",
+      "topics": [
+        "Media Queries in Bootstrap: `.col-sm-*`, `.col-md-*`, etc.",
+        "Responsive Breakpoints: Creating mobile-first websites",
+        "Creating Responsive Layouts with the Grid System",
+        "Visibility and Display Utilities for Different Devices",
+        "Responsive Images: `.img-fluid`, `.img-thumbnail`",
+        "Fluid Containers and Responsive Components"
+      ]
+    },
+    {
+      "title": "Customizing Bootstrap Themes",
+      "topics": [
+        "Using Bootstrap's Default Theme",
+        "Customizing Colors, Fonts, and Layouts",
+        "Modifying Bootstrap Variables with SCSS",
+        "Creating a Custom Bootstrap Theme",
+        "Overriding Default Styles with Custom CSS"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Capstone: Build a Portfolio Website using Bootstrap",
+        "Create a Landing Page with Navigation, Cards, and Forms",
+        "Implement a Fully Responsive Layout for Multiple Devices",
+        "Integrate Bootstrap Components like Modals and Alerts",
+        "Final Deliverables: GitHub repository with code, README, and demo walkthrough"
       ]
     }
   ]
