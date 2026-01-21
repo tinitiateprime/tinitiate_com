@@ -73,12 +73,12 @@ const STACK_TECH = {
   // Frontend
   html: { name: "HTML5", Icon: SiHtml5, color: "text-orange-600", path:'/courses/html-course'},
   css: { name: "CSS3", Icon: SiCss3, color: "text-blue-600", path:'/courses/css-course'},
-  js: { name: "JavaScript", Icon: SiJavascript, color: "text-yellow-500", path:'courses/javascript-language-course'},
-  ts: { name: "TypeScript", Icon: SiTypescript, color: "text-sky-600", path:'courses/bootstrap-course'},
-  react: { name: "React", Icon: SiReact, color: "text-cyan-600", path:'courses/react-beginner-course'},
+  js: { name: "JavaScript", Icon: SiJavascript, color: "text-yellow-500", path:'/courses/javascript-language-course'},
+  ts: { name: "TypeScript", Icon: SiTypescript, color: "text-sky-600"},
+  react: { name: "React", Icon: SiReact, color: "text-cyan-600", path:'/courses/react-beginner-course'},
   next: { name: "Next.js", Icon: SiNextdotjs, color: "text-gray-900" },
   angular: { name: "Angular", Icon: SiAngular, color: "text-red-600" },
-  bootstrap: { name: "Bootstrap", Icon: SiBootstrap, color: "text-violet-700" },
+  bootstrap: { name: "Bootstrap", Icon: SiBootstrap, color: "text-violet-700",path:'/courses/bootstrap-course' },
 
   // Backend (Web)
   node: { name: "Node.js", Icon: SiNodedotjs, color: "text-green-700" },
