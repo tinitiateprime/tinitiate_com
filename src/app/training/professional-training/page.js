@@ -1,7 +1,3 @@
-
-
-
-
 "use client";
 
 import Image from "next/image";
@@ -41,7 +37,7 @@ import {
   SiTerraform,
   SiApachespark,
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa6";
+import { FaAws, FaJava  } from "react-icons/fa6";
 
 import {
   FiArrowRight,
@@ -60,6 +56,8 @@ import {
 
 import { SiDatabricks } from "react-icons/si";
 
+import { DiMsqlServer } from "react-icons/di";
+import { color } from "framer-motion";
 // -------------------- HERO --------------------
 const HERO = {
   title: "Professional Training",
@@ -86,15 +84,16 @@ const STACK_TECH = {
   node: { name: "Node.js", Icon: SiNodedotjs, color: "text-green-700" },
 
   // Backend (Java Full Stack)
-  java: { name: "Java", Icon: FiCpu, color: "text-red-600" },
+  java: { name: "Java", Icon: FaJava , color: "text-red-600" },
   springboot: { name: "Spring Boot", Icon: SiSpring, color: "text-green-700" },
   spring: { name: "Spring", Icon: SiSpring, color: "text-green-700" },
   hibernate: { name: "Hibernate / JPA", Icon: SiHibernate, color: "text-amber-700" },
 
   // Database
   postgres: { name: "PostgreSQL", Icon: SiPostgresql, color: "text-indigo-700" },
-  mysql: { name: "MySQL Server", Icon: SiMysql, color: "text-blue-700" },
+  // mysql: { name: "MySQL Server", Icon: SiMysql, color: "text-blue-700" },
   mongo: { name: "MongoDB", Icon: SiMongodb, color: "text-green-700" },
+  mysql: { name: "SQL Server", Icon: DiMsqlServer, color: "text-red-700" },
 
   // Cloud / Hosting
   aws: { name: "AWS", Icon: FaAws, color: "text-orange-600" },
@@ -145,7 +144,7 @@ const STACK_TECH = {
   redshift: { name: "Amazon Redshift", Icon: FiBarChart2, color: "text-slate-800" },
 
   // Extras
-  sql: { name: "SQL", Icon: FiDatabase, color: "text-slate-800" },
+  sql: { name: "SQL", Icon: FiDatabase, color: "text-blue-600" },
   rds: { name: "Amazon RDS", Icon: FiDatabase, color: "text-slate-800" },
   lambda: { name: "AWS Lambda", Icon: FiZap, color: "text-slate-800" },
   stepfunctions: { name: "Step Functions", Icon: FiGitBranch, color: "text-slate-800" },
@@ -172,7 +171,11 @@ const STACK_TECH = {
 
   // extra
   partitioning: { name: "Partitioning", Icon: "none", img: "/images/courses/partitioning.png" },
+  Visualization:{name:"Visualization", Icon:"FiBarChart2", color:"text-blue-600"},
+  powerbi: { name: "Power BI", Icon: "none",img: "/images/courses/powerbi.png" },
+  quicksight: { name: "QuickSight", Icon: SiAwsamplify, color: "text-green-500" },  // Using AWS Amplify icon for QuickSight
 };
+
 
 // --- normalize tech keys (NO UI change, only makes icons appear reliably)
 const TECH_KEY_ALIASES = {
@@ -244,8 +247,10 @@ const DATA_ENGINEERING_PACKAGES = [
     subtitle: "S3 • Glue • Athena • Kinesis • Redshift",
     heroTech: "aws",
     blocks: {
-      "Core Skills": ["python", "SQL", "csv", "json", "xml", "Parquet"],
-      "Data Lake": ["s3", "redshift", "rds"],
+      "Core Skills": ["python", "SQL", ],
+      "Data Fomat":["csv", "json", "xml", "Parquet"],
+      "Database":["redshift", "rds"],
+      "Data Lake": ["s3"],
       "Batch ETL": ["glue", "emr", "pyspark", "athena", "lambda functions", "Step Functions"],
       "Streaming and Orchestration": ["kinesis", "kafka", "airflow"],
       "CI/CD": ["terraform", "git", "docker"],
@@ -271,7 +276,8 @@ const DATA_ENGINEERING_PACKAGES = [
     subtitle: "ADLS • ADF • Databricks (Delta) • Synapse",
     heroTech: "azure",
     blocks: {
-      "Core Skills": ["python", "sql", "csv", "json", "xml", "parquet"],
+      "Core Skills": ["python", "sql"],
+       "Data Fomat":["csv", "json", "xml", "parquet"],
       "Data Lake": ["adls"],
       "Batch ETL": ["adf", "databricks", "pyspark", "delta", "synapse"],
       "Streaming and Orchestration": ["eventhubs", "kafka", "streamanalytics"],
@@ -285,7 +291,8 @@ const DATA_ENGINEERING_PACKAGES = [
     subtitle: "GCS • Dataflow • BigQuery • Pub/Sub",
     heroTech: "gcp",
     blocks: {
-      "Core Skills": ["python", "sql", "csv", "json", "parquet"],
+      "Core Skills": ["python", "sql"],
+       "Data Fomat":["csv", "json", "parquet"],
       "Storage": ["gcs"],
       "Processing": ["dataflow", "bigquery"],
       "Streaming": ["pubsub"],
@@ -293,6 +300,17 @@ const DATA_ENGINEERING_PACKAGES = [
       "CI/CD": ["terraform", "docker", "git"],
     },
   },
+  {
+  key: "visualization-course",  // Unique key for the course
+  title: "Visualization",  // Title of the course
+  subtitle: "QuickSight • Power BI",  // Tools for visualization
+  heroTech: "visualization",  // Reference to the visualization tech (can be a custom icon or label)
+  blocks: {
+ 
+    "frontend": ["quickSight", "powerBI"], 
+    "backend": ["sql"]  
+  }
+}
 ];
 
 // =====================================================================================
