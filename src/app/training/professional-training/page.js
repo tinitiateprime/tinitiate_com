@@ -5,6 +5,7 @@ import Link from "next/link";
 import { VscAzureDevops } from "react-icons/vsc";
 import {
   SiDocker,
+  SiApacheparquet,
   SiKubernetes,
   SiGit,
   SiSpring,
@@ -36,9 +37,13 @@ import {
   SiApachekafka,
   SiTerraform,
   SiApachespark,
+  SiAmazonredshift,
+  SiAmazonrds, SiAmazons3, SiGoogledataflow, SiGooglebigquery 
 } from "react-icons/si";
 import { FaAws, FaJava  } from "react-icons/fa6";
-
+import { FaFileCsv } from "react-icons/fa";
+import { BiSolidFileJson } from "react-icons/bi";
+import { BsFiletypeXml } from "react-icons/bs";
 import {
   FiArrowRight,
   FiPhone,
@@ -74,14 +79,14 @@ const STACK_TECH = {
   html: { name: "HTML5", Icon: SiHtml5, color: "text-orange-600", path:'/courses/html-course'},
   css: { name: "CSS3", Icon: SiCss3, color: "text-blue-600", path:'/courses/css-course'},
   js: { name: "JavaScript", Icon: SiJavascript, color: "text-yellow-500", path:'/courses/javascript-language-course'},
-  ts: { name: "TypeScript", Icon: SiTypescript, color: "text-sky-600"},
-  react: { name: "React", Icon: SiReact, color: "text-cyan-600", path:'/courses/react-beginner-course'},
-  next: { name: "Next.js", Icon: SiNextdotjs, color: "text-gray-900" },
+  ts: { name: "TypeScript", Icon: SiTypescript, color: "text-sky-600", path:'/courses/typescript-course'},
+  react: { name: "React", Icon: SiReact, color: "text-cyan-600", path:'/courses/react-beginner-beginner-course'},
+  next: { name: "Next.js", Icon: SiNextdotjs, color: "text-gray-900", path:'/courses/nextjs-course' },
   angular: { name: "Angular", Icon: SiAngular, color: "text-red-600" },
   bootstrap: { name: "Bootstrap", Icon: SiBootstrap, color: "text-violet-700",path:'/courses/bootstrap-course' },
 
   // Backend (Web)
-  node: { name: "Node.js", Icon: SiNodedotjs, color: "text-green-700" },
+  node: { name: "Node.js", Icon: SiNodedotjs, color: "text-green-700", path:'/courses/nodejs-beginner-course' },
 
   // Backend (Java Full Stack)
   java: { name: "Java", Icon: FaJava , color: "text-red-600" },
@@ -90,70 +95,69 @@ const STACK_TECH = {
   hibernate: { name: "Hibernate / JPA", Icon: SiHibernate, color: "text-amber-700" },
 
   // Database
-  postgres: { name: "PostgreSQL", Icon: SiPostgresql, color: "text-indigo-700" },
+  postgres: { name: "PostgreSQL", Icon: SiPostgresql, color: "text-indigo-700", path:'/courses/postgresql-course' },
   // mysql: { name: "MySQL Server", Icon: SiMysql, color: "text-blue-700" },
-  mongo: { name: "MongoDB", Icon: SiMongodb, color: "text-green-700" },
-  mysql: { name: "SQL Server", Icon: DiMsqlServer, color: "text-red-700" },
+  mongo: { name: "MongoDB", Icon: SiMongodb, color: "text-green-700", path:'/courses/mongodb-course'},
+  sqlserver: { name: "SQL Server", Icon: DiMsqlServer, color: "text-red-700" },
 
   // Cloud / Hosting
-  aws: { name: "AWS", Icon: FaAws, color: "text-orange-600" },
+  aws: { name: "AWS", Icon: FaAws, color: "text-orange-600", path:"/courses/aws-cloud-foundation-data-engineering" },
   gcp: { name: "Google Cloud", Icon: 'none', color: "text-blue-600", img: "/images/courses/google-cloud.png"},
 
   // Azure as image
-  azure: { name: "Azure", Icon: "none", img: "/images/courses/microsoftAzure.png" },
+  azure: { name: "Azure", Icon: "none", img: "/images/courses/microsoftAzure.png", path:'/courses/microsoft-azure-beginner-course' },
 
-  amplify: { name: "AWS Amplify", Icon: SiAwsamplify, color: "text-orange-600" },
-  netlify: { name: "Netlify", Icon: SiNetlify, color: "text-cyan-700" },
-  vercel: { name: "Vercel", Icon: SiVercel, color: "text-gray-900" },
+  amplify: { name: "AWS Amplify", Icon: SiAwsamplify, color: "text-orange-600", path:'/courses/aws-amplify-course' },
+  netlify: { name: "Netlify", Icon: SiNetlify, color: "text-cyan-700", path:'/courses/netlify-course' },
+  vercel: { name: "Vercel", Icon: SiVercel, color: "text-gray-900", path:'/courses/vercel-course' },
 
   // CI/CD
-  git: { name: "Git", Icon: SiGit, color: "text-orange-600" },
-  gha: { name: "GitHub Actions", Icon: SiGithubactions, color: "text-gray-900" },
-  gitlab: { name: "GitLab CI/CD", Icon: SiGitlab, color: "text-orange-600" },
-  circleci: { name: "CircleCI", Icon: SiCircleci, color: "text-gray-900" },
+  git: { name: "Git", Icon: SiGit, color: "text-orange-600",path:'/courses/git-course' },
+  gha: { name: "GitHub Actions", Icon: SiGithubactions, color: "text-gray-900",path:'/courses/github-actions-course' },
+  gitlab: { name: "GitLab CI/CD", Icon: SiGitlab, color: "text-orange-600",path:'/courses/gitlab-ci-course' },
+  circleci: { name: "CircleCI", Icon: SiCircleci, color: "text-gray-900",path:'/courses/circleci-course' },
 
-  azuredevops: { name: "Azure DevOps", Icon: VscAzureDevops, img: "/images/courses/azureDevOps.png" },
+  azuredevops: { name: "Azure DevOps", Icon: VscAzureDevops, img: "/images/courses/azureDevOps.png", path:'/courses/azure-devops-course' },
 
-  bitbucket: { name: "Bitbucket Pipelines", Icon: SiBitbucket, color: "text-blue-700" },
-  jenkins: { name: "Jenkins", Icon: SiJenkins, color: "text-red-700" },
-  docker: { name: "Docker", Icon: SiDocker, color: "text-sky-600" },
+  bitbucket: { name: "Bitbucket Pipelines", Icon: SiBitbucket, color: "text-blue-700", path:'/courses/bitbucket-course'},
+  jenkins: { name: "Jenkins", Icon: SiJenkins, color: "text-red-700", path:'/courses/jenkins-course'},
+  docker: { name: "Docker", Icon: SiDocker, color: "text-sky-600", path:'/courses/docker-beginner-course' },
   k8s: { name: "Kubernetes", Icon: SiKubernetes, color: "text-blue-600" },
 
   // Data Eng
-  snowflake: { name: "Snowflake", Icon: SiSnowflake, color: "text-sky-600" },
-  python: { name: "Python", Icon: SiPython, color: "text-yellow-500" },
-  airflow: { name: "Apache Airflow", Icon: SiApacheairflow, color: "text-sky-600" },
-  kafka: { name: "Apache Kafka", Icon: SiApachekafka, color: "text-gray-900" },
-  terraform: { name: "Terraform", Icon: SiTerraform, color: "text-purple-700" },
+  snowflake: { name: "Snowflake", Icon: SiSnowflake, color: "text-sky-600", path:'/courses/snowflake-data-platform-course' },
+  python: { name: "Python", Icon: SiPython, color: "text-yellow-500", path:'/courses/python-language-course'},
+  airflow: { name: "Apache Airflow", Icon: SiApacheairflow, color: "text-sky-600", path:'/courses/apache-airflow-workflow-orchestration-course'},
+  kafka: { name: "Apache Kafka", Icon: SiApachekafka, color: "text-gray-900", path:'/courses/apache-kafka-streaming-course'},
+  terraform: { name: "Terraform", Icon: SiTerraform, color: "text-purple-700", path:'/courses/terraform-infrastructure-as-code-course' },
   spark: { name: "Apache Spark", Icon: SiApachespark, color: "text-orange-600" },
   pyspark: { name: "PySpark", Icon: SiApachespark, color: "text-orange-600" },
 
   // Formats
-  csv: { name: "CSV", Icon: FiFileText, color: "text-slate-700" },
-  json: { name: "JSON", Icon: FiFileText, color: "text-slate-700" },
-  xml: { name: "XML", Icon: FiFileText, color: "text-slate-700" },
-  parquet: { name: "Parquet", Icon: FiFileText, color: "text-slate-700" },
+  csv: { name: "CSV", Icon: FaFileCsv, color: "text-green-600" },
+  json: { name: "JSON", Icon: BiSolidFileJson, color: "text-blue-400" },
+  xml: { name: "XML", Icon: BsFiletypeXml, color: "text-orange-700" },
+  parquet: { name: "Parquet", Icon: SiApacheparquet, color: "text-blue-500" },
   avro: { name: "Avro", Icon: FiFileText, color: "text-slate-700" },
 
   // AWS services
-  s3: { name: "Amazon S3", Icon: FiLayers, color: "text-slate-800" },
+  s3: { name: "Amazon S3", Icon: SiAmazons3 , color: "text-green-800" },
   glue: { name: "AWS Glue", Icon: FiTool, color: "text-slate-800" },
   emr: { name: "AWS EMR", Icon: FiCpu, color: "text-slate-800" },
   athena: { name: "Amazon Athena", Icon: FiSearch, color: "text-slate-800" },
   kinesis: { name: "Amazon Kinesis", Icon: FiActivity, color: "text-slate-800" },
-  redshift: { name: "Amazon Redshift", Icon: FiBarChart2, color: "text-slate-800" },
+  redshift: { name: "Amazon Redshift", Icon: SiAmazonredshift , color: "text-[#5828b0]" },
 
   // Extras
-  sql: { name: "SQL", Icon: FiDatabase, color: "text-blue-600" },
-  rds: { name: "Amazon RDS", Icon: FiDatabase, color: "text-slate-800" },
+  sql: { name: "SQL", Icon: FiDatabase, color: "text-blue-600", path:'/courses/' },
+  rds: { name: "Amazon RDS", Icon: SiAmazonrds , color: "text-[#285ab0]" },
   lambda: { name: "AWS Lambda", Icon: FiZap, color: "text-slate-800" },
   stepfunctions: { name: "Step Functions", Icon: FiGitBranch, color: "text-slate-800" },
 
-  snowpark: { name: "Snowpark", Icon: "none", img: "/images/courses/snowpark.png" },
-  snowpipe: { name: "Snowpipe", Icon: "none", img: "/images/courses/snowpipe.png" },
-
+  snowpark: { name: "Snowpark", Icon: "none", img: "/images/courses/snowpark.png", path:'/courses/snowpark-data-engineering-course'},
+  snowpipe: { name: "Snowpipe", Icon: "none", img: "/images/courses/snowpipe.png", path:'/courses/snowpipe-continuous-data-ingestion-course'},
   // Azure DE
-  adls: { name: "ADLS Gen2", Icon: FiLayers, color: "text-slate-800" },
+  adls: { name: "ADLS Gen2", Icon: FiLayers, color: "text-blue-700" },
   adf: { name: "Azure Data Factory", Icon: FiTool, color: "text-slate-800" },
   databricks: { name: "Azure Databricks", Icon: SiDatabricks, color: "text-red-600" },
   synapse: { name: "Azure Synapse", Icon: FiDatabase, color: "text-slate-800" },
@@ -164,9 +168,9 @@ const STACK_TECH = {
   delta: { name: "Delta Lake", Icon: FiLayers, color: "text-slate-800" },
 
   // GCP DE
-  gcs: { name: "Google Cloud Storage (GCS)", Icon: FiLayers, color: "text-slate-800" },
-  dataflow: { name: "Dataflow", Icon: FiTool, color: "text-slate-800" },
-  bigquery: { name: "BigQuery", Icon: FiDatabase, color: "text-slate-800" },
+  gcs: { name: "Google Cloud Storage (GCS)", Icon: FiLayers, color: "text-orange-500" },
+  dataflow: { name: "Dataflow", Icon: SiGoogledataflow , color: "text-[#5375b0]" },
+  bigquery: { name: "BigQuery", Icon: SiGooglebigquery , color: "text-blue-400" },
   pubsub: { name: "Pub/Sub", Icon: FiActivity, color: "text-slate-800" },
 
   // extra
@@ -210,28 +214,28 @@ const COURSE_STACKS = {
   "java-full-stack-development": {
     frontend: ["html", "css", "js", "react", "bootstrap"],
     backend: ["java", "spring", "springboot", "hibernate"],
-    database: ["postgres", "mysql", "mongo"],
+    database: ["postgres", "sqlserver", "mongo"],
     cloud: ["aws", "azure", "gcp"],
     cicd: ["git", "gha", "gitlab", "circleci", "azuredevops", "jenkins"],
   },
   "react-web-development": {
     frontend: ["html", "css", "js", "ts", "react", "bootstrap"],
     backend: ["node"],
-    database: ["postgres", "mysql", "mongo"],
+    database: ["postgres", "sqlserver", "mongo"],
     cloud: ["amplify", "netlify", "vercel"],
     cicd: ["git", "gha", "gitlab", "azuredevops", "bitbucket", "jenkins"],
   },
   "nextjs-web-development": {
     frontend: ["html", "css", "js", "ts", "react", "next", "bootstrap"],
     backend: ["node"],
-    database: ["postgres", "mysql", "mongo"],
+    database: ["postgres", "sqlserver", "mongo"],
     cloud: ["amplify", "netlify", "vercel"],
     cicd: ["git", "gha", "gitlab", "azuredevops", "bitbucket", "jenkins"],
   },
   "angular-web-development": {
     frontend: ["html", "css", "ts", "angular", "bootstrap"],
     backend: ["node"],
-    database: ["postgres", "mysql", "mongo"],
+    database: ["postgres", "sqlserver", "mongo"],
     cloud: ["amplify", "netlify", "vercel"],
     cicd: ["git", "gitlab", "circleci", "azuredevops", "bitbucket", "jenkins"],
   },

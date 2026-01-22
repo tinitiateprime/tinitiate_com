@@ -313,7 +313,7 @@ import * as SI from "react-icons/si"
 import * as DI from "react-icons/di"
 import * as FA from "react-icons/fa"
 import * as FI from "react-icons/fi"
-
+import * as VSC from "react-icons/vsc"
 import {
   FaChalkboardTeacher, FaCode, FaBriefcase, FaUserTie, FaProjectDiagram, FaTools,
 } from "react-icons/fa"
@@ -354,6 +354,7 @@ const brandColors = {
   SiLangchain: "#1C3C3C",   // dark green from LangChain brand
 SiHuggingface: "#FFCC4D", // hugging face yellow
 SiOpenai: "#412991",      // OpenAI purple
+VscAzureDevops:"#000000"
 
 }
 
@@ -414,7 +415,7 @@ const ICON_ALIASES = {
 "hugging-face": "SiHuggingface",
 "gpt": "SiOpenai",
 "openai": "SiOpenai",
-
+"Azure":"VscAzureDevops"
 };
 
 
@@ -470,7 +471,7 @@ export default function CourseDetailPage() {
   }
 
   return (
-    <main className="text-gray-800 w-full bg-white px-2 sm:px-4 md:px-8">
+    <main className="text-gray-800 w-full bg-white ">
       {/* Hero */}
       <section className="w-full bg-gradient-to-br from-blue-100 to-white min-h-[50vh] flex items-center px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full py-16">

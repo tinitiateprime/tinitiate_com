@@ -1113,7 +1113,7 @@
   ]
 },
 {
-  "slug": "nextjs-beginner-course",
+  "slug": "nextjs-course",
   "title": "Next.js Course",
   "icon": "SiNextdotjs",
   "duration": "2 Month",
@@ -2620,7 +2620,7 @@
   ]
 },
 {
-  "slug": "postgresql-beginner-course",
+  "slug": "postgresql-course",
   "title": "PostgreSQL Course",
   "icon": "SiPostgresql",
   "duration": "2 Months",
@@ -4264,6 +4264,1944 @@
         "Implement a Fully Responsive Layout for Multiple Devices",
         "Integrate Bootstrap Components like Modals and Alerts",
         "Final Deliverables: GitHub repository with code, README, and demo walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "sql-server-course",
+  "title": "SQL Server for Database Development and Administration",
+  "icon": "SiMicrosoftsqlserver",
+  "duration": "2 Months",
+  "level": "Intermediate",
+  "image": "/images/courses/sql-server.png",
+  "description": "Learn SQL Server from both a development and administration perspective. This course covers SQL queries, database design, performance tuning, security, and backup strategies, ensuring you can manage and optimize SQL Server databases effectively.",
+  "prerequisites": "Basic understanding of databases and SQL queries. Familiarity with relational database concepts is recommended.",
+  "courseStructure": [
+    {
+      "title": "Introduction to SQL Server",
+      "topics": [
+        "What is SQL Server? Overview of Microsoft SQL Server",
+        "SQL Server Editions: Choosing the Right Edition",
+        "Installing SQL Server: Steps and Configuration",
+        "SQL Server Management Studio (SSMS) Overview",
+        "SQL Server Databases: Understanding Database Architecture"
+      ]
+    },
+    {
+      "title": "SQL Server Basic Querying",
+      "topics": [
+        "Basic SQL Syntax: SELECT, INSERT, UPDATE, DELETE",
+        "Filtering Data: WHERE Clause, Comparison Operators",
+        "Sorting Data: ORDER BY",
+        "Using Aggregates: COUNT, SUM, AVG, MIN, MAX",
+        "Grouping Data: GROUP BY, HAVING",
+        "Joining Tables: INNER JOIN, LEFT JOIN, RIGHT JOIN"
+      ]
+    },
+    {
+      "title": "Advanced SQL Queries",
+      "topics": [
+        "Subqueries: Correlated and Non-Correlated Subqueries",
+        "Common Table Expressions (CTEs)",
+        "Window Functions: ROW_NUMBER(), RANK(), LEAD(), LAG()",
+        "Union and Intersect Operations",
+        "Working with NULLs: IS NULL, IS NOT NULL",
+        "String Functions: CONCAT, SUBSTRING, CHARINDEX, REPLACE"
+      ]
+    },
+    {
+      "title": "SQL Server Data Types and Constraints",
+      "topics": [
+        "Understanding Data Types: INT, VARCHAR, DATETIME, etc.",
+        "Working with Numbers: DECIMAL, NUMERIC, FLOAT",
+        "Date and Time Functions: GETDATE(), DATEDIFF()",
+        "Implementing Constraints: PRIMARY KEY, FOREIGN KEY, UNIQUE",
+        "CHECK and DEFAULT Constraints",
+        "Data Integrity and Validation"
+      ]
+    },
+    {
+      "title": "SQL Server Views, Indexes, and Stored Procedures",
+      "topics": [
+        "Creating and Using Views: Benefits and Use Cases",
+        "Stored Procedures: Creating, Altering, and Executing",
+        "Passing Parameters to Stored Procedures",
+        "Indexes: Types of Indexes (Clustered, Non-Clustered)",
+        "Managing Indexes for Performance",
+        "Triggers: Creating and Managing Triggers"
+      ]
+    },
+    {
+      "title": "SQL Server Database Design and Normalization",
+      "topics": [
+        "Database Design Principles",
+        "Normalization: 1NF, 2NF, 3NF, BCNF",
+        "Entity-Relationship Diagrams (ERD)",
+        "Relational Integrity and Referential Integrity",
+        "Creating Tables and Defining Relationships",
+        "Denormalization Techniques"
+      ]
+    },
+    {
+      "title": "SQL Server Security",
+      "topics": [
+        "SQL Server Authentication: Windows vs SQL Server Authentication",
+        "Managing Logins and Users",
+        "Roles and Permissions: GRANT, DENY, REVOKE",
+        "SQL Server Security Auditing",
+        "Encryption: Transparent Data Encryption (TDE), Always Encrypted",
+        "SQL Injection Prevention and Best Practices"
+      ]
+    },
+    {
+      "title": "SQL Server Performance Tuning",
+      "topics": [
+        "Understanding Query Execution Plans",
+        "Optimizing SQL Queries for Performance",
+        "Index Optimization and Maintenance",
+        "SQL Profiler and Extended Events",
+        "Monitoring SQL Server Performance",
+        "Resolving Performance Bottlenecks"
+      ]
+    },
+    {
+      "title": "SQL Server Backup and Recovery",
+      "topics": [
+        "Backup Strategies: Full, Differential, Transaction Log",
+        "Restoring Databases: Full Restore, Point-in-Time Restore",
+        "Backup Compression and Encryption",
+        "Automating Backups with SQL Server Agent",
+        "Database Mirroring and Always On Availability Groups",
+        "High Availability and Disaster Recovery Strategies"
+      ]
+    },
+    {
+      "title": "SQL Server Advanced Topics",
+      "topics": [
+        "SQL Server Integration Services (SSIS)",
+        "SQL Server Reporting Services (SSRS)",
+        "SQL Server Analysis Services (SSAS)",
+        "Managing Linked Servers",
+        "Working with XML and JSON in SQL Server",
+        "Full-Text Indexing and Search"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Capstone: Design and Implement a Full SQL Server Database Solution",
+        "Create a Database Schema with Tables, Relationships, and Constraints",
+        "Write Complex SQL Queries for Data Retrieval and Manipulation",
+        "Implement Stored Procedures, Views, and Triggers for Business Logic",
+        "Optimize Database Performance and Implement Security Best Practices",
+        "Final Deliverables: GitHub repository with code, README, and demo walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "aws-cloud-foundation-data-engineering",
+  "title": "AWS Cloud Foundation to Professional Data Engineering",
+  "icon": "SiAmazonaws",
+  "duration": "6–8 Months",
+  "level": "Beginner → Professional",
+  "image": "/images/courses/aws-devops.png",
+  "description": "This program takes you from AWS cloud fundamentals to professional-level data engineering and production architecture. It covers core AWS services, security, networking, compute, storage, and then deep-dives into modern data lake, analytics, governance, DevOps, and enterprise-scale patterns used in real-world data platforms.",
+  "prerequisites": "Basic IT knowledge is helpful but not required. Familiarity with databases, SQL, or programming will be an advantage.",
+  "courseStructure": [
+    {
+      "title": "Foundations & Account Setup",
+      "topics": [
+        "Regions, Availability Zones, Edge Locations, Endpoints, Shared Responsibility Model",
+        "AWS Account Setup: MFA, Budgets, Billing Alarms, Cost Allocation Tags",
+        "AWS CLI and SDK, Named Profiles",
+        "IAM Identity Center (SSO) Basics",
+        "IAM Credential Hygiene Best Practices"
+      ]
+    },
+    {
+      "title": "Identity & Access Management (IAM, Identity Center, Organizations)",
+      "topics": [
+        "IAM Users, Roles, Policies, Least Privilege, Permission Boundaries",
+        "IAM Access Analyzer, Credential Report, IAM Best Practices",
+        "Identity Center: Users, Groups, Permission Sets, SSO Apps, SCIM Basics",
+        "AWS Organizations: Multi-Account Strategy, OUs, SCPs",
+        "Consolidated Billing and Tagging Standards"
+      ]
+    },
+    {
+      "title": "Networking (VPC)",
+      "topics": [
+        "CIDR Planning, Public and Private Subnets, Route Tables",
+        "Internet Gateway, NAT Gateway vs NAT Instance",
+        "Network ACLs vs Security Groups",
+        "VPC Endpoints (Gateway and Interface), PrivateLink",
+        "VPC Peering vs Transit Gateway",
+        "Hybrid Connectivity: Site-to-Site VPN, Direct Connect"
+      ]
+    },
+    {
+      "title": "Compute (EC2, Auto Scaling, ELB)",
+      "topics": [
+        "EC2 Instance Families, AMIs, User Data, Instance Profiles",
+        "On-Demand vs Spot vs Savings Plans Basics",
+        "Elastic Load Balancer: ALB vs NLB vs GWLB, Target Groups, Health Checks",
+        "Auto Scaling Policies, Lifecycle Hooks, Warm Pools"
+      ]
+    },
+    {
+      "title": "Storage (Core AWS Storage)",
+      "topics": [
+        "S3 Buckets and Prefixes, Versioning, Lifecycle Policies",
+        "Replication and Encryption: SSE-S3, SSE-KMS, Client-Side",
+        "S3 Access Points, VPC-Only Access, Presigned URLs",
+        "CloudFront Fundamentals and Use Cases",
+        "EBS Types and Snapshots",
+        "EFS and FSx (Windows, Lustre, ONTAP, OpenZFS)"
+      ]
+    },
+    {
+      "title": "Databases (Core)",
+      "topics": [
+        "RDS Engines, Multi-AZ, Read Replicas, Backups, Performance Insights",
+        "Aurora Provisioned and Serverless v2, Replicas, Global Concepts",
+        "DynamoDB: PK/SK Design, GSIs, LSIs, Streams, TTL, DAX, Capacity Modes",
+        "ElastiCache Basics",
+        "Amazon OpenSearch Basics"
+      ]
+    },
+    {
+      "title": "App Integration (Messaging & Eventing)",
+      "topics": [
+        "SNS and SQS (Standard and FIFO), DLQs, Retries, Idempotency",
+        "EventBridge: Event Buses, Rules, Pipes",
+        "Step Functions: Standard vs Express",
+        "Amazon MQ Basics and Use Cases"
+      ]
+    },
+    {
+      "title": "Serverless",
+      "topics": [
+        "AWS Lambda: Concurrency, Layers, Provisioned vs On-Demand",
+        "Lambda Event Sources and Integrations",
+        "API Gateway: REST, HTTP, WebSocket APIs",
+        "SAM vs CDK Overview"
+      ]
+    },
+    {
+      "title": "Containers",
+      "topics": [
+        "ECR Basics",
+        "ECS with EC2 and Fargate, Service Discovery, Autoscaling",
+        "EKS Basics, Node Groups, IRSA",
+        "CodeDeploy Blue/Green Deployments"
+      ]
+    },
+    {
+      "title": "Observability & Operations",
+      "topics": [
+        "CloudWatch Metrics, Logs, Alarms, Log Insights",
+        "CloudTrail (Org Trail) and Audit Practices",
+        "AWS Health Dashboard",
+        "Systems Manager: Session Manager, Patch Manager, Inventory, Automation Runbooks"
+      ]
+    },
+    {
+      "title": "Security & Governance (Core)",
+      "topics": [
+        "KMS, Secrets Manager, Parameter Store",
+        "AWS Config and Conformance Packs",
+        "GuardDuty, Security Hub, Macie, Inspector",
+        "WAF and Shield Basics",
+        "Tagging and Resource Governance"
+      ]
+    },
+    {
+      "title": "Data Engineering Fundamentals",
+      "topics": [
+        "Batch vs Streaming Processing",
+        "ETL vs ELT, Incremental Loads, Watermarking",
+        "CDC Concepts and Idempotency Patterns",
+        "Data SLAs, SLOs, Backfills, Reprocessing Strategies"
+      ]
+    },
+    {
+      "title": "Data Lake & Lakehouse Architecture",
+      "topics": [
+        "S3 Lake Layout: Bronze, Silver, Gold",
+        "Partitioning Strategy and Pruning",
+        "Small Files Problem and Compaction",
+        "File Formats: Parquet, ORC, Avro",
+        "Schema Evolution Techniques"
+      ]
+    },
+    {
+      "title": "Data Modeling for Analytics",
+      "topics": [
+        "Star and Snowflake Schema",
+        "Facts and Dimensions, Surrogate Keys",
+        "Slowly Changing Dimensions (SCD0, SCD1, SCD2)",
+        "Aggregations and Rollups"
+      ]
+    },
+    {
+      "title": "Ingestion & Data Movement",
+      "topics": [
+        "AWS DMS Full Load and CDC",
+        "Kinesis Data Streams Patterns",
+        "Firehose Delivery to S3, Redshift, OpenSearch",
+        "MSK (Kafka) Topics, Partitions, Consumer Groups",
+        "Glue Schema Registry",
+        "DataSync and Transfer Family",
+        "Snowball Family Overview"
+      ]
+    },
+    {
+      "title": "Catalog, Governance & Access Control",
+      "topics": [
+        "AWS Glue Data Catalog",
+        "Lake Formation Permissions, LF-Tags, Row/Column Security",
+        "Amazon DataZone: Discovery and Governance",
+        "Cross-Account Data Sharing Patterns"
+      ]
+    },
+    {
+      "title": "Transformation & Processing Engines",
+      "topics": [
+        "Glue ETL Jobs, Crawlers, Parameters, Retries",
+        "Glue Studio vs Script, DynamicFrames vs DataFrames",
+        "Glue DataBrew Use Cases",
+        "EMR with Spark, Hive, Trino",
+        "Lambda Transforms",
+        "Managed Flink for Streaming"
+      ]
+    },
+    {
+      "title": "Query & Analytics Layer",
+      "topics": [
+        "Athena Partitioning, CTAS, Performance Tuning",
+        "Redshift RA3 and Serverless, Dist and Sort Keys",
+        "Redshift Spectrum Concepts",
+        "OpenSearch Analytics",
+        "QuickSight Datasets, SPICE, Refresh Patterns"
+      ]
+    },
+    {
+      "title": "Open Table Formats (Modern Lakehouse)",
+      "topics": [
+        "Apache Iceberg Fundamentals",
+        "Iceberg Read/Write with Athena",
+        "Iceberg with Redshift",
+        "Hudi and Delta Lake Concepts"
+      ]
+    },
+    {
+      "title": "Data Quality & Testing",
+      "topics": [
+        "Glue Data Quality and Deequ",
+        "Completeness, Uniqueness, Referential, Range, Freshness Rules",
+        "Data Contracts Basics",
+        "Unit Tests and Data Tests for Pipelines"
+      ]
+    },
+    {
+      "title": "Data Operations",
+      "topics": [
+        "Glue Job Bookmarks",
+        "Backfill Playbooks and Reprocessing Windows",
+        "Operational Dashboards",
+        "Incident Handling and Rollback Strategies"
+      ]
+    },
+    {
+      "title": "Infrastructure as Code & DevOps",
+      "topics": [
+        "CloudFormation vs CDK vs SAM",
+        "Terraform Basics",
+        "CI/CD with CodePipeline, GitHub Actions",
+        "Artifact Promotion and Environment Strategy",
+        "Blue/Green and Canary Deployments"
+      ]
+    },
+    {
+      "title": "Orchestration & Scheduling",
+      "topics": [
+        "Step Functions Orchestration Patterns",
+        "EventBridge Scheduler and Rules",
+        "Amazon MWAA (Airflow)",
+        "Glue Workflows, Triggers, Dependencies, SLAs"
+      ]
+    },
+    {
+      "title": "Observability for Data Platforms",
+      "topics": [
+        "Central Logging and Metrics Strategy",
+        "Pipeline Freshness and Volume Metrics",
+        "CloudTrail Lake for Audit Analytics",
+        "Data Lineage Concepts"
+      ]
+    },
+    {
+      "title": "Performance & Cost Optimization (FinOps)",
+      "topics": [
+        "S3 Lifecycle and Storage Class Optimization",
+        "Athena Optimization Techniques",
+        "Glue and EMR Tuning",
+        "Kinesis and MSK Cost Optimization",
+        "Redshift Cost and Performance Levers",
+        "Cost & Usage Reports with Athena and QuickSight"
+      ]
+    },
+    {
+      "title": "Security at Scale (Enterprise)",
+      "topics": [
+        "KMS Key Strategy and Rotation",
+        "Secrets Management at Scale",
+        "Org-Wide Detective Controls",
+        "SCP Guardrails and Permission Boundaries",
+        "Data Governance Operating Model"
+      ]
+    },
+    {
+      "title": "Architecture & Multi-Account at Scale",
+      "topics": [
+        "Control Tower Landing Zone",
+        "Central Logging and Security Accounts",
+        "Well-Architected Framework for Data Platforms",
+        "Multi-AZ and Multi-Region Lake Strategies"
+      ]
+    },
+    {
+      "title": "Backup, DR & Resiliency",
+      "topics": [
+        "AWS Backup and Cross-Region Copy",
+        "S3 Replication Strategies",
+        "Aurora Global Database",
+        "DR Patterns: Pilot Light, Warm Standby, Active-Active"
+      ]
+    },
+    {
+      "title": "Data Sharing & Collaboration",
+      "topics": [
+        "Lake Formation Cross-Account Sharing",
+        "Amazon DataZone Sharing Workflows",
+        "Redshift Data Sharing Concepts"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Design and Implement an End-to-End AWS Data Platform",
+        "Build Secure Multi-Account Architecture",
+        "Ingest Batch and Streaming Data",
+        "Transform and Model Data for Analytics",
+        "Implement Governance, Security, and Cost Controls",
+        "Final Deliverables: GitHub Repo, Architecture Diagram, Demo Walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "mongodb-course",
+  "title": "MongoDB for Database Development",
+  "icon": "SiMongodb",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/mongodb.png",
+  "description": "Learn how to work with MongoDB, a popular NoSQL database, and build applications that store data in a flexible and scalable way. This course covers everything from basic CRUD operations to advanced topics like indexing, aggregation, and data modeling.",
+  "prerequisites": "Basic knowledge of databases and SQL. Familiarity with programming concepts is helpful but not required.",
+  "courseStructure": [
+    {
+      "title": "Introduction to MongoDB",
+      "topics": [
+        "What is MongoDB? Overview of NoSQL and MongoDB",
+        "MongoDB Architecture: Databases, Collections, Documents",
+        "Installing MongoDB: Local and Cloud (MongoDB Atlas)",
+        "MongoDB Shell and Compass Overview",
+        "MongoDB vs Relational Databases: Pros and Cons"
+      ]
+    },
+    {
+      "title": "MongoDB CRUD Operations",
+      "topics": [
+        "Connecting to MongoDB: Mongo Shell, MongoDB Compass, MongoDB Atlas",
+        "Creating Documents: `insertOne`, `insertMany`",
+        "Reading Documents: `find`, `findOne`, query operators",
+        "Updating Documents: `updateOne`, `updateMany`, `$set`, `$inc`, `$push`",
+        "Deleting Documents: `deleteOne`, `deleteMany`",
+        "Using MongoDB Query Language (MQL)"
+      ]
+    },
+    {
+      "title": "MongoDB Data Modeling",
+      "topics": [
+        "Document Structure and Design: BSON and Data Types",
+        "Best Practices for Modeling Documents and Collections",
+        "Embedded vs. Referenced Data",
+        "Schema Design for Read and Write Efficiency",
+        "Normalization vs Denormalization in MongoDB",
+        "Handling Arrays, Subdocuments, and Nested Data"
+      ]
+    },
+    {
+      "title": "Indexes in MongoDB",
+      "topics": [
+        "What are Indexes? Why Use Them?",
+        "Creating Indexes: `createIndex`, `ensureIndex`",
+        "Types of Indexes: Single-field, Compound, Geospatial, Text Indexes",
+        "Indexing Strategies: Improving Query Performance",
+        "Managing Indexes: Listing, Dropping, and Rebuilding Indexes",
+        "Understanding Indexing Performance and Best Practices"
+      ]
+    },
+    {
+      "title": "Aggregation in MongoDB",
+      "topics": [
+        "Introduction to Aggregation Framework",
+        "Aggregation Pipeline: `$match`, `$group`, `$sort`, `$project`",
+        "Using Aggregation Operators: `$sum`, `$avg`, `$min`, `$max`, `$push`",
+        "Using `$lookup` for Joins and `$unwind` for Arrays",
+        "Aggregation Performance: Indexes and Optimization",
+        "Building Complex Aggregation Pipelines"
+      ]
+    },
+    {
+      "title": "MongoDB Transactions",
+      "topics": [
+        "What is a MongoDB Transaction?",
+        "ACID Properties in MongoDB",
+        "Using `session` and `transaction` APIs",
+        "Managing Transactions in Sharded Clusters",
+        "Best Practices for Transactional Data in MongoDB"
+      ]
+    },
+    {
+      "title": "Replication and High Availability",
+      "topics": [
+        "What is Replication in MongoDB?",
+        "Replica Sets: Primary, Secondary, Arbiter",
+        "Configuring and Managing Replica Sets",
+        "Failover and Automatic Failover",
+        "Read/Write Concerns and Majority Writes",
+        "Ensuring High Availability and Data Redundancy"
+      ]
+    },
+    {
+      "title": "Sharding in MongoDB",
+      "topics": [
+        "Introduction to Sharding: Horizontal Scaling",
+        "Sharding Key: Choosing the Right Key",
+        "Sharded Clusters: Config Servers, Query Routers, Shard Servers",
+        "Setting Up and Managing Sharded Clusters",
+        "Data Distribution and Balancing",
+        "Monitoring Sharded Clusters"
+      ]
+    },
+    {
+      "title": "MongoDB Security",
+      "topics": [
+        "Authentication and Authorization in MongoDB",
+        "Role-Based Access Control (RBAC)",
+        "TLS/SSL Encryption for MongoDB Connections",
+        "Auditing MongoDB: Audit Logs and Compliance",
+        "Backup and Restore in MongoDB",
+        "Data Encryption: Encryption at Rest and in Transit"
+      ]
+    },
+    {
+      "title": "MongoDB Performance Optimization",
+      "topics": [
+        "Monitoring MongoDB Performance: `mongostat`, `mongotop`, `db.currentOp()`",
+        "Optimizing Queries: Query Performance and Indexing",
+        "Caching and Memory Management",
+        "Disk and Storage Optimization",
+        "Sharding and Indexing for Scaling",
+        "Profiling and Query Optimization with the Profiler"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Capstone: Build a Full-Stack Application using MongoDB",
+        "Create a Data Model for a Real-World Application",
+        "Implement MongoDB CRUD Operations, Indexing, and Aggregation",
+        "Design and Implement a Scalable, High-Availability MongoDB Solution",
+        "Final Deliverables: GitHub repository with code, README, and demo walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "git-course",
+  "title": "Git for Version Control and Collaboration",
+  "icon": "SiGit",
+  "duration": "1 Month",
+  "level": "Beginner",
+  "image": "/images/courses/git.png",
+  "description": "Learn how to use Git for version control, managing repositories, collaborating with teams, and automating development workflows. This course covers basic and advanced Git concepts for developers.",
+  "prerequisites": "Basic understanding of software development and programming concepts.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Git and Version Control",
+      "topics": [
+        "What is Git? Introduction to Version Control Systems",
+        "Setting Up Git: Installation and Configuration",
+        "Git Workflow: Cloning, Pulling, and Pushing Repositories",
+        "Basic Git Commands: `git init`, `git status`, `git commit`, `git push`, `git pull`",
+        "Branching and Merging: Creating, Merging, and Deleting Branches",
+        "Resolving Conflicts: `git merge`, `git rebase`, `git checkout --theirs`",
+        "Collaborating with Git: Forking, Pull Requests, and Code Reviews",
+        "Git Best Practices: Commit Messages, Branching Strategies (GitFlow, GitHub Flow)"
+      ]
+    }
+  ]
+},
+{
+  "slug": "github-actions-course",
+  "title": "GitHub Actions for CI/CD Automation",
+  "icon": "SiGithubactions",
+  "duration": "1 Month",
+  "level": "Intermediate",
+  "image": "/images/courses/github-actions.png",
+  "description": "Learn to automate build, test, and deployment workflows using GitHub Actions. This course covers workflow creation, CI/CD automation, and advanced GitHub Actions configurations.",
+  "prerequisites": "Basic knowledge of Git and GitHub.",
+  "courseStructure": [
+    {
+      "title": "GitHub Actions Overview",
+      "topics": [
+        "What is GitHub Actions? Overview of CI/CD workflows",
+        "Setting Up GitHub Actions: Workflow YAML files",
+        "Creating Actions: Using Predefined Actions and Writing Custom Actions",
+        "CI Workflow: Automating Testing, Linting, and Builds",
+        "CD Workflow: Deploying Applications with GitHub Actions",
+        "Managing Secrets and Environment Variables in GitHub Actions",
+        "Using Matrix Builds for Parallel Testing",
+        "Triggers and Events in GitHub Actions: Push, Pull Request, Schedule",
+        "Best Practices for Organizing GitHub Actions Workflows"
+      ]
+    }
+  ]
+},
+{
+  "slug": "gitlab-ci-course",
+  "title": "GitLab CI/CD for Continuous Integration",
+  "icon": "SiGitlab",
+  "duration": "1 Month",
+  "level": "Intermediate",
+  "image": "/images/courses/gitlab-ci.png",
+  "description": "Master GitLab CI/CD pipelines and automate your development workflows using GitLab. Learn to configure pipelines, manage runners, and optimize your deployments.",
+  "prerequisites": "Familiarity with Git and GitLab repositories.",
+  "courseStructure": [
+    {
+      "title": "Introduction to GitLab CI/CD",
+      "topics": [
+        "What is GitLab CI/CD? Overview of Pipelines",
+        "Setting Up GitLab CI: `.gitlab-ci.yml` configuration file",
+        "Pipeline Stages: Build, Test, Deploy",
+        "GitLab Runners: Types and Configuration",
+        "Using Artifacts and Caches in GitLab CI/CD",
+        "CI Workflow: Automating Tests and Builds",
+        "CD Workflow: Deploying to Servers or Cloud Platforms",
+        "GitLab CI Variables: Managing Secrets and Environment Variables",
+        "Handling Multiple Environments: Staging and Production Deployments",
+        "Monitoring and Debugging Pipelines in GitLab"
+      ]
+    }
+  ]
+},
+{
+  "slug": "circleci-course",
+  "title": "CircleCI for Continuous Integration and Delivery",
+  "icon": "SiCircleci",
+  "duration": "1 Month",
+  "level": "Intermediate",
+  "image": "/images/courses/circleci.png",
+  "description": "Learn CircleCI to automate the development lifecycle from testing to deployment. This course covers CircleCI pipeline configuration, parallelism, and optimization techniques.",
+  "prerequisites": "Familiarity with Git and basic CI/CD concepts.",
+  "courseStructure": [
+    {
+      "title": "CircleCI Fundamentals",
+      "topics": [
+        "What is CircleCI? Introduction to Continuous Integration and Delivery",
+        "Setting Up CircleCI: `.circleci/config.yml`",
+        "Configuring Jobs and Workflows in CircleCI",
+        "CircleCI Orbs: Using and Creating Reusable Configurations",
+        "Pipeline Triggers: Push, Schedule, and Manual Triggers",
+        "CircleCI Executors: Docker, Machine, and Custom Executors",
+        "Managing Secrets in CircleCI: Environment Variables and Contexts",
+        "Caching and Artifacts: Optimizing Build Performance",
+        "Running Tests and Deployments in CircleCI",
+        "CircleCI Integrations: Slack, GitHub, AWS, Docker, Kubernetes"
+      ]
+    }
+  ]
+},
+{
+  "slug": "azure-devops-course",
+  "title": "Azure DevOps for CI/CD Automation",
+  "icon": "VscAzureDevops",
+  "duration": "1 Month",
+  "level": "Intermediate",
+  "image": "/images/courses/azure-devops.png",
+  "description": "This course covers Azure DevOps services for version control, build pipelines, release management, and deployment. Learn to automate CI/CD with Azure Pipelines and integrate with other Microsoft Azure services.",
+  "prerequisites": "Familiarity with version control and basic DevOps practices.",
+  "courseStructure": [
+    {
+      "title": "Azure DevOps Overview",
+      "topics": [
+        "What is Azure DevOps? Overview of DevOps Tools and Services",
+        "Creating Build Pipelines: YAML vs Classic Editor",
+        "Configuring Azure Pipelines: Build, Test, Release Stages",
+        "Using Azure Repos for Source Control",
+        "Azure Pipelines Variables: Secrets, System Variables, and Custom Variables",
+        "Azure Artifacts: Managing Dependencies and Packages",
+        "Release Pipelines in Azure DevOps: Multi-Stage Pipelines",
+        "Deploying Applications with Azure Pipelines: On-Prem, Azure, and Kubernetes",
+        "Azure DevOps Integrations: GitHub, Docker, Kubernetes, Azure Cloud"
+      ]
+    }
+  ]
+},
+{
+  "slug": "jenkins-course",
+  "title": "Jenkins for Continuous Integration and Deployment",
+  "icon": "SiJenkins",
+  "duration": "1 Month",
+  "level": "Intermediate",
+  "image": "/images/courses/jenkins.png",
+  "description": "Learn Jenkins for automating the build, test, and deployment pipelines in software development. This course covers Jenkins installation, creating pipelines, and using Jenkins for continuous integration.",
+  "prerequisites": "Basic knowledge of version control systems and software development.",
+  "courseStructure": [
+    {
+      "title": "Jenkins Fundamentals",
+      "topics": [
+        "What is Jenkins? Introduction to Continuous Integration and Delivery",
+        "Setting Up Jenkins: Installation and Configuration",
+        "Jenkins Jobs: Freestyle, Pipeline, and Multibranch Pipeline Jobs",
+        "Creating Jenkins Pipelines with Declarative and Scripted Syntax",
+        "Automating Builds: Integrating Jenkins with Git and GitHub",
+        "Running Tests in Jenkins: Test Reports, JUnit, and Code Coverage",
+        "Jenkins Plugins: Adding Functionality to Jenkins",
+        "Managing Jenkins Agents: Distributed Builds",
+        "Using Jenkins for Continuous Deployment (CD) with Docker and Kubernetes",
+        "Jenkinsfile Best Practices: Versioning, Code Quality, and Pipeline Design"
+      ]
+    }
+  ]
+},
+{
+  "slug": "aws-amplify-course",
+  "title": "AWS Amplify for Full-Stack Web and Mobile Development",
+  "icon": "SiAwsamplify",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/aws-amplify.png",
+  "description": "Learn how to build scalable, full-stack applications with AWS Amplify. This course covers Amplify's authentication, APIs, file storage, and hosting capabilities to integrate with modern web and mobile applications.",
+  "prerequisites": "Basic knowledge of web development (HTML, CSS, JavaScript). Familiarity with AWS is helpful but not required.",
+  "courseStructure": [
+    {
+      "title": "Introduction to AWS Amplify",
+      "topics": [
+        "What is AWS Amplify? Overview and Benefits",
+        "Setting Up AWS Amplify for Web and Mobile Apps",
+        "Amplify CLI and Console: Overview and Setup",
+        "Managing AWS Amplify Environments",
+        "Understanding Amplify Services: Auth, API, Storage, Hosting"
+      ]
+    },
+    {
+      "title": "Amplify Authentication",
+      "topics": [
+        "Setting Up Authentication with Amazon Cognito",
+        "User Sign-Up, Sign-In, and Password Recovery",
+        "Social Login Integration (Google, Facebook, Amazon)",
+        "Multi-Factor Authentication (MFA)",
+        "Managing User Roles and Permissions"
+      ]
+    },
+    {
+      "title": "Amplify API (GraphQL & REST)",
+      "topics": [
+        "Setting Up and Using AWS AppSync for GraphQL APIs",
+        "Building and Managing REST APIs with Amazon API Gateway",
+        "Connecting Frontend with Backend APIs",
+        "Using DynamoDB with Amplify for Data Storage",
+        "Real-Time Data Syncing with AWS AppSync"
+      ]
+    },
+    {
+      "title": "Amplify Storage",
+      "topics": [
+        "Configuring Amazon S3 for File Storage",
+        "Managing Files with Amplify Storage",
+        "Using Amplify Storage to Upload/Download Files",
+        "Setting Up File Access Permissions"
+      ]
+    },
+    {
+      "title": "Hosting and Continuous Deployment",
+      "topics": [
+        "Setting Up Hosting with AWS Amplify",
+        "Continuous Deployment (CD) with GitHub and Amplify",
+        "Custom Domain Configuration",
+        "Managing Branches and Environments"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Capstone: Build a Full-Stack Web or Mobile Application with AWS Amplify",
+        "Implement Authentication, APIs, and File Storage",
+        "Deploy and Host the Application on AWS Amplify",
+        "Final Deliverables: GitHub repository with code, README, and live demo"
+      ]
+    }
+  ]
+},
+{
+  "slug": "netlify-course",
+  "title": "Netlify for Continuous Deployment and Hosting",
+  "icon": "SiNetlify",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/netlify.png",
+  "description": "Learn how to build, deploy, and manage modern web projects with Netlify. This course covers CI/CD pipelines, serverless functions, and hosting dynamic sites with Netlify.",
+  "prerequisites": "Basic knowledge of web development (HTML, CSS, JavaScript). Familiarity with Git and GitHub is recommended.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Netlify",
+      "topics": [
+        "What is Netlify? Overview of Static Site Hosting and Continuous Deployment",
+        "Setting Up a Netlify Account and Initial Project Setup",
+        "Integrating Netlify with GitHub, GitLab, and Bitbucket",
+        "Netlify Dashboard: Overview of Features"
+      ]
+    },
+    {
+      "title": "Deploying Static Sites on Netlify",
+      "topics": [
+        "Connecting Git Repositories to Netlify",
+        "Automating Deployments with Continuous Integration (CI)",
+        "Managing Build Settings: Environment Variables and Build Commands",
+        "Custom Domain Setup on Netlify"
+      ]
+    },
+    {
+      "title": "Netlify Functions and Serverless Architecture",
+      "topics": [
+        "What are Serverless Functions? Introduction to Netlify Functions",
+        "Creating and Deploying Serverless Functions with Netlify",
+        "Using Netlify Functions for Backend Logic",
+        "Connecting Serverless Functions with APIs and Databases"
+      ]
+    },
+    {
+      "title": "Netlify CMS and Content Management",
+      "topics": [
+        "Setting Up Netlify CMS for Content-Driven Sites",
+        "Creating and Managing Content with Netlify CMS",
+        "Integrating Netlify CMS with Static Site Generators",
+        "Deploying Dynamic Content on Netlify"
+      ]
+    },
+    {
+      "title": "Advanced Netlify Features",
+      "topics": [
+        "Working with Netlify Edge Functions for Performance",
+        "Netlify Analytics: Tracking Site Performance",
+        "Deploy Previews: Review Changes before Merging",
+        "Netlify Identity and Authentication"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Capstone: Build a Full Static Site with Netlify and Serverless Functions",
+        "Set up Continuous Deployment and Integrate Content Management",
+        "Deploy the Project to Netlify with Custom Domain",
+        "Final Deliverables: GitHub repository with code, README, and live demo"
+      ]
+    }
+  ]
+},{
+  "slug": "vercel-course",
+  "title": "Vercel for Modern Web Development and Deployment",
+  "icon": "SiVercel",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/vercel.png",
+  "description": "Learn to deploy and host your web applications with Vercel, a cloud platform for frontend frameworks and static sites. This course focuses on the features of Vercel for continuous deployment and scaling applications.",
+  "prerequisites": "Basic knowledge of web development (HTML, CSS, JavaScript) and Git. Familiarity with frontend frameworks like Next.js is helpful.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Vercel",
+      "topics": [
+        "What is Vercel? Overview of Deployment and Hosting Platform",
+        "Setting Up Vercel: Create an Account and Link GitHub",
+        "Vercel Dashboard Overview",
+        "Deploying Static Websites with Vercel"
+      ]
+    },
+    {
+      "title": "Deploying Full-Stack Applications with Vercel",
+      "topics": [
+        "Deploying Next.js Apps on Vercel",
+        "Serverless Functions on Vercel",
+        "Preview Deployments: Review Changes Before Merging",
+        "Connecting Databases and APIs to Vercel"
+      ]
+    },
+    {
+      "title": "Vercel for Frontend Frameworks",
+      "topics": [
+        "Deploying Static Sites and Single Page Apps (SPAs) with Vercel",
+        "Optimizing React and Next.js Apps for Deployment",
+        "Handling Static and Dynamic Content in Vercel",
+        "Using Vercel CLI for Deployment Automation"
+      ]
+    },
+    {
+      "title": "Vercel Serverless Functions",
+      "topics": [
+        "What are Serverless Functions on Vercel?",
+        "Creating Serverless Functions for Backend Logic",
+        "Connecting Serverless Functions to Databases and APIs",
+        "Deploying Serverless Functions with Vercel"
+      ]
+    },
+    {
+      "title": "Advanced Features of Vercel",
+      "topics": [
+        "Vercel Analytics: Performance and Usage Tracking",
+        "Custom Domains and SSL Certificates on Vercel",
+        "Optimizing Build and Deployment Times",
+        "Integrating with Third-Party Services and APIs"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Capstone: Build a Full-Stack Application with Vercel and Serverless Functions",
+        "Deploy the Application with Continuous Integration",
+        "Final Deliverables: GitHub repository with code, README, and live demo"
+      ]
+    }
+  ]
+},
+{
+  "slug": "bitbucket-course",
+  "title": "Bitbucket for Version Control and CI/CD",
+  "icon": "SiBitbucket",
+  "duration": "1 Month",
+  "level": "Beginner to Intermediate",
+  "image": "/images/courses/bitbucket.png",
+  "description": "Learn how to use Bitbucket for version control and CI/CD automation. This course covers repository management, branching strategies, and integrating Bitbucket with pipelines for continuous integration and deployment.",
+  "prerequisites": "Basic understanding of Git and version control systems.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Bitbucket",
+      "topics": [
+        "What is Bitbucket? Overview of Version Control with Bitbucket",
+        "Setting Up a Bitbucket Account and Repository",
+        "Bitbucket Cloud vs Bitbucket Server: Differences and Use Cases",
+        "Git and Bitbucket: Using Git with Bitbucket Repositories",
+        "Bitbucket Dashboard Overview and Navigation"
+      ]
+    },
+    {
+      "title": "Working with Bitbucket Repositories",
+      "topics": [
+        "Creating and Cloning Bitbucket Repositories",
+        "Adding and Committing Files to Bitbucket",
+        "Branching and Merging in Bitbucket",
+        "Collaborating with Teams in Bitbucket",
+        "Pull Requests: Creating, Reviewing, and Merging",
+        "Resolving Merge Conflicts in Bitbucket"
+      ]
+    },
+    {
+      "title": "Bitbucket Branching Strategies",
+      "topics": [
+        "Branching Models: Feature Branching, GitFlow, and GitHub Flow",
+        "Using Bitbucket Branch Permissions",
+        "Best Practices for Branching and Merging in Bitbucket",
+        "Implementing Code Reviews via Pull Requests",
+        "Managing and Organizing Multiple Branches"
+      ]
+    },
+    {
+      "title": "Bitbucket Pipelines for CI/CD",
+      "topics": [
+        "What are Bitbucket Pipelines? Introduction to CI/CD",
+        "Setting Up Bitbucket Pipelines: YAML Configuration",
+        "Pipeline Stages: Build, Test, Deploy",
+        "Managing Environment Variables and Secrets in Pipelines",
+        "Configuring Build and Deployment Steps in Pipelines",
+        "Running Tests and Automating Deployments with Pipelines"
+      ]
+    },
+    {
+      "title": "Integrating Bitbucket with Other Tools",
+      "topics": [
+        "Integrating Bitbucket with Jira for Issue Tracking",
+        "Using Bitbucket with Confluence for Documentation",
+        "Connecting Bitbucket with Slack for Notifications",
+        "Integrating Bitbucket with AWS, Google Cloud, and Azure for Deployments"
+      ]
+    },
+    {
+      "title": "Managing Permissions and Access Control",
+      "topics": [
+        "Setting Repository Permissions in Bitbucket",
+        "Managing Team Permissions and Access Levels",
+        "Creating and Managing Users and Groups in Bitbucket",
+        "Setting up Branch-Level Permissions",
+        "Best Practices for Bitbucket Security and Access Control"
+      ]
+    },
+    {
+      "title": "Advanced Bitbucket Pipelines Features",
+      "topics": [
+        "Using Bitbucket Pipeline Caching for Faster Builds",
+        "Custom Docker Images for Pipelines",
+        "Deploying Multi-Environment Applications with Pipelines",
+        "Using Conditionals and Triggers in Bitbucket Pipelines",
+        "Bitbucket Deployments for Production, Staging, and Testing Environments"
+      ]
+    },
+    {
+      "title": "Monitoring and Debugging Bitbucket Pipelines",
+      "topics": [
+        "Viewing and Analyzing Pipeline Logs",
+        "Debugging Failing Pipelines and Build Failures",
+        "Setting Up Pipeline Notifications for Failures",
+        "Pipeline Metrics: Performance and Resource Management",
+        "Using Bitbucket Insights for Tracking Pipeline Success"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Capstone: Set Up a Full CI/CD Pipeline Using Bitbucket",
+        "Create Repositories, Branches, and Pull Requests for Collaboration",
+        "Automate Build, Test, and Deployment Steps with Bitbucket Pipelines",
+        "Integrate Bitbucket with Jira and Slack for Full Workflow Automation",
+        "Final Deliverables: GitHub repository with code, README, and demo walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "snowflake-data-platform-course",
+  "title": "Snowflake Data Platform (Data Engineering, Analytics & Administration)",
+  "icon": "SiSnowflake",
+  "duration": "2–3 Months",
+  "level": "Intermediate → Advanced",
+  "image": "/images/courses/snowflake.png",
+  "description": "This course provides hands-on training on the Snowflake Data Cloud, covering data engineering, analytics, performance optimization, security, and administration. You will learn how to build scalable data pipelines, optimize warehouses, manage security, and implement modern data architectures using Snowflake in real-world scenarios.",
+  "prerequisites": "Basic SQL knowledge and understanding of databases. Familiarity with cloud platforms (AWS/Azure/GCP) is recommended.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Snowflake & Architecture",
+      "topics": [
+        "What is Snowflake Data Cloud?",
+        "Snowflake Editions and Use Cases",
+        "Snowflake Architecture: Storage, Compute, Cloud Services",
+        "Virtual Warehouses and Scaling Concepts",
+        "Account Structure, Regions, and Organizations",
+        "Snowflake UI, Worksheets, and Snowsight Overview"
+      ]
+    },
+    {
+      "title": "Snowflake SQL Fundamentals",
+      "topics": [
+        "Snowflake Databases, Schemas, and Tables",
+        "Data Types and Semi-Structured Data Types",
+        "DDL and DML Operations",
+        "Querying with SELECT, WHERE, GROUP BY, HAVING",
+        "Joins, Subqueries, CTEs",
+        "Time Travel Queries and Data Recovery"
+      ]
+    },
+    {
+      "title": "Data Loading & Unloading",
+      "topics": [
+        "Stages: Internal and External",
+        "COPY INTO for Bulk Loading",
+        "File Formats: CSV, JSON, Parquet, Avro, ORC, XML",
+        "Continuous Data Loading with Snowpipe",
+        "Error Handling and Validation",
+        "Unloading Data from Snowflake to Cloud Storage"
+      ]
+    },
+    {
+      "title": "Semi-Structured & JSON Data Handling",
+      "topics": [
+        "VARIANT, OBJECT, ARRAY Data Types",
+        "Flatten Function and Lateral Joins",
+        "Parsing JSON, XML, Avro, Parquet",
+        "Schema-on-Read vs Schema-on-Write",
+        "Querying Nested and Repeated Data",
+        "Best Practices for Semi-Structured Data"
+      ]
+    },
+    {
+      "title": "Warehouses, Performance & Cost Optimization",
+      "topics": [
+        "Warehouse Sizing and Scaling",
+        "Multi-Cluster Warehouses",
+        "Query Profile and Execution Plans",
+        "Result Caching and Metadata Caching",
+        "Clustering Keys and Micro-Partitioning",
+        "Cost Control: Auto-Suspend, Auto-Resume, Resource Monitors"
+      ]
+    },
+    {
+      "title": "Security & Access Control",
+      "topics": [
+        "Role-Based Access Control (RBAC)",
+        "System-Defined vs Custom Roles",
+        "Users, Roles, and Privileges",
+        "Network Policies and IP Whitelisting",
+        "Data Encryption (At Rest and In Transit)",
+        "Column-Level and Row-Level Security",
+        "Dynamic Data Masking"
+      ]
+    },
+    {
+      "title": "Data Engineering with Snowflake",
+      "topics": [
+        "Streams and Tasks for Incremental Processing",
+        "Change Data Capture (CDC) Patterns",
+        "Merge Operations for Upserts",
+        "Building ELT Pipelines in Snowflake",
+        "Error Handling and Idempotency",
+        "Orchestration with Tasks and External Tools"
+      ]
+    },
+    {
+      "title": "Snowflake for Analytics & BI",
+      "topics": [
+        "Star and Snowflake Schema Design",
+        "Fact and Dimension Tables",
+        "Materialized Views",
+        "Secure Views for Data Access",
+        "Connecting BI Tools (Power BI, Tableau, Looker)",
+        "Query Optimization for BI Workloads"
+      ]
+    },
+    {
+      "title": "Snowflake Time Travel, Fail-Safe & Data Protection",
+      "topics": [
+        "Time Travel Concepts and Retention",
+        "UNDROP and Data Recovery",
+        "Fail-Safe Overview",
+        "Zero-Copy Cloning",
+        "Backup and Recovery Strategies",
+        "Data Retention Policies"
+      ]
+    },
+    {
+      "title": "Snowflake Data Sharing & Collaboration",
+      "topics": [
+        "Secure Data Sharing",
+        "Reader Accounts",
+        "Cross-Account Data Sharing",
+        "Marketplace Data Sharing",
+        "Collaboration Across Organizations",
+        "Governance Best Practices for Sharing"
+      ]
+    },
+    {
+      "title": "Advanced Snowflake Features",
+      "topics": [
+        "Snowpark (Python, Java, Scala) Basics",
+        "User-Defined Functions (UDFs)",
+        "Stored Procedures",
+        "External Functions",
+        "Search Optimization Service",
+        "Snowflake Native Apps Overview"
+      ]
+    },
+    {
+      "title": "Monitoring, Governance & Admin Operations",
+      "topics": [
+        "Account Usage and Information Schema",
+        "Query History and Warehouse Usage",
+        "Cost Monitoring and Optimization Reports",
+        "Access History and Auditing",
+        "Resource Monitors and Alerts",
+        "Operational Best Practices"
+      ]
+    },
+    {
+      "title": "Snowflake Integration with Cloud Ecosystem",
+      "topics": [
+        "Snowflake + AWS S3 Integration",
+        "Snowflake + Azure Blob Integration",
+        "Snowflake + GCS Integration",
+        "Integrating with Kafka and Streaming Sources",
+        "Fivetran, Airbyte, DBT Integration",
+        "API-Based Integrations"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Design and Build an End-to-End Snowflake Data Platform",
+        "Ingest Batch and Streaming Data into Snowflake",
+        "Implement Incremental ELT Pipelines using Streams & Tasks",
+        "Apply Security, Masking, and Governance",
+        "Optimize Cost and Performance",
+        "Final Deliverables: GitHub Repo, Architecture Diagram, Demo Walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "snowpark-data-engineering-course",
+  "title": "Snowpark for Data Engineering & Advanced Analytics",
+  "icon": "SiSnowflake",
+  "image": "/images/courses/snowpark.png",
+  "description": "This course focuses on Snowpark, Snowflake’s developer framework, enabling data engineers and developers to build scalable data transformations, machine learning pipelines, and advanced analytics directly inside Snowflake using Python, Java, and Scala. You will learn how to replace external Spark jobs with Snowpark-native workloads for better performance, governance, and cost efficiency.",
+  "prerequisites": "Strong SQL knowledge, basic Python programming, and familiarity with Snowflake concepts such as warehouses, stages, and security roles.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Snowpark & Developer Architecture",
+      "topics": [
+        "What is Snowpark and Why It Matters",
+        "Snowpark vs Spark vs SQL-Based ELT",
+        "Snowpark Architecture and Execution Model",
+        "Snowpark Runtime and Pushdown Optimization",
+        "Supported Languages: Python, Java, Scala",
+        "Use Cases and Real-World Patterns"
+      ]
+    },
+    {
+      "title": "Snowpark Setup & Development Environment",
+      "topics": [
+        "Snowflake Account Setup for Snowpark",
+        "Roles, Warehouses, and Permissions for Developers",
+        "Installing Snowpark Python",
+        "Local Development vs In-Warehouse Execution",
+        "Using SnowSQL and Snowsight",
+        "Project Structure Best Practices"
+      ]
+    },
+    {
+      "title": "Snowpark DataFrames & Transformations",
+      "topics": [
+        "Creating DataFrames from Tables, Views, and Stages",
+        "Selecting, Filtering, Sorting, and Aggregating Data",
+        "Joins and Set Operations",
+        "Handling Nulls and Data Type Casting",
+        "Lazy Evaluation and Execution Plans",
+        "Converting SQL Logic to Snowpark Code"
+      ]
+    },
+    {
+      "title": "Working with Semi-Structured Data in Snowpark",
+      "topics": [
+        "VARIANT, ARRAY, OBJECT Handling",
+        "Flattening Nested Data with Snowpark",
+        "Parsing JSON, Parquet, Avro Files",
+        "Schema Inference and Evolution",
+        "Best Practices for Semi-Structured Processing"
+      ]
+    },
+    {
+      "title": "User-Defined Functions (UDFs) & Stored Procedures",
+      "topics": [
+        "Scalar UDFs with Snowpark",
+        "Vectorized UDFs for Performance",
+        "Table Functions (UDTFs)",
+        "Stored Procedures using Snowpark",
+        "Error Handling and Logging",
+        "Packaging and Deployment Best Practices"
+      ]
+    },
+    {
+      "title": "Snowpark ML & Advanced Analytics",
+      "topics": [
+        "Introduction to Snowpark ML",
+        "Feature Engineering in Snowpark",
+        "Training ML Models Inside Snowflake",
+        "Model Versioning and Registry",
+        "Batch Predictions and Inference",
+        "ML Pipelines with Snowpark"
+      ]
+    },
+    {
+      "title": "Building Data Pipelines with Snowpark",
+      "topics": [
+        "Batch Processing Patterns",
+        "Incremental Processing with Streams",
+        "Task-Based Orchestration",
+        "Idempotent Pipeline Design",
+        "Error Recovery and Reprocessing",
+        "Pipeline Parameterization"
+      ]
+    },
+    {
+      "title": "Performance Optimization & Cost Control",
+      "topics": [
+        "Warehouse Sizing for Snowpark Jobs",
+        "Partitioning and Parallelism Strategies",
+        "Avoiding Data Movement Anti-Patterns",
+        "Pushdown Optimization Techniques",
+        "Monitoring Snowpark Jobs",
+        "Cost Optimization Best Practices"
+      ]
+    },
+    {
+      "title": "Security, Governance & Deployment",
+      "topics": [
+        "Role-Based Access Control for Snowpark",
+        "Secrets Management for External Calls",
+        "Network Policies and Secure Integrations",
+        "CI/CD for Snowpark Projects",
+        "Promoting Code Across Environments",
+        "Version Control and Release Strategy"
+      ]
+    },
+    {
+      "title": "Integrations & Advanced Use Cases",
+      "topics": [
+        "Calling External APIs from Snowpark",
+        "Snowpark with DBT Integration Patterns",
+        "Snowpark + Kafka Streaming Use Cases",
+        "Interoperability with SQL and Tasks",
+        "Replacing Spark Jobs with Snowpark",
+        "Real-Time Feature Engineering"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Build a Production-Grade Snowpark Data Pipeline",
+        "Implement Incremental ELT using Streams & Tasks",
+        "Apply UDFs and Advanced Transformations",
+        "Optimize Performance and Cost",
+        "Apply Security and CI/CD Practices",
+        "Final Deliverables: GitHub Repo, Architecture Diagram, Demo Walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "snowpipe-continuous-data-ingestion-course",
+  "title": "Snowpipe for Continuous Data Ingestion in Snowflake",
+  "icon": "SiSnowflake",
+  "duration": "2–3 Weeks",
+  "level": "Intermediate",
+  "image": "/images/courses/snowpipe.png",
+  "description": "This course focuses on Snowpipe, Snowflake’s continuous data ingestion service. You will learn how to design, implement, monitor, and optimize real-time and near-real-time ingestion pipelines from cloud storage and streaming sources into Snowflake using Snowpipe, Snowpipe Streaming, and event-driven architectures.",
+  "prerequisites": "Basic Snowflake knowledge, SQL fundamentals, and familiarity with cloud storage (S3, Azure Blob, or GCS).",
+  "courseStructure": [
+    {
+      "title": "Introduction to Snowpipe",
+      "topics": [
+        "What is Snowpipe and When to Use It",
+        "Snowpipe vs COPY INTO vs Batch Loads",
+        "Snowpipe Architecture and Execution Flow",
+        "Use Cases for Continuous Ingestion",
+        "Cost Model and Billing Considerations"
+      ]
+    },
+    {
+      "title": "Snowpipe Setup & Configuration",
+      "topics": [
+        "Creating Stages and File Formats",
+        "Configuring Storage Integrations",
+        "IAM Roles and Permissions for Snowpipe",
+        "Creating Pipes with COPY INTO",
+        "Auto-Ingest vs Manual Triggering",
+        "Validating Snowpipe Setup"
+      ]
+    },
+    {
+      "title": "Event-Driven Auto Ingest (Cloud Notifications)",
+      "topics": [
+        "Snowpipe Auto-Ingest Architecture",
+        "S3 Event Notifications + SQS Integration",
+        "Azure Event Grid Integration",
+        "GCS Pub/Sub Integration",
+        "End-to-End Event Flow and Troubleshooting",
+        "Security Best Practices for Notifications"
+      ]
+    },
+    {
+      "title": "Snowpipe Data Loading Patterns",
+      "topics": [
+        "Handling CSV, JSON, Parquet, Avro Files",
+        "Schema Evolution and Column Mapping",
+        "Handling Late or Duplicate Files",
+        "Idempotency and Exactly-Once Semantics",
+        "Error Handling and Failed File Recovery",
+        "Best Practices for File Naming and Partitioning"
+      ]
+    },
+    {
+      "title": "Monitoring, Troubleshooting & Operations",
+      "topics": [
+        "Pipe Status and Load History",
+        "Using ACCOUNT_USAGE and INFORMATION_SCHEMA",
+        "Monitoring Latency and Throughput",
+        "Retry and Failure Handling",
+        "Operational Alerts and Observability",
+        "Common Snowpipe Issues and Fixes"
+      ]
+    },
+    {
+      "title": "Snowpipe Streaming (Advanced)",
+      "topics": [
+        "What is Snowpipe Streaming",
+        "Streaming Ingestion vs File-Based Ingestion",
+        "Client SDKs and Integration Patterns",
+        "Exactly-Once Guarantees",
+        "High-Throughput Streaming Design",
+        "Use Cases for Real-Time Analytics"
+      ]
+    },
+    {
+      "title": "Security, Cost & Governance",
+      "topics": [
+        "RBAC for Snowpipe Operations",
+        "Securing Storage Integrations",
+        "Encrypting Data in Motion and at Rest",
+        "Cost Optimization Strategies",
+        "Resource Monitoring and Quotas",
+        "Governance Best Practices"
+      ]
+    },
+    {
+      "title": "Snowpipe Integration Patterns",
+      "topics": [
+        "Snowpipe with AWS S3, Azure Blob, GCS",
+        "Snowpipe + Kafka / Kinesis / Event Hubs",
+        "Snowpipe with Fivetran / Airbyte",
+        "Combining Snowpipe with Streams & Tasks",
+        "End-to-End ELT Pipeline Design"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Design a Real-Time Ingestion Pipeline with Snowpipe",
+        "Implement Auto-Ingest using Cloud Events",
+        "Handle Schema Evolution and Failures",
+        "Monitor and Optimize Ingestion Performance",
+        "Secure and Govern the Pipeline",
+        "Final Deliverables: GitHub Repo, Architecture Diagram, Demo Walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "terraform-infrastructure-as-code-course",
+  "title": "Terraform Infrastructure as Code (IaC) for Cloud & Data Platforms",
+  "icon": "SiTerraform",
+  "duration": "2–3 Months",
+  "level": "Beginner → Advanced",
+  "image": "/images/courses/terraform.png",
+  "description": "This course provides hands-on training on Terraform for building, managing, and automating cloud infrastructure using Infrastructure as Code (IaC). You will learn how to provision AWS, Azure, GCP, and data platform resources using reusable, version-controlled Terraform modules following production best practices.",
+  "prerequisites": "Basic cloud knowledge (AWS/Azure/GCP) and familiarity with Linux or command-line tools is recommended.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Terraform & IaC Concepts",
+      "topics": [
+        "What is Infrastructure as Code (IaC)",
+        "Terraform vs CloudFormation vs ARM vs CDK",
+        "Terraform Architecture and Workflow",
+        "Terraform CLI Basics",
+        "Declarative vs Imperative Infrastructure",
+        "Real-World Use Cases of Terraform"
+      ]
+    },
+    {
+      "title": "Terraform Setup & Core Workflow",
+      "topics": [
+        "Installing Terraform",
+        "Terraform Init, Plan, Apply, Destroy",
+        "Terraform Providers and Resources",
+        "Terraform State Basics",
+        "Understanding the .terraform Directory",
+        "Terraform Formatting and Validation"
+      ]
+    },
+    {
+      "title": "Terraform Language (HCL) Fundamentals",
+      "topics": [
+        "Blocks, Arguments, and Attributes",
+        "Variables and Outputs",
+        "Local Values",
+        "Data Sources",
+        "Functions and Expressions",
+        "Terraform File Structure Best Practices"
+      ]
+    },
+    {
+      "title": "Terraform State Management",
+      "topics": [
+        "Local State vs Remote State",
+        "Using S3 + DynamoDB for Remote State",
+        "State Locking and Consistency",
+        "Terraform State Commands",
+        "State Migration and Refactoring",
+        "Handling Sensitive Data in State"
+      ]
+    },
+    {
+      "title": "Terraform Modules (Reusable Infrastructure)",
+      "topics": [
+        "What are Modules and Why Use Them",
+        "Creating Custom Modules",
+        "Module Inputs and Outputs",
+        "Versioning Modules",
+        "Terraform Registry Modules",
+        "Module Design Best Practices"
+      ]
+    },
+    {
+      "title": "Provisioning Cloud Infrastructure",
+      "topics": [
+        "Provisioning AWS Resources (VPC, EC2, RDS, S3)",
+        "Provisioning Azure Resources",
+        "Provisioning GCP Resources",
+        "Multi-Cloud and Hybrid Deployments",
+        "Resource Dependencies and Graph",
+        "Environment Separation (Dev/Test/Prod)"
+      ]
+    },
+    {
+      "title": "Terraform for Networking & Security",
+      "topics": [
+        "VPC, Subnets, Route Tables",
+        "Security Groups and NACLs",
+        "IAM Users, Roles, and Policies",
+        "KMS Keys and Secrets Management",
+        "Private Endpoints and Networking",
+        "Security Best Practices in IaC"
+      ]
+    },
+    {
+      "title": "Terraform for Data & Analytics Platforms",
+      "topics": [
+        "Provisioning Snowflake Resources",
+        "Provisioning Databases (RDS, BigQuery, Synapse)",
+        "Terraform for Data Lakes (S3, ADLS, GCS)",
+        "Managing Glue, EMR, Databricks with Terraform",
+        "IaC for Data Governance",
+        "Cross-Account Data Platform Setup"
+      ]
+    },
+    {
+      "title": "Terraform Workspaces & Environments",
+      "topics": [
+        "Terraform Workspaces Basics",
+        "Environment Isolation Strategies",
+        "Naming and Tagging Standards",
+        "Managing Multiple Accounts",
+        "Secrets Management per Environment",
+        "Promoting Changes Across Environments"
+      ]
+    },
+    {
+      "title": "CI/CD with Terraform",
+      "topics": [
+        "Terraform in GitHub Actions",
+        "Terraform in GitLab CI",
+        "Using Terraform Cloud / Enterprise",
+        "Automated Plan and Apply",
+        "Approval Workflows",
+        "Policy as Code with Sentinel"
+      ]
+    },
+    {
+      "title": "Advanced Terraform Patterns",
+      "topics": [
+        "for_each and count Meta-Arguments",
+        "Dynamic Blocks",
+        "Conditional Expressions",
+        "Depends_on and Graph Control",
+        "Refactoring Without Destroying Resources",
+        "Handling Large-Scale Terraform Codebases"
+      ]
+    },
+    {
+      "title": "Governance, Security & Compliance",
+      "topics": [
+        "Terraform Sentinel Policies",
+        "OPA / Checkov / TFSec Integration",
+        "Drift Detection",
+        "Secrets Management Integration",
+        "Audit and Compliance Reporting",
+        "Enterprise Governance Patterns"
+      ]
+    },
+    {
+      "title": "Performance, Cost & Operations",
+      "topics": [
+        "Terraform Execution Performance",
+        "Parallelism and Large Deployments",
+        "Managing Provider Limits",
+        "Cost Estimation with Infracost",
+        "Resource Lifecycle Management",
+        "Operational Best Practices"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Design and Build Production-Grade Terraform Modules",
+        "Provision Secure Multi-Account Cloud Infrastructure",
+        "Implement Remote State and CI/CD Pipeline",
+        "Deploy Data Platform Resources Using Terraform",
+        "Apply Governance and Security Policies",
+        "Final Deliverables: GitHub Repo, Architecture Diagram, Demo Walkthrough"
+      ]
+    }
+  ]
+},
+{
+  "slug": "apache-kafka-streaming-course",
+  "title": "Apache Kafka for Real-Time Data Streaming & Event-Driven Systems",
+  "icon": "SiApachekafka",
+  "duration": "2–3 Months",
+  "level": "Beginner → Advanced",
+  "image": "/images/courses/kafka.png",
+  "description": "This course provides end-to-end training on Apache Kafka, covering core concepts, producer-consumer patterns, stream processing, schema management, security, and operations. You will learn how to build scalable, fault-tolerant, real-time data pipelines and event-driven architectures using Kafka in production environments.",
+  "prerequisites": "Basic Java or Python knowledge and understanding of databases or distributed systems is recommended.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Kafka & Event Streaming",
+      "topics": [
+        "What is Apache Kafka and Why It Exists",
+        "Event Streaming vs Message Queues",
+        "Kafka Architecture Overview",
+        "Kafka Use Cases in Modern Systems",
+        "Kafka Ecosystem Components",
+        "Kafka vs RabbitMQ vs Pulsar"
+      ]
+    },
+    {
+      "title": "Kafka Core Architecture",
+      "topics": [
+        "Brokers, Topics, Partitions, and Offsets",
+        "Replication, ISR, and Leader Election",
+        "Producers and Consumers Internals",
+        "Consumer Groups and Rebalancing",
+        "Message Ordering and Delivery Semantics",
+        "Exactly-Once vs At-Least-Once vs At-Most-Once"
+      ]
+    },
+    {
+      "title": "Kafka Setup & Local Development",
+      "topics": [
+        "Installing Kafka with KRaft (No Zookeeper)",
+        "Kafka CLI Tools Overview",
+        "Creating Topics and Managing Partitions",
+        "Running Producers and Consumers",
+        "Kafka Configurations and Tuning Basics",
+        "Docker-Based Kafka Setup"
+      ]
+    },
+    {
+      "title": "Kafka Producers Deep Dive",
+      "topics": [
+        "Producer APIs and Configurations",
+        "Key-Based Partitioning Strategy",
+        "Batching, Compression, and Throughput Tuning",
+        "Retries, Acks, and Idempotent Producers",
+        "Handling Errors and Failures",
+        "Schema Evolution Strategies"
+      ]
+    },
+    {
+      "title": "Kafka Consumers Deep Dive",
+      "topics": [
+        "Polling Model and Offset Management",
+        "Auto Commit vs Manual Commit",
+        "Consumer Rebalancing Strategies",
+        "Handling Duplicate Messages",
+        "Parallel Processing Patterns",
+        "Scaling Consumers"
+      ]
+    },
+    {
+      "title": "Kafka Connect (Data Integration)",
+      "topics": [
+        "What is Kafka Connect",
+        "Source and Sink Connectors",
+        "JDBC, S3, Elasticsearch Connectors",
+        "Single Message Transforms (SMTs)",
+        "Running Connect in Distributed Mode",
+        "Monitoring and Error Handling"
+      ]
+    },
+    {
+      "title": "Schema Management & Governance",
+      "topics": [
+        "Schema Registry Overview",
+        "Avro, JSON Schema, Protobuf",
+        "Schema Compatibility Rules",
+        "Versioning and Evolution",
+        "Enforcing Data Contracts",
+        "Handling Breaking Changes"
+      ]
+    },
+    {
+      "title": "Kafka Streams API",
+      "topics": [
+        "What is Kafka Streams",
+        "Stateless vs Stateful Processing",
+        "KStreams and KTables",
+        "Windowing and Aggregations",
+        "Exactly-Once Processing Semantics",
+        "Building Real-Time Stream Processing Apps"
+      ]
+    },
+    {
+      "title": "ksqlDB (SQL on Streams)",
+      "topics": [
+        "Introduction to ksqlDB",
+        "Creating Streams and Tables",
+        "Windowed Aggregations",
+        "Stream-Table Joins",
+        "Real-Time Analytics Use Cases",
+        "Deploying ksqlDB Applications"
+      ]
+    },
+    {
+      "title": "Kafka Security",
+      "topics": [
+        "Authentication: SSL, SASL, IAM",
+        "Authorization with ACLs",
+        "Encrypting Data In-Transit",
+        "Securing Kafka Connect and Streams",
+        "Multi-Tenant Security Patterns",
+        "Security Best Practices"
+      ]
+    },
+    {
+      "title": "Kafka Monitoring & Operations",
+      "topics": [
+        "Kafka Metrics and JMX",
+        "Lag Monitoring and Consumer Health",
+        "Broker Monitoring",
+        "Log Retention and Cleanup Policies",
+        "Partition Reassignment and Scaling",
+        "Disaster Recovery Strategies"
+      ]
+    },
+    {
+      "title": "Kafka Performance Tuning & Scaling",
+      "topics": [
+        "Partitioning Strategy for Scale",
+        "Producer and Consumer Throughput Tuning",
+        "Broker Configuration Optimization",
+        "Disk and Network Tuning",
+        "Handling High-Volume Streams",
+        "Multi-Cluster Kafka Architecture"
+      ]
+    },
+    {
+      "title": "Kafka in Cloud & Managed Services",
+      "topics": [
+        "Amazon MSK Overview",
+        "Confluent Cloud",
+        "Azure Event Hubs for Kafka",
+        "Hybrid Kafka Architecture",
+        "Cross-Region Replication",
+        "Cost Optimization Strategies"
+      ]
+    },
+    {
+      "title": "Event-Driven Architecture Patterns",
+      "topics": [
+        "Event Sourcing",
+        "CQRS",
+        "Saga Pattern",
+        "Outbox Pattern",
+        "Idempotent Consumers",
+        "Real-World Architecture Examples"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Build a Real-Time Streaming Data Platform Using Kafka",
+        "Ingest Events from Multiple Producers",
+        "Process Streams Using Kafka Streams or ksqlDB",
+        "Integrate with Data Warehouse or Data Lake",
+        "Apply Security, Monitoring, and Scaling",
+        "Final Deliverables: GitHub Repo, Architecture Diagram, Demo Walkthrough"
+      ]
+    }
+  ]
+},{
+  "slug": "apache-airflow-workflow-orchestration-course",
+  "title": "Apache Airflow for Workflow Orchestration & Data Pipelines",
+  "icon": "SiApacheairflow",
+  "duration": "1.5–2 Months",
+  "level": "Intermediate → Advanced",
+  "image": "/images/courses/airflow.png",
+  "description": "This course provides hands-on training on Apache Airflow for designing, scheduling, and monitoring data pipelines and workflows. You will learn how to build reliable, scalable, and production-grade orchestration systems for batch, streaming, ML, and analytics workloads using Airflow in real-world environments.",
+  "prerequisites": "Python fundamentals, basic SQL, and understanding of data pipelines or cloud platforms is recommended.",
+  "courseStructure": [
+    {
+      "title": "Introduction to Workflow Orchestration & Airflow",
+      "topics": [
+        "What is Workflow Orchestration",
+        "Why Airflow (and When Not to Use It)",
+        "Airflow Architecture Overview",
+        "Airflow vs Luigi vs Prefect vs Dagster",
+        "Core Concepts: DAGs, Tasks, Operators, Schedulers",
+        "Real-World Use Cases"
+      ]
+    },
+    {
+      "title": "Airflow Setup & Environment",
+      "topics": [
+        "Installing Airflow (Local & Docker)",
+        "Airflow Components: Webserver, Scheduler, Metadata DB",
+        "Airflow Configurations",
+        "Creating Your First DAG",
+        "Airflow CLI Basics",
+        "Folder Structure Best Practices"
+      ]
+    },
+    {
+      "title": "DAGs & Operators Deep Dive",
+      "topics": [
+        "DAG Definition and Best Practices",
+        "PythonOperator, BashOperator",
+        "Branching and Conditional Workflows",
+        "Task Dependencies and Ordering",
+        "Trigger Rules",
+        "SubDAGs vs Task Groups"
+      ]
+    },
+    {
+      "title": "Scheduling, Triggers & Backfills",
+      "topics": [
+        "Schedule Intervals and Cron Expressions",
+        "Catchup and Backfill Strategies",
+        "Manual Triggers and Re-runs",
+        "Dynamic DAG Generation",
+        "Time Zones and SLA Handling",
+        "Handling Late and Missing Data"
+      ]
+    },
+    {
+      "title": "Airflow XComs, Variables & Connections",
+      "topics": [
+        "Passing Data with XComs",
+        "Airflow Variables and Secrets",
+        "Connections for Databases and APIs",
+        "Using Secrets Backends",
+        "Parameterizing DAGs",
+        "Configuration Management Best Practices"
+      ]
+    },
+    {
+      "title": "Error Handling, Retries & SLAs",
+      "topics": [
+        "Retry Logic and Exponential Backoff",
+        "Timeouts and Failures",
+        "SLA Monitoring",
+        "Alerting with Email, Slack, PagerDuty",
+        "Handling Partial Failures",
+        "Designing Resilient Pipelines"
+      ]
+    },
+    {
+      "title": "Airflow for Data Engineering",
+      "topics": [
+        "Orchestrating ETL/ELT Pipelines",
+        "Airflow + Spark + EMR",
+        "Airflow + Snowflake + BigQuery",
+        "Airflow + dbt Integration",
+        "Event-Driven Pipelines",
+        "Incremental Pipeline Patterns"
+      ]
+    },
+    {
+      "title": "Airflow Sensors & External Triggers",
+      "topics": [
+        "File Sensors, Time Sensors",
+        "ExternalTaskSensor",
+        "Deferrable Operators",
+        "Triggering DAGs via API",
+        "Event-Based Execution Patterns",
+        "Efficient Sensor Design"
+      ]
+    },
+    {
+      "title": "Airflow Deployment & Production Setup",
+      "topics": [
+        "Celery Executor vs Kubernetes Executor",
+        "Scaling Airflow",
+        "High Availability Setup",
+        "Metadata Database Tuning",
+        "Airflow on Kubernetes",
+        "Airflow on AWS MWAA"
+      ]
+    },
+    {
+      "title": "Monitoring, Logging & Observability",
+      "topics": [
+        "Task Logs and Centralized Logging",
+        "Metrics with Prometheus and Grafana",
+        "DAG Performance Monitoring",
+        "Identifying Bottlenecks",
+        "Audit Logging",
+        "Operational Dashboards"
+      ]
+    },
+    {
+      "title": "Security & Governance",
+      "topics": [
+        "RBAC in Airflow",
+        "Securing Connections and Secrets",
+        "Network Security and Isolation",
+        "Access Control and Permissions",
+        "Auditing and Compliance",
+        "Multi-Tenant Airflow Patterns"
+      ]
+    },
+    {
+      "title": "Advanced Airflow Patterns",
+      "topics": [
+        "Dynamic Task Mapping",
+        "TaskFlow API",
+        "Data-Aware Scheduling (Datasets)",
+        "Cross-DAG Dependencies",
+        "Reusable DAG Factories",
+        "Pipeline Versioning"
+      ]
+    },
+    {
+      "title": "CI/CD & Testing for Airflow",
+      "topics": [
+        "Unit Testing DAGs",
+        "Local DAG Validation",
+        "CI/CD Pipelines for Airflow",
+        "Deploying DAGs Safely",
+        "Rollback Strategies",
+        "Promotion Across Environments"
+      ]
+    },
+    {
+      "title": "Capstone Project (Portfolio Ready)",
+      "topics": [
+        "Build a Production-Grade Airflow Data Pipeline",
+        "Orchestrate Batch and Incremental Jobs",
+        "Integrate Snowflake / S3 / Kafka / dbt",
+        "Implement Alerts, SLAs, and Monitoring",
+        "Deploy on Docker or MWAA",
+        "Final Deliverables: GitHub Repo, Architecture Diagram, Demo Walkthrough"
       ]
     }
   ]
