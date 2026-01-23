@@ -89,7 +89,7 @@ const STACK_TECH = {
   node: { name: "Node.js", Icon: SiNodedotjs, color: "text-green-700", path: "/courses/professionalCourses/backend/nodejs-course" },
 
   // Backend (Java Full Stack)
-  java: { name: "Java", Icon: FaJava , color: "text-red-600", path: "/courses/professionalCourses/backend/java-full-stack-core-java"},
+  java: { name: "Java", Icon: FaJava , color: "text-red-600", path: "/courses/professionalCourses/backend/core-java"},
   springboot: { name: "Spring Boot", Icon: SiSpring, color: "text-green-700", path: "/courses/professionalCourses/backend/spring-boot-beginner-to-professional" },
   spring: { name: "Spring", Icon: SiSpring, color: "text-green-700",path: "/courses/professionalCourses/backend/spring-framework-core"},
   hibernate: { name: "Hibernate / JPA", Icon: SiHibernate, color: "text-amber-700" },
