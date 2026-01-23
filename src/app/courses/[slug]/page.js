@@ -314,6 +314,8 @@ import * as DI from "react-icons/di"
 import * as FA from "react-icons/fa"
 import * as FI from "react-icons/fi"
 import * as VSC from "react-icons/vsc"
+import * as BI from "react-icons/bi"
+
 import {
   FaChalkboardTeacher, FaCode, FaBriefcase, FaUserTie, FaProjectDiagram, FaTools,
 } from "react-icons/fa"
@@ -429,8 +431,9 @@ function resolveIconName(name) {
 function getIconData(name) {
   if (!name) return { Component: null, color: null }
   const resolved = resolveIconName(name)
-  const Component = SI[resolved] || DI[resolved] || FA[resolved] || FI[resolved] || null
-  const color = brandColors[resolved] || "#2563EB" // Tailwind blue-600 fallback
+  const Component = SI[resolved] || DI[resolved] || FA[resolved] || FI[resolved] ||  VSC[resolved] ||
+    BI[resolved] || null
+  const color = brandColors[resolved] || "#3668d4" // Tailwind blue-600 fallback
   return { Component, color }
 }
 
@@ -447,11 +450,11 @@ export default function CourseDetailPage() {
         if (!res.ok) throw new Error("Failed to load courses.json")
         const data = await res.json()
         const found = Array.isArray(data) ? data.find((c) => c.slug === slug) : null
-        if (!found) return router.replace("/404")
+        if (!found) return router.replace("/courses/coming-soon")
         if (!cancelled) setCourse(found)
       } catch (e) {
         console.error(e)
-        router.replace("/404")
+        router.replace("/courses/coming-soon")
       }
     })()
     return () => { cancelled = true }
