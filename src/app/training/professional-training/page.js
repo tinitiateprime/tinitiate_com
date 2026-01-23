@@ -122,7 +122,7 @@ const STACK_TECH = {
   bitbucket: { name: "Bitbucket Pipelines", Icon: SiBitbucket, color: "text-blue-700", path:'/courses/bitbucket-course'},
   jenkins: { name: "Jenkins", Icon: SiJenkins, color: "text-red-700", path:'/courses/jenkins-course'},
   docker: { name: "Docker", Icon: SiDocker, color: "text-sky-600", path:'/courses/docker-beginner-course' },
-  k8s: { name: "Kubernetes", Icon: SiKubernetes, color: "text-blue-600" },
+  k8s: { name: "Kubernetes", Icon: SiKubernetes, color: "text-blue-600",path:'/courses/mongodb-course' },
 
   // Data Eng
   snowflake: { name: "Snowflake", Icon: SiSnowflake, color: "text-sky-600", path:'/courses/snowflake-data-platform-course' },
@@ -149,7 +149,7 @@ const STACK_TECH = {
   redshift: { name: "Amazon Redshift", Icon: SiAmazonredshift , color: "text-[#5828b0]", path: "/courses/professionalCourses/dataEngineering/aws-redshift" },
 
   // Extras
-  sql: { name: "SQL", Icon: FiDatabase, color: "text-blue-600", path:'/courses/' },
+  sql: { name: "SQL", Icon: FiDatabase, color: "text-blue-600", path:'/courses/mongodb-course' },
   rds: { name: "Amazon RDS", Icon: SiAmazonrds , color: "text-[#285ab0]", path: "/courses/professionalCourses/dataEngineering/aws-rds" },
   lambda: { name: "AWS Lambda", Icon: FiZap, color: "text-slate-800", path: "/courses/professionalCourses/dataEngineering/aws-lambda" },
   stepfunctions: { name: "Step Functions", Icon: FiGitBranch, color: "text-slate-800", path: "/courses/professionalCourses/dataEngineering/aws-step-functions" },
