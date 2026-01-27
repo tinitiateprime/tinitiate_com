@@ -23,6 +23,14 @@
         "Build React UI and integrate with backend APIs",
         "Deploy apps and set up CI/CD pipelines"
       ],
+  "stack": {
+  "Frontend": ["html", "css", "js", "react", "bootstrap"],
+  "Backend": ["java", "spring", "springboot"],
+  "Database": ["postgres", "sqlserver", "mongo"],
+  "Cloud / Hosting": ["aws", "azure", "gcp"],
+  "CI/CD": ["git", "docker", "gha", "gitlab", "circleci", "azuredevops", "jenkins"]
+   },
+
       "modules": [
         {
           "module": "M1",
@@ -190,6 +198,15 @@
         "Build forms with validation and API integration",
         "Deploy React apps to Netlify/Vercel"
       ],
+
+      "stack": {
+  "Frontend": ["html", "css", "js", "ts", "react", "bootstrap"],
+  "Backend": ["node"],
+  "Database": ["postgres", "sqlserver", "mongo"],
+  "Cloud / Hosting": ["amplify", "netlify", "vercel"],
+  "CI/CD": ["git", "docker", "gha", "gitlab", "azuredevops", "bitbucket", "jenkins"]
+            },
+
       "modules": [
         {
           "module": "M1",
@@ -327,6 +344,16 @@
         "Build secure auth flows and protected pages",
         "Deploy on Vercel with best practices"
       ],
+      "stack": {
+  "Core Skills": ["python", "sql"],
+  "Data Format": ["csv", "json", "xml", "parquet"],
+  "Database": ["redshift", "rds"],
+  "Data Lake": ["s3"],
+  "Batch ETL": ["glue", "emr", "pyspark", "athena", "lambda", "stepfunctions"],
+  "Streaming / Orchestration": ["kinesis", "kafka", "airflow"],
+  "CI/CD": ["terraform", "git", "docker"]
+},
+
       "modules": [
         {
           "module": "M1",
@@ -449,6 +476,14 @@
         "Build secure routing and form-heavy apps",
         "Deploy Angular apps confidently"
       ],
+      "stack": {
+  "Frontend": ["html", "css", "js", "ts", "react", "next", "bootstrap"],
+  "Backend": ["node"],
+  "Database": ["postgres", "sqlserver", "mongo"],
+  "Cloud / Hosting": ["amplify", "netlify", "vercel"],
+  "CI/CD": ["git", "docker", "gha", "gitlab", "azuredevops", "bitbucket", "jenkins"]
+},
+
       "modules": [
         {
           "module": "M1",
@@ -731,6 +766,16 @@
         "Build incremental pipelines using Streams/Tasks",
         "Deliver dimensional marts and performance optimized queries"
       ],
+
+      "stack": {
+  "Core Skills": ["snowflake", "python"],
+  "Ingestion": ["snowpipe"],
+  "Transform": ["snowpark"],
+  "Streaming / Events": ["kafka"],
+  "Orchestration": ["airflow"],
+  "CI/CD": ["terraform", "git", "docker"]
+},
+
       "modules": [
         {
           "module": "M1",
@@ -859,6 +904,16 @@
         "Build Delta Lake transformations in Databricks (PySpark)",
         "Serve analytics via Synapse patterns"
       ],
+      "stack": {
+  "Core Skills": ["python", "sql"],
+  "Data Format": ["csv", "json", "xml", "parquet"],
+  "Data Lake": ["adls"],
+  "Batch ETL": ["adf", "databricks", "pyspark", "delta", "synapse"],
+  "Streaming / Orchestration": ["eventhubs", "kafka", "streamanalytics"],
+  "Automation": ["functions", "logicapps"],
+  "CI/CD": ["terraform", "git", "azuredevops", "docker"]
+},
+
       "modules": [
         {
           "module": "M1",
@@ -987,6 +1042,16 @@
         "Model and query analytics data in BigQuery",
         "Automate and manage infra patterns using Terraform concepts"
       ],
+      "stack": {
+  "Core Skills": ["python", "sql"],
+  "Data Format": ["csv", "json", "parquet"],
+  "Storage": ["gcs"],
+  "Processing": ["dataflow", "bigquery"],
+  "Streaming": ["pubsub"],
+  "Orchestration": ["airflow"],
+  "CI/CD": ["terraform", "docker", "git"]
+},
+
       "modules": [
         {
           "module": "M1",
@@ -1079,6 +1144,86 @@
         "title": "Capstone: GCP Data Platform Blueprint",
         "description": "Design a complete GCP data platform with storage, processing, streaming patterns, analytics marts, and automation strategy."
       }
+    },
+    {
+  "key": "visualization-course",
+  "category": "Data Analytics",
+  "title": "Visualization",
+  "subtitle": "QuickSight • Power BI",
+  "level": "Beginner → Intermediate",
+  "mode": "Online (Mentor-led)",
+  "duration": "4–6 weeks",
+  "overview": "Learn practical data visualization with Power BI and Amazon QuickSight: dashboards, KPIs, filters, storytelling, and shareable reports.",
+  "prerequisites": [
+    "Basic Excel/SQL helpful"
+  ],
+  "outcomes": [
+    "Build interactive dashboards and KPI scorecards",
+    "Model data for reporting (relationships, measures)",
+    "Create drill-downs, filters, and slicers",
+    "Publish and share dashboards securely"
+  ],
+  "stack": {
+    "Visualization": ["powerbi", "quicksight"]
+  },
+  "modules": [
+    {
+      "module": "M1",
+      "title": "Visualization Foundations",
+      "topics": [
+        "Dashboard vs report vs story",
+        "Choosing the right chart",
+        "KPIs and business metrics",
+        "Design principles (layout, color, accessibility)"
+      ],
+      "labs": [
+        "Create a KPI dashboard wireframe"
+      ]
+    },
+    {
+      "module": "M2",
+      "title": "Power BI Essentials",
+      "topics": [
+        "Power BI Desktop overview",
+        "Data import and transformations (Power Query basics)",
+        "Data modeling (relationships)",
+        "Measures and DAX basics",
+        "Slicers, filters, drill-through"
+      ],
+      "labs": [
+        "Build a Power BI dashboard with filters"
+      ]
+    },
+    {
+      "module": "M3",
+      "title": "Amazon QuickSight Essentials",
+      "topics": [
+        "QuickSight datasets and SPICE basics",
+        "Visual types and dashboard controls",
+        "Calculated fields basics",
+        "Sharing and permissions overview"
+      ],
+      "labs": [
+        "Build a QuickSight dashboard with KPIs"
+      ]
     }
+  ],
+  "projects": [
+    {
+      "title": "Project: Executive Dashboard",
+      "description": "Create a business dashboard with KPIs, drilldowns, filters, and shareable views.",
+      "deliverables": [
+        "Dashboard file/link",
+        "KPI definitions",
+        "Short README on data + visuals"
+      ]
+    }
+  ],
+  "capstone": {
+    "title": "Capstone: Analytics Storyboard",
+    "description": "A complete visualization story with KPI tracking, trend analysis, and stakeholder-ready narrative."
+  }
+}
   ]
 }
+
