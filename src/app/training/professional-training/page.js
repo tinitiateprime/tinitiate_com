@@ -1808,7 +1808,7 @@ export default function Page() {
       <section className="bg-gray-50 py-16">
         <Container>
           <SectionHeader
-            kicker="Web & Full-Stack"
+            kicker=""
             title="Full-Stack Development"
             subtitle="Pick a track and start building production-ready skills with guided projects."
           />
@@ -1835,7 +1835,7 @@ export default function Page() {
       <section className="bg-white py-16">
         <Container>
           <SectionHeader
-            kicker="Data Engineering"
+            kicker=""
             title="Data Engineering"
             subtitle="Choose your track based on the target platform: AWS, Snowflake, Azure, or GCP."
           />
@@ -1859,10 +1859,10 @@ export default function Page() {
       </section>
 
       {/* Visualization */}
-      <section className="bg-white py-16">
+      <section className="bg-gray-50 py-16">
         <Container>
           <SectionHeader
-            kicker="Visualization"
+            kicker=""
             title="Visualization"
             subtitle="Build dashboarding & BI skills with QuickSight and Power BI—turn data into clear, decision-ready insights."
           />
