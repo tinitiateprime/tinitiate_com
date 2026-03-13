@@ -1340,11 +1340,19 @@
 
 
 
+
+
+
+
+
+
+
+
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
-
+import AiDevelopBanner from "../../components/AiDevelopBanner";
 import { SiReact, SiNextdotjs, SiAngular, SiSnowflake } from "react-icons/si";
 import { FaAws, FaJava } from "react-icons/fa6";
 import {
@@ -1757,6 +1765,14 @@ function CourseCard({
 export default function Page() {
   return (
     <main className="bg-white text-gray-900">
+            <section className="bg-white py-5">
+        <Container>
+          <AiDevelopBanner
+            title="Develop with AI"
+            subtitle="Learn modern development workflows with ChatGPT, Claude, and Copilot for prompting, coding, debugging, architecture, and project delivery."
+          />
+        </Container>
+      </section>
       {/* HERO */}
       <section className="relative overflow-hidden bg-black">
         <div className="pointer-events-none absolute inset-0">
