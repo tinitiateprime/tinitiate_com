@@ -23,7 +23,7 @@ import Link from "next/link";
 const LS_KEY = "tinitiate_chat_v1";
 // const COACHMARK_KEY = "tinitiate_fab_seen_v1";
 
-const ASSISTANT_AVATAR = "/images/tinitiatelogoicon.png";
+const ASSISTANT_AVATAR = "/images/tinitiate-logo-mark.svg";
 const USER_AVATAR_LETTER = "You";
 
 // Handoff links
@@ -36,16 +36,14 @@ const PHONE_LINK_US = "tel:+19736536870";
 // Larger suggestions pool
 const SUGGESTIONS_POOL = [
   "What services does TINITIATE offer?",
-  "Tell me about the Work Experience Program.",
-  "How do I enroll?",
-  "Do you provide corporate training?",
-  "What tech stacks do you train on?",
-  "Do you help with job placement?",
-  "What is the fee structure?",
-  "Do you offer weekend batches?",
-  "Can you customize corporate training?",
+  "Tell me about your consulting services.",
+  "Do you build web and data engineering projects?",
+  "Can you help modernize an existing system?",
+  "What cloud platforms do you work with?",
+  "Do you provide maintenance and support?",
+  "Can you help with database performance?",
+  "How can I request a callback?",
   "What are the contact options?",
-  "Do you build web & data engineering projects?",
   "What is included in maintenance & support?"
 ];
 
@@ -296,7 +294,7 @@ export default function ChatWidget() {
         if (Array.isArray(saved) && saved.length) return saved;
       } catch {}
     }
-    return [{ role: "assistant", content: "👋 Hi! I’m the TINITIATE Assistant. Ask me about our courses, WEP, or services!" }];
+    return [{ role: "assistant", content: "Hi! I am the TINITIATE Assistant. Ask me about our consulting, development, cloud, or support services." }];
   });
   useEffect(() => {
     if (typeof window !== "undefined") localStorage.setItem(LS_KEY, JSON.stringify(messages));

@@ -19,7 +19,7 @@ export default function CancellationRefundPolicy() {
         </h1>
 
         <p className="text-lg text-center text-gray-600 mb-10">
-          At <span className="font-semibold text-indigo-500">TINITIATE Technologies</span>, we are committed to delivering high-quality IT training and services. We understand that plans may change, so here is our transparent policy regarding cancellations and refunds.
+          At <span className="font-semibold text-indigo-500">TINITIATE Technologies</span>, we are committed to delivering high-quality IT services. We understand that plans may change, so here is our transparent policy regarding cancellations and refunds.
         </p>
 
         {/* Cancellation Policy */}
@@ -36,7 +36,7 @@ export default function CancellationRefundPolicy() {
             </li>
             <li className="flex items-start">
               <FaCheckCircle className="mt-1 mr-2 text-green-500" />
-              If you cancel before the course begins, you are eligible for a refund minus the 15% fee.
+              If you cancel before the scheduled service begins, you are eligible for a refund minus the 15% fee.
             </li>
           </ul>
         </section>
@@ -55,11 +55,11 @@ export default function CancellationRefundPolicy() {
             </li>
             <li className="flex items-start">
               <FaTimesCircle className="mt-1 mr-2 text-red-500" />
-              No refunds are issued after class has started and the refund window has closed.
+              No refunds are issued after scheduled service work has started and the refund window has closed.
             </li>
             <li className="flex items-start">
               <FaClock className="mt-1 mr-2 text-yellow-500" />
-              Refund requests must be made within <strong>7 days</strong> or before completing <strong>5 hours</strong> of training, whichever comes first.
+              Refund requests must be made within <strong>7 days</strong> or before completing <strong>5 hours</strong> of scheduled service work, whichever comes first.
             </li>
           </ul>
         </section>
@@ -74,11 +74,11 @@ export default function CancellationRefundPolicy() {
             </li>
             <li className="flex items-start">
               <FaTimesCircle className="mt-1 mr-2 text-red-500" />
-              Accessed downloadable digital content or course materials.
+              Accessed downloadable digital content or project materials.
             </li>
             <li className="flex items-start">
               <FaTimesCircle className="mt-1 mr-2 text-red-500" />
-              Custom corporate training sessions once scheduled.
+              Custom consulting sessions once scheduled.
             </li>
           </ul>
         </section>

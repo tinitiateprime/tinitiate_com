@@ -5,23 +5,23 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-white border-t pt-10 pb-6 mt-12">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-gray-700 text-sm">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-700 text-sm">
         
         {/* Company Intro */}
         <div>
-        <Link href="/" className="block w-[160px] md:w-[220px] lg:w-[260px] xl:w-[300px] mb-3">
+        <Link href="/" className="flex h-12 w-[145px] items-center mb-3 md:w-[160px]">
   <img
-    src="/images/tinitiatelogo.png" // Make sure your logo exists at public/images/logo.png
+    src="/images/tinitiate-full-logo.svg"
     alt="TINITIATE Logo"
-    className="w-full h-auto object-contain"
+    className="h-11 w-auto object-contain md:h-12"
   />
 </Link>
 
           <h4 className="text-base font-semibold text-gray-900 mb-3">
-            TECHNICAL INITIATE Technologies Pvt Ltd
+            Tinitiate Technologies Pvt Ltd
           </h4>
           <p className="leading-relaxed">
-          TINITIATE is a leading IT consulting, development and training company, dedicated to empowering businesses with cutting-edge technology solutions and high-quality professional training. A highly experienced team with years of expertise in IT services, database management, and cloud computing, we deliver tailored solutions to meet the evolving demands of enterprises worldwide.
+          TINITIATE is a leading IT consulting and development company dedicated to empowering businesses with cutting-edge technology solutions. With years of expertise in IT services, database management, and cloud computing, we deliver tailored solutions to meet the evolving demands of enterprises worldwide.
 
 
           </p>
@@ -149,31 +149,6 @@ export default function Footer() {
         </div>
         
 
-        {/* Company Links */}
-        <div>
-          <h4 className="text-base font-semibold text-gray-900 mb-3">Company</h4>
-          <ul className="space-y-2">
-            <li>
-              <Link href="/company" className="hover:text-blue-600 transition">About Us</Link>
-            </li>
-            <li>
-              <Link href="/pricing-policy" className="hover:text-blue-600 transition">Pricing Policy</Link>
-            </li>
-            <li>
-              <Link href="/privacy-policy" className="hover:text-blue-600 transition">Privacy Policy</Link>
-            </li>
-            <li>
-              <Link href="/refund-policy" className="hover:text-blue-600 transition">Refund Policy</Link>
-            </li>
-            <li>
-              <Link href="/terms" className="hover:text-blue-600 transition">Terms & Conditions</Link>
-            </li>
-             {/* <li>
-              <Link href="/faq/why-tinitiate/parents-stem" className="hover:text-blue-600 transition">FAQ</Link>
-            </li> */}
-          </ul>
-        </div>
-
         {/* Contact Info */}
   <div>
   <h4 className="text-base font-semibold text-gray-900 mb-3">Contact Us</h4>
@@ -213,10 +188,8 @@ export default function Footer() {
       <div>
         <span className="font-semibold">Head Office:</span>
         <br />
-        Plot No. B 503, Ace Ajanta,
-        Beside Indu Aranya, Nagole,
-        Hayathnagar, R.R. – 500068,
-        Telangana, India
+        1420 Valley Trl,
+        Irving, TX 75063, USA
       </div>
     </address>
         <address className="not-italic space-y-2 pt-2">

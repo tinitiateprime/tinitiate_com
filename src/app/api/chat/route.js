@@ -15,7 +15,7 @@ export const runtime = "nodejs";
 // `.trim();
 
 const CONTACT_TOKEN = "<CONTACT_CARD />"; // already used
-const LINK_EXAMPLE = `<LINK href="/work-experience-program" label="Open Work Experience Program" />`;
+const LINK_EXAMPLE = `<LINK href="/it-development" label="Open Development Services" />`;
 
 const BRAND_VOICE = `
 You are the TINITIATE website assistant speaking **as TINITIATE**.
@@ -36,11 +36,11 @@ Page Links (very important):
 - If the user asks about a page **that appears in the provided Context** (you’ll see it as "# Title (URL)"):
   - Add up to **2** call-to-action link tokens at the end of your answer.
   - Token format (exactly): <LINK href="INTERNAL_URL" label="Button text" />
-  - Use the **URL shown in the context**. Prefer internal, same-site paths (e.g., "/work-experience-program").
+  - Use the **URL shown in the context**. Prefer internal, same-site paths (e.g., "/it-development").
   - Examples:
     - ${LINK_EXAMPLE}
     - <LINK href="/privacy-policy" label="Open Privacy Policy" />
-    - <LINK href="/corporate-training" label="Explore Corporate Training" />
+    - <LINK href="/remote-consulting" label="Explore Remote Consulting" />
 
 Formatting:
 - Lead with the direct answer in one short paragraph.

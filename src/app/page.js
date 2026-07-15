@@ -3,71 +3,14 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Globe, Users, Clock, UserCheck, Briefcase, CheckCircle, Star, BookOpen, FileText, ClipboardCheck,  Code2,
+import { Globe, Users, Clock, UserCheck, CheckCircle, Star, BookOpen,  Code2,
   ShoppingCart,
   ShieldCheck,
   Truck,
   HeartPulse,
   Hospital ,
   Plane,
-  Factory, UserCircle2,Settings ,Database, Cloud, Brain, BarChart3, Layers, Smartphone, Server, Bug  } from 'lucide-react'
-
-
-import { useRouter } from 'next/navigation';
-
-
-const services = [
-  {
-    title: 'Development Services',
-    href: '/it-development',
-    image: '/images/it-development-services.jpg',
-  },
-  {
-    title: 'Training program',
-    href: '/training/personalized-training',
-    image: '/images/services-training.png',
-  },
-  {
-    title: 'Work Experience Program',
-    href: '/work-experience-program',
-    image: '/images/work-experience-program.jpg',
-  },
-  {
-    title: 'Remote Consulting',
-    href: '/remote-consulting',
-    image: '/images/Remote-consulting-service.jpg',
-  },
-]
-
-const programs = [
-  {
-    title: 'Python AWS Developer Program',
-    duration: '3 Months',
-    image: '/images/IT-training/Python-AWS-Developer-Program.png',
-    href: '/courses/Python-AWS-Developer-Program',
-    description: 'Master Python backend, AWS Lambda, API Gateway, and DynamoDB through hands-on projects.',
-  },
-  {
-    title: 'Power BI Developer Program',
-    duration: '2 Months',
-    image: '/images/IT-training/Power-BI-Developer-Program.png',
-    href: '/courses/power-bi-developer-program',
-    description: 'Learn powerful BI reporting, data modeling, and dashboard creation using real-world business data.',
-  },
-  // {
-  //   title: 'AWS DevOps Program',
-  //   duration: '3 Months',
-  //   image: '/images/IT-training/AWS-DevOps-Program.png',
-  //   description: 'Gain expertise in CI/CD pipelines, infrastructure as code, containerization, and cloud deployment.',
-  // },
-    {
-    title: 'SQL Database Program',
-    duration: '3 Months',
-    image: '/images/courses/sql.png',
-    description: 'Understand data modeling, querying, and reporting using relational databases and SQL.',
-    href: '/courses/sql-language-course',
-  },
-]
+  Factory, Settings ,Database, Cloud, Brain, BarChart3, Layers, Smartphone, Server, Bug  } from 'lucide-react'
 
 
 // const itServices = [
@@ -190,50 +133,7 @@ const itServices = [
 
 
 
-const careerSupport = [
-  {
-    icon: Briefcase,
-    title: 'IT Career Guidance',
-    description: 'Personalized guidance from industry experts to align your goals with real-world roles in IT.',
-    href:'/it-career-guidance',
-  },
-  {
-    icon: BookOpen,
-    title: 'Basics to Advanced Learning',
-    description: 'Step-by-step learning paths from foundational concepts to advanced tech stacks and real use cases.',
-    href:'/basics-to-advanced-learning'
-  },
-  {
-    icon: Code2,
-    title: 'Hands-On Coding Exercises',
-    description: 'Daily challenges and practice labs to build strong coding logic and practical development skills.',
-      href:'/hands-on-coding-exercises'
-  },
-  {
-    icon: FileText,
-    title: 'Live Projects',
-    description: 'Build real-world applications with mentorship support to strengthen your portfolio and confidence.',
-      href:'/live-projects'
-  },
-  {
-    icon: UserCircle2,
-    title: 'Resume Preparation',
-    description: 'Get help crafting a standout, recruiter-friendly resume tailored for your desired job roles.',
-      href:'/resume-preparation'
-  },
-  {
-    icon: ClipboardCheck,
-    title: 'Interview Preparation',
-    description: 'Mock interviews, HR tips, and technical assessments to boost your readiness and confidence.',
-      href:'/interview-preparation'
-  },
-]
-
 export default function HomePage() {
-
-   const router = useRouter();
-
-
   return (
     <main className="text-gray-800">
     <section className="relative bg-black py-20 sm:py-10 md:py-15  ">
@@ -400,10 +300,10 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-200 to-white py-20 px-6 text-center">
         <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900">
-          Empowering Careers with Real Time Experience
+          Empowering Businesses with Real-Time IT Solutions
         </h1>
         <p className="max-w-xl mx-auto text-lg text-gray-700 mb-8">
-          TINITIATE provides job-ready IT training, hands-on coding, and real-world consulting services led by 15+ years of industry expertise.
+          TINITIATE delivers custom software development, cloud consulting, and practical engineering services led by 15+ years of industry expertise.
         </p>
         {/* <Link
           href="#about"
@@ -413,87 +313,24 @@ export default function HomePage() {
         </Link> */}
       </section>
 
-      {/* Training Programs */}
-{/* <section id="programs" className="py-10 px-6 bg-white ">
-  <h2 className="text-3xl font-bold text-center mb-12">
-    Our Top Training Programs
-  </h2>
-  <div className="max-w-6xl mx-auto  grid grid-cols-1 md:grid-cols-3 gap-8">
-    {programs.map((prog) => (
-      <div
-        key={prog.title}
-        className="rounded-xl shadow-sm bg-white overflow-hidden flex flex-col transition-all hover:shadow-md"
-      >
-  
-        <Link href={prog.href} className="relative w-2/3 h-40">
-          <Image
-            src={prog.image}
-            alt={prog.title}
-            fill
-            className=""
-          />
-        </Link>
-
-        <div className="p-6 flex flex-col justify-between grow">
-          <div className="mb-6">
-            <h3 className="text-lg text-gray-900 font-semibold mb-2">
-              {prog.title}
-            </h3>
-            <p className="text-sm text-gray-600 mb-2">
-              Duration: {prog.duration}
-            </p>
-             <p className="text-sm text-gray-700 mb-2">
-              {prog.description}
-            </p>
-          </div>
-        <button
-        onClick={() => router.push('/request-callback')}
-            // href={`/programs/${prog.title.toLowerCase().replace(/\s+/g, '-')}`}
-            href={`/request-callback/`}
-            className="inline-block px-4 py-2 bg-blue-500 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
-          >
-            Register Course
-        </button>
-        <button
-  onClick={() => router.push(`/request-callback?course=${encodeURIComponent(prog.title)}`)}
-  className="inline-block px-4 py-2 bg-blue-500 text-white text-sm rounded-lg text-center hover:bg-blue-700 transition"
->
-  Register Course
-</button>
-
-        </div>
-      </div>
-    ))}
-
-  </div>
-  <div className=' text-center mt-10'>
-              <Link
-  href="/training/personalized-training"
-  className="inline-block px-8 py-3 bg-gray-500 mb-5 text-center text-white rounded-lg hover:bg-gray-700 transition-colors duration-300"
->
-  Explore all our Programs
-  </Link>
-  </div>
-</section> */}
-
 <section id="about" className="py-10 px-6 bg-gray-50">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
       Why Choose TINITIATE?
     </h2>
     <div className="grid md:grid-cols-2 gap-12 items-start">
-      {/* Left: Why Choose TINITIATE */}
-      <div>
+        {/* Left: Why Choose TINITIATE */}
+        <div>
         <p className="text-gray-700 mb-6 leading-relaxed">
-          With <strong>15+ years of hands-on IT experience</strong>, our training isn&apos;t just theory—It&apos;s real-time knowledge paired with live projects, bonus technologies, and business domain immersion.
+          With <strong>15+ years of hands-on IT experience</strong>, our work is grounded in production systems, live deployments, and business domain depth.
         </p>
         <ul className="space-y-3">
           {[
-            'Expert faculty with deep industry background',
-            'Structured training from basics to advanced',
-            'Business domain training included',
-            'Extensive hands-on exercises',
-            'Bonus technologies taught free-of-cost',
+            'Expert engineers with deep industry background',
+            'Architecture from concept to production',
+            'Business domain understanding',
+            'Extensive hands-on implementation',
+            'Modern cloud, data, and AI capabilities',
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">
               <CheckCircle className="w-5 h-5 text-green-600 mt-1" />
@@ -683,61 +520,10 @@ export default function HomePage() {
   </div>
 </section>
 
-
-
-    <section className="py-10 px-6 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-          Career Support
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {careerSupport.map(({ icon: Icon, title, description,href }) => (
-            <div
-              key={title}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1 flex flex-col items-center text-center"
-            >
-              <div className="mb-4 bg-blue-100 p-3 rounded-full">
-                <Icon className="w-8 h-8 text-blue-700" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2 hover:text-blue-700">
-                <button onClick={() => router.push(href)}>{title}</button>
-                </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-      {/* Services
-      <section id="services" className="py-10 px-6 bg-white">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((svc) => (
-            <Link
-              key={svc.href}
-              href={svc.href}
-              className="group relative rounded-2xl overflow-hidden shadow hover:shadow-lg transition-all bg-white"
-            >
-              <Image
-                src={svc.image}
-                alt={svc.title}
-                width={400}
-                height={300}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="p-4">
-                <h3 className="text-xl text-center text-gray-800 hover:text-blue-700">{svc.title}</h3>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section> */}
-
       {/* Final CTA Banner */}
       <section className="py-16 px-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Career or Business?</h2>
-        <p className="mb-6 text-lg">Join our training programs or consult with us for IT development and cloud solutions tailored for startups and enterprises.</p>
+        <p className="mb-6 text-lg">Consult with us for IT development and cloud solutions tailored for startups and enterprises.</p>
         <Link href="/request-callback" className="inline-block px-8 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition">
           Get Started Today
         </Link>

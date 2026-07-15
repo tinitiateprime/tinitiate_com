@@ -99,7 +99,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaRocket, FaBuilding } from 'react-icons/fa'
+import { FaBuilding, FaCogs, FaGlobeAmericas, FaRobot, FaRocket } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 export default function RemoteConsultingPage() {
@@ -137,10 +137,34 @@ export default function RemoteConsultingPage() {
       <section className="bg-gradient-to-r from-blue-50 via-white to-purple-50 py-20 px-6 sm:px-10">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-14 text-gray-900 leading-tight">
-            Consulting Tracks for Startups & Enterprises
+            Consulting Tracks for GCCs, Startups & Enterprises
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* GCC CONSULTING */}
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.3 }}
+              className="md:col-span-2 bg-white rounded-3xl shadow-xl hover:shadow-2xl p-8 md:p-10 border-t-4 border-emerald-500 relative"
+            >
+              <Link href="/remote-consulting/gcc" className="block h-full">
+                <div className="grid gap-6 text-left md:grid-cols-[auto_1fr_auto] md:items-center">
+                  <div className="text-emerald-600 text-5xl">
+                    <FaGlobeAmericas />
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold mb-3 text-emerald-800">GCC Consulting</h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      Build and scale a Global Capability Center with the right operating model, team structure, governance, cloud and data architecture, automation roadmap, and secure remote delivery practices. We help you turn distributed execution into a reliable, cost-effective extension of your business.
+                    </p>
+                  </div>
+                  <button className="justify-self-start md:justify-self-end px-5 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition font-medium whitespace-nowrap">
+                    Plan GCC Setup
+                  </button>
+                </div>
+              </Link>
+            </motion.div>
+
             {/* STARTUP CONSULTING */}
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -165,6 +189,30 @@ export default function RemoteConsultingPage() {
               </Link>
             </motion.div>
 
+            {/* AI AUTOMATION */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-3xl shadow-xl hover:shadow-2xl p-8 border-t-4 border-cyan-500 relative"
+            >
+              <Link href="/remote-consulting/ai-automation" className="block h-full">
+                <div className="flex flex-col h-full">
+                  <div className="text-cyan-600 text-4xl mb-4">
+                    <FaRobot />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-cyan-800">AI Automation</h3>
+                  <p className="text-gray-700 mb-6 text-left">
+                    Turn repetitive workflows into intelligent systems with AI-assisted process design, agents, API automation, reporting dashboards, and human-in-the-loop controls built around your startup or enterprise operations.
+                  </p>
+                  <div className="mt-auto">
+                    <button className="mt-4 px-5 py-2 bg-cyan-600 text-white rounded-full hover:bg-cyan-700 transition font-medium">
+                      Explore AI Automation
+                    </button>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+
             {/* ENTERPRISE CONSULTING */}
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -183,6 +231,30 @@ export default function RemoteConsultingPage() {
                   <div className="mt-auto">
                     <button className="mt-4 px-5 py-2 bg-purple-700 text-white rounded-full hover:bg-purple-800 transition font-medium">
                       View Enterprise Services
+                    </button>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+
+            {/* MANAGED SERVICES */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-3xl shadow-xl hover:shadow-2xl p-8 border-t-4 border-slate-600 relative"
+            >
+              <Link href="/remote-consulting/managed-services" className="block h-full">
+                <div className="flex flex-col h-full">
+                  <div className="text-slate-700 text-4xl mb-4">
+                    <FaCogs />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-slate-800">Managed Services</h3>
+                  <p className="text-gray-700 mb-6 text-left">
+                    Keep critical platforms stable after launch with remote monitoring, cloud and database operations, DevOps support, incident response, cost optimization, and continuous improvement delivered by an embedded expert team.
+                  </p>
+                  <div className="mt-auto">
+                    <button className="mt-4 px-5 py-2 bg-slate-700 text-white rounded-full hover:bg-slate-800 transition font-medium">
+                      View Managed Services
                     </button>
                   </div>
                 </div>

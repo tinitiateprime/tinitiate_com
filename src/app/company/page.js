@@ -4,41 +4,6 @@ import Image from "next/image"
 export default function CompanyPage() {
   return (
     <main className="text-gray-800">
-      {/* Hero Section */}
-      {/* <section className="bg-gradient-to-br from-blue-100 to-white py-20 text-center px-6">
-        <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-gray-900"> TINITIATE</h1>
-        <p className="max-w-2xl mx-auto text-lg text-gray-700">
-          Empowering individuals and businesses through innovative IT training and development services.
-        </p>
-      </section> */}
-
-            {/* <section className="relative px-4 py-16 sm:py-24 text-center overflow-hidden">               
-                Background Image Container (with height)
-                <div className="absolute inset-0 w-full h-full ">
-                  <Image
-                    src="/images/banners/company.jpg" // Replace with your actual image
-                    alt="Remote Consulting Background"
-                    fill
-                    className="object-cover"
-                    priority
-                    sizes="100vw"
-                  />
-                  Optional dark overlay to enhance text contrast
-                  <div className="absolute inset-0 bg-black/60" />
-                </div>
-            
-                Foreground Text Content
-                <div className="relative z-10 max-w-4xl mx-auto">
-                  <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white leading-tight">
-            TINITIATE
-                  </h1>
-                  <p className="text-base sm:text-lg text-white mb-6">
-                  Empowering individuals and businesses through innovative IT training and development services.
-                   
-                  </p>
-                </div>
-              </section> */}
-
               <section className="relative bg-black py-20 sm:py-10 md:py-15 ">
   <div className="max-w-7xl sm:px-5 mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
     
@@ -51,7 +16,7 @@ export default function CompanyPage() {
         TINITIATE Technologies 
       </h1>
       <p className="text-base sm:text-lg text-white mb-6 max-w-xl">
-         Empowering individuals and businesses through innovative IT training and development services.
+         Empowering businesses through innovative IT consulting, development, and cloud engineering services.
       </p>
     </div>
 
@@ -74,10 +39,10 @@ export default function CompanyPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Who We Are</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            TINITIATE is a technology-driven organization committed to delivering high-quality IT training and development services. With over 15 years of industry experience, we bridge the gap between education and employment by equipping students and professionals with real-world skills.
+            TINITIATE is a technology-driven organization committed to delivering high-quality IT consulting, software development, and cloud engineering services. With over 15 years of industry experience, we help businesses design, build, and support reliable digital systems.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Our team of experienced professionals, industry experts, and technologists ensure every engagement reflects our commitment to excellence, innovation, and learner success.
+            Our team of experienced professionals, industry experts, and technologists ensures every engagement reflects our commitment to excellence, innovation, and measurable business outcomes.
           </p>
         </div>
       </section>
@@ -87,12 +52,12 @@ export default function CompanyPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Mission</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            To enable individuals, students, and corporate teams to thrive in the digital world by delivering hands-on, real-time IT education, software development, and cloud-based engineering solutions.
+            To help organizations thrive in the digital world by delivering practical software development, cloud-based engineering, and dependable technology consulting.
           </p>
           <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li>Empower through practical, live-project-based training</li>
             <li>Deliver full-cycle software development and support</li>
-            <li>Support career growth with domain-oriented guidance</li>
+            <li>Modernize systems with cloud, data, and AI capabilities</li>
+            <li>Support business growth with domain-oriented engineering</li>
           </ul>
         </div>
       </section>
@@ -102,14 +67,14 @@ export default function CompanyPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Partner With Us?</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Whether you&apos;re an individual looking to upskill or an enterprise needing cutting-edge development services, TINITIATE is your trusted technology partner. Our commitment to personalized mentoring, project-oriented learning, and scalable engineering makes us stand out.
+            Whether you&apos;re a startup building a new product or an enterprise modernizing critical systems, TINITIATE is your trusted technology partner. Our commitment to practical architecture, reliable delivery, and scalable engineering makes us stand out.
           </p>
           <div className="grid sm:grid-cols-2 gap-6 text-left">
             {[
               'Proven industry experience across multiple domains',
-              'Live project-based training with practical exposure',
               'Full-stack, cloud, and DevOps capabilities',
-              'Support for corporate upskilling and transformation',
+              'Practical architecture and implementation support',
+              'Support for digital transformation initiatives',
             ].map((point, idx) => (
               <div key={idx} className="flex items-start gap-3">
                 <span className="text-blue-600 font-bold text-lg">✓</span>

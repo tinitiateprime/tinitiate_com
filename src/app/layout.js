@@ -42,14 +42,14 @@ export const metadata = {
   title: 'TINITIATE',
   description: 'Empowering IT Careers',
   icons: {
-    icon: '/favicon.png', // or .png/.svg
+    icon: '/favicon.svg',
   },
 }
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
          <head>
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         
       </head>
       <body className="bg-white text-gray-900 flex flex-col min-h-screen">
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
         </main>
 
         <Footer /> */}
-         <main className="flex-grow pt-14">
+         <main className="flex-grow pt-20">
           {children}
         </main>
 

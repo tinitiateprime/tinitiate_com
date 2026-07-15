@@ -22,7 +22,7 @@ export default function PricingPolicy() {
         </h1>
 
         <p className="text-lg text-center text-gray-600 mb-10">
-          At <span className="font-semibold text-indigo-500">TINITIATE Technologies</span>, we believe in fair, clear, and competitive pricing for all our IT services and training programs. Below is our pricing policy.
+          At <span className="font-semibold text-indigo-500">TINITIATE Technologies</span>, we believe in fair, clear, and competitive pricing for all our IT services. Below is our pricing policy.
         </p>
 
         {/* Pricing Structure */}
