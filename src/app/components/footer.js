@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 export default function Footer() {
   return (
@@ -9,11 +10,13 @@ export default function Footer() {
         
         {/* Company Intro */}
         <div>
-        <Link href="/" className="flex h-12 w-[145px] items-center mb-3 md:w-[160px]">
-  <img
-    src="/images/tinitiate-full-logo.svg"
+        <Link href="/" className="mb-3 flex h-[58px] w-[160px] items-center md:w-[178px]">
+  <Image
+    src="/images/tinitiate-logo.png"
     alt="TINITIATE Logo"
-    className="h-11 w-auto object-contain md:h-12"
+    width={426}
+    height={168}
+    className="block h-[52px] w-auto max-w-full object-contain md:h-[56px]"
   />
 </Link>
 

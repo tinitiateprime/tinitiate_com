@@ -102,13 +102,13 @@ export default function Header() {
   return (
     <header className="bg-white sticky top-0 z-[100] border-b border-gray-100">
       <nav ref={navRef} className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <Link href="/" className="flex h-14 w-[155px] items-center md:w-[170px] lg:w-[185px]">
+        <Link href="/" className="flex h-14 w-[160px] shrink-0 items-center md:w-[175px] lg:w-[190px]">
           <Image
-            src="/images/tinitiate-full-logo.svg"
+            src="/images/tinitiate-logo.png"
             alt="TINITIATE Logo"
-            width={560}
-            height={210}
-            className="block h-12 w-auto object-contain md:h-[52px] lg:h-14"
+            width={426}
+            height={168}
+            className="block h-[50px] w-auto max-w-full object-contain md:h-[52px] lg:h-[54px]"
             priority
           />
         </Link>
