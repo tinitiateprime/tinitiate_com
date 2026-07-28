@@ -4,7 +4,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, CalendarDays } from "lucide-react";
 
 export default function Header() {
   // ---------- State ----------
@@ -97,6 +97,7 @@ export default function Header() {
     { label: "Consulting Services", href: "/remote-consulting" },
     { label: "Development Services", href: "/it-development" },
     { label: "About Us", href: "/company" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -270,13 +271,13 @@ export default function Header() {
               );
             })}
 
-            {/* Desktop CTA */}
             <li className="pl-2">
               <Link
                 href="/request-callback"
-                className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm font-medium whitespace-nowrap"
+                className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-blue-600 px-5 py-2 text-sm font-medium text-white transition hover:bg-blue-700"
               >
-                Contact Us
+                <CalendarDays className="h-4 w-4" aria-hidden="true" />
+                Book a Free Call
               </Link>
             </li>
           </ul>
@@ -375,14 +376,14 @@ export default function Header() {
             );
           })}
 
-          {/* Mobile CTA */}
           <li className="pt-2">
             <Link
               href="/request-callback"
-              className="bg-blue-600 text-white w-full block text-center px-5 py-2 rounded-full hover:bg-blue-700 transition text-sm font-medium"
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
               onClick={() => setIsOpen(false)}
             >
-              Contact Us
+              <CalendarDays className="h-4 w-4" aria-hidden="true" />
+              Book a Free Call
             </Link>
           </li>
         </ul>

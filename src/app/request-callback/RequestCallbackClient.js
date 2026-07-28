@@ -10,6 +10,7 @@ export default function RequestCallbackPage() {
   const searchParams = useSearchParams()
   const serviceFromQuery =
     searchParams.get('service') ||
+    searchParams.get('course') ||
     ''
   const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', preferredTime: '', message: '' })
   const [status, setStatus] = useState('idle')
@@ -27,7 +28,8 @@ export default function RequestCallbackPage() {
   }, [serviceFromQuery])
    
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
+  const handleChange = (e) =>
+    setForm((current) => ({ ...current, [e.target.name]: e.target.value }))
 
   const FORM_ENDPOINT = '/__forms.html'
 
@@ -40,11 +42,16 @@ export default function RequestCallbackPage() {
     e.preventDefault()
     setStatus('sending')
     try {
-      await fetch(FORM_ENDPOINT, {
+      const response = await fetch(FORM_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'request-callback', ...form }),
       })
+
+      if (!response.ok) {
+        throw new Error(`Form submission failed with status ${response.status}`)
+      }
+
       setStatus('success')
       setForm({ name: '', email: '', phone: '', service: '', preferredTime: '', message: '' })
     } catch (err) {
@@ -93,15 +100,14 @@ export default function RequestCallbackPage() {
 
             <div className="flex items-center border-gray-200 rounded-lg focus-within:ring-2 focus-within:ring-blue-500 border">
               <Phone className="text-gray-400 m-3" />
-              <input name="phone" type="tel" placeholder="Phone Number" required value={form.phone} onChange={handleChange}  pattern="^[0-9]{10}$"
-              title="Phone number should be 10 digits" className="flex-1 p-3 placeholder-gray-500 text-gray-900 focus:outline-none rounded-r-lg" />
+              <input name="phone" type="tel" placeholder="Phone Number" required value={form.phone} onChange={handleChange} pattern="[0-9+() -]{7,20}"
+              title="Enter a valid phone number" className="flex-1 p-3 placeholder-gray-500 text-gray-900 focus:outline-none rounded-r-lg" />
             </div>
-             { form.service &&
-              <div className="flex items-center border-gray-200 rounded-lg border focus-within:ring-2 focus-within:ring-blue-500">
+
+            <div className="flex items-center border-gray-200 rounded-lg border focus-within:ring-2 focus-within:ring-blue-500">
               <Briefcase className="text-gray-400 m-3" />
-              <input name="service" required type="text" placeholder="Requested Service" value={form.service} readOnly className="flex-1 p-3 bg-gray-100 text-gray-900 rounded-r-lg" />
+              <input name="service" required type="text" placeholder="Requested Service" value={form.service} onChange={handleChange} className="flex-1 p-3 placeholder-gray-500 text-gray-900 focus:outline-none rounded-r-lg" />
             </div>
-            }
             
             <div className="flex items-center border-gray-200 rounded-lg focus-within:ring-2 focus-within:ring-blue-500 border">
               <Clock className="text-gray-400 m-3" />
