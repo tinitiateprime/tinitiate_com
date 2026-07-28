@@ -25,4 +25,4 @@ npm start
 ```
 
 ## Netlify Forms
-The `request-callback` form posts to Netlify Forms. Its static detection blueprint is in `public/__forms.html`. Configure the form submission email recipient in the Netlify project notifications.
+The `tinitiate-com-callback` form posts to Netlify Forms. Its static detection blueprint is in `public/__forms.html`. Configure the form submission email recipient in the Netlify project notifications.

@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 
+const FORM_NAME = 'tinitiate-com-callback';
+
 export default function RequestCallbackForm({ initialService }) {
   const [status, setStatus] = useState('idle');
 
@@ -32,13 +34,13 @@ export default function RequestCallbackForm({ initialService }) {
   return (
     <form
       className="callback-form panel"
-      name="request-callback"
+      name={FORM_NAME}
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
     >
-      <input type="hidden" name="form-name" value="request-callback" />
+      <input type="hidden" name="form-name" value={FORM_NAME} />
       <input type="hidden" name="subject" value="New TINITIATE callback request" data-remove-prefix />
       <p className="netlify-honeypot" aria-hidden="true">
         <label>Do not fill this out: <input name="bot-field" tabIndex={-1} autoComplete="off" /></label>
