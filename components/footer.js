@@ -10,13 +10,13 @@ export default function Footer() {
         
         {/* Company Intro */}
         <div>
-        <Link href="/" className="mb-3 flex h-[58px] w-[160px] items-center md:w-[178px]">
+        <Link href="/" className="relative mb-3 block h-[58px] w-[160px] overflow-hidden md:w-[178px]">
   <Image
     src="/images/tinitiate-logo.png"
     alt="TINITIATE Logo"
-    width={426}
-    height={168}
-    className="block h-[52px] w-auto max-w-full object-contain md:h-[56px]"
+    fill
+    sizes="(max-width: 768px) 160px, 178px"
+    className="object-cover object-[center_46.5%]"
   />
 </Link>
 

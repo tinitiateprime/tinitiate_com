@@ -31,21 +31,17 @@ export default function RequestCallbackPage() {
   const handleChange = (e) =>
     setForm((current) => ({ ...current, [e.target.name]: e.target.value }))
 
-  const FORM_ENDPOINT = '/__forms.html'
-
-  const encode = (data) =>
-    Object.keys(data)
-      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&')
+  const FORM_ENDPOINT = '/'
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('sending')
     try {
+      const formData = new FormData(e.currentTarget)
       const response = await fetch(FORM_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'request-callback', ...form }),
+        body: new URLSearchParams(formData).toString(),
       })
 
       if (!response.ok) {
@@ -85,8 +81,14 @@ export default function RequestCallbackPage() {
         
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="bg-white shadow-xl rounded-2xl p-8">
-          <form name="request-callback" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-4">
+          <form name="request-callback" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit} className="space-y-4">
             <input type="hidden" name="form-name" value="request-callback" />
+            <input type="hidden" name="subject" value="New TINITIATE callback request" data-remove-prefix />
+            <p className="absolute -m-px h-px w-px overflow-hidden border-0 p-0 whitespace-nowrap [clip:rect(0,0,0,0)]" aria-hidden="true">
+              <label>
+                Do not fill this out: <input name="bot-field" tabIndex={-1} autoComplete="off" />
+              </label>
+            </p>
 
             <div className="flex items-center border-gray-200 rounded-lg focus-within:ring-2 focus-within:ring-blue-500 border">
               <User className="text-gray-400 m-3" />
