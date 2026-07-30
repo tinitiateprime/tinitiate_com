@@ -8,7 +8,7 @@ export default function Footer({ isHome }) {
       <div className="wrap site-footer-grid">
         <div className="footer-company">
           <Link className="footer-brand" href={brandHref} aria-label="Tinitiate home">
-            <img className="footer-logo" src="/images/tinitiate-logo.png" alt="Tinitiate Technologies" />
+            <img className="footer-logo" src="/images/website_logo_white_bg_black_text.png" alt="Tinitiate Technologies" />
           </Link>
           <h4>Tinitiate Technologies Pvt Ltd</h4>
           <p>TINITIATE is a leading IT consulting and development company dedicated to empowering businesses with cutting-edge technology solutions. With deep expertise in IT services, database management, and cloud computing, we deliver tailored solutions for the evolving needs of enterprises worldwide.</p>

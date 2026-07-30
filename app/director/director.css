@@ -1,0 +1,237 @@
+/* Venkata Bhattaram — Director personal pages: scoped theme.
+   Every selector is scoped under .vbp-scope so it can only ever match
+   elements inside the /director section's wrapper div and can never
+   collide with the main site's globals.css. */
+
+.vbp-scope{
+  --bg:#fbfbfd;
+  --panel:#ffffff;
+  --panel-2:#f2f4f9;
+  --border:rgba(15,23,42,.16);
+  --border-strong:rgba(15,23,42,.32);
+  --text:#0b1220;
+  --text-soft:#4b5567;
+  --text-dim:#6b7280;
+  --teal:#FC3401;
+  --blue:#2757c9;
+  --amber:#c4820a;
+  --radius:16px;
+  --maxw:1000px;
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 15% 0%, rgba(77,141,255,.10), transparent 45%),
+                    radial-gradient(circle at 85% 20%, rgba(46,230,184,.08), transparent 40%);
+}
+.vbp-scope *{margin:0;padding:0;box-sizing:border-box}
+@media (prefers-reduced-motion: reduce){
+  .vbp-scope *,.vbp-scope *::before,.vbp-scope *::after{transition:none!important}
+}
+.vbp-scope a{color:inherit}
+.vbp-scope .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.vbp-scope .mono{font-family:'IBM Plex Mono',monospace}
+
+/* ---------- header ---------- */
+.vbp-scope header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,251,253,.82);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.vbp-scope .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.vbp-scope .brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.25}
+.vbp-scope .brand-name{font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:-.01em;color:var(--text)}
+.vbp-scope .brand-tag{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+
+.vbp-scope .nav-links{display:flex;gap:22px;list-style:none;align-items:center}
+.vbp-scope .nav-links a{text-decoration:none;font-size:.86rem;font-weight:500;color:var(--text-soft);transition:color .15s ease;white-space:nowrap}
+.vbp-scope .nav-links a:hover,.vbp-scope .nav-links a:focus-visible{color:var(--text)}
+.vbp-scope .nav-links > li > a.active{color:var(--text)}
+.vbp-scope .has-dropdown{position:relative}
+.vbp-scope .dropdown-toggle{display:inline-flex;align-items:center;gap:4px;text-align:left;line-height:1.2}
+.vbp-scope .caret{font-size:.7em;transition:transform .15s ease;display:inline-block;color:var(--text-dim)}
+.vbp-scope .dropdown-menu{
+  position:absolute;top:100%;left:0;margin-top:14px;min-width:270px;list-style:none;
+  background:var(--panel);border:1.5px dashed var(--border-strong);
+  padding:8px;box-shadow:0 20px 40px rgba(15,23,42,.10);
+  opacity:0;visibility:hidden;transform:translateY(6px);
+  transition:opacity .15s ease,transform .15s ease,visibility .15s ease;
+  z-index:200;
+}
+.vbp-scope .has-dropdown:hover .dropdown-menu,.vbp-scope .has-dropdown:focus-within .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.vbp-scope .has-dropdown:hover .caret,.vbp-scope .has-dropdown:focus-within .caret{transform:rotate(180deg)}
+.vbp-scope .dropdown-menu a{display:block;padding:9px 12px;font-size:.82rem;color:var(--text-soft);text-decoration:none;white-space:nowrap}
+.vbp-scope .dropdown-menu a:hover,.vbp-scope .dropdown-menu a:focus-visible{background:var(--panel-2);color:var(--text)}
+
+.vbp-scope .gh-row{display:flex;align-items:center;gap:8px}
+.vbp-scope .gh-link{display:inline-flex;align-items:center;transition:transform .15s ease;opacity:.92}
+.vbp-scope .gh-link:hover{transform:translateY(-1px);opacity:1}
+.vbp-scope .gh-badge{height:24px;display:block}
+
+/* ---------- hero (home page) ---------- */
+.vbp-scope .hero{padding:48px 0 64px;text-align:center}
+.vbp-scope .hero .eyebrow{justify-content:center}
+.vbp-scope h1.hero-title{
+  font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3rem);
+  letter-spacing:-.02em;margin-bottom:12px
+}
+.vbp-scope .hero-sub{
+  font-family:'IBM Plex Mono',monospace;font-size:.95rem;letter-spacing:.02em;
+  color:var(--teal);margin-bottom:18px
+}
+.vbp-scope .hero-copy{max-width:680px;margin:0 auto;color:var(--text-soft);font-size:1rem}
+
+.vbp-scope .pill-groups{max-width:840px;margin:36px auto 0;display:flex;flex-direction:column;gap:16px}
+.vbp-scope .pill-group-label{
+  font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-dim);margin-bottom:9px;text-align:center
+}
+.vbp-scope .pill-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.vbp-scope .pill{
+  font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.03em;color:var(--text-soft);
+  border:1.5px dashed var(--border-strong);border-radius:0;padding:6px 13px;background:var(--panel);
+}
+.vbp-scope .badge-row{gap:6px}
+.vbp-scope .pill-badge{height:26px;display:block}
+
+/* ---------- skills section (shared header — home, enterprise, small-business) ---------- */
+.vbp-scope .skills{padding:64px 0 56px}
+.vbp-scope .skills-head{text-align:center;max-width:640px;margin:0 auto 40px}
+.vbp-scope .eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:10px
+}
+.vbp-scope .eyebrow::before,.vbp-scope .eyebrow::after{content:"";width:24px;height:1px;background:var(--teal)}
+.vbp-scope h2.section-title{
+  font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(1.6rem,3.6vw,2.2rem);
+  letter-spacing:-.02em;margin-bottom:10px
+}
+.vbp-scope .section-sub{color:var(--text-soft);font-size:.98rem}
+
+/* ---------- specialization link cards (home page only) ---------- */
+.vbp-scope .track-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.vbp-scope .track-col{display:flex;flex-direction:column;gap:16px}
+.vbp-scope .track-heading{
+  font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:-.01em;
+  padding-bottom:10px;border-bottom:1.5px dashed var(--border-strong)
+}
+.vbp-scope .track-sub{font-size:.82rem;color:var(--text-dim);margin-top:-8px}
+.vbp-scope .track-cards{display:flex;flex-direction:column;gap:16px}
+
+.vbp-scope .spec-card{
+  position:relative;display:flex;flex-direction:column;gap:10px;
+  border:1px solid #d0d7de;border-radius:6px;background:var(--panel);
+  padding:16px;text-decoration:none;
+  transition:border-color .15s ease,box-shadow .15s ease;
+}
+.vbp-scope .spec-card:hover{border-color:#8c959f;box-shadow:0 1px 2px rgba(31,35,40,.09)}
+
+.vbp-scope .spec-head{display:flex;align-items:center;gap:10px}
+.vbp-scope .spec-icon{
+  flex:none;width:32px;height:32px;border-radius:6px;
+  display:flex;align-items:center;justify-content:center;background:#f6f8fa;border:1px solid #d0d7de;
+}
+.vbp-scope .spec-icon svg{width:18px;height:18px}
+.vbp-scope .spec-title{font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;letter-spacing:-.01em;color:#0969da}
+.vbp-scope .spec-card:hover .spec-title{text-decoration:underline}
+.vbp-scope .spec-desc{font-size:.86rem;color:#57606a;line-height:1.5}
+.vbp-scope .spec-meta{display:flex;align-items:center;gap:6px;font-size:.78rem;color:#57606a}
+.vbp-scope .spec-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none}
+
+.vbp-scope .spec-card[data-track="enterprise"]{--accent:var(--blue)}
+.vbp-scope .spec-card[data-track="solo"]{--accent:var(--teal)}
+.vbp-scope .spec-card[data-track="enterprise"] .spec-icon{color:var(--blue)}
+.vbp-scope .spec-card[data-track="solo"] .spec-icon{color:var(--teal)}
+
+/* ---------- compact section link list (home page only) ---------- */
+.vbp-scope .section-links{list-style:none;display:flex;flex-direction:column;gap:2px;margin-top:4px}
+.vbp-scope .section-links a{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:11px 4px;font-size:.86rem;color:var(--text-soft);text-decoration:none;
+  border-bottom:1px dashed var(--border);transition:color .15s ease,padding-left .15s ease;
+}
+.vbp-scope .section-links a:last-child{border-bottom:none}
+.vbp-scope .section-links a:hover{color:var(--text);padding-left:8px}
+.vbp-scope .section-links a .num{font-family:'IBM Plex Mono',monospace;font-size:.68rem;color:var(--text-dim);margin-right:10px}
+.vbp-scope .section-links a svg{width:14px;height:14px;flex:none;color:var(--text-dim);transition:transform .15s ease}
+.vbp-scope .section-links a:hover svg{transform:translateX(3px);color:var(--teal)}
+
+/* ---------- skill cards (shared structure — enterprise + small-business pages) ---------- */
+.vbp-scope .skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding-bottom:40px}
+
+.vbp-scope .skill-card{
+  position:relative;
+  border:1.5px dashed var(--border-strong);border-radius:0;background:var(--panel);
+  overflow:hidden;transition:border-color .15s ease,box-shadow .15s ease;
+}
+.vbp-scope .skill-card:hover{border-color:var(--border-strong)}
+.vbp-scope .skill-card::before,.vbp-scope .skill-card::after{
+  content:"";position:absolute;top:-2px;width:16px;height:16px;
+  border-top:2.5px solid var(--accent);pointer-events:none;z-index:2;
+}
+.vbp-scope .skill-card::before{left:-2px;border-left:2.5px solid var(--accent)}
+.vbp-scope .skill-card::after{right:-2px;border-right:2.5px solid var(--accent)}
+
+.vbp-scope .skill-watermark{
+  position:absolute;top:50%;right:-8px;transform:translateY(-50%);
+  width:150px;height:150px;color:var(--accent);opacity:.05;pointer-events:none;z-index:0;
+}
+
+.vbp-scope .skill-head{
+  all:unset;box-sizing:border-box;cursor:pointer;position:relative;z-index:1;
+  display:flex;align-items:center;gap:14px;width:100%;padding:20px 20px;
+}
+.vbp-scope .skill-icon{
+  flex:none;width:44px;height:44px;border-radius:0;
+  display:flex;align-items:center;justify-content:center;background:var(--panel-2);border:1.5px dashed var(--border);
+}
+.vbp-scope .skill-icon svg{width:26px;height:26px}
+.vbp-scope .skill-head-text{flex:1;min-width:0}
+.vbp-scope .skill-head-text h3{font-family:'Poppins',sans-serif;font-weight:600;font-size:1.05rem;letter-spacing:-.01em;color:var(--text);margin-bottom:3px}
+.vbp-scope .skill-head-text p{font-size:.86rem;color:var(--text-soft)}
+.vbp-scope .chevron{flex:none;width:20px;height:20px;color:var(--text-dim);transition:transform .2s ease}
+.vbp-scope .skill-card.is-open .chevron{transform:rotate(180deg)}
+
+.vbp-scope .skill-detail{
+  position:relative;z-index:1;
+  padding:0 20px;
+  display:grid;grid-template-rows:0fr;
+  transition:grid-template-rows .25s ease;
+}
+.vbp-scope .skill-detail-inner{overflow:hidden}
+.vbp-scope .skill-card.is-open .skill-detail{grid-template-rows:1fr}
+.vbp-scope .skill-groups{padding-top:2px;padding-bottom:22px;display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--border);margin-top:2px;padding-top:16px}
+.vbp-scope .skill-group-label{
+  font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--text-dim);margin-bottom:8px;display:flex;align-items:center;gap:6px
+}
+.vbp-scope .group-icon{flex:none;width:14px;height:14px;color:var(--text-dim)}
+.vbp-scope .skill-tools{display:flex;flex-wrap:wrap;gap:7px}
+.vbp-scope .skill-tool{
+  font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.03em;text-transform:uppercase;color:var(--text-soft);
+  border:1.5px dashed var(--border-strong);border-radius:0;padding:6px 12px;background:var(--panel-2);
+}
+.vbp-scope .skill-card:hover{box-shadow:0 8px 28px rgba(15,23,42,.06)}
+
+/* desktop: always expanded, click is a no-op */
+@media (min-width:721px){
+  .vbp-scope .skill-detail{grid-template-rows:1fr!important}
+  .vbp-scope .chevron{display:none}
+  .vbp-scope .skill-head{cursor:default}
+}
+
+/* ---------- mobile / responsive ---------- */
+@media (max-width:900px){
+  .vbp-scope .nav-links{display:none}
+}
+@media (max-width:900px){
+  .vbp-scope .track-grid{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:720px){
+  .vbp-scope .nav{height:64px}
+  .vbp-scope .hero{padding:36px 0 44px}
+  .vbp-scope .skills{padding:44px 0 36px}
+  .vbp-scope .skill-grid{grid-template-columns:1fr}
+}

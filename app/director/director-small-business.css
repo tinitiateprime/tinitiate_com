@@ -1,0 +1,54 @@
+/* Venkata Bhattaram — Solo Entrepreneur & Small Business Services page:
+   page-specific skill-card accent variables + platform-accent rules.
+   Structural .skill-card CSS lives in director.css (shared with the
+   enterprise page). Scoped under .vbp-scope — see director.css header
+   comment. */
+
+.vbp-scope{
+  --aiworker1:#c66a00;
+  --aiworker2:#2b7fd6;
+  --discovery:#c66a00;
+  --platform:#2b7fd6;
+  --plan1:#e0341f;
+  --plan2:#0e8fb8;
+  --webapp1:#c66a00;
+  --webapp2:#2b7fd6;
+  --crm:#c66a00;
+  --engage:#0e8fb8;
+  --social:#2b7fd6;
+  --campaign:#e0341f;
+}
+
+.vbp-scope .skills{padding:64px 0 24px}
+.vbp-scope .skills + .skills{border-top:1px solid var(--border)}
+
+/* per-card accent */
+.vbp-scope .skill-card[data-platform="aiworker1"]{--accent:var(--aiworker1)}
+.vbp-scope .skill-card[data-platform="aiworker2"]{--accent:var(--aiworker2)}
+.vbp-scope .skill-card[data-platform="discovery"]{--accent:var(--discovery)}
+.vbp-scope .skill-card[data-platform="platform"]{--accent:var(--platform)}
+.vbp-scope .skill-card[data-platform="plan1"]{--accent:var(--plan1)}
+.vbp-scope .skill-card[data-platform="plan2"]{--accent:var(--plan2)}
+.vbp-scope .skill-card[data-platform="webapp1"]{--accent:var(--webapp1)}
+.vbp-scope .skill-card[data-platform="webapp2"]{--accent:var(--webapp2)}
+.vbp-scope .skill-card[data-platform="crm"]{--accent:var(--crm)}
+.vbp-scope .skill-card[data-platform="engage"]{--accent:var(--engage)}
+.vbp-scope .skill-card[data-platform="social"]{--accent:var(--social)}
+.vbp-scope .skill-card[data-platform="campaign"]{--accent:var(--campaign)}
+
+.vbp-scope .skill-card[data-platform="aiworker1"] .skill-icon{color:var(--aiworker1);border-color:rgba(198,106,0,.4)}
+.vbp-scope .skill-card[data-platform="aiworker2"] .skill-icon{color:var(--aiworker2);border-color:rgba(43,127,214,.4)}
+.vbp-scope .skill-card[data-platform="discovery"] .skill-icon{color:var(--discovery);border-color:rgba(198,106,0,.4)}
+.vbp-scope .skill-card[data-platform="platform"] .skill-icon{color:var(--platform);border-color:rgba(43,127,214,.4)}
+.vbp-scope .skill-card[data-platform="plan1"] .skill-icon{color:var(--plan1);border-color:rgba(224,52,31,.4)}
+.vbp-scope .skill-card[data-platform="plan2"] .skill-icon{color:var(--plan2);border-color:rgba(14,143,184,.4)}
+.vbp-scope .skill-card[data-platform="webapp1"] .skill-icon{color:var(--webapp1);border-color:rgba(198,106,0,.4)}
+.vbp-scope .skill-card[data-platform="webapp2"] .skill-icon{color:var(--webapp2);border-color:rgba(43,127,214,.4)}
+.vbp-scope .skill-card[data-platform="crm"] .skill-icon{color:var(--crm);border-color:rgba(198,106,0,.4)}
+.vbp-scope .skill-card[data-platform="engage"] .skill-icon{color:var(--engage);border-color:rgba(14,143,184,.4)}
+.vbp-scope .skill-card[data-platform="social"] .skill-icon{color:var(--social);border-color:rgba(43,127,214,.4)}
+.vbp-scope .skill-card[data-platform="campaign"] .skill-icon{color:var(--campaign);border-color:rgba(224,52,31,.4)}
+
+@media (max-width:720px){
+  .vbp-scope .skills{padding:44px 0 16px}
+}

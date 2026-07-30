@@ -27,4 +27,7 @@ npm start
 ## Netlify Forms
 The `tinitiate-com-callback` form posts to Netlify Forms. Its static detection blueprint is in `public/__forms.html`. Configure the form submission email recipient in the Netlify project notifications.
 
-## Adding New Director Page
+## Director Pages
+## Showcase Pages
+## Case Study Pages
+

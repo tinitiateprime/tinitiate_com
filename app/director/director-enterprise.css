@@ -1,0 +1,46 @@
+/* Venkata Bhattaram — Enterprise Services page: page-specific skill-card
+   accent variables + platform-accent rules. Structural .skill-card CSS
+   lives in director.css (shared with the small-business page). Scoped
+   under .vbp-scope — see director.css header comment. */
+
+.vbp-scope{
+  --migrate:#c66a00;
+  --landingzone:#2b7fd6;
+  --aws:#c66a00;
+  --azure:#2b7fd6;
+  --databricks:#e0341f;
+  --snowflake:#0e8fb8;
+  --llm:#c66a00;
+  --agent:#2b7fd6;
+  --rag:#e0341f;
+  --automation:#0e8fb8;
+}
+
+.vbp-scope .skills{padding:64px 0 24px}
+.vbp-scope .skills + .skills{border-top:1px solid var(--border)}
+
+/* per-card accent */
+.vbp-scope .skill-card[data-platform="migrate"]{--accent:var(--migrate)}
+.vbp-scope .skill-card[data-platform="landingzone"]{--accent:var(--landingzone)}
+.vbp-scope .skill-card[data-platform="aws"]{--accent:var(--aws)}
+.vbp-scope .skill-card[data-platform="azure"]{--accent:var(--azure)}
+.vbp-scope .skill-card[data-platform="databricks"]{--accent:var(--databricks)}
+.vbp-scope .skill-card[data-platform="snowflake"]{--accent:var(--snowflake)}
+.vbp-scope .skill-card[data-platform="llm"]{--accent:var(--llm)}
+.vbp-scope .skill-card[data-platform="agent"]{--accent:var(--agent)}
+.vbp-scope .skill-card[data-platform="rag"]{--accent:var(--rag)}
+.vbp-scope .skill-card[data-platform="automation"]{--accent:var(--automation)}
+.vbp-scope .skill-card[data-platform="migrate"] .skill-icon{color:var(--migrate);border-color:rgba(198,106,0,.4)}
+.vbp-scope .skill-card[data-platform="landingzone"] .skill-icon{color:var(--landingzone);border-color:rgba(43,127,214,.4)}
+.vbp-scope .skill-card[data-platform="aws"] .skill-icon{color:var(--aws);border-color:rgba(198,106,0,.4)}
+.vbp-scope .skill-card[data-platform="azure"] .skill-icon{color:var(--azure);border-color:rgba(43,127,214,.4)}
+.vbp-scope .skill-card[data-platform="databricks"] .skill-icon{color:var(--databricks);border-color:rgba(224,52,31,.4)}
+.vbp-scope .skill-card[data-platform="snowflake"] .skill-icon{color:var(--snowflake);border-color:rgba(14,143,184,.4)}
+.vbp-scope .skill-card[data-platform="llm"] .skill-icon{color:var(--llm);border-color:rgba(198,106,0,.4)}
+.vbp-scope .skill-card[data-platform="agent"] .skill-icon{color:var(--agent);border-color:rgba(43,127,214,.4)}
+.vbp-scope .skill-card[data-platform="rag"] .skill-icon{color:var(--rag);border-color:rgba(224,52,31,.4)}
+.vbp-scope .skill-card[data-platform="automation"] .skill-icon{color:var(--automation);border-color:rgba(14,143,184,.4)}
+
+@media (max-width:720px){
+  .vbp-scope .skills{padding:44px 0 16px}
+}

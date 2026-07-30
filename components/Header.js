@@ -12,7 +12,7 @@ export default function Header({ current }) {
     <header>
       <div className="wrap nav">
         <Link className="brand" href={homeHref} aria-label="Tinitiate home">
-          <img className="brand-logo" src="/images/tinitiate-logo.png" alt="Tinitiate Technologies" />
+          <img className="brand-logo" src="/images/website_logo_white_bg_black_text.png" alt="Tinitiate Technologies" />
         </Link>
         <ul className="nav-links">
           <li><Link href={homeHref} className={cls('home')}>Home</Link></li>
@@ -41,6 +41,7 @@ export default function Header({ current }) {
             </ul>
           </li>
           <li><Link href="/case-studies" className={cls('case-studies')}>Case Studies</Link></li>
+          <li><Link href="/showcases" className={cls('showcases')}>Showcases</Link></li>
           <li><Link href="/contact" className={cls('contact')}>Contact</Link></li>
           <li><Link href="/about" className={cls('about')}>About</Link></li>
         </ul>

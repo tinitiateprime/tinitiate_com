@@ -1,0 +1,198 @@
+/* Diagram component styles — pairs with js/diagram.js. Expects the Tinitiate
+   design tokens (--ink, --ink-soft, --slate, --line, --panel, --blue, --marigold, --green)
+   to be defined on :root by the host page. Falls back to sane defaults otherwise. */
+
+.dg-root {
+  --dg-ink: var(--ink, #101A3D);
+  --dg-ink-soft: var(--ink-soft, #3A4569);
+  --dg-slate: var(--slate, #5B6478);
+  --dg-line: var(--line, #DDE0E8);
+  --dg-panel: var(--panel, #FFFFFF);
+  --dg-blue: var(--blue, #2757C9);
+  --dg-marigold: var(--marigold, #E8A020);
+  --dg-green: var(--green, #2F7D57);
+  position: relative;
+  width: 100%;
+}
+
+.dg-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: 'Public Sans', system-ui, sans-serif;
+}
+
+.dg-node-rect {
+  fill: var(--dg-panel);
+  stroke: var(--dg-line);
+  stroke-width: 1.5;
+  transition: stroke .18s ease, fill .18s ease, filter .18s ease;
+}
+
+.dg-node {
+  cursor: pointer;
+  outline: none;
+}
+
+.dg-node .dg-label {
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--dg-ink);
+  transition: fill .18s ease;
+}
+
+.dg-node-icon {
+  pointer-events: none;
+}
+
+.dg-node:hover .dg-node-rect,
+.dg-node:focus-visible .dg-node-rect {
+  stroke: var(--dg-blue);
+  filter: drop-shadow(0 4px 14px rgba(39,87,201,.18));
+}
+
+.dg-node.dg-active .dg-node-rect {
+  stroke: var(--dg-blue);
+  stroke-width: 2;
+  fill: #EEF3FE;
+}
+
+.dg-node.dg-dim {
+  opacity: .35;
+}
+
+.dg-accent-marigold.dg-active .dg-node-rect { stroke: var(--dg-marigold); fill: #FFF6E3; }
+.dg-accent-green.dg-active .dg-node-rect { stroke: var(--dg-green); fill: #EDF7F0; }
+
+/* Plain nodes: no permanent box — icon + label only. The box still exists in
+   the markup (for click/hover feedback and active/dim states) but is
+   transparent until hovered, focused, or selected. Use with `groups` so a
+   set of plain nodes reads as steps inside one labelled section. */
+.dg-node.dg-plain .dg-node-rect {
+  fill: none;
+  stroke: none;
+  pointer-events: all; /* keep the whole box clickable even though it has no visible paint */
+}
+.dg-node.dg-plain:hover .dg-node-rect,
+.dg-node.dg-plain:focus-visible .dg-node-rect {
+  fill: var(--dg-panel);
+  stroke: var(--dg-blue);
+  filter: drop-shadow(0 4px 14px rgba(39,87,201,.18));
+}
+.dg-node.dg-plain.dg-active .dg-node-rect {
+  fill: #EEF3FE;
+  stroke: var(--dg-blue);
+  stroke-width: 2;
+}
+.dg-node.dg-plain.dg-accent-marigold.dg-active .dg-node-rect { stroke: var(--dg-marigold); fill: #FFF6E3; }
+.dg-node.dg-plain.dg-accent-green.dg-active .dg-node-rect { stroke: var(--dg-green); fill: #EDF7F0; }
+
+/* Section container drawn behind a set of nodes (see `groups` in the spec) */
+.dg-group-rect {
+  fill: none;
+  stroke: var(--dg-line);
+  stroke-width: 1.25;
+  stroke-dasharray: 5 5;
+}
+.dg-group-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  fill: var(--dg-slate);
+}
+
+.dg-edge {
+  fill: none;
+  stroke: var(--dg-slate);
+  stroke-width: 1.75;
+  opacity: 0;
+  transition: stroke .18s ease, opacity .18s ease;
+}
+
+.dg-edge-dashed {
+  stroke-dasharray: 5 5 !important;
+}
+
+.dg-edge-active {
+  stroke: var(--dg-blue);
+  stroke-width: 2.25;
+}
+
+.dg-arrowhead {
+  fill: var(--dg-slate);
+}
+
+.dg-edge-label {
+  font-size: 11px;
+  font-family: 'IBM Plex Mono', monospace;
+  fill: var(--dg-slate);
+  opacity: 0;
+  transition: opacity .2s ease, fill .18s ease;
+}
+
+.dg-edge.dg-edge-active ~ .dg-edge-label,
+.dg-edge-label-active {
+  opacity: 1;
+  fill: var(--dg-blue);
+}
+
+/* flowing "marching ants" once the draw-in animation completes */
+.dg-edge-flow {
+  stroke-dasharray: 6 5;
+  animation: dg-flow 900ms linear infinite;
+}
+@keyframes dg-flow {
+  to { stroke-dashoffset: -22; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dg-edge-flow { animation: none; }
+}
+
+/* optional side panel that shows node detail on click */
+.dg-panel {
+  border: 1px solid var(--dg-line);
+  border-radius: 14px;
+  background: var(--dg-panel);
+  padding: 20px 22px;
+  min-height: 96px;
+}
+.dg-panel .dg-panel-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--dg-slate);
+}
+.dg-panel h4 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -.01em;
+  color: var(--dg-ink);
+  margin: 6px 0 6px;
+}
+.dg-panel p {
+  font-size: .92rem;
+  color: var(--dg-ink-soft);
+}
+.dg-panel .dg-panel-hint {
+  color: var(--dg-slate);
+  font-size: .88rem;
+}
+
+.dg-replay {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: .74rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  border: 1px solid var(--dg-line);
+  background: var(--dg-panel);
+  color: var(--dg-ink-soft);
+  border-radius: 999px;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: border-color .15s ease, color .15s ease;
+}
+.dg-replay:hover { border-color: var(--dg-blue); color: var(--dg-blue); }
